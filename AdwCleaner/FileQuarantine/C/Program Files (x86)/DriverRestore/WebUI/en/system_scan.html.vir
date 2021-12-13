@@ -1,0 +1,145 @@
+﻿<html>
+<html style="position:absolute;">
+<head>
+<title>Home</title>
+<meta http-equiv="X-UA-Compatible" content="IE=9" >
+    <meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    
+<link rel="stylesheet" href="lib/css/style.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="lib/css/CustomScrollbar.css" type="text/css" media="screen" />
+<link rel="shortcut icon" href="favicon.png" />
+<link href="lib/Donut/jquery.jqplot.min.css" rel="stylesheet" />
+<script language="javascript" type="text/javascript" src="lib/Donut/excanvas.js"></script>
+<script src="lib/scripts/jquery.min.js" type="text/javascript"></script>
+<script src="lib/scripts/jquery.spritely.js" type="text/javascript"></script>
+<script src="lib/scripts/html5shiv.js" type="text/javascript"></script>
+<script src="lib/scripts/custom.js" type="text/javascript"></script>
+<script type="text/javascript" src="lib/scripts/expand.js"></script>
+<script type="text/javascript" src="lib/js/csharpglue.js"></script>
+<script type="text/javascript" src="lib/js/SystemScan/Model.js"></script>
+<script type="text/javascript" src="lib/js/SystemScan/DriversView.js"></script>
+<script type="text/javascript" src="lib/js/SystemScan/ProgressView.js"></script>
+<script type="text/javascript" src="lib/js/SystemScan/SystemInfoView.js"></script>
+<script type="text/javascript" src="lib/js/SystemScan/ScanSummaryView.js"></script>
+<script type="text/javascript" src="lib/js/SystemScan/events.js"></script>
+<script src="lib/Donut/jquery.jqplot.min.js" type="text/javascript"></script>
+<script src="lib/Donut/jqplot.donutRenderer.min.js" type="text/javascript"></script>
+    <script src="lib/Donut/DonutChart.js" type="text/javascript"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+	    $('.progress .red_bar').sprite({ fps: 48, no_of_frames: 48, dir: 'down' }).active();
+	    $('.progress .green_bar').sprite({ fps: 48, no_of_frames: 48, dir: 'down' }).active();
+
+	});
+    
+</script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+$(function() {	
+    //$("#content li.expand").toggler();
+});
+//--><!]]>
+</script>
+
+
+
+</head>
+
+<body>
+
+<noscript>
+	<div class="noscript">
+		<div>Please enable JavaScript in your browser.</div>
+	</div>
+</noscript>
+
+<article class="home" style="display:block">
+
+		<!-- overview -->
+
+		<div class="overview">
+			<!--<div class="top"></div>-->
+
+			<div class="content">
+
+				<div class="notice" id="system_info">
+
+				</div>
+                <div class="summary"></div>
+			  <div  id="summary_donut">
+
+
+				
+              </div>
+                
+				<!--<div class="speed" >-->
+					<!--<span class="meter" id="speedMeter"></span>-->
+                    <!--<canvas id="canvas" height="100" width="100"></canvas>-->
+                    <!--<div id='jqxChart' class="speed" style="width: 102px; height: 102px; position: relative; left: 0px;top: 0px;"></div>-->
+                    
+				
+
+			<!--</div>-->
+
+			</div>
+		</div>
+
+		<!-- progress -->
+
+     <div class="progress">
+			<span class="box"><span class="red_bar" id="scanProgressBar"></span></span>
+			<div class="scan_complete" id="scanProgressLabel"></div>
+		</div>
+
+		<div class="attenction" id="bigAreaLable_missing" style="display:none;">
+			<img src="lib/images/icons/error_found.png">
+			<span class="total_error font18"></span>
+			<a href="#" class="error_now_btn_1" id="upgradeButton"></a>
+		</div>
+
+        <div class="attenction cong-update" id="bigAreaLable_uptodate"  style="display:none;">
+			<img src="lib/images/icons/star-big1.png" class="star-ico-error" alt="">
+			<span class="total_error font18"></span>
+			<a href="#" class="RegisterNow" id="register_now_btn"></a>
+		</div>
+		
+		 <div class="scan_buttons">
+			<!---<a class="button start" href="#"></a>--->
+            <a href="#" class="button_scan scan_stop  fr" id="stopButton"></a>
+		     <a href="#" class="button_scan resume_scan" id="resumeButton"  style="display:none;"></a>
+             <a href="#" class="button_scan scan_pause" id="pauseButton"  style="display:none;"></a>
+		     <a href="#" class="button_scan start_scan" id="startButton"></a>
+             <div href="#" class="empty_space_block" id="empty_space_block"  style="display:none;"></div>
+		</div>
+		
+        <div class="home_drivers">
+            <div class="driver_cat">
+                <h1 class="br_cat_heading">Driver Categories</h1>
+                <div class="dr_category-list" id="dr_category_list">
+                    <div id="content"> 
+                        <div class="demo">
+                            <ul id="dr_categ">               
+                            </ul>               
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <span id="driver_detail_parent">
+                <div class="quardo_part" id="quardo_part_id">
+                </div>
+            </span>
+        </div>
+
+		<!-- buttons -->
+
+		
+
+	</article>
+
+<script src="lib/js/jquery.mCustomScrollbar.concat.min.js"></script>
+<script class="code" type="text/javascript">
+   
+</script>  
+</body>
+</html>

@@ -1,0 +1,211 @@
+//Set up GUID generation and event logging
+var util = {
+    generateUUID: function () {
+        var d = new Date().getTime();
+        var uuid = 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function (c) {
+            var r = (d + Math.random() * 16) % 16 | 0;
+            d = Math.floor(d / 16);
+            return (c == 'x' ? r : (r & 0x3 | 0x8)).toString(16);
+        });
+        return uuid;
+    },
+    log: function (eventName) {
+        var messageName = "Ext_Event";
+        var messageParameters = util.constructMsgParameters(eventName);
+        var messageUrl = "http://api.checkext.com/m?action=" + messageName;
+
+        for (key in messageParameters) {
+            messageUrl = messageUrl + "&" + key + "=" + encodeURIComponent(messageParameters[key])
+        }
+
+        (new Image).src = messageUrl;
+    },
+    constructMsgParameters: function (eventName) {
+        var messageParameters = {
+            extensionId: chrome.runtime.id,
+            extensionName: manifestInfo.name,
+            version: manifestInfo.version,
+            extensionType: 0,
+            userGuid: userInfo.guid || '00000000-0000-0000-0000-000000000000',
+            sessionGuid: userInfo.sessionGuid || '00000000-0000-0000-0000-000000000000',
+            eventName: eventName,
+            ebid: "NA_EBID",
+            aff_id: userInfo.aff_id || 'NA_AFFID',
+            offer_id: userInfo.offer_id || 'NA_OFFERID',
+            offer_url_id: userInfo.offer_url_id || 'NA_OFFERURLID',
+            source: userInfo.source || 'NA_SOURCE',
+            aff_sub: userInfo.aff_sub || "NA_AFFSUB1",
+            aff_sub2: userInfo.aff_sub2 || "NA_AFFSUB2",
+            aff_sub3: userInfo.aff_sub3 || "NA_AFFSUB3",
+            aff_sub4: userInfo.aff_sub4 || "NA_AFFSUB4",
+            aff_sub5: userInfo.aff_sub5 || "NA_AFFSUB5",
+            country_code: userInfo.country_code || "NA_GEO",
+            url: window.location.href,
+            offer_type: userInfo.ot || 0
+        };
+        return messageParameters;
+    }
+};
+
+var manifestInfo = chrome.runtime.getManifest(),
+    userInfo = {};
+
+function getUserInfoFromStorage() {
+    chrome.storage.local.get("userObj", function (result) {
+        if (!jQuery.isEmptyObject(result)) {
+            userInfo = result.userObj;
+        }
+    });
+}
+
+//Check for heartbeat every hour and send message
+var twentySeconds = 20000; //use to test sendHeartbeat works
+var oneHour = (60000 * 60);
+
+
+//Log heartbeat when extension is first enabled
+sendHeartbeat();
+
+//Log heartbeat every hour it is enabled
+setInterval(sendHeartbeat, oneHour);
+function sendHeartbeat() {
+    util.log("Heartbeat");
+}
+
+// check cookies every 10 minutes
+setInterval(checkCookies, 600000);
+function checkCookies() {
+    var tenYears = (3600 * 24 * 365 * 10),
+        expirationDate = (new Date().getTime() / 1000) + tenYears;
+
+    var searchUserInfoCookie = {
+        "url": "http://search.searchnewwindow.com/search",
+        "name": "userInfo"
+    };
+    chrome.cookies.get(searchUserInfoCookie, function (cookie) {
+        if (cookie == null || cookie.value == "") {
+            searchUserInfoCookie.value = JSON.stringify(userInfo);
+            searchUserInfoCookie.expirationDate = expirationDate;
+            chrome.cookies.set(searchUserInfoCookie, function () { });
+        }
+    });
+
+    var domainUserInfoCookie = {
+        "url": "http://www.searchnewwindow.com",
+        "name": "userInfo"
+    };
+    chrome.cookies.get(domainUserInfoCookie, function (cookie) {
+        if (cookie == null || cookie.value == "") {
+            domainUserInfoCookie.value = JSON.stringify(userInfo);
+            domainUserInfoCookie.expirationDate = expirationDate;
+            chrome.cookies.set(domainUserInfoCookie, function () { });
+        }
+    });
+}
+
+chrome.runtime.onInstalled.addListener(function (details) {
+    chrome.storage.local.get("userObj", function (result) {
+        if (jQuery.isEmptyObject(result)) {
+            var userInfoCookie = {
+                "url": "http://www.searchnewwindow.com",
+                "name": "userInfo",
+            };
+            chrome.cookies.get(userInfoCookie, function (cookie) {
+                var userObj = {};
+                if (cookie == null || cookie.value == "") {
+                    userObj.guid = util.generateUUID();
+                } else {
+                    try {
+                        userObj = JSON.parse(cookie.value);
+                    } catch (e) {
+                        userObj.guid = util.generateUUID();
+                    }
+                }
+
+                userObj.extensionId = chrome.runtime.id;
+                userObj.extensionName = manifestInfo.name;
+                // userObj.themeID = '23';
+
+                chrome.storage.local.set({ "userObj": userObj });
+                userInfo = userObj;
+
+                // check search handler cookie
+                var userInfoCookieForSearch = {
+                    "url": "http://search.searchnewwindow.com/search",
+                    "name": "userInfo",
+                };
+                chrome.cookies.get(userInfoCookieForSearch, function (searchCookie) {
+                    if (searchCookie == null || searchCookie.value == "") {
+                        var tenYears = (3600 * 24 * 365 * 10),
+                        expirationDate = (new Date().getTime() / 1000) + tenYears;
+
+                        // set user info cookie on search handler
+                        userInfoCookieForSearch.value = JSON.stringify(userObj);
+                        userInfoCookieForSearch.expirationDate = expirationDate;
+                        chrome.cookies.set(userInfoCookieForSearch, function () { });
+                    }
+                });
+            });
+        } else {
+            userInfo = result.userObj;
+        }
+    });
+    if (details.reason == "install") {
+        chrome.runtime.setUninstallURL("http://www.searchnewwindow.com/uninstall/?uninstall=true");
+    }
+});
+
+chrome.runtime.onMessageExternal.addListener(
+    function (request, sender, sendResponse) {
+        sendResponse("OK");
+    }
+)
+
+chrome.runtime.onMessage.addListener(
+  function (request, sender, sendResponse) {
+      if (request.action == "getNewTabCode") {
+          chrome.storage.local.get("newTabSearch", function (result) {
+              var searchDomain = "tightropetb";
+              var url = sender.url;
+              if (jQuery.isEmptyObject(result) && url.indexOf(searchDomain) >= 0) {
+                  setTimeout(function() {
+                     util.log("First Run Default Search");
+                  }, 4000);
+                  chrome.storage.local.set({
+                      "newTabSearch": true
+                  });
+                  chrome.tabs.sendMessage(sender.tab.id, {
+                      action: "showDefaultWelcomeMessage"
+                  });
+              }
+          })
+        } else if(request.action == "defaultSearchContinuePerformed") {
+          util.log("First Run Default Search Modal Click");
+      }
+      switch (request.message) {
+          case "getUserInfo":
+              if (jQuery.isEmptyObject(userInfo)) {
+                  getUserInfoFromStorage();
+              }
+              sendResponse({
+                  userInfo: userInfo
+              });
+              chrome.storage.local.get("installDate", function (result) {
+                  if (jQuery.isEmptyObject(result)) {
+                      chrome.storage.local.set({
+                          "installDate": (new Date()).toGMTString()
+                      });
+                      chrome.tabs.sendMessage(sender.tab.id, {
+                          isNewInstall: true
+                      });
+                  }
+              });
+              break;
+
+      }
+  }
+);
+//Open new tab on icon click
+chrome.browserAction.onClicked.addListener(function(tab) {
+	chrome.tabs.create({ url: 'newtab.html' });
+});

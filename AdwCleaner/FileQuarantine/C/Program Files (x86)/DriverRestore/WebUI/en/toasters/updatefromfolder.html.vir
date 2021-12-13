@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+
+<meta charset="UTF-8" />
+
+<title>Scan Alert</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+
+<link rel="stylesheet" href="../lib/css/style.css" type="text/css" media="screen" />
+<link rel="shortcut icon" href="favicon.png" />
+
+<script src="../lib/scripts/jquery.min.js" type="text/javascript"></script>
+<script src="../lib/scripts/html5shiv.js" type="text/javascript"></script>
+<script src="../lib/js/main_router.js" type="text/javascript"></script>
+<script src="../lib/scripts/custom.js" type="text/javascript"></script>
+<script src="../lib/js/toasters/updatefromfolder/model.js" type="text/javascript"></script>
+<script src="../lib/js/toasters/updatefromfolder/UpdateFromFolderView.js" type="text/javascript"></script>
+
+</head>
+
+<body>
+
+<noscript>
+	<div class="noscript">
+		<div>Please enable JavaScript in your browser.</div>
+	</div>
+</noscript>
+
+		<div class="update-toster">
+        	<div class="logo"></div>
+            <a class="close4" id="update_from_shortcut_close"> &nbsp; </a>
+        		<div class="inne_popup">
+            		<p class="driver_update"><b id="update_from_shortcut_devicename1"></b> Driver Update</p>
+                    <p class="dellwireless-txt">The zip folder containing your &nbsp;<strong id="update_from_shortcut_devicename2"></strong>&nbsp; driver update has been downloaded to your desktop. To complete the update of your Driver please follow the following steps.</p>
+                 <p class="toster-driver"><strong>1.</strong> Locate the shortcut on your desktop titled <br>
+&quot;<span id="update_from_shortcut_devicename3"></span>&quot;.</p>
+                 <p class="toster-driver">
+                   <strong>2. </strong> Open shortcut and unzip this folder to view the files.</p>
+                 <p class="toster-driver">
+                  <strong>3.</strong> Within the folder locate and select the desired file.</p>
+                 <p class="toster-driver">
+                  <strong> 4.</strong> Open the file to launch your Driver Download</p>
+                 <!--<span class="close_3"></span>--->
+        	</div>
+      	</div>
+
+
+</body>
+</html>

@@ -1,0 +1,79 @@
+﻿Popups.RegistrationFlow.Buttons = {
+    QuitApp: 0,
+    CompleteScan: 1,
+    UpdateDrivers: 2,
+    EnterLicenseKey: 3,
+    Register: 4,
+    Cancel: 5,
+    MicrosoftArea: 6
+};
+
+Popups.RegistrationFlow.Events = (function () {
+    var completeScanId = ".button.complete_scan.regflw";
+    var upgradeDriversId = ".button.fix_error_now.regflw,.up_dr.regflw";
+    var registerNowId = ".button.reg-now.regflw";
+    var quitAppId = ".quit_1.regflw,.quit_btn.regflw";
+    var closePopupId = ".close.close_2.regflw";
+    var enterKeyId = "#enterkey_regflw";
+    var microsoftAreaId = "#navigateToMicrosoft";
+
+    var completeScanClicked = function () {
+        Popups.RegistrationFlow.ContainerView.hide();
+        window.external.RegisterFlowPopupClicked(Popups.RegistrationFlow.Buttons.CompleteScan); 
+        
+    };
+    var upgradeDrivers = function () {
+        Popups.RegistrationFlow.ContainerView.hide();
+        window.external.RegisterFlowPopupClicked(Popups.RegistrationFlow.Buttons.UpdateDrivers); 
+        
+    };
+    var registerNowClicked = function () {
+        Popups.RegistrationFlow.ContainerView.hide();
+        window.external.RegisterFlowPopupClicked(Popups.RegistrationFlow.Buttons.Register); 
+        
+    };
+    var quitAppClicked = function () {
+        Popups.RegistrationFlow.ContainerView.hide();
+        window.external.RegisterFlowPopupClicked(Popups.RegistrationFlow.Buttons.QuitApp);
+
+        return false;
+
+    };
+    var closePopupClicked = function () {
+        window.external.RegisterFlowPopupClicked(Popups.RegistrationFlow.Buttons.Cancel);
+        Popups.RegistrationFlow.ContainerView.hide();      
+    };
+
+    var enterKeyClicked = function () {
+        Popups.RegistrationFlow.ContainerView.hide();
+        window.external.RegisterFlowPopupClicked(Popups.RegistrationFlow.Buttons.EnterLicenseKey); 
+        
+    };
+
+    var microsoftAreaClicked = function () {
+        window.external.RegisterFlowPopupClicked(Popups.RegistrationFlow.Buttons.MicrosoftArea);
+
+    };
+    var init = function () {
+        $(completeScanId).unbind();
+        $(upgradeDriversId).unbind();
+        $(registerNowId).unbind();
+        $(closePopupId).unbind();
+        $(quitAppId).unbind();
+        $(enterKeyId).unbind();
+        $(microsoftAreaId).unbind();
+
+        $(completeScanId).bind("click", completeScanClicked);
+        $(upgradeDriversId).bind("click", upgradeDrivers);
+        $(registerNowId).bind("click", registerNowClicked);
+        $(quitAppId).bind("click", quitAppClicked);
+        $(closePopupId).bind("click", closePopupClicked);
+        $(enterKeyId).bind("click", enterKeyClicked);
+        $(microsoftAreaId).bind("click", microsoftAreaClicked);
+
+    };
+
+    return {
+        init: init
+    };
+})();

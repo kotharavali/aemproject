@@ -1,0 +1,88 @@
+﻿BC_Biometric_Details:Aparelhos biométricos tomam como entrada a informação da pessoa, por exemplo, voz, impressão digital, escaneamento da íris e depois processa as informações. Esses aparelhos permitem um sistema de computador a identificar indivíduos baseando nessas características.
+BL_Bluetooth_Details: Aparelhos de bluetooth permitem computadores a comunicar com vários computadores simultaneamente, sem fio e com troca dados em pequenas distâncias (geralmente, alguns metros) via rádio UHF.        
+CD_CDDVD_Details:CD (compact disc) é um disco óptico que armazena dados digitais. Ele é inserido num CD-ROM para salvar, gravar ou excluir dados de áudio. Inicialmente, ele foi desenvolvido apenas para música e outros sons. DVD ou disco de vídeo digital é similar a um CD  mas com uma qualidade adicionada que pode combinar gráficos com sons para armazenar vídeos.                                    
+DA_Display_Details: Telas ou monitores de exibição são aparelhos de saída de dados, usados para representar o resultado de um processamento de dados ou qualquer informação relevante em forma visual, convertendo informação eletrônica em uma forma que é compreendido pelo olho humano.
+DD_DiskDrive_Details:O disk drive é um aparelho de computador que lê dados armazenados que são salvos em um disco óptico (CD ou DVD) e grava dados para armazenar num disco.                                                    
+FD_FloppyDisk_Details:Floppy disks é um disco pequeno de armazenamento médio para ler ou gravar dados de computador em filmes magnéticos ao inserir floppy disks nos floppy drives. Mas eles tedem de ter uma capacidade de armazenamento pequena em comparação aos cartões de memórias e USBs.
+FW_Firewire_Details:Assim como o USB, o Firewire é outro componente para conectar e adicionar aos aparelhos periféricos (ex. equipamento de áudio e vídeo) para seu computador pessoal. Uma grande razão porque que o Firewire é usado é que ele tem uma taxa de transmissão de dados alta e outro é que ele transfere energia para o aparelho pela mesma via.                                                                    
+HD_HardDiskControllers_Details: Controladores de Disco Rígido são componente elétricos (circuito numa placa de expansão) dos CPUs que age como interfaces para gravar, ler, excluir e modificar dados/informações no disco rígido, conseqüentemente, fornecendo controle sobre o disco rígido.
+HI_HID_Details:HID ou Human Interface Device (Aparelho de Interface Humana) é um termo amplo para categorizar qualquer aparelho de computador que interage diretamente com humanos. Exemplos incluem caixas de som, headsets, webcams e etc.
+IM_Imaging_Details:Imaging significa a reprodução ou representação de qualquer imagem genérica. Aparelhos de imagem são hardware drivers em um computador pessoal que permite um sinal eletrônico ser criado em uma imagem na tela do computador.
+IR_Infrared_Details:Com aparelhos infravermelhos, computadores podem comunicar entre eles usando sinais sem fios de curto alcance (ondas de infravermelho são usadas) para transmitir e receber dados. Adaptadores de rede infravermelho especializados foram feitos para este propósito.                                                                                                                           
+KB_Keyboard_Details:Um teclado é um outro aparelho de entrada de dados, foi criado parecido como um máquina de escrever, para entrar textos e caracteres para serem exibidos na tela. Teclados incluem teclas alfanuméricas, teclas de pontuação e teclas de comando especial.                                                                                                                                                       
+MD_Modem_Details: Um modem é um aparelho responsável de permitir o computador a transferir e receber dados. Dados podem ser transmitidos em formato analógico através de cabos ou telefone, mas a armazenagem de dados em um computador é em formato digital. Um modem é capaz de fazer a conversão entre esses dois formatos.                                                                                        
+MF_MultifunctionPCMCIA_Details:PCMCIA significa Associação Internacional do Cartão de Memória de Computador Pessoal. Cartões PCMCIA são como cartões de expansão para laptops. Eles agem como interfaces de hardware e fornecem funcionalidade adicional a computadores laptops. PCMCIA Multifunção tem mais que uma função, por exemplo, um único cartão pode funcionar como telefone, fax modem  e também como um adaptador de rede.
+MS_Mice_Details:Mouse ou mice no plural, é um aparelho de entrada de dados para um computador e que permite o usuário movimentar uma seta ou cursor no monitor. Mice geralmente tem 2 ou 3 botões para manipular objetos na tela do monitor.                                                                                                                                    
+MT_MemoryTechnologyDriver_Details:Memory Technology Driver é um aparelho que gerencia e faz interface com a memória flash (componente de armazenamento do computador) nos sistemas operacionais Windows.                                                                                                                                                                                                                          
+NT_Network_Details: Uma rede computadores abrange um grupo de aparelhos e sistemas de computação que são ligados juntos usando tanto rede sem fio como cabo, facilitando a comunicação e compartilhando recursos entre usuários diferentes.                                                                                                                                              
+PC_Pcmcia_Details:Um cartão PCMCIA (Associação Internacional do Cartão de Memória do Computador Pessoal) é um aparelho de entrada/saída (como uma cartão de expansão) que conecta à um computador laptop ou notebook para fornecer funcionalidade adicional. Existem três tipos ou tamanhos de cartões PCMCIA.                                                                                                      
+PT_Ports_Details:Portas são pontos de conexão e exercem um papel na interface entre um computador e aparelhos periféricos ou outros computadores. Portas de computadores podem ser internas ou externas. Discos rígidos e drives de CD/DVD são conectados via porta interna e teclados e mice via porta externa.                                                                                          
+SC_SCSI_Details:SCSI  significa Interface de Sistema de Computadores Pequenos. É um conjunto de padrões de interface, proposto pelo Instituto de Padrão Nacional Americano (ANSI), para conectar/anexar aparelhos periféricos a um computador pessoal para transferência de dados e comunicação.                                                                                                                   
+SH_Sdhost_Details:SD Host ou Secure Data Hosts são softwares de drivers num computador que controla hardware do controlador central e fornece a interface para comunicar com os cartões de memória SD e também definir parâmetros operacionais.                                                                                                                                                                
+SO_SoundVideoGameControllers_Details:Controladores de Som, Vídeo e Jogos são aparelhos que são usados geralmente para aplicações de multimídia. Esses aparelhos facilitam a entrada e saída do áudio e imagens gráficas do computador e também gerência a interatividade do usuário.                                                                                                                                          
+SR_SmartCardReaders_Details:Leitores de smart card são aparelhos para leitura de entrada de dados em smart cards e também para gravar informações neles. Um leitor de smart card tem que estar interfaçado com um computador para ser operado. Os leitores vem com um slot de entrada para inserir smart cards.                                                                                                                              
+SY_System_Details:Um sistema de computador é uma coleção de componentes de hardware e software que trabalham juntos de forma inteligente para o computador funcionar de forma eficiente. Assim como os outros sistemas, sistema de computador recebem uma entrada de dados, processa e entrega a saída de dados.                                                                                                                                    
+TD_TapeDrive_Details:Tape drive é um outro aparelho de armazenamento de dados, mas ele é usado para ler e gravar dados/informações numa fita magnética, que foi primeiramente usado para backup e armazenamento de arquivos.                                                                                                                                                                                    
+US_USB_Details:Universal Serial Bus (USB) é basicamente um aparelho de armazenamento de dados para armazenar informações num formato digital. Ele pode ser conectado a um computador e permite transferência de dados entre diferentes computadores. A quantidade de informações que eles podem guardar varia de USB para USB.                                                                                           
+WC_WindowsCEUSBDevices_Details:Esses aparelhos de USB foram feitos para serem compatível com Windows CE, um sistema operacional desenvolvido para sistemas embedded. Tais aparelhos controlam todos os tipos de outros aparelhos USBs e fornecem ao usuário um programa de interface para aplicativos com Windows CE.                                                                                                               
+WP_WindowsPortableDevice_Details:Windows Portable Devices ou WPD é um tipo de technologia de driver para comunicar entre computadores, que funciona no Windows e ligado à aparelhos de armazenamento e mídia. Aparelhos que são tem suporte do WPD incluem reprodutores de MP3, câmeras digitais e celulares.                                                                                                           
+MN_Monitor_Details: Monitor é um aparelho de saída de dados num sistema de computador que exibe todas as informações gráficas e vídeo, que é produzida pela placa de vídeo num computador. Monitores são bem similares a televisores mas a diferença é que monitores geralmente tendem ter uma resolução melhor.                                                                                           
+CP_CPU_Details:CPU ou Unidade de Processamento Central é um aparelho de hardware eletrônico que funciona como um cérebro do computador. Um CPU é responsável pelo processamento e execução de todas as instruções e comandos que ele recebe do hardware e software executadores no computador.
+PR_Printer_Details:Impressoras são aparelhos de hardware externo de saída de dados que imprimem ou transfere dados do computador, como documentos, textos ou imagens para folhas padrão de papel referidas como cópia impressa. Uma impressora é categorizada como um aparelho periférico, isso significa que ela precisa ser anexada á um computador antes da impressão.                                                                    
+Problem_1: Este aparelho não está configurado corretamente.
+Problem_3: O driver para este aparelho pode estar corrompido ou o seu sistema pode estar funcionando com pouca memória ou outros recursos.
+Problem_10: Este aparelho não pôde iniciar.
+Problem_12: Este aparelho não pôde encontrar recursos livres que ele possa usá-lo. Se você deseja usar este aparelho, você terá que desabilitar outros aparelhos ligados a este sistema.
+Problem_14: Este aparelho não pode funcionar corretamente até que você reinicie seu computador.
+Problem_16:Windows não pôde identificar todos os recursos que este aparelho usa.
+Problem_18: Reinstalar os driver para este aparelho.
+Problem_19: Windows não pode iniciar este aparelho de hardware porque sua informação de configuração (no registro) está incompleta ou danificada.
+Problem_21: Windows está removendo este aparelho.
+Problem_22: Este aparelho está desabilitado.
+Problem_24: Este aparelho não está presente, não está funcionando corretamente ou não tem todos os seus drivers instalados.
+Problem_28: Os drivers para este aparelho não estão instalados.
+Problem_29: Este aparelho está desabilitado porque o firmware do aparelho não fornece a ele os recursos necessários.
+Problem_31: Este aparelho não está funcionando corretamente por que o Windows não pode carregar os drivers requeridos para este aparelho.
+Problem_32: Um driver (serviço) para este aparelho foi desabilitado. Um driver alternativo talvez forneça esta funcionalidade.
+Problem_33: Windows não pode determinar quais recursos são requeridos para este aparelho.
+Problem_34: Windows não pode determinar as configurações para este aparelho.
+Problem_35: Firmware do sistema de computador não inclui informação suficiente para configurar corretamente  e usar este aparelho. Para usar este aparelho, entre em contato como o fabricante do computador para obter um firmware ou atualização da BIOS.
+Problem_36:Este aparelho esta pedindo um PCI interrrupt mas está configurado para uma ISA interrupt (ou vice versa). Por favor use o programa de configuração do sistema do computador para reconfigurar o interrupt para este aparelho.
+Problem_37:Windows não pôde inicializar o driver do aparelho para este hardware.
+Problem_38:Windows não pôde carregar o driver do aparelho para este hardware porque a unidade anterior do driver do aparelho ainda está na memória.
+Problem_39:Windows não pode carregar o driver do aparelho para este hardware. O driver pode estar corrompido ou faltando.
+Problem_40:Windows não pode acessar este hardware por que sua chave de serviço no registro está ausente ou gravada incorretamente.
+Problem_41:Windows carregou com sucesso o driver do aparelho para este hardware mas não pôde encontrar o aparelho de hardware.
+Problem_42:Windows não pode carregar o driver do aparelho para este hardware porque já há uma aparelho duplicado rodando no sistema. 
+Problem_43: Windows parou este aparelho porque ele reportou problemas.
+Problem_44: Um aplicativo ou serviço encerrou este aparelho de hardware.
+Problem_45:Atualmente este aparelho de hardware não está conectado ao computador.
+Problem_46:Windows não pôde ter acesso para o aparelho de hardware porque o sistema operacional está em processo de encerramento.
+Problem_47:Windows não pode usar este aparelho de hardware porque ele foi preparado para remoção segura, mas ele foi removido do computador.
+Problem_48:O software para este aparelho foi bloqueado de iniciar porque ele é conhecido de ter problemas com Windows. Entre em contato como o vendedor do hardware para um novo driver.
+Problem_49:Windows não pode iniciar o novo aparelho de hardware porque a sessão do sistema é muito grande (excede o Limite do Tamanho do Registro). 
+Problem_52:Windows não pôde verificar a assinatura digital para o driver solicitado para este aparelho.
+Problem_Unknown:Problema Desconhecido
+HTTPException_1:Não pôde enviar esmeamento do driver para processo
+HTTPException_2:Não pôde enviar escaneamento do driver para pré-processamento
+HTTPException_3:Não pôde obter resultados do driver
+HTTPException_4:Não pôde fazer download das instruções do driver. {0}
+HTTPException_5:Erro ao fazer download do driver: {0}
+FileIOException_1:Não pôde criar pasta: {0}
+FileIOException_2:Não pôde gravar resultados do escaneamento
+FileIOException_3:Não pôde compactar arquivo
+FileIOException_4:Não pôde ler {0}
+FileIOException_5:Não pôde excluir pasta do driver: {0}
+FileIOException_6:Não pôde corrigir linha no arquivo: {0}
+FileIOException_7:Não pôde corrigir string no arquivo: {0}
+FileIOException_8:Não pôde gravar arquivo: {0}
+FileIOException_9:Não pôde descompactar arquivo {0} para {1}
+FileIOException_10:Não pôde criar atalho na área de trabalho para {0}
+APIException_1:Não pôde escanear drivers
+APIException_2:Não pôde ler ID do escaneamento
+APIException_3:Não pôde ler nome do computador
+APIException_4:Não pôde ler resultados do escaneamento
+APIException_5:Não pôde ler instruções de instalação para driver:
+APIException_6:Não pôde liberar linhas no arquivo: {0}
+APIException_7:Não pôde analisar resultados do driver
+

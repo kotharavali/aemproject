@@ -1,0 +1,102 @@
+﻿var Popups = Popups || {};
+
+
+Popups.RegisterNow = (function () {
+    var State = {
+        AskForRegistration: 0,
+        RegistrationSuccesfull: 1
+    };
+
+    var registerPopupId = '#popupRegister';
+    var registerNowId = '#licenseRegisterButton';
+    var pasteFromClipboardId = '#popupRegisterPaste';
+    var closeRegisterPpId = '.close_3.registernow';
+    var inputLicenseId = '#licenseKeyRegister1';
+    var popupRegisterShadowId = '#popupRegisterShadow';
+    var thankyouPopupId = '#thankyou_for_registration';
+    var thankyouBtnId = '.ok.thankyou';
+    var closeThankyouId = '.close_3.thankyou';
+    var thankyouShadow = '#popupThankyouShadow';
+
+    var hideAll = function() {
+        $(registerPopupId).hide();
+        $(popupRegisterShadowId).hide();
+        $(thankyouPopupId).hide();
+        $(thankyouShadow).hide();
+    };
+
+    var init = function () {
+        $(registerNowId).on('click', function (e) {
+            submitActivationKey();
+        });
+
+        $(pasteFromClipboardId).on('click', function (e) {
+            try {
+                window.external.PasteLicenseKeyClicked();
+            } catch (err) {
+                window.external.OnJavaScriptError(err.source + '-Popups.LicenseValidation.SubmitActivationKey: ' + ' ' + err.message);
+            }
+        });
+
+
+        $(closeRegisterPpId).on('click', function (e) {
+            hideAll();
+        });
+
+        $(closeThankyouId).on('click', function (e) {
+            hideAll();
+        });
+
+        $(thankyouBtnId).on('click', function (e) {
+            hideAll();
+        });
+    };
+
+    var show = function (jsonState) {
+
+        var state = $.parseJSON(jsonState);
+
+        hideAll();
+
+        switch (state) {
+            case State.AskForRegistration:
+                $(inputLicenseId).val("");
+                $(registerPopupId).show();
+                $(popupRegisterShadowId).show();
+                break;
+            case State.RegistrationSuccesfull:
+                $(thankyouPopupId).show();
+                $(thankyouShadow).show();
+                break;
+        }
+    };
+
+    var submitActivationKey = function () {
+        try {
+            var key = $(inputLicenseId).val();
+            window.external.SubmitActivationKey(key);
+        } catch (err) {
+            window.external.OnJavaScriptError(err.source + '-Popups.LicenseValidation.SubmitActivationKey: ' + ' ' + err.message);
+        }
+    };
+
+    var setLicenseKeyInputValue = function (key) {
+        $(inputLicenseId).val(key);
+    };
+
+    var showWaitCursor = function(show){
+        var cursor = show === "True" ? "wait":"auto";  
+        $("body").css("cursor", "cursor");
+        $("#licenseRegisterButton").css("cursor", cursor);
+        $("#licenseKeyRegister1").css("cursor", cursor);
+        $("#popupRegisterPaste").css("cursor", cursor);
+        $("#registernow_close").css("cursor", cursor);
+    }
+
+    return {
+        init: init,
+        show: show,
+        set: setLicenseKeyInputValue,
+        showWaitCursor: showWaitCursor
+    };
+})();

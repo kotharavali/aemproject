@@ -1,0 +1,362 @@
+﻿var SystemScan = SystemScan || {};
+
+SystemScan.DriversCategoryView = (function () {
+    var categoiesParentId = ".driver_cat";
+    var categoryParentId = "#dr_categ";
+    var driversParentId = "#list_parent";
+    var categoryId;
+    var categoryInfo;
+    var arrayOfCategories = [];
+    var isSemBuild = false;
+
+    var addDrivers = function () {
+        $.each(categoryInfo.Drivers, function (index, driver) {
+            addDriver(index, driver);
+        });
+    };
+
+    var addDriver = function (index, driver) {
+        $("#" + categoryId).find(driversParentId).append(SystemScan.DriverItemHtmlFactory.get(driver.ScanState, driver.Name.toString(), categoryId + index));
+        $("#" + categoryId + index).click(function () {
+            SystemScan.DriverDetailsView.set(driver, isSemBuild);
+
+            //if autoselected, don't send event
+            if (driver.IsAutoSelectClick) {
+                driver.IsAutoSelectClick = false; //reset field
+                return;
+            }
+
+            window.external.DriverSelectedClicked(driver.Name, driver.Category);
+        });
+    };
+
+    var addCategory = function () {
+        $("#" + categoryId).remove();       
+        $(categoryParentId).append(SystemScan.CategoryHtmlFactory.get(categoryInfo.State, categoryInfo.Name, categoryId));        
+    };
+
+    var render = function (driverCategories, isSemBuildType) {
+        isSemBuild = isSemBuildType;
+
+        resetView();
+
+        $.each(driverCategories, function (index, categoryInfoModel) {
+            categoryInfo = categoryInfoModel;
+            categoryId = categoryInfoModel.Name.toString().replace(/\s+/g, '').replace(/[^\w\s]/gi, '');
+
+            addCategory();
+            addDrivers();
+        });
+
+        postSettings();
+
+        expandDriverCategories(driverCategories);
+
+        arrayOfCategories = driverCategories;
+    };
+
+    var resetView = function() {
+        $(categoiesParentId).empty();
+        $(categoiesParentId).append("<h1 class=\"br_cat_heading\">Driver Categories</h1>" +
+                                    "<div class=\"dr_category-list\" id=\"dr_category_list\">" +
+                                        "<div id=\"content\">" +
+                                            "<div class=\"demo\">" +
+                                                "<ul id=\"dr_categ\">" +
+                                                "</ul>" +
+                                            "</div>" +
+                                        "</div>"+
+                                    "</div>");
+    };
+
+    var postSettings = function() {
+        $("#content li.expand").toggler();
+    };
+
+    var selectDriver = function (driverModel) {
+        $.each(arrayOfCategories, function (index1, categoryInfoModel) {
+            categoryInfo = categoryInfoModel;
+            categoryId = categoryInfoModel.Name.toString().replace(/\s+/g, '').replace(/[^\w\s]/gi, '');
+
+            $.each(categoryInfo.Drivers, function (index2, driver) {
+                if (driverModel.Name == driver.Name) {
+                    var driversCategoriesList = $('.dr_category-list');
+                    var driverToAutoSelectEl = $("#" + categoryId + index2);
+
+                    driver.IsAutoSelectClick = true;
+
+                    driverToAutoSelectEl.click();
+
+                    driversCategoriesList.scrollTop(driverToAutoSelectEl.offset().top - driversCategoriesList.offset().top + driversCategoriesList.scrollTop());
+                }
+            });
+        });
+    };
+
+    var expandDriverCategories = function (arrayOfCategories) {
+        $.each(arrayOfCategories, function (index1, categoryInfoModel) {
+            if (categoryInfoModel.State != SystemScan.DriverState.UPTODATE) {
+                categoryId = categoryInfoModel.Name.toString().replace(/\s+/g, '').replace(/[^\w\s]/gi, '');
+                var driverCategoryEl = $("#" + categoryId);
+
+                driverCategoryEl.children().click();
+            }
+        });
+    };
+    return {
+        render: render,
+        selectDriver: selectDriver
+    };
+})();
+
+SystemScan.DriverDetailsView = (function() {
+    var parentId = "#quardo_part_id";
+    var contactButtonId = ".contact-support";
+    var updateDriverClass = ".update-driver,.update-driver-sem";
+    var driverDetailsParentid = "#driver_detail_parent";
+    var ignoreDriverId = "#ignoreButton";
+    var reportProblemButtonId = ".report-problem";
+
+    var set = function (driverInfo, isSemBuild) {
+    $(parentId).empty();
+    resetView();
+
+    var info = SystemScan.DriverDetailsHtmlFactory.get(driverInfo, isSemBuild);
+
+    $(parentId).append(info);
+
+    $(contactButtonId).click(function () {
+        parent.Popups.QuestionForm.show(driverInfo);
+    });
+
+    $(reportProblemButtonId).click(function () {
+        parent.Popups.FeedbackView.render({ State: parent.Popups.Feedback.States.ReportProblemFeedback, Driver: driverInfo });
+    });
+
+    $(updateDriverClass).click(function () {
+        window.external.UpdateDriverClicked(driverInfo.Name, driverInfo.Category);
+    });
+
+    $(ignoreDriverId).click(function () {
+        window.external.IgnoreDriverClicked(driverInfo.Name, driverInfo.Category);
+    });
+
+    postSettings();
+    };
+
+
+    var resetView = function() {
+        $(driverDetailsParentid).empty();
+        $(driverDetailsParentid).append("<div class=\"quardo_part\" id=\"quardo_part_id\"></div>");
+    };
+
+    var postSettings = function () {
+    };
+
+    return {
+        set: set
+    };
+})();
+
+SystemScan.CategoryHtmlFactory = (function () {
+
+    var get = function (state, name, id) {
+        switch (state) {
+            case SystemScan.DriverState.UNKNOWN:
+                return unknown(name, id);
+            case SystemScan.DriverState.UPTODATE:
+                return uptodate(name, id);
+            case SystemScan.DriverState.MISSING:
+                return missing(name, id);
+            case SystemScan.DriverState.OUTOFDATE:
+                return outofdate(name, id);
+            case SystemScan.DriverState.SCANNING:
+                return scanning(name, id);
+            case SystemScan.DriverState.SCANNINGPAUSED:
+                return scanningPaused(name, id);
+            default:
+                return unknown(name, id);
+        }
+    };
+
+    var unknown = function (name, id) {
+        return "<li class=\"list_bg1\" id=\"" + id + "\"><span class=\"question_mark\"></span><span>" + name + "</span></li>";
+    };
+
+    var scanning = function (name, id) {
+        return "<li class=\"list_bg1\" id=\"" + id + "\"><span class=\"loading\"></span><span>" + name + "</span></li>";
+    };
+
+    var scanningPaused = function (name, id) {
+        return "<li class=\"list_bg1\" id=\"" + id + "\"><span class=\"loading_pause\"></span><span>" + name + "</span></li>";
+    };
+
+    var uptodate = function (name, id) {
+        return "<span  id=\"" + id + "\">" +
+        "<li class=\"list_bg_lgray expand\"><span class=\"green_check\"></span><span class=\"w225 \">" + name + "</span>" +
+                "<li class=\"collapse list_dr1\">" +
+                    "<ul id=\"list_parent\">" +
+                    "</ul>" +
+                "</li>" +
+            "</li>" +
+             "</span>";
+    };
+
+    var outofdate = function (name, id) {
+        return "<span  id=\"" + id + "\">" +
+            "<li class=\"red_strip expand\"><p><span class=\"red_cross-1\"></span><strong>" + name + "</strong><label class=\"clor_white\">Out-of-date</label></p>" +
+            "<li class=\"collapse\">" +
+                "<ul id=\"list_parent\">" +
+                " </ul>" +
+            "</li>" +
+        "</li >" +
+        "</span>";;
+    };
+    var missing = function (name, id) {
+        return "<span  id=\"" + id + "\">" +
+                    "<li class=\"ylo_strip expand\"><p><span class=\"error-ico\"></span><strong>" + name + "</strong><label>Missing</label></p>" +
+                        "<li class=\"collapse\"> " +
+                            "<ul id=\"list_parent\">" +
+                            "</ul>" +
+                        "</li>" +
+                    "</li>" +
+                "</span>";
+    };
+
+    return {
+        get: get
+    };
+}());
+
+SystemScan.DriverItemHtmlFactory = (function () {
+
+    var get = function (state, name, id) {
+        switch (state) {
+            case SystemScan.DriverState.UNKNOWN:
+                return unknown(name, id);
+            case SystemScan.DriverState.UPTODATE:
+                return uptodate(name, id);
+            case SystemScan.DriverState.MISSING:
+                return missing(name, id);
+            case SystemScan.DriverState.OUTOFDATE:
+                return outofdate(name, id);
+            case SystemScan.DriverState.SCANNING:
+                return scanning(name, id);
+            default:
+                return unknown(name, id);
+        }
+    };
+
+    var unknown = function (name, id) {
+        return "<li class=\"list_bg1 sub_cat\" id=\"" + id + "\"><span class=\"question_mark\"></span><span class=\"w220\">" + name + "</span></li>";
+    };
+
+    var scanning = function (name, id) {
+        return "<li class=\"list_bg1 sub_cat\" id=\"" + id + "\"><span class=\"loading\"></span><span class=\"w220\">" + name + "</span></li>";
+    };
+
+    var uptodate = function (name, id) {
+        return "<li class=\"list_bg sub_cat\" id=\"" + id + "\"><span class=\"green_check\"></span><span class=\"w220\">" + name + "</span></li>";
+    };
+
+    var outofdate = function (name, id) {        
+        return "<li class=\"red_strip\" id=\"" + id + "\"><p class=\"nvida_quardo-fx\"><span class=\"red_cross-1\"></span><strong class=\"clor_white\">" + name + "</strong><label class=\"clor_white\">Out-of-date</label></p></li>";
+    };
+
+    var missing = function (name, id) {
+        return "<li class=\"ylo_strip .ylo_strip1\" id=\"" + id + "\">" +
+                        "<p class=\"nvida_quardo-fx\">" +
+                            "<span class=\"error-ico\">" +
+                            "</span><strong class=\"logicaltxt\">" + name + "</strong>" +
+                        "<label>Missing</label>" +
+                    "</p>" +
+                "</li>";
+    };
+
+    return {
+        get: get
+    };
+}());
+
+SystemScan.DriverDetailsHtmlFactory = (function () {
+    var get = function (driver, isSemBuildType) {
+        switch (driver.ScanState) {
+            case SystemScan.DriverState.UNKNOWN:
+                return uptodate(driver, isSemBuildType);
+            case SystemScan.DriverState.UPTODATE:
+                return uptodate(driver, isSemBuildType);
+            case SystemScan.DriverState.MISSING:
+                return missing(driver, isSemBuildType);
+            case SystemScan.DriverState.OUTOFDATE:
+                return outofdate(driver, isSemBuildType);
+            default:
+                return "";
+        }
+    };
+
+    var formatDate = function (jsonDate) {
+        var regEx = /-?\d+/;
+        var m = regEx.exec(jsonDate);
+        var date = new Date(parseInt(m[0]));
+        return date.getMonth() + 1 + "/" + date.getDate() + "/" + date.getFullYear();
+    };
+
+
+    var uptodate = function (driver) {
+        var style           = driver.Name.length > 35 ? "style=\"height:220px!important;padding:0 0 10px;\"" : "style=\"height:249px!important;padding:0 0 0px;\"";
+        var imagePath       = typeof driver.LandingImagePath === "string" && driver.LandingImagePath.length > 0 ? driver.LandingImagePath : driver.ImagePath;
+        var reportProblem   = driver.Updated == true ? "<p class=\"report-problem\"><a href=\"#\"></a></p>" : "";
+
+        return "<h1 class=\"quardo_heading\">" + driver.Name + "</h1>" +
+            "<div class=\"quardo_list\" " + style + " >" +
+            "<p class=\"out_ofdate font13\"><strong>Problem:</strong><span>No Problem</span></p>" +
+            "<p class=\"out_ofdate\"><strong class=\"font-normal\">Installed Driver Date:</strong><span>" + formatDate(driver.InstallDate) + "</span></p>" +
+            "<p class=\"out_ofdate\"><strong class=\"font-normal\">New Driver Date:</strong><span>" + formatDate(driver.InstallDate) + "</span></p>" +
+            "<p class=\"dr_nvi\">Drivers for <b>" + driver.Name + "</b> are all up-to-date.</p></br>" + reportProblem +
+            "<!--p class=\"contact-support\"><a href=\"#\"></a></p-->" +
+            "<div class=\"device_detail\"><p><span>Device Driver Details</span>" +
+            "<img  width=\"98px\" height=\"69px\" src='" + imagePath + "' alt=\"\"/>" +
+            "<span>" + driver.Name + "</span>" + driver.DriverDetails + "</p>" + "</div>" +
+            "</div>";
+    };
+
+    var outofdate = function (driver, isSemBuildType) {
+        var style            = driver.Name.length > 35 ? "style=\"height:220px!important;padding:0 0 10px;\"" : "style=\"height:249px!important;padding:0 0 0px;\"";
+        var imagePath        = typeof driver.LandingImagePath === "string" && driver.LandingImagePath.length > 0 ? driver.LandingImagePath : driver.ImagePath;
+        var buttonClass      = isSemBuildType ? "update-driver-sem" : "update-driver";
+
+        return "<h1 class=\"quardo_heading\">" + driver.Name + "</h1>" +
+            "<div class=\"quardo_list\" " + style + ">" +
+            "<p class=\"out_ofdate font13\"><strong>Problem:</strong><span>Out-of-date drivers</span></p>" +
+            "<p class=\"out_ofdate\"><strong class=\"font-normal\">Installed Driver Date:</strong><span>" + formatDate(driver.InstallDate) + "</span></p>" +
+            "<p class=\"out_ofdate\"><strong class=\"font-normal\">New Driver Date:</strong><span>" + formatDate(driver.NewDriverDate) + "</span></p>" +
+            "<p class=\"" + buttonClass  + "\"><a href=\"#\"></a></p>" +
+            "<div class=\"device_detail\"> <p><span>Device Driver Details</span>" +
+            "<img  width=\"98px\" height=\"69px\" src='" + imagePath + "' alt=\"\"/>" +
+            "<span>" + driver.Name + "</span>" + driver.DriverDetails + "</p>" + "</div>" +
+             "<span class=\"device_detail\"><a href=\"#\" style=\"color: #1284bf;font-weight:normal;font-size:11px;\" id=\"ignoreButton\">&nbsp;Ignore&nbsp;</a>(Do not notify me again about this.)</span>" +
+            "</div >";
+    };
+    var missing = function (driver, isSemBuildType) {
+        var style            = driver.Name.length > 35 ? "style=\"height:220px!important;padding:0 0 10px;\"" : "style=\"height:249px!important;padding:0 0 0px;\"";
+        var imagePath        = typeof driver.LandingImagePath === "string" && driver.LandingImagePath.length > 0 ? driver.LandingImagePath : driver.ImagePath;
+        var buttonClass      = isSemBuildType ? "update-driver-sem" : "update-driver";
+
+
+        return "<h1 class=\"quardo_heading\">" + driver.Name + "</h1>" +
+            "<div class=\"quardo_list\" " + style  + ">" +
+            "<p class=\"out_ofdate font13\"><strong>Problem:</strong><span>Missing driver</span></p>" +
+            "<p class=\"out_ofdate\"><strong class=\"font-normal\">Installed Driver Date:</strong><span> Never </span></p>" +
+            "<p class=\"out_ofdate\"><strong class=\"font-normal\">New Driver Date:</strong><span>" + formatDate(driver.NewDriverDate) + "</span></p>" +
+            "<p class=\"" + buttonClass + "\"><a href=\"#\"></a></p>" +
+           "<div class=\"device_detail\"><p><span>Device Driver Details</span>" +
+            "<img  width=\"98px\" height=\"69px\" src='" + imagePath + "' alt=\"\"/>" +
+            "<span>" + driver.Name + "</span>" + driver.DriverDetails + "</p>" + "</div>" +
+            "</div>" +
+            "<span class=\"device_detail\"><a href=\"#\" style=\"color: #1284bf;font-weight:normal;font-size:11px;\" id=\"ignoreButton\">&nbsp;Ignore&nbsp;</a>(Do not notify me again about this.)</span>";
+
+    };
+
+    return {
+        get: get
+    };
+}());

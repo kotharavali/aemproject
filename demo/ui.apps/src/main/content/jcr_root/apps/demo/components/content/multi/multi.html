@@ -1,0 +1,14 @@
+
+<h1>employ components </h1>
+<div data-sly-use.object1="com.aem.community.core.pojo.TouchMultiFieldPojo" data-sly-unwrap>
+<nav class="navbar-inverse navbar-absolute-bottom">
+<div class="collapse navbar-collapse width" id="we-example-navbar-collapse-inverse">
+<ul class="nav navbar-nav navbar-center">
+<li class="nav navbar-nav navbar-left" data-sly-repeat.keyName="${object1.links}"><a href="${object1.links[keyName]}.html">${keyName}</a>
+<!-- <li class="visible-xs divider" role="separator"></li> -->
+
+</ul>
+</div>
+<span style="height: 0px;" class="navbar-shutter"></span>
+</nav> 
+</div>

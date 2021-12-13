@@ -1,0 +1,76 @@
+HKLM\SOFTWARE\MICROSOFT\SYSTEMCERTIFICATES\ROOT\CERTIFICATES\26D9E607FFF0C58C7844B47FF8B6E079E5A2220E->C:\AdwCleaner\RegistryQuarantine\reg_cffpzmtjga.reg
+HKLM\SOFTWARE\5da059a482fd494db3f252126fbc3d5b->C:\AdwCleaner\RegistryQuarantine\reg_okeiztsvtv.reg
+HKCU\Software\Google\Chrome\Extensions\fcfenmboojpjinhpgggodefccipikbpd->C:\AdwCleaner\RegistryQuarantine\reg_opnjtadnwg.reg
+HKCU\Software\gameo->C:\AdwCleaner\RegistryQuarantine\reg_kvlpiopzzz.reg
+HKCU\Software\GoldenGate->C:\AdwCleaner\RegistryQuarantine\reg_iuszketjmi.reg
+HKCU\Software\ICSW1.17->C:\AdwCleaner\RegistryQuarantine\reg_cuetrpexat.reg
+HKCU\Software\OMX_Media->C:\AdwCleaner\RegistryQuarantine\reg_cqlgjyngcb.reg
+HKCU\Software\PRODUCTSETUP->C:\AdwCleaner\RegistryQuarantine\reg_ilobcznesw.reg
+HKCU\Software\WebDiscoverBrowser->C:\AdwCleaner\RegistryQuarantine\reg_ddiampuicp.reg
+HKCU\Software\Microsoft\Windows\CurrentVersion\Uninstall\gameo->C:\AdwCleaner\RegistryQuarantine\reg_qjmupuxzwg.reg
+HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\{E1527582-8509-4011-B922-29E3FB548882}_is1->C:\AdwCleaner\RegistryQuarantine\reg_rnvzsaicmv.reg
+HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\11598763487076930564->C:\AdwCleaner\RegistryQuarantine\reg_yciyepquav.reg
+HKLM64\SOFTWARE\WebDiscoverBrowser->C:\AdwCleaner\RegistryQuarantine\reg_bxhdiddepv.reg
+HKLM64\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\{E1527582-8509-4011-B922-29E3FB548882}_is1->C:\AdwCleaner\RegistryQuarantine\reg_olxtikcxbt.reg
+HKLM64\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\OLBPre->C:\AdwCleaner\RegistryQuarantine\reg_ytaaqklbhn.reg
+HKCU\Software\Microsoft\Internet Explorer\SearchScopes\{0E521781-A58F-4CB1-899B-E0D615AA7966}->C:\AdwCleaner\RegistryQuarantine\reg_wartnrssqz.reg
+HKLM\SYSTEM\CurrentControlSet\services\Tcpip\Parameters\Interfaces\{1bca25cf-1187-4916-8a6e-ffb4a83dcf7d}|NameServer->C:\AdwCleaner\RegistryQuarantine\reg_cwvehxmsng.reg
+HKLM\SYSTEM\CurrentControlSet\services\Tcpip\Parameters\Interfaces\{2e946d2c-b50c-49f6-b836-62c077a8170a}|NameServer->C:\AdwCleaner\RegistryQuarantine\reg_ippenpsani.reg
+HKLM\SYSTEM\CurrentControlSet\services\Tcpip\Parameters\Interfaces\{60f6aa6f-ff76-41e0-b07d-7daaef9465e1}|NameServer->C:\AdwCleaner\RegistryQuarantine\reg_nfgnmkebgz.reg
+HKLM\SYSTEM\CurrentControlSet\services\Tcpip\Parameters\Interfaces\{d82b6228-8eb8-4fd4-b220-ecfe4daa65f5}|NameServer->C:\AdwCleaner\RegistryQuarantine\reg_wwadhkydfm.reg
+HKCU\Software\Microsoft\Internet Explorer\LowRegistry\DOMStorage\akamaihd.net->C:\AdwCleaner\RegistryQuarantine\reg_rymljolfrt.reg
+HKCU\Software\Microsoft\Internet Explorer\LowRegistry\DOMStorage\bestpriceninja.com->C:\AdwCleaner\RegistryQuarantine\reg_deszhwihjc.reg
+HKCU\Software\Microsoft\Internet Explorer\LowRegistry\DOMStorage\d3l3lkinz3f56t.cloudfront.net->C:\AdwCleaner\RegistryQuarantine\reg_jownzompdo.reg
+HKCU\Software\Microsoft\Internet Explorer\LowRegistry\DOMStorage\eshopcomp.com->C:\AdwCleaner\RegistryQuarantine\reg_mndbbycdbe.reg
+HKCU\Software\Microsoft\Internet Explorer\LowRegistry\DOMStorage\hdapp1008-a.akamaihd.net->C:\AdwCleaner\RegistryQuarantine\reg_jcnkrmxvtk.reg
+HKCU\Software\Microsoft\Internet Explorer\LowRegistry\DOMStorage\nps.pastaleads.com->C:\AdwCleaner\RegistryQuarantine\reg_ojzpxbrppe.reg
+HKCU\Software\Microsoft\Internet Explorer\LowRegistry\DOMStorage\pastaleads.com->C:\AdwCleaner\RegistryQuarantine\reg_lvyxkhswfb.reg
+HKCU\Software\Microsoft\Internet Explorer\LowRegistry\DOMStorage\pstatic.bestpriceninja.com->C:\AdwCleaner\RegistryQuarantine\reg_viqzjeugcc.reg
+HKCU\Software\Microsoft\Internet Explorer\LowRegistry\DOMStorage\pstatic.eshopcomp.com->C:\AdwCleaner\RegistryQuarantine\reg_umhmonumdd.reg
+HKCU\Software\Microsoft\Internet Explorer\LowRegistry\DOMStorage\re-markable.net->C:\AdwCleaner\RegistryQuarantine\reg_ahgirvmxhh.reg
+HKCU\Software\Microsoft\Internet Explorer\LowRegistry\DOMStorage\re-markit.co->C:\AdwCleaner\RegistryQuarantine\reg_quahxfjizw.reg
+HKCU\Software\Microsoft\Internet Explorer\LowRegistry\DOMStorage\static.re-markable00.re-markable.net->C:\AdwCleaner\RegistryQuarantine\reg_kzpczarwoi.reg
+HKCU\Software\Microsoft\Internet Explorer\LowRegistry\DOMStorage\static.re-markit00.re-markit.co->C:\AdwCleaner\RegistryQuarantine\reg_brcodujdpp.reg
+HKCU\Software\Microsoft\Internet Explorer\LowRegistry\DOMStorage\utop.it->C:\AdwCleaner\RegistryQuarantine\reg_pnbjktvliv.reg
+HKCU\Software\Microsoft\Internet Explorer\LowRegistry\DOMStorage\webcrawler.com->C:\AdwCleaner\RegistryQuarantine\reg_zrfvsscomm.reg
+HKCU\Software\Microsoft\Internet Explorer\LowRegistry\DOMStorage\www.webcrawler.com->C:\AdwCleaner\RegistryQuarantine\reg_mkuutcoadh.reg
+HKCU\Software\Classes\Local Settings\Software\Microsoft\Windows\CurrentVersion\AppContainer\Storage\microsoft.microsoftedge_8wekyb3d8bbwe\Children\001\Internet Explorer\EdpDomStorage\bestpriceninja.com->C:\AdwCleaner\RegistryQuarantine\reg_djmdonpkgm.reg
+HKCU\Software\Classes\Local Settings\Software\Microsoft\Windows\CurrentVersion\AppContainer\Storage\microsoft.microsoftedge_8wekyb3d8bbwe\Children\001\Internet Explorer\EdpDomStorage\d19tqk5t6qcjac.cloudfront.net->C:\AdwCleaner\RegistryQuarantine\reg_aztqxrnrmf.reg
+HKCU\Software\Classes\Local Settings\Software\Microsoft\Windows\CurrentVersion\AppContainer\Storage\microsoft.microsoftedge_8wekyb3d8bbwe\Children\001\Internet Explorer\EdpDomStorage\driverupdate.net->C:\AdwCleaner\RegistryQuarantine\reg_nwxlejnbiu.reg
+HKCU\Software\Classes\Local Settings\Software\Microsoft\Windows\CurrentVersion\AppContainer\Storage\microsoft.microsoftedge_8wekyb3d8bbwe\Children\001\Internet Explorer\EdpDomStorage\eshopcomp.com->C:\AdwCleaner\RegistryQuarantine\reg_vfmtgixfah.reg
+HKCU\Software\Classes\Local Settings\Software\Microsoft\Windows\CurrentVersion\AppContainer\Storage\microsoft.microsoftedge_8wekyb3d8bbwe\Children\001\Internet Explorer\EdpDomStorage\pstatic.bestpriceninja.com->C:\AdwCleaner\RegistryQuarantine\reg_wektrepzqv.reg
+HKCU\Software\Classes\Local Settings\Software\Microsoft\Windows\CurrentVersion\AppContainer\Storage\microsoft.microsoftedge_8wekyb3d8bbwe\Children\001\Internet Explorer\EdpDomStorage\pstatic.eshopcomp.com->C:\AdwCleaner\RegistryQuarantine\reg_gxgnshxeqw.reg
+HKCU\Software\Classes\Local Settings\Software\Microsoft\Windows\CurrentVersion\AppContainer\Storage\microsoft.microsoftedge_8wekyb3d8bbwe\Children\001\Internet Explorer\EdpDomStorage\utop.it->C:\AdwCleaner\RegistryQuarantine\reg_wjnnhsppzv.reg
+HKCU\Software\Classes\Local Settings\Software\Microsoft\Windows\CurrentVersion\AppContainer\Storage\microsoft.microsoftedge_8wekyb3d8bbwe\Children\001\Internet Explorer\EdpDomStorage\www.driverupdate.net->C:\AdwCleaner\RegistryQuarantine\reg_cuddsvmafl.reg
+HKCU\Software\Classes\Local Settings\Software\Microsoft\Windows\CurrentVersion\AppContainer\Storage\microsoft.microsoftedge_8wekyb3d8bbwe\Children\001\Internet Explorer\DOMStorage\bestpriceninja.com->C:\AdwCleaner\RegistryQuarantine\reg_usltojacel.reg
+HKCU\Software\Classes\Local Settings\Software\Microsoft\Windows\CurrentVersion\AppContainer\Storage\microsoft.microsoftedge_8wekyb3d8bbwe\Children\001\Internet Explorer\DOMStorage\d19tqk5t6qcjac.cloudfront.net->C:\AdwCleaner\RegistryQuarantine\reg_egpqbifprl.reg
+HKCU\Software\Classes\Local Settings\Software\Microsoft\Windows\CurrentVersion\AppContainer\Storage\microsoft.microsoftedge_8wekyb3d8bbwe\Children\001\Internet Explorer\DOMStorage\driverupdate.net->C:\AdwCleaner\RegistryQuarantine\reg_ypqllmnrzp.reg
+HKCU\Software\Classes\Local Settings\Software\Microsoft\Windows\CurrentVersion\AppContainer\Storage\microsoft.microsoftedge_8wekyb3d8bbwe\Children\001\Internet Explorer\DOMStorage\eshopcomp.com->C:\AdwCleaner\RegistryQuarantine\reg_jnbjmghabb.reg
+HKCU\Software\Classes\Local Settings\Software\Microsoft\Windows\CurrentVersion\AppContainer\Storage\microsoft.microsoftedge_8wekyb3d8bbwe\Children\001\Internet Explorer\DOMStorage\pstatic.bestpriceninja.com->C:\AdwCleaner\RegistryQuarantine\reg_fsydygddql.reg
+HKCU\Software\Classes\Local Settings\Software\Microsoft\Windows\CurrentVersion\AppContainer\Storage\microsoft.microsoftedge_8wekyb3d8bbwe\Children\001\Internet Explorer\DOMStorage\pstatic.eshopcomp.com->C:\AdwCleaner\RegistryQuarantine\reg_dxaidwegjy.reg
+HKCU\Software\Classes\Local Settings\Software\Microsoft\Windows\CurrentVersion\AppContainer\Storage\microsoft.microsoftedge_8wekyb3d8bbwe\Children\001\Internet Explorer\DOMStorage\utop.it->C:\AdwCleaner\RegistryQuarantine\reg_yctmrcqvbz.reg
+HKCU\Software\Classes\Local Settings\Software\Microsoft\Windows\CurrentVersion\AppContainer\Storage\microsoft.microsoftedge_8wekyb3d8bbwe\Children\001\Internet Explorer\DOMStorage\www.driverupdate.net->C:\AdwCleaner\RegistryQuarantine\reg_jcwmoxlyzd.reg
+HKCU\Software\Microsoft\Windows\CurrentVersion\Run|Gameo->C:\AdwCleaner\RegistryQuarantine\reg_zehlfrvtmh.reg
+HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\App Paths\DriverRestore.exe->C:\AdwCleaner\RegistryQuarantine\reg_lnrxfqhxnh.reg
+HKLM\SOFTWARE\Classes\CLSID\{F83D1872-D9FF-47F8-B5A0-49CC51E24EE8}->C:\AdwCleaner\RegistryQuarantine\reg_ilmzmmrotr.reg
+HKCU\Software\DriverRestore->C:\AdwCleaner\RegistryQuarantine\reg_vinilnprcz.reg
+HKCU\Software\eSupport.com->C:\AdwCleaner\RegistryQuarantine\reg_fsrlriigsf.reg
+HKCU\Software\PRODUCTSETUP->C:\AdwCleaner\RegistryQuarantine\reg_tevxqmziek.reg
+HKCU\Software\System Healer->C:\AdwCleaner\RegistryQuarantine\reg_eenkkmexrx.reg
+HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\WinZip Registry Optimizer_is1->C:\AdwCleaner\RegistryQuarantine\reg_rkdqfcozha.reg
+HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\11598763487076930564->C:\AdwCleaner\RegistryQuarantine\reg_ackjffklqd.reg
+HKLM64\SOFTWARE\DriverRestore->C:\AdwCleaner\RegistryQuarantine\reg_srragterpz.reg
+HKLM64\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\Driver Restore->C:\AdwCleaner\RegistryQuarantine\reg_vxsivzoftj.reg
+HKCU\Software\Microsoft\Internet Explorer\Main|Start Page->C:\AdwCleaner\RegistryQuarantine\reg_yrutxbmduq.reg
+HKLM\SOFTWARE\Microsoft\Internet Explorer\Main|Start Page->C:\AdwCleaner\RegistryQuarantine\reg_ogvgjclhwa.reg
+HKLM64\SOFTWARE\Microsoft\Internet Explorer\Main|Start Page->C:\AdwCleaner\RegistryQuarantine\reg_apybzpzilt.reg
+HKU\S-1-5-21-1230874461-3600533927-1289800634-1001\Software\Microsoft\Internet Explorer\Main|Start Page->C:\AdwCleaner\RegistryQuarantine\reg_zozmxcuhma.reg
+HKCU\Software\Microsoft\Internet Explorer\SearchScopes|DoNotAskAgain->C:\AdwCleaner\RegistryQuarantine\reg_sgrbyaabqb.reg
+HKCU\Software\Microsoft\Internet Explorer\SearchScopes\{2f23ab71-4ac6-41f2-a955-ea576e553146}->C:\AdwCleaner\RegistryQuarantine\reg_asiusgjdhl.reg
+HKCU\Software\Microsoft\Internet Explorer\SearchScopes\{EA4CD57B-AE5C-496C-8295-E00538FD173C}->C:\AdwCleaner\RegistryQuarantine\reg_cfydcrjtop.reg
+HKCU\Software\Microsoft\Internet Explorer\SearchScopes|DefaultScope->C:\AdwCleaner\RegistryQuarantine\reg_cvcrjabudv.reg
+HKLM64\SOFTWARE\Microsoft\Internet Explorer\SearchScopes|DoNotAskAgain->C:\AdwCleaner\RegistryQuarantine\reg_ytugwbrywc.reg
+HKLM64\SOFTWARE\Microsoft\Internet Explorer\SearchScopes\{2f23ab71-4ac6-41f2-a955-ea576e553146}->C:\AdwCleaner\RegistryQuarantine\reg_yqahrsfzrd.reg
+HKLM64\SOFTWARE\Microsoft\Internet Explorer\SearchScopes\{EA4CD57B-AE5C-496C-8295-E00538FD173C}->C:\AdwCleaner\RegistryQuarantine\reg_chwrtyzerv.reg
+HKLM64\SOFTWARE\Microsoft\Internet Explorer\SearchScopes|DefaultScope->C:\AdwCleaner\RegistryQuarantine\reg_jqjockfnpr.reg
+HKU\S-1-5-21-1230874461-3600533927-1289800634-1001\Software\Microsoft\Internet Explorer\SearchScopes|DefaultScope->C:\AdwCleaner\RegistryQuarantine\reg_ksvtauvtos.reg

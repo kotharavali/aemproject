@@ -1,0 +1,56 @@
+﻿var Toasters = Toasters || {};
+
+Toasters.UpdatesAvailable.Events = (function () {
+    var installNowId = "#installNow";
+    var notNowId = "#notNow";
+    var dismissId = "#dismiss";
+    var moveBackId = "#back_errow";
+    var moveNextId = "#next_arrow";
+
+
+    var installNowClicked = function () {
+        window.external.ButtonClicked(Toasters.UpdatesAvailable.Buttons.InstallNow, Toasters.UpdatesAvailableView.getCurrent());
+		
+		return false;
+    };
+
+    var notNowClicked = function () {
+        window.external.ButtonClicked(Toasters.UpdatesAvailable.Buttons.NotNow,Toasters.UpdatesAvailableView.getCurrent());
+				
+		return false;
+    };
+
+    var dismissClicked = function () {
+        window.external.ButtonClicked(Toasters.UpdatesAvailable.Buttons.Dismiss, Toasters.UpdatesAvailableView.getCurrent());
+        Toasters.UpdatesAvailableView.refresh();
+				
+		return false;
+    };
+
+    var moveBackClicked = function() {
+        Toasters.UpdatesAvailableView.moveBack();
+    };
+
+    var moveNextClicked = function() {
+        Toasters.UpdatesAvailableView.moveNext();
+    };
+
+    var init = function () {
+        $(installNowId).unbind();
+        $(notNowId).unbind();
+        $(dismissId).unbind();
+        $(moveBackId).unbind();
+        $(moveNextId).unbind();
+
+
+        $(installNowId).bind("click", installNowClicked);
+        $(notNowId).bind("click", notNowClicked);
+        $(dismissId).bind("click", dismissClicked);
+        $(moveBackId).bind("click", moveBackClicked);
+        $(moveNextId).bind("click", moveNextClicked);
+    };
+
+    return {
+        init: init
+    };
+})();

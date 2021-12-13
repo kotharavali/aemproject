@@ -1,0 +1,87 @@
+﻿SystemScan.Buttons = {
+    Stop: 1,
+    Scan: 2,
+    Pause: 3,
+    Resume: 4,
+    UpdateDrivers: 5,
+    RegisterNow: 6,
+    Rescan: 7
+};
+
+SystemScan.Events = (function () {
+    var stopId = "#stopButton";
+    var scanId = "#startButton";
+    var pauseId = "#pauseButton";
+    var resumeId = "#resumeButton";
+    var updateDriversId = "#upgradeButton";
+    var rescanId = "#rescanButton";
+    var registerNowId = "#register_now_btn";
+    var outOfDateClass = ".red_strip";
+    var otherDriversClass = ".list_bg";
+
+    var outOfDateClicked = function () {
+        $(outOfDateClass).removeClass("red_strip_active");
+        $(otherDriversClass).removeClass("list_bg_active");
+        $(this).addClass("red_strip_active");
+    };
+
+    var otherDriversClicked = function () {
+        $(outOfDateClass).removeClass("red_strip_active");
+        $(otherDriversClass).removeClass("list_bg_active");
+        $(this).addClass("list_bg_active");
+    };
+
+    var stopScanClicked = function () {
+        window.external.SystemScanPageClicked(SystemScan.Buttons.Stop);
+    };
+    var startScanClicked = function () {
+        window.external.SystemScanPageClicked(SystemScan.Buttons.Scan);
+    };
+    var pauseScanClicked = function () {
+        window.external.SystemScanPageClicked(SystemScan.Buttons.Pause);
+    };
+    var resumeScanClicked = function () {
+        window.external.SystemScanPageClicked(SystemScan.Buttons.Resume);
+
+        return false;
+
+    };
+    var updateDriversClicked = function () {
+        window.external.SystemScanPageClicked(SystemScan.Buttons.UpdateDrivers);
+
+        return false;
+    };
+
+    var registerNowClicked = function () {
+        window.external.SystemScanPageClicked(SystemScan.Buttons.RegisterNow);
+    };
+
+    var rescanClicked = function () {
+        window.external.SystemScanPageClicked(SystemScan.Buttons.Rescan);
+    };
+
+    var init = function () {
+        $(stopId).unbind();
+        $(scanId).unbind();
+        $(pauseId).unbind();
+        $(resumeId).unbind();
+        $(updateDriversId).unbind();
+        $(registerNowId).unbind();
+        $(rescanId).unbind();
+
+        $(outOfDateClass).bind("click", outOfDateClicked);
+        $(otherDriversClass).bind("click", otherDriversClicked);
+        $(stopId).bind("click", stopScanClicked);
+        $(scanId).bind("click", startScanClicked);
+        $(pauseId).bind("click", pauseScanClicked);
+        $(resumeId).bind("click", resumeScanClicked);
+        $(updateDriversId).bind("click", updateDriversClicked);
+        $(registerNowId).bind("click", registerNowClicked);
+        $(rescanId).bind("click", rescanClicked);
+
+    };
+
+    return {
+        init: init
+    };
+})();

@@ -1,0 +1,241 @@
+﻿var SystemScan = SystemScan || {};
+
+SystemScan.ProgressModel = {
+    State: SystemScan.ScannerStates.PAUSED,
+    IsRegistered: false,
+    PpiOrSemType: "PPI", //SEM
+    Drivers: { Fixed: 0, Unfixed: 0 },
+    Progress: 100,
+    fetch: function () {
+        // TO DO 
+    },
+
+    set: function (progressString) {
+        try {
+            var progressModel = $.parseJSON(progressString);
+            this.State = progressModel.State;
+            this.Drivers = progressModel.Drivers;
+            this.PpiOrSemType = progressModel.PpiOrSemType;
+            this.Progress = progressModel.Progress;
+            this.IsRegistered = progressModel.IsRegistered;
+
+            SystemScan.ProgressView.render(this);
+        } catch (err) {
+            window.external.OnJavaScriptError(err.source + '-SystemScan.ProgressModel.set: ' + err.message);
+        }
+    },
+
+    init: function () {
+        SystemScan.ProgressView.render(this);
+    },
+    stopProgressBar: function () {
+    $('.progress .red_bar').spStop();
+    $('.progress .green_bar').spStop();
+    $('.progress .red_bar').destroy();
+    $('.progress .green_bar').destroy();
+},
+startProgressBar: function () {
+    $('.progress .red_bar').sprite({ fps: 48, no_of_frames: 48, dir: 'down' }).active();
+    $('.progress .green_bar').sprite({ fps: 48, no_of_frames: 48, dir: 'down' }).active();
+
+    $('.progress .red_bar').spStart();
+    $('.progress .green_bar').spStart();
+}
+};
+
+SystemScan.ProgressView = (function () {
+    var scanProgressBarId = '#scanProgressBar';
+    var scanProgressLabelId = '#scanProgressLabel';
+    var bigAreaLabelMissingId = '#bigAreaLable_missing';
+    var bigAreaLabelUpToDateId = '#bigAreaLable_uptodate';
+
+    var render = function (progressModel) {
+        switch (progressModel.State) {
+            case SystemScan.ScannerStates.SCANNINGSTOPPED:
+            case SystemScan.ScannerStates.NOTHING:
+                stopped(progressModel);
+                break;
+            case SystemScan.ScannerStates.SCANNINGPAUSED:
+                paused();
+                break;
+            case SystemScan.ScannerStates.SCANNING:
+                scanning(progressModel);
+                break;
+            case SystemScan.ScannerStates.FIXING:
+                fixing(progressModel);
+                break;
+            case SystemScan.ScannerStates.SCANNINGCOMPLETED:
+                complete(progressModel, "Scan Completed");
+                break;
+            case SystemScan.ScannerStates.FIXINGCOMPLETED:
+                complete(progressModel, "Driver Fix Completed");
+                break;
+            case SystemScan.ScannerStates.FIXINGSTOPPED:
+                complete(progressModel, "");
+                break;
+            default:
+                stopped();
+        }
+
+        occupyEmptySpaceInButtonArea();
+    };
+
+    var stopped = function (progressModel) {
+        setProgressBarColor("red");
+        setProgressBarPercentage(progressModel.Progress);
+        setLabelText("Scan Stopped");
+        showButton("resume", false);
+        showButton("pause", false);
+        showButton("stop", true);
+        showButton("start", true);
+        showButton("rescan", false);
+        showBigLabelArea(null, false);
+    };
+
+    var paused = function () {
+        setProgressBarColor("green");
+        setLabelText("Scan Paused");
+        showButton("resume", true);
+        showButton("pause", false);
+        showButton("stop", true);
+        showButton("start", false);
+        showButton("upgrade", false);
+        showButton("rescan", false);
+        showBigLabelArea(null, false);
+    };
+
+    var scanning = function (progressModel) {
+        setProgressBarColor("green");
+        setProgressBarPercentage(progressModel.Progress);
+        setLabelText("Scanning Drivers");
+        showButton("resume", false);
+        showButton("pause", true);
+        showButton("stop", true);
+        showButton("start", false);
+        showButton("upgrade", false);
+        showButton("rescan", false);
+        showBigLabelArea(null, false);
+    };
+
+    var fixing = function (progressModel) {
+        setProgressBarColor("red");
+        setProgressBarPercentage(progressModel.Progress);
+        setLabelText("Fixing Drivers");
+        showButton("resume", false);
+        showButton("pause", false);
+        showButton("stop", false);
+        showButton("start", false);
+        showButton("upgrade", false);
+        showButton("rescan", false);
+
+        showBigLabelArea(null, false);
+    };
+
+    var complete = function (model, labelText) {
+        setProgressBarColor(model.Drivers.Unfixed > 0 ? "red" : "stillgreen");
+        setProgressBarPercentage(100);
+        setLabelText(labelText);
+        showButton("resume", false);
+        showButton("pause", false);
+        showButton("stop", false);
+        showButton("start", false);
+        showButton("rescan", true);
+
+        showBigLabelArea(model, true);
+
+        if (model.PpiOrSemType == "PPI" && !model.IsRegistered) {
+            showButton("upgrade", true);
+            //} else if (model.PpiOrSemType == "SEM") {
+        } else {
+            showButton("upgrade", false);
+        }
+
+        if (model.IsRegistered && model.Drivers.Unfixed == 0) {
+            $('#register_now_btn').hide();
+        }
+    };
+
+    var setProgressBarColor = function (color) {
+        switch (color) {
+            case "red":
+                $(scanProgressBarId).attr('class', 'red_bar');
+                break;
+            case "green":
+                $(scanProgressBarId).attr('class', 'green_bar');
+                break;
+            case "stillgreen":
+                $(scanProgressBarId).attr('class', 'stillgreen_bar');
+                break;
+            default:
+                break;
+        }        
+    };
+
+    var setProgressBarPercentage = function (percentage) {
+        var intMinValue = "-2147483648";
+        if (percentage == intMinValue) {
+            return;
+        }
+
+        $(scanProgressBarId).css('width', percentage + '%');
+    };
+
+    var setLabelText = function (text) {
+        $(scanProgressLabelId).text(text);
+    };
+
+    var showButton = function (name, show) {
+        if (show) {
+            $('#' + name + "Button").show();
+        } else {
+            $('#' + name + "Button").hide();
+        }
+    };
+
+    var occupyEmptySpaceInButtonArea = function () {
+        var isAnyButtonVisible = $('.button_scan:visible').length == 0;
+        if (isAnyButtonVisible) {
+            $("empty_space_block").hide();
+        } else {
+            $("empty_space_block").show();
+        }
+    };
+
+    var showBigLabelArea = function (model, show) {
+        if (!show) {
+            $(bigAreaLabelMissingId).hide();
+            $(bigAreaLabelUpToDateId).hide();
+        } else {
+
+            if (model.Drivers.Unfixed == 0) {
+                customizeBigLabelArea(model, bigAreaLabelMissingId, bigAreaLabelUpToDateId);
+            } else {
+                customizeBigLabelArea(model, bigAreaLabelUpToDateId, bigAreaLabelMissingId);
+            }
+        }
+    };
+
+    var customizeBigLabelArea = function (model, labelToHide, labelToCustomizeAndShow) {
+
+        var labelAttention = "<strong>Attention!</strong> <span></span>" + model.Drivers.Unfixed + " Drivers Missing or Out-of-Date";
+        var labelCongrats = "<strong>Congratulations!</strong> All " + model.Drivers.Fixed + " Drivers are Up-to-date!";
+        var buttonClass = model.Drivers.Unfixed == 0 ? ".RegisterNow" : ".error_now_btn_1";
+        var labelClass = '.total_error';
+
+        $(labelToHide).hide();
+        $(labelToCustomizeAndShow).show();
+        $(labelToCustomizeAndShow).find('.total_error').html(model.Drivers.Unfixed == 0 ? labelCongrats : labelAttention);
+
+        if (model.PpiOrSemType == "PPI") {
+            $(labelToCustomizeAndShow).find(labelClass).removeClass('font24');
+            $(labelToCustomizeAndShow).find(buttonClass).show();
+        } else if (model.PpiOrSemType == "SEM") {
+            $(labelToCustomizeAndShow).find(labelClass).removeClass('font24').addClass('font24');
+            $(labelToCustomizeAndShow).find(buttonClass).hide();
+        }
+    };
+
+    return {
+        render: render
+    };
+})();

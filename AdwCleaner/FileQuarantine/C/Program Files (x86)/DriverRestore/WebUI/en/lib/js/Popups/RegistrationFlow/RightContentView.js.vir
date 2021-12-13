@@ -1,0 +1,60 @@
+﻿Popups.RegistrationFlow.RightContentView = (function () {
+    var contentViewId = '#regflw_rightcontview';
+   
+    var render = function (state, registerModel) {
+        var htmlcontentView = Popups.RegistrationFlow.RightContentViewHtmlFactory.get(state, registerModel.ScanSummary);
+        $(contentViewId).empty();
+        $(contentViewId).append(htmlcontentView);
+        
+        DonutChart.Create(registerModel.ScanSummary.OutOfDate, registerModel.ScanSummary.Missing, registerModel.ScanSummary.UpToDate);
+    };
+
+    return {
+        render: render
+    };
+    
+})();
+
+Popups.RegistrationFlow.RightContentViewHtmlFactory = (function () {
+    var get = function (state, scanSummary) {
+
+        switch (state) {
+            case Popups.RegistrationFlow.States.ONQUIT_SCANCOMPLETE_DRIVERSFOUND:
+                return rightSummary(scanSummary);
+            case Popups.RegistrationFlow.States.ONQUIT_SCANINCOMPLETE:
+                return "";
+            case Popups.RegistrationFlow.States.ONSCANEND_DRIVERSFOUND:
+                return rightSummary(scanSummary);
+            case Popups.RegistrationFlow.States.ONSCANEND_DRIVERSNOTFOUND:
+            case Popups.RegistrationFlow.States.ONQUIT_SCANCOMPLETE_DRIVERSNOTFOUND:
+                return rightSummaryNoDrivers();
+            default:
+        }
+    };
+
+    var rightSummary = function (scanSummary) {
+        
+        return "<div class=\"smry-right\">" +
+            "<h1><b>Scan</b> Summary</h1>" +
+            "<div  id='summary_donut' ></div>" +
+            //"<span class=\"scan_meter\" id='summary_donut'>" + "</span>" +
+            "<div class=\"scan-dr\">" +
+            "<p>" + "<span class=\"cross-error-big\">" + "</span>" + "<span>" + scanSummary.OutOfDate + "</span><span> Out of Date Drivers</span></p>" +
+            "<p>" + "<span class=\"errors-big\">" + "</span>" + "<span>" + scanSummary.Missing + "</span>" + "<span> Devices with No Driver</span>" + "</p>" +
+            "<p>" + "<span class=\"green-error-big\">" + "</span>" + "<span>" + scanSummary.UpToDate + "</span>" + "<span> Up-to-Date Drivers</span>" + "</p>" +
+            "</div>" +
+            "</div>";
+    };
+
+    var rightSummaryNoDrivers = function () {
+        return "<div class=\"summry1left summry1left-min\">" +
+            "<p>It is recommended that you register <b> Driver Restore</b> to ensure that your computer continues to run smoothly. " +
+            "<b>Driver Restore</b> alters you when device drivers are out-of-date or missing. System errors, communication problems " +
+            "and hardware malfunction in Windows are all common occurrences when drivers are not kept up-to-date.</p>" +
+            "</div>";
+    };
+
+    return {
+        get: get
+    };
+})();

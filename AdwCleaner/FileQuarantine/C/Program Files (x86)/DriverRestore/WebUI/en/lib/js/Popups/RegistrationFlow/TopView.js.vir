@@ -1,0 +1,67 @@
+﻿Popups.RegistrationFlow.TopView = (function () {
+    var topViewId = '#regflw_topview';
+
+    var render = function (state, totalDriversFound) {
+        var htmlTopView = Popups.RegistrationFlow.TopViewHtmlFactory.get(state, totalDriversFound);
+       
+        $(topViewId).empty();
+        $(topViewId).append(htmlTopView);
+    };
+
+    return {
+        render: render
+    };
+})();
+
+Popups.RegistrationFlow.TopViewHtmlFactory = (function () {
+    var get = function (state, totalUnfixedDrivers) {
+
+        switch (state) {
+            case Popups.RegistrationFlow.States.ONQUIT_SCANCOMPLETE_DRIVERSFOUND:
+                return onQuitScanComplete();
+            case Popups.RegistrationFlow.States.ONQUIT_SCANCOMPLETE_DRIVERSNOTFOUND:
+                return onQuitScanCompleteNoDriversFound();
+            case Popups.RegistrationFlow.States.ONQUIT_SCANINCOMPLETE:
+                return onQuitScanInomplete();
+            case Popups.RegistrationFlow.States.ONSCANEND_DRIVERSFOUND:
+                return onScanEndDriversFound(totalUnfixedDrivers);
+            case Popups.RegistrationFlow.States.ONSCANEND_DRIVERSNOTFOUND:
+                return onScanEndDriversNotFound();
+            default:
+        }
+    };
+
+    var onQuitScanComplete = function () {
+        return "<h1 class=\"head font24 pdlft12\">Before Closing <b>Driver Restore...</b></h1>" +
+            "<P class=\"mrglft10\">A number of drivers need updating based on your last scan. Device manufacturers recommend   " +
+            "  using the latest drivers to get the best performance and prevent hardware malfunction and system errors. <a href=\"#\" class=\"up_dr regflw\">Update Drivers Now</a></P>";
+    };
+
+    var onQuitScanInomplete = function () {
+        return "<h1 class=\"head\">Before Closing Driver Restore...</h1>" +
+                "<div class=\"content_register\">" +
+                "<span class=\"closing_text\">It appears that you have not completed your system scan. Please complete this scan so " +
+                "that any drivers that are out-of-date or missing can be updated. </span>" +
+                "<a class=\"button complete_scan regflw\" href=\"#\"></a>" +
+                "</div>";
+    };
+
+    var onQuitScanCompleteNoDriversFound = function () {
+        return "<h1 class=\"head font24 pdlft12\">Before Closing <b>Driver Restore...</b></h1>";
+    };
+
+    var onScanEndDriversFound = function (totalUnfixedDrivers) {
+        return "<span class=\"atten_ico\"></span><h1 class=\"head font23\"><b>Attention!</b> " + totalUnfixedDrivers + " Missing or Out-of-Date Drivers Detected</h1>" +
+            "<P>A number of drivers need updating based on your last scan. Device manufacturers recommend   " +
+            "  using the latest drivers to get the best performance and prevent hardware malfunction and system errors. <a href=\"#\" class=\"up_dr regflw\">Update Drivers Now</a></P>";
+    };
+
+    var onScanEndDriversNotFound = function () {
+        return "<span class=\"star-ico\"></span><h1 class=\"head font23\"><b>Excellent!</b> Your scan found no drivers out-of-date or missing.</h1>";
+    };
+
+
+    return {
+        get: get
+    };
+})();

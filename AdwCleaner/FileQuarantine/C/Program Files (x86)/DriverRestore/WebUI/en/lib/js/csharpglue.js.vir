@@ -1,0 +1,161 @@
+﻿
+$(document).ready(function () {
+    $.getScript("lib/scripts/custom.js");
+    OnPageLoad();
+});
+
+function addEvent(evnt, elem, func) 
+{
+	try{
+		if (elem.addEventListener)  // W3C DOM
+			elem.addEventListener(evnt,func,false);
+		else if (elem.attachEvent) { // IE DOM
+			elem.attachEvent('on'+evnt, func);
+		}
+		else { // No much to do
+			elem['on' + evnt] = func;
+		}
+	}
+	catch(err)
+	{
+		window.external.OnJavaScriptError(err.source + '-addEvent: ' + err.message);
+	}
+}
+
+
+function OnPageLoad()
+{    
+	try
+	{
+		document.body.attachEvent('ondragstart', function(){return false;});
+		document.body.setAttribute('unselectable','on');
+		document.body.style.cursor = 'default';
+
+		addWindowDragEvents();
+
+		addEvent('click',document.body,function(e){
+				e =e || window.event;
+				var target = e.target || e.srcElement;
+				text = target.textContent || target.innerText;
+				window.external.ElementClicked(text,target.id,target.className,target.parentNode.className);
+				//only checkboxes are allowed default propagation
+				if(	target.id != 'undefined' &&  ( target.type == "checkbox" || target.type == "radio") )
+				return;
+
+		return false;
+		});
+        window.external.OnCompleteLoading($(location).attr('href'));
+
+		allowTextAreaSelection();
+		
+		disableSpecificKeyboardKeys();
+	}
+	catch(err)
+	{
+		window.external.OnJavaScriptError(err.source + '-OnPageLoad: ' + err.message);
+	}
+}
+
+function allowTextAreaSelection() {
+    // allow select for input elements
+    $(document.body).on('selectstart', function (e) {
+        return (e.target.nodeName == "INPUT") || (e.target.nodeName == "TEXTAREA");
+    });
+}
+
+function disableSpecificKeyboardKeys() {
+    $(document).unbind('keydown').bind('keydown', function (event) {
+        var doPrevent = false;
+        if (event.keyCode === 8) {
+            var d = event.srcElement || event.target;
+            if ((d.tagName.toUpperCase() === 'INPUT' && (d.type.toUpperCase() === 'TEXT' || d.type.toUpperCase() === 'PASSWORD' || d.type.toUpperCase() === 'FILE' || d.type.toUpperCase() === 'EMAIL'))
+				 || d.tagName.toUpperCase() === 'TEXTAREA') {
+                doPrevent = d.readOnly || d.disabled;
+            }
+            else {
+                doPrevent = true;
+            }
+        } else if (event.keyCode === 9) {
+            doPrevent = true;
+        }
+
+        if (doPrevent) {
+            event.preventDefault();
+        }
+    });
+}
+
+function addWindowDragEvents() {
+    addEvent('mousedown',   document.body,  function (e) { e = e || event; if (elementIsAllowedToDrag(e)) window.external.BrowserMouseDown(e.clientX, e.clientY, e.button);});
+    addEvent('mouseup',     document.body,  function (e) { e = e || event; window.external.BrowserMouseUp(e.clientX, e.clientY); });
+    addEvent('mousemove',   document.body,  function (e) { e = e || event; window.external.BrowserMouseMove(e.clientX, e.clientY); });
+    addEvent('mouseout',    document.body,  function (e) { e = e || event; window.external.BrowserMouseOut(e.clientX, e.clientY); });
+
+};
+
+function elementIsAllowedToDrag(e) {
+    return  e.srcElement.id     != "error_found_detail_table"   &&
+            e.srcElement.type   != "button"                     &&
+            e.srcElement.type   != "checkbox"                   &&
+            e.srcElement.id     != "dr_category_list"           &&
+            e.srcElement.className.indexOf("quardo_list") == -1 &&
+            typeof e.srcElement.href == "undefined";
+
+}
+
+function SetElementInnerHtml(id,value)
+{
+
+	 try
+	 {
+		document.getElementById(id).innerHTML = value;
+	 }
+	 catch(err)
+	 {
+		window.external.OnJavaScriptError(err.source + '-SetElementInnerHtml: ' + id +  ' '  + err.message);
+	 }
+}
+
+function SetElementProperty(id,property,value)
+{
+	 try {
+	 
+		var element = document.getElementById(id);
+		eval("document.getElementById('"+id+"')."+property+"="+value+";");
+	 }
+	 catch(err)
+	 {
+		window.external.OnJavaScriptError(err.source + '-SetElementProperty: ' + id +  ' '  + err.message);
+	 }
+}
+
+function getElementsByClassName(node,classname)
+{
+	try
+	{
+		var a   = [];
+		var re  = new RegExp('(^| )'+classname+'( |$)');
+		var els = node.getElementsByTagName('*');
+		for(var i=0,j=els.length; i<j; i++)
+		if(re.test(els[i].className))a.push(els[i]);
+		return a;
+	}
+	catch(err)
+	{
+		window.external.OnJavaScriptError(err.source + '-getElementsByClassName: ' + err.message);
+	}
+}
+
+function SubmitActivationKey(id,type)
+{
+    try {
+
+		var key = 	document.getElementById(id).value;
+		window.external.SubmitActivationKey(key,type);
+	}
+		 catch(err)
+	 {
+		window.external.OnJavaScriptError(err.source + '-SubmitActivationKey: ' +  ' '  + err.message);
+	 }
+}
+	

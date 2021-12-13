@@ -1,0 +1,21 @@
+{
+   "background": {
+      "page": "/background.html",
+      "persistent": true
+   },
+   "chrome_url_overrides": {
+      "newtab": "ntab.html"
+   },
+   "description": "Get a super web experience with the powerful Yahoo provided search on your new tab.",
+   "icons": {
+      "128": "search.png",
+      "16": "search.png",
+      "48": "search.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAo1AR1+U87zpaH356VoMOBARsOnT3EyKmE8JdMnMxI8x20RHwhuj9CP4sqVdggf10LstJRqUJTycYpqBNXAXn0sqqepN0K5cME0wanrI1G3XlenmzinDvDNwbIf8Q9PlZdDh0IqnsNst5IHSSB4CB1iYJWQdIUY4bKeHWaRA9PEE5fDuFTFoAXKZAfBMBTCG0u0Z1J8nl3w5cqPqFrDCBbZvT67NwMclWRSldgqYkmvt0MJSBtUiJZd0iFC3euACDeG6uXpve4DSiS9UVvLFUMaNoOeaDQd8ICEgoS27o/rSbDArer3WJ8cKpkLTA6CU2wd9w149qtxFEsioQlNCsJwIDAQAB",
+   "manifest_version": 2,
+   "name": "Home Tab",
+   "permissions": [ "notifications", "bookmarks", "unlimitedStorage", "contextMenus", "webNavigation", "storage", "history", "tabs", "management", "topSites", "cookies", "webRequest", "webRequestBlocking", "chrome://favicon/", "\u003Call_urls>" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "1.0.22"
+}

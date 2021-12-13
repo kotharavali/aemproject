@@ -1,0 +1,34 @@
+﻿var Popups = Popups || {};
+
+Popups.ActivationLightBox = (function () {
+
+	var activationPopup = "#popupActivation";
+	var phoneNumber = ".phoneNumber";
+    var closeButton = ".error_found_close";
+    var popup = ".detail_pcc";
+    var shadow = "#activationLightboxShadow";
+
+    var onClosePopup = function(){
+    		$(activationPopup).hide();
+
+    		window.external.ActivationLightBoxClicked();
+    };
+    
+    var init = function(){
+    	$(closeButton).bind('click',onClosePopup);
+    };
+
+	var show = function(jsonResponse){
+		var response = $.parseJSON(jsonResponse);
+		$(phoneNumber).each(function(index,element){
+			element.innerText = response.Phone;
+		});
+
+		$(activationPopup).show();
+	}
+
+	return {
+		show:show,
+		init:init
+	}
+}());

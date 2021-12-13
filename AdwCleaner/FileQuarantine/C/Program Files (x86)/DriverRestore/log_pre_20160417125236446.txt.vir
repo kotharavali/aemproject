@@ -1,0 +1,7 @@
+BuildNumber: 10
+SystemImagePath: http://leads.383media.com/leads/driversproduct/product-personalisation-v2.jsp?uuid=D68A7709-FBD4-42B2-91C1-9D5A669A0AB5&build=true&leadDefinitionId=1531&systemType=Laptop&clkid=dell&bid_lang=en
+LandingPageInfo: http://leads.383media.com/leads/driversproduct/product-personalisation-v2.jsp?uuid=D68A7709-FBD4-42B2-91C1-9D5A669A0AB5&clkid=2863302399&build=true&bid_lang=en
+_checkAPPImageOnline failed: https://leads.383media.com/images/os-logo/computer/Win-10.png
+System.Net.WebException: The operation has timed out
+   at System.Net.HttpWebRequest.GetResponse()
+   at DriverRestore.Scanner.DriversScanner._checkAPPImageOnline(String url)

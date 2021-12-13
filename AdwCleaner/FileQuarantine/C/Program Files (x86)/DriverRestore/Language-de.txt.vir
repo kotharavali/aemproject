@@ -1,0 +1,88 @@
+﻿BC_Biometric_Details:Biometrische Geräte akzeptieren die Daten einer Person als Eingabe, beispielsweise Voice input, Fingerabdruck-Eingabe, Iris-Scan und verarbeiten diese dann. Diese Geräte ermöglichen ein EDV-System, um Personen auf der Grundlage dieser Merkmale zu identifizieren.
+BL_Bluetooth_Details:Bluetooth Geräte ermöglichen Computern mit mehreren Computern gleichzeitig und drahtlos zu kommunizieren und den Austausch von Daten über kurze Distanzen (in der Regel ein paar Meter) über UHF-Funk.
+CD_CDDVD_Details:CD (Compact Disc) ist ein optisches Medium zum Speichern digitaler Daten. Es wird einfach in eine CD-ROM eingefügt, um  Audiodaten zu speichern, zu beschreiben oder zu löschen. Zunächst wurde es nur für Musik und andere Sounds entwickelt. DVD oder Digital-Video-Disk ist ähnlich wie eine CD, aber mit einer zusätzlichen Eigenschaft, die Grafiken mit Sounds kombiniert, um Videos zu speichern.
+DA_Display_Details: Displays sind Leistungsgeräte, die dazu verwendet werden, um das Ergebnis eine Daten-Prozesses oder jegliche relevanten Informationen in visueller Form darzustellen , indem es elektronischene Informationen in eine Form umwandelt, die vom menschlichen Auge verstanden wird.
+DD_DiskDrive_Details:Ein Laufwerk ist ein Computer-Gerät, um gespeicherte Daten zu lesen, die auf einem optischen Datenträger (CD oder DVD) gespeichert sind und zum Schreiben von Daten, die auf der Festplatte gespeichert werden.
+FD_FloppyDisk_Details:Floppy-Datenträger oder einfach Diskette ist ein kleines Datenträger-Speichermedium zum Lesen oder Schreiben von Computerdaten auf Magnetfolien durch Einfügen von Disketten in Floppy-Laufwerke. Aber sie weisen eher kleinere Speicherkapazitäten im Vergleich zu Speicherkarten und USBs auf.
+FW_Firewire_Details:Firewire ist wie USB ein anderes Gerät zum Anschließen und Hinzufügen von Peripherie-Geräten (z.B. Audio- und video-Anlagen) an einen PC. Ein wichtiger Grund, warum Firewire verwendet wird, ist, dass es hohe Datentransferraten besitzt und ein weiterer Grund ist, dass es Energie über die gleichen Datenübertragung auf das Gerät überträgt.
+HD_HardDiskControllers_Details:Hard-Disk-Controller sind elektrische Komponenten (Schaltung auf eine Erweiterungskarte) von CPUs, die sich wie Schnittstellen verhalten, indem sie Daten/Informationen auf der Festplatte schreiben, lesen, löschen und ändern und Kontrolle über die Festplatte bieten.
+HI_HID_Details:HID oder Human Interface Device ist ein weitgefasster Begriff, um jedes Computer-Gerät zu kategorisieren, das direkt mit den Menschen interagiert. Solche Geräte empfangen Eingaben von Menschen und geben dann die Ausgabe direkt an Menschen. Beispiele sind Lautsprecher, Headsets, Webcams etc.
+IM_Imaging_Details:Imaging bedeutet die Reproduktion oder Darstellung jeden generischen Bildes. Imaging-Geräte sind Hardware-Treiber in einem Personal-Computer, die aus einem elektronischen Signal ein Bild auf dem Bildschirm erstellen können.
+IR_Infrared_Details: Mit Infrarotgeräten, können Computer miteinander durch die Erzeugung drahtloser Signale über eine kurze Reichweite (Verwendung von Infrarotwellen) kommunizieren, um Daten zu übertragen und zu empfangen. Spezielle Infrarot-Netzwerkadapter wurden für diesen Zweck konzipiert.
+KB_Keyboard_Details:Eine Tastatur ist ein anderes Eingabegerät, ähnlich einer Schreibmaschine, zur Eingabe von Text und Zeichen auf dem Bildschirm. Die Tastatur verfügt über Alpha-numerischen Tasten, Satzzeichen-Tasten und spezielle Befehlstasten.
+MD_Modem_Details:Ein Modem ist ein Gerät, das es dem Computer ermöglicht, Daten hin und her zu übertragen. Daten können im analogen Format über Erdkabel oder Telefon übertragen werden, die Datenspeicherung in einem Computer findet jedoch in digitaler Form statt. Ein Modem ist in der Lage, Daten zwischen diesen beiden Formaten zu konvertieren.
+MF_MultifunctionPCMCIA_Details:PCMCIA steht für Personal Computer Memory Card International Association. PCMCIA-Karten ähneln Erweiterungskarten für Laptops. Sie verhalten sich wie Hardware-Schnittstellen und bieten zusätzliche Funktionalitäten für Laptops. Multifunktionelle PCMCIA haben mehrere Funktionen, beispielsweise eine einzelne Karte funktioniert als Telefon- und Fax-Modem und ebenso wie eine Netzwerkkarte.
+MS_Mice_Details:Maus oder Mäuse im Plural, ist ein Eingabegerät für einen Computer, der es dem Benutzer ermöglicht, die Bewegung von einem Zeiger oder Cursor auf dem Bildschirm zu kontrollieren. Mäuse sind in der Regel mit 2 oder 3 Tasten zum Bearbeiten von Objekten auf dem Bildschirm angezeigt.
+MT_MemoryTechnologyDriver_Details:Memory-Technologie-Treiber ist ein Gerät für die Verwaltung und zur Schnittstelle des Flash-Speichers (Computer-Speicher-Geräte) in Windows-Betriebssystemen.
+NT_Network_Details: Ein Computer-Netzwerk umfasst eine Gruppe von EDV-Geräten und Systemen, die durch drahtlosen oder Kabel-Medien verknüpft wurden, um die Kommunikation und Ressourcenfreigabe zwischen verschiedenen Nutzern zu erleichtern.
+PC_Pcmcia_Details:Eine PCMCIA (Personal Computer Memory Card International Association) Karte ist ein Eingabe/Ausgabe-Gerät (wie eine Erweiterungskarte), das mit einem Laptop-Computer oder einem Notebook verbindet, um zusätzliche Funktionen bereitzustellen. Es gibt drei Größen oder Typen von PCMCIA-Karten.
+PT_Ports_Details:Anschlüsse sind Verbindungspunkte und spielen die Rolle einer Schnittstelle zwischen einem Computer und Peripherie-Geräten und anderen Computern. Computer Ports können intern oder extern sein. Festplatten und CD/DVD Laufwerke werden über interne Anschlüsse und Tastaturen und Mäuse über einen externen Anschluss angeschlossen.
+SC_SCSI_Details:SCSI steht für Small Computer System Interface. Es ist ein Bündel von Schnittstellenstandards, vorgeschlagen vom American National Standards Institute (ANSI), um Peripherie-Geräte an einen PC anzufügen/zu verbinden zur Übertragung von Daten und Kommunikation.
+SH_Sdhost_Details:SD Host oder das Sichern der Daten-Hosts sind Software-Treiber auf einem Computer, die Host-Controller-Hardware zu steuern und stellen die Schnittstelle zur Kommunikation mit SD-Speicherkarten und legen zudem Betriebsparameter fest.
+SO_SoundVideoGameControllers_Details:Sound, Video- und Gamecontroller sind Geräte, die häufig für Multimedia-Anwendungen verwendet werden. Diese Geräte erleichtern die Eingabe und Ausgabe von Computer-Audios und Grafik-Bildern sowie das Verwalten von Benutzerinteraktivität.
+SR_SmartCardReaders_Details::Smart-Kartenleser sind Geräte zum Lesen von Eingabedaten auf Smartcards und auch zur Beschreibung dieser mit Informationen. Ein Smartcard-Leser muss mit einem Computer zusammengeschaltet werden, um betrieben werden zu können. Die Leser kommen mit einem Slot zum Einfügen von Smartcards.
+SY_System_Details:Ein Computer-System ist eine Sammlung von Hardware- und Software-Komponenten, die intelligent zusammenarbeiten, um einen Computer effizient laufen zu lassen. Genau wie andere Systeme, nehmen Computersysteme Eingaben auf, verarbeiten sie und liefern eine Ausgabe.
+TD_TapeDrive_Details:Tape-Treiber ist ein anderes Daten-Speicher-Gerät, aber es wird auch zum Lesen und Schreiben von Daten/Informationen auf ein Magnetband verwendet, das hauptsächlich für Backup- und Archivierungs-Speicher Zwecke verwendet wird.
+US_USB_Details:Universal Serial Bus (USB) ist in erster Linie ein Datenträger zum Speichern von Informationen in einem digitalen Format. Es kann an einen Computer angeschlossen werden und ermöglicht die Übertragung von Daten zwischen verschiedenen Computern. Die Menge an Informationen, die sie innehaben können variiert von USB zu USB.
+WC_WindowsCEUSBDevices_Details: Diese USB-Geräte sind kompatibel mit Windows CE, ein Betriebssystem für eingebettete Systeme entwickelt. Solche Geräte kontrollieren alle Arten von anderen USB-Geräten und bieten den Benutzer eine Programmierschnittstelle für Windows CE-Anwendungen.
+WP_WindowsPortableDevice_Details:Windows tragbares Gerät oder WPD ist eine Art von Treiber-Technologie zur Kommunikation zwischen einem Computer, der auf Windows, und beigefügtem Speicherplatz und Mediengeräten funktioniert. Geräte von WPD werden unterstützt, wie z. B. MP3-Player, Digitalkameras und Mobiltelefone.
+MN_Monitor_Details:Monitor ist ein Ausgabegerät in Computersystemen, der Grafiken und Video-Informationen anzeigt, die von der Grafikkarte in einem Computer produziert werden. Monitore sind wie Fernseher, der Unterschied ist jedoch, dass die Monitore in der Regel eine besseren Auflösung haben.
+CP_CPU_Details:CPU oder die Zentralverarbeitungseinheit ist ein elektronisches Hardware-Gerät, das wie das Gehirn des Computers funktioniert. Eine CPU ist verantwortlich für die Verarbeitung und Handhabung aller Anweisungen und Befehle, die es von beiden empfängt, von Hard- und Software, die auf dem Computer ausgeführt werden.
+PR_Printer_Details:Drucker sind externe Hardware Ausgabegeräte, die Computerdaten wie Dokumente, Texte oder Bilder drucken oder auf standardmäßige Papierbögen übertragen, auch als Hardcopy bezeichnet. Ein Drucker ist als ein Peripheriegerät kategorisiert, was bedeutet, dass er vor dem Drucken mit einem Computer verbunden werden muss.
+Problem_1:Dieses Gerät ist nicht ordnungsgemäß konfiguriert.
+Problem_3: Der Treiber für dieses Gerät ist möglicherweise beschädigt, oder Ihr System besitzt möglicherweise zu wenig Arbeitsspeicher oder andere Ressourcen.
+Problem_10: Dieses Gerät kann nicht gestartet werden.
+Problem_12: Dieses Gerät kann keine ausreichenden freien Ressourcen finden, die sie verwenden können. Wenn Sie dieses Gerät verwenden möchten, müssen Sie eines der anderen Geräte auf diesem System deaktivieren.
+Problem_14: Dieses Gerät kann nicht richtig arbeiten, bevor Sie Ihren Computer neu starten.
+Problem_16:Windows kann nicht alle Ressourcen identifizieren, die dieses Gerät verwendet.
+Problem_18:Installieren Sie die Treiber für dieses Gerät neu.
+Problem_19:Windows kann dieses Hardwaregerät nicht starten, da dessen Konfigurationsinformationen (in der Registrierung) unvollständig oder beschädigt ist.
+Problem_21:Windows entfernt dieses Gerät.
+Problem_22:Dieses Gerät ist deaktiviert.
+Problem_24:Dieses Gerät ist nicht vorhanden, funktioniert nicht ordnungsgemäß, oder es sind nicht alle Treiber installiert.
+Problem_28:Die Treiber für dieses Gerät sind nicht installiert.
+Problem_29:Dieses Gerät ist deaktiviert, da die Firmware des Geräts nicht die erforderlichen Ressourcen bereitgestellt hat.
+Problem_31:Dieses Gerät funktioniert nicht ordnungsgemäß, da Windows die für dieses Gerät erforderlichen Treiber nicht laden kann.
+Problem_32:Ein Treiber (Dienst) für dieses Gerät wurde deaktiviert. Ein alternativer Treiber kann diese Funktionalität bereitstellen.
+Problem_33:Windows kann nicht bestimmen, welche Ressourcen für dieses Gerät erforderlich sind.
+Problem_34:Windows kann die Einstellungen für dieses Gerät nicht bestimmen.
+Problem_35: Ihre Computer-System-Firmware beinhaltet nicht genügend Informationen, um richtig konfiguriert zu werden und dieses Gerät zu verwenden. Um dieses Gerät zu verwenden, kontaktieren Sie den Hersteller Ihres Computers, um eine Firmware- oder BIOS-Update zu erhalten.
+Problem_36:Dieses Gerät fordert einen PCI-Interrupt, ist jedoch für einen ISA-Interrupt konfiguriert (oder umgekehrt). Bitte benutzen Sie das Computer-System-Setup-Programm, um den Interrupt für das Gerät neu zu konfigurieren.
+Problem_37:Windows kann den Gerätetreiber für diese Hardware nicht initialisieren.
+Problem_38:Windows kann den Gerätetreiber für diese Hardware nicht laden, da sich eine vorherige Version des Gerätetreibers noch im Speicher befindet.
+Problem_39:Windows kann den Gerätetreiber für diese Hardware nicht laden. Der Treiber ist möglicherweise beschädigt oder fehlt.
+Problem_40:Windows kann nicht auf die Hardware zugreifen, da die Serviceinformationen für den Schlüssel in der Registrierung fehlen oder falsch aufgezeichnet wurden.
+Problem_41:Windows hat den Gerätetreiber für diese Hardware erfolgreich geladen, aber kann das Hardware-Gerät nicht finden.
+Problem_42:Windows kann den Gerätetreiber für diese Hardware nicht laden, da ein zweites Gerät bereits im System ausgeführt ist.
+Problem_43:Windows hat dieses Gerät beendet, da es Probleme gemeldet hat.
+Problem_44:Eine Anwendung oder ein Dienst hat dieses Hardwaregerät heruntergefahren.
+Problem_45:Dieses Hardwaregerät ist zur Zeit nicht mit dem Computer verbunden.
+Problem_46:Windows kann auf dieses Hardwaregerät nicht zugreifen werden, weil das Betriebssystem gerade heruntergefahren wird.
+Problem_47:Windows kann dieses Hardwaregerät nicht verwenden, weil es sich auf die sichere Entfernung vorbereitet hat, aber es wurde nicht vom Computer entfernt.
+Problem_48:Die Software für dieses Gerät wurde vor dem Start blockiert, da Probleme mit Windows bestehen. Kontaktieren Sie den Hardwarehersteller für einen neuen Treiber.
+Problem_49:Windows kann keine neuen Hardwaregeräte starten, da die Systemstruktur zu groß ist (mehr als die maximale Registrierungsgröße).
+Problem_52:Windows kann die digitale Signatur für die Treiber für dieses Gerät nicht überprüfen.
+Problem_Unknown: Unbekanntes Problem
+HTTPException_1:Konnte keinen Treiber-Scan zur Bearbeitung senden
+HTTPException_2:Konnte keinen Treiber-Scan zur Bearbeitung senden
+HTTPException_3:Ergebnisse der Treiber konnten nicht abgerufen werden
+HTTPException_4:Downloadanleitung des Treibers konnte nicht heruntergeladen werden: {0}
+HTTPException_5:Downloadfehler des Treibers: {0}
+FileIOException_1:Ordner konnte nicht erstellt werden: {0}
+FileIOException_2:Scan-Ergebnisse konnten nicht beschrieben werden 
+FileIOException_3:Datei konnte nicht komprimiert werden
+FileIOException_4:{0} konnte nicht gelesen werden
+FileIOException_5:Treiberordner konnte nicht gelöscht werden: {0}
+FileIOException_6:Zeile in Datei konnte nicht behoben werden: {0}
+FileIOException_7:Zeichenkette in Datei konnte nicht behoben werden: {0}
+FileIOException_8:Datei konnte nicht beschrieben werden: {0}
+FileIOException_9:Datei {0} bis {1} konnten nicht dekomprimiert werden 
+FileIOException_10:Eine Desktop-Verknüpfung für {0} konnte nicht erstellt werden
+APIException_1:Treiber konnte nicht durchsucht werden
+APIException_2:Scan-ID konnte nicht gelesen werden
+APIException_3:Computername konnte nicht gelesen werden
+APIException_4:Scan-Ergebnisse konnten nicht gelesen werden
+APIException_5:Installationsanleitung für Treiber konnte nicht gelesen werden:
+APIException_6:Installationsanleitung für Treiber konnte nicht gelesen werden:
+APIException_7:Ergebnisse der Treiber konnten nicht analysiert werden
+

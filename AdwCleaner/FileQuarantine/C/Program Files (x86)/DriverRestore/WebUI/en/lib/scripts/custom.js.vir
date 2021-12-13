@@ -1,0 +1,54 @@
+﻿var $ = jQuery.noConflict();
+
+$(document).ready(function(){
+
+	/*-------------------- buttons -------------------*/
+
+	$('.button').mouseenter(function(){ $(this).addClass('hover'); });
+	$('.button').mousedown(function(){ $(this).addClass('pressed'); });
+	$('.button').mouseup(function(){ $(this).removeClass('pressed'); });
+	$('.button').mouseleave(function(){ $(this).removeClass('hover pressed'); });
+
+	/*-------------------- header --------------------*/
+
+	$('header nav a').mouseenter(function(){ $(this).parent().addClass('hover'); });
+	$('header nav a').mousedown(function(){ $(this).parent().addClass('pressed'); });
+	$('header nav a').mouseup(function(){ $(this).parent().removeClass('pressed'); });
+	$('header nav a').mouseleave(function(){ $(this).parent().removeClass('hover pressed'); });
+
+	/*-------------------- sidebar -------------------*/
+
+	$('aside nav a').mouseenter(function(){ $(this).parent().addClass('hover'); });
+	$('aside nav a').mousedown(function(){ $(this).parent().addClass('pressed'); });
+	$('aside nav a').mouseup(function(){ $(this).parent().removeClass('pressed'); });
+	$('aside nav a').mouseleave(function(){ $(this).parent().removeClass('hover pressed'); });
+
+	/*--------------------- tabs ---------------------*/
+
+	$('.setting_tabs div').mouseenter(function(){ $(this).addClass('hover'); });
+	$('.setting_tabs div').mouseleave(function(){ $(this).removeClass('hover'); });
+
+	$('.setting_tabs div').click(function(){
+		if (!$(this).hasClass('active')) {
+			var id = $(this).attr('data-tab');
+			$('article .visible').hide().removeClass('visible');
+			$('article #tab_'+id).fadeIn().addClass('visible');
+			$('article .active').removeClass('active');
+			$(this).addClass('active');
+		}
+	});
+
+	/*-------------------- popup ---------------------*/
+
+	$('.popup .close').mouseenter(function(){ $(this).addClass('hover'); });
+	$('.popup .close').mousedown(function(){ $(this).addClass('pressed'); });
+	$('.popup .close').mouseup(function(){ $(this).removeClass('pressed'); });
+	$('.popup .close').mouseleave(function(){ $(this).removeClass('hover pressed'); });
+
+	$('.popup .close').click(function(){
+		if (!$(this).hasClass('disabled'))
+			$(this).closest('.popup').hide()
+				.next('.popup_shadow').hide();
+	});
+
+});

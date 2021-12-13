@@ -1,0 +1,85 @@
+﻿SystemScan.SystemInfoModel = {
+    SystemType: "",
+    OsName: "",
+    BitVersion: "",
+    Ram: "",
+    Processor: "",
+    ImagePath: "",
+
+    set: function (systemInfo) {
+        try {
+            var systemInfoModel = $.parseJSON(systemInfo);
+ 
+            this.SystemType = systemInfoModel.SystemType;
+            this.OsName = systemInfoModel.OsName;
+            this.BitVersion = systemInfoModel.BitVersion;
+            this.Ram = systemInfoModel.Ram;
+            this.Processor = systemInfoModel.Processor;
+            this.ImagePath = systemInfoModel.ImagePath;
+
+            SystemScan.SystemInfoView.render(this, "top");
+            SystemScan.SystemInfoView.render(this, "bottom");
+        } catch (err) {
+            window.external.OnJavaScriptError(err.source + '-SystemScan.SystemInfoModel.set: ' + err.message);
+        }
+    },
+    init: function () {
+        try {
+            SystemScan.SystemInfoView.render(this, "top");
+            SystemScan.SystemInfoView.render(this, "bottom");
+        } catch (err) {
+            window.external.OnJavaScriptError(err.source + '-SystemScan.SystemInfoModel.init: ' + err.message);
+        }
+    }
+};
+
+SystemScan.SystemInfoView = (function () {
+
+    var render = function (osModel, position) {
+        var bottomId = "#quardo_part_id";
+        var topId = "#system_info";
+
+        switch (position) {
+            case "top":
+                $(topId).empty();
+                $(topId).append(systemInfoTop(osModel));
+            case "bottom":
+            default:
+                $(bottomId).empty();
+                $(bottomId).append(systemInfoBottom(osModel));
+        };
+    };
+
+    var systemInfoBottom = function (os) {
+
+        var style = os.SystemType.length > 35 ? "style=\"height:220px!important\" style=\"padding:0 0 10px\"" : "style=\"height:249px!important;padding:0 0 0px;\"";
+
+        return "<h1 class=\"quardo_heading\">" + os.SystemType + "</h1>" +
+            "<div  class=\"quardo_list\" " + style  + ">" +
+            "<p class=\"lenovo_lap\">" + "<img  src='" + os.ImagePath + "' alt=\"\"/>" + "</p>" +
+            "<div class=\"device_discription\"><span>System Overview</span>" +
+            "<p class=\"sys_discr\">" + os.SystemType + "</p>" +
+            "<p class=\"sys_discr\">" + os.OsName + "</p>" +
+            "<p class=\"sys_discr\">" + os.BitVersion + "</p>" +
+            "<p class=\"sys_discr\">" + os.Ram + "</p>" +
+            "<p class=\"sys_discr\">" + os.Processor + "</p>" +
+            "</div>" +
+            "</div>";
+
+    };
+
+    var systemInfoTop = function (os) {
+        return "<div class=\"notice\" id=\"system_info\">" +
+                "<span><img src=\"lib/images/cumputarIcon.png\" width=\"41px\" height=\"30px\" alt=\"\" class=\"com_ico\"></span>" +
+                "<h1 class=\"sys_over\">System Overview</h1>" +
+                os.SystemType + "<br>" +
+                os.OsName + "<br>" +
+                os.BitVersion + "<br>" +
+                os.Ram + "<br>" +
+                os.Processor + "</div>";
+    };
+
+    return {
+        render: render
+    };
+})();

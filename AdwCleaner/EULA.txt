@@ -1,0 +1,74 @@
+
+MALWAREBYTES ADWCLEANER SOFTWARE LICENSE AGREEMENT
+
+PLEASE READ THE FOLLOWING TERMS AND CONDITIONS CAREFULLY BEFORE DOWNLOADING, INSTALLING OR USING THE MALWAREBYTES ADWCLEANER SOFTWARE THAT ACCOMPANIES THIS SOFTWARE LICENSE AGREEMENT (“AGREEMENT”) OR ANY ACCOMPANYING DOCUMENTATION (COLLECTIVELY, THE “SOFTWARE").
+
+THE TERMS AND CONDITIONS OF THIS AGREEMENT ARE AN AGREEMENT BETWEEN YOU AND MALWAREBYTES AND GOVERN USE OF THE SOFTWARE.
+
+"MALWAREBYTES" MEANS: (a) IF YOU ACQUIRED THE SOFTWARE IN THE UNITED STATES OR CANADA, MALWAREBYTES INC., A DELAWARE CORPORATION; AND (B) IF YOU IF YOU ACQUIRED THE SOFTWARE IN ANY OTHER COUNTRY, MALWAREBYTES LIMITED, A COMPANY INCORPORATED IN IRELAND.
+
+Malwarebytes is willing to license the Software to you only upon the condition that you accept all the terms contained in this Agreement. By clicking to accept where indicated below or by downloading, installing or using the Software, you have indicated that you understand this Agreement and accept all of its terms. If you are accepting the terms of this Agreement on behalf of a company or other legal entity, you represent and warrant that you have the authority to bind that company or other legal entity to the terms of this Agreement, and, in such event, "you" and "your" will refer to that company or other legal entity. If you do not accept all the terms of this Agreement, then Malwarebytes is unwilling to license the Software to you, and you must destroy all copies of the Software.
+
+
+1. LICENSE 
+
+Conditioned upon your compliance with the terms and conditions of this Agreement, Malwarebytes grants you a non-exclusive and non-transferable license to load, install, and run the Software solely in executable form.
+
+
+2. RESTRICTIONS
+
+Your license permits you to use the Software solely for your internal business purposes. You may not combine the Software with any third party script, application, hardware or tools which would cause it to run on an automated or unattended basis. Except as expressly specified or permitted in this Agreement, you may not: (i) copy (except in the course of loading or installing) or modify the Software, including but not limited to adding new features or otherwise making adaptations that alter the functioning of the Software; (ii) transfer, sublicense, lease, lend, rent or otherwise distribute the Software to any third party; or (iii) make the functionality of the Software available to any third party through any means, including but not limited to by uploading the Software to a network or file-sharing service or through any hosting, application services provider, service bureau, software-as-a-service (SaaS) or any other type of services. You acknowledge and agree that portions of the Software, including but not limited to the source code and the specific design and structure of individual modules or programs, constitute or contain trade secrets of Malwarebytes and its licensors. Accordingly, you agree not to disassemble, decompile or reverse engineer the Software, in whole or in part, or permit or authorize a third party to do so, except to the extent such activities are expressly permitted by law notwithstanding this prohibition. 
+
+3. DURATION
+
+Subject to Malwarebytes product End-of-Life schedule, this Agreement shall remain in effect until terminated. You may terminate it at any time by ceasing to use and deleting the Software. Your license and this Agreement terminate immediately upon your breach of this Agreement.
+ 
+
+4. TECHNICAL ASSISTANCE
+
+Nothing in this Agreement entitles you to receive any support, maintenance, updates, upgrades, content or new versions of the Software. Malwarebytes reserves the right to designate any updates, additional content or features as requiring separate payment or purchase of a separate subscription at any time. From time to time, Malwarebytes may, but has no obligation to, provide updates to the Software. Support options may be found here https://www.malwarebytes.com/support/
+
+
+5. PRIVACY
+
+By entering into this Agreement you agree to the terms of Malwarebytes' privacy policy, which can be found at https://www.malwarebytes.com/privacy/ (as may be updated from time to time, the "Privacy Policy"). More information concerning what data is collected and used by Malwarebytes and how it is used is available in the Privacy Policy. Without limiting the Privacy Policy, this Software may collect and send anonymous statistics related to the Software to Malwarebytes including but not limited to:
+
+* Software version
+* language identifier
+* mode of execution
+* scan duration
+* clean duration
+* number of found elements
+* number of cleaned elements
+* number of elements not cleaned
+* uninstallation action
+
+
+6. DISCLAIMER AND LIMITATION OF LIABILITY
+
+The Software is provided "as is". You acknowledge that it is likely to present risks associated with its use. There is no warranty as to the results produced by the Software. Similarly, in no event shall Malwarebytes be liable for any damage arising from the use of the Software, including and not limited to loss of data. IN NO EVENT WILL MALWAREBYTES BE LIABLE TO YOU FOR ANY SPECIAL, INCIDENTAL, EXEMPLARY, PUNITIVE OR CONSEQUENTIAL DAMAGES (INCLUDING LOSS OF DATA, BUSINESS, PROFITS OR ABILITY TO EXECUTE) OR FOR THE COST OF PROCURING SUBSTITUTE PRODUCTS ARISING OUT OF OR IN CONNECTION WITH THIS AGREEMENT OR THE EXECUTION OR PERFORMANCE OF THE SOFTWARE, WHETHER SUCH LIABILITY ARISES FROM ANY CLAIM BASED UPON CONTRACT, WARRANTY, TORT (INCLUDING NEGLIGENCE), STRICT LIABILITY OR OTHERWISE, AND WHETHER OR NOT MALWAREBYTES HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH LOSS OR DAMAGE. THE FOREGOING LIMITATIONS WILL SURVIVE AND APPLY EVEN IF ANY LIMITED REMEDY SPECIFIED IN THIS AGREEMENT IS FOUND TO HAVE FAILED OF ITS ESSENTIAL PURPOSE. Some jurisdictions do not allow the limitation or exclusion of liability for incidental or consequential damages, so the above limitation or exclusion may not apply to you.
+
+
+7. EXPORT CONTROL AND U.S. GOVERNMENT USE
+
+You agree to comply fully with all U.S. and other applicable export laws and regulations to ensure that neither the Software nor any technical data related thereto nor any direct product thereof are exported or re-exported directly or indirectly in violation of, or used for any purposes prohibited by, such laws and regulations. The Software is a "commercial item" as that term is defined in FAR 2.101, consisting of "commercial computer software" and "commercial computer software documentation," respectively, as such terms are used in FAR 12.212 and DFARS 227.7202. If the Software is being acquired by or on behalf of the U.S. Government, then, as provided in FAR 12.212 and DFARS 227.7202-1 through 227.7202-4, as applicable, the U.S. Government's rights in the Software will be only those specified in this Agreement.
+
+8. OPENSSL ACKNOWLEDGEMENT
+
+This Software includes software developed by the OpenSSL Project for use in the OpenSSL Toolkit (http://www.openssl.org/).
+
+9. MODIFICATION OF THESE TERMS
+
+You acknowledge and agree that this Agreement may be modified by Malwarebytes with or without notice to you. However, you may terminate the Agreement at any time by ceasing to use and deleting the Software.
+
+10. FEEDBACK MARKETING
+
+If you provide any ideas, suggestions, or recommendations regarding the Software ("Feedback"), Malwarebytes will be free to use, disclose, reproduce, license or otherwise distribute, and exploit such Feedback as it sees fit, entirely without obligation or restriction of any kind. By providing Feedback, you grant Malwarebytes a worldwide, perpetual, irrevocable, sublicenseable, fully-paid and royalty-free license to use and exploit in any manner such Feedback. 
+
+11. GENERAL
+
+This Agreement will be governed by and construed in accordance with the laws of the State of California, without regard to or application of conflict of laws rules or principles. The United Nations Convention on Contracts for the International Sale of Goods will not apply. you agree that any claims or actions regarding this Agreement may be brought solely in the state of federal courts located in the Northern District of California, and you waive any right to challenge jurisdiction and venue therein. You may not assign or transfer this Agreement or any rights granted hereunder, by operation of law or otherwise, without Malwarebytes' prior written consent, and any attempt by you to do so, without such consent, will be void. Except as expressly set forth in this Agreement, the exercise by either party of any of its remedies under this Agreement will be without prejudice to its other remedies under this Agreement or otherwise. All notices or approvals required or permitted under this Agreement will be in writing and delivered by email (we will email you at the email address you provided us when you initially purchased your license), and in each instance will be deemed given upon receipt. The failure by either party to enforce any provision of this Agreement will not constitute a waiver of future enforcement of that or any other provision. Any waiver, modification or amendment of any provision of this Agreement will be effective only if in writing and signed by authorized representatives of both parties. Nothing in this Agreement shall be construed to create a partnership, joint venture or agency relationship between the parties. Neither party will have the power to bind the other or to incur obligations on the other's behalf without such other party's prior written consent. If any provision of this Agreement is held to be unenforceable or invalid, that provision will be enforced to the maximum extent possible, and the other provisions will remain in full force and effect. This Agreement is the complete and exclusive understanding and agreement between the parties regarding its subject matter, and supersedes all proposals, understandings or communications between the parties, oral or written, regarding its subject matter, unless you and Malwarebytes have executed a separate agreement for this specific Software. Any terms or conditions contained in your purchase order or other purchasing document that are inconsistent with or in addition to the terms and conditions of this Agreement are hereby rejected by Malwarebytes and will be deemed null.
+
+12. CONTACT US
+
+If you have any questions regarding this Agreement, you may contact Malwarebytes at legal@malwarebytes.com.

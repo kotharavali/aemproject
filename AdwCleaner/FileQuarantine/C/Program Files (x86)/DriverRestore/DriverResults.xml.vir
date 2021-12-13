@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "DTD/xhtml1-strict.dtd">
+<XML xmlns:v="urn:value" xmlns:d="urn:device">
+<v:scanid VALUE="f594111fa0ff0d48d34c4e1281cc18be" />
+<v:osstring VALUE="Microsoft Windows 10 x64" />
+<v:osid VALUE="31" />
+<v:computername VALUE="LAPTOP-M2RH9VQU" />
+<v:mainboard VALUE="4136" />
+<v:memory VALUE="8192" MAX="16384" />
+<v:model VALUE="Inspiron 5558" MAKE="Dell Inc." />
+<d:device>
+<v:node winid="ACPI\VEN_ACPI&amp;DEV_0003" problem="0" class="SY" stat="0" drdate="20060621" desc="Microsoft AC Adapter" />
+<v:node winid="ACPI\VEN_DELL&amp;DEV_ABCE" problem="0" class="HI" stat="0" drdate="20150504" desc="Airplane Mode Switch" />
+<v:node winid="ACPI\VEN_DLL&amp;DEV_B6AD" problem="0" class="MS" stat="0" drdate="20060621" desc="PS/2 Compatible Mouse" />
+<v:node winid="ACPI\VEN_DLL&amp;DEV_C6AD" problem="0" class="HI" stat="0" drdate="20060621" desc="I2C HID Device" />
+<v:node winid="ACPI\VEN_DLLK&amp;DEV_06AD" problem="0" class="KB" stat="0" drdate="20060621" desc="Standard PS/2 Keyboard" />
+<v:node winid="ACPI\GenuineIntel_-_Intel64_Family_6_Model_69" problem="0" class="CP" stat="0" drdate="20090421" desc="Intel(R) Core(TM) i5-4210U CPU @ 1.70GHz" />
+<v:node winid="ACPI\VEN_INT&amp;DEV_33C2&amp;REV_0004" problem="0" class="SY" stat="0" drdate="20150224" desc="Intel(R) Serial IO I2C Host Controller - 9C61" />
+<v:node winid="ACPI\VEN_INT&amp;DEV_33C3&amp;REV_0004" problem="0" class="SY" stat="0" drdate="20150224" desc="Intel(R) Serial IO I2C Host Controller - 9C62" />
+<v:node winid="ACPI\VEN_PNP&amp;DEV_0C0A" problem="0" class="SY" stat="0" drdate="20060621" desc="Microsoft ACPI-Compliant Control Method Battery" />
+<v:node winid="BTH\MS_BTHBRB" problem="0" class="BL" stat="0" drdate="20060621" desc="Microsoft Bluetooth Enumerator" />
+<v:node winid="BTH\MS_BTHLE" problem="0" class="BL" stat="0" drdate="20060621" desc="Microsoft Bluetooth LE Enumerator" />
+<v:node winid="BTH\MS_BTHPAN" problem="0" class="NT" stat="0" drdate="20060621" desc="Bluetooth Device (Personal Area Network)" />
+<v:node winid="BTH\MS_RFCOMM" problem="0" class="NT" stat="0" drdate="20060621" desc="Bluetooth Device (RFCOMM Protocol TDI)" />
+<v:node winid="BTHENUM\Dev_0022371FA48B" problem="0" class="BL" stat="0" drdate="20060621" desc="JBL Micro Wireless" />
+<v:node winid="BTHENUM\Dev_B8AD3E065D6C" problem="0" class="BL" stat="0" drdate="20060621" desc="LG HBS900" />
+<v:node winid="BTHENUM\{00001101-0000-1000-8000-00805f9b34fb}_LOCALMFG&amp;0000" problem="0" class="PT" stat="0" drdate="20060621" desc="Standard Serial over Bluetooth link (COM5)" />
+<v:node winid="BTHENUM\{00001101-0000-1000-8000-00805f9b34fb}_LOCALMFG&amp;0002" problem="0" class="PT" stat="0" drdate="20060621" desc="Standard Serial over Bluetooth link (COM6)" />
+<v:node winid="BTHENUM\{0000110b-0000-1000-8000-00805f9b34fb}_LOCALMFG&amp;0002" problem="0" class="SO" stat="0" drdate="20151029" desc="JBL Micro Wireless Stereo" />
+<v:node winid="BTHENUM\{0000110c-0000-1000-8000-00805f9b34fb}_LOCALMFG&amp;0002" problem="0" class="BL" stat="0" drdate="20060621" desc="AV Remote Target Service" />
+<v:node winid="BTHENUM\{0000110e-0000-1000-8000-00805f9b34fb}_LOCALMFG&amp;0002" problem="0" class="HI" stat="0" drdate="20151029" desc="LG HBS900 Audio/Video Remote Control HID" />
+<v:node winid="BTHHFENUM\BthHFPAudio" problem="0" class="SO" stat="0" drdate="20151029" desc="LG HBS900 Hands-Free" />
+<v:node winid="BTHHFENUM\BthHFPHID" problem="0" class="HI" stat="0" drdate="20151029" desc="LG HBS900 Hands-Free Call Control HID" />
+<v:node winid="MONITOR\BBY3942" problem="0" class="MN" stat="0" drdate="20060621" desc="Generic PnP Monitor" />
+<v:node winid="MONITOR\LGD04DA" problem="0" class="MN" stat="0" drdate="20060621" desc="Generic PnP Monitor" />
+<v:node winid="HDAUDIO\FUNC_01&amp;VEN_10EC&amp;DEV_0255&amp;SUBSYS_102806AD&amp;REV_1000" problem="0" class="SO" stat="0" drdate="20150624" desc="Realtek High Definition Audio" />
+<v:node winid="HDAUDIO\FUNC_01&amp;VEN_8086&amp;DEV_2807&amp;SUBSYS_80860101&amp;REV_1000" problem="0" class="SO" stat="0" drdate="20150803" desc="Intel(R) Display Audio" />
+<v:node winid="HID\VEN_DELL&amp;DEV_ABCE" problem="0" class="HI" stat="0" drdate="20150504" desc="Airplane Mode Switch Collection" />
+<v:node winid="HID\VEN_DLL&amp;DEV_C6AD&amp;Col01" problem="0" class="MS" stat="0" drdate="20060621" desc="HID-compliant mouse" />
+<v:node winid="HID\VEN_DLL&amp;DEV_C6AD&amp;Col02" problem="0" class="HI" stat="0" drdate="20060621" desc="HID-compliant touch pad" />
+<v:node winid="HID\VEN_DLL&amp;DEV_C6AD&amp;Col03" problem="0" class="HI" stat="0" drdate="20060621" desc="Microsoft Input Configuration Device" />
+<v:node winid="HID\VEN_DLL&amp;DEV_C6AD&amp;Col04" problem="0" class="HI" stat="0" drdate="20060621" desc="HID-compliant vendor-defined device" />
+<v:node winid="HID\VID_045E&amp;PID_07B2&amp;REV_0704&amp;MI_00" problem="0" class="KB" stat="0" drdate="20060621" desc="HID Keyboard Device" />
+<v:node winid="HID\VID_045E&amp;PID_07B2&amp;REV_0704&amp;MI_01&amp;Col01" problem="0" class="MS" stat="0" drdate="20060621" desc="HID-compliant mouse" />
+<v:node winid="HID\VID_045E&amp;PID_07B2&amp;REV_0704&amp;MI_01&amp;Col02" problem="0" class="HI" stat="0" drdate="20060621" desc="HID-compliant consumer control device" />
+<v:node winid="HID\VID_045E&amp;PID_07B2&amp;REV_0704&amp;MI_02&amp;Col01" problem="0" class="HI" stat="0" drdate="20060621" desc="HID-compliant consumer control device" />
+<v:node winid="HID\VID_045E&amp;PID_07B2&amp;REV_0704&amp;MI_02&amp;Col02" problem="0" class="HI" stat="0" drdate="20060621" desc="HID-compliant consumer control device" />
+<v:node winid="HID\VID_045E&amp;PID_07B2&amp;REV_0704&amp;MI_02&amp;Col03" problem="0" class="HI" stat="0" drdate="20060621" desc="HID-compliant vendor-defined device" />
+<v:node winid="HID\VID_045E&amp;PID_07B2&amp;REV_0704&amp;MI_02&amp;Col04" problem="0" class="HI" stat="0" drdate="20060621" desc="HID-compliant system controller" />
+<v:node winid="HID\VID_1FD2&amp;PID_5001&amp;REV_0500&amp;MI_00&amp;Col01" problem="0" class="HI" stat="0" drdate="20060621" desc="HID-compliant touch screen" />
+<v:node winid="HID\VID_1FD2&amp;PID_5001&amp;REV_0500&amp;MI_00&amp;Col02" problem="0" class="HI" stat="0" drdate="20060621" desc="Microsoft Input Configuration Device" />
+<v:node winid="HID\VID_1FD2&amp;PID_5001&amp;REV_0500&amp;MI_00&amp;Col03" problem="0" class="MS" stat="0" drdate="20060621" desc="HID-compliant mouse" />
+<v:node winid="HID\VID_1FD2&amp;PID_5001&amp;REV_0500&amp;MI_01" problem="0" class="HI" stat="0" drdate="20060621" desc="HID-compliant vendor-defined device" />
+<v:node winid="PCI\VEN_10EC&amp;DEV_8136&amp;SUBSYS_06AD1028&amp;REV_07" problem="0" class="NT" stat="0" drdate="20150505" desc="Realtek PCIe FE Family Controller" />
+<v:node winid="PCI\VEN_8086&amp;DEV_08B3&amp;SUBSYS_84708086&amp;REV_83" problem="0" class="NT" stat="0" drdate="20150622" desc="Intel(R) Dual Band Wireless-AC 3160" />
+<v:node winid="PCI\VEN_8086&amp;DEV_0A0C&amp;SUBSYS_06AD1028&amp;REV_0B" problem="0" class="SY" stat="0" drdate="20151029" desc="High Definition Audio Controller" />
+<v:node winid="PCI\VEN_8086&amp;DEV_0A16&amp;SUBSYS_06AD1028&amp;REV_0B" problem="0" class="DA" stat="0" drdate="20150817" desc="Intel(R) HD Graphics Family" />
+<v:node winid="PCI\VEN_8086&amp;DEV_9C03&amp;SUBSYS_06AD1028&amp;REV_04" problem="0" class="HD" stat="0" drdate="20150722" desc="Intel(R) 8 Series Chipset Family SATA AHCI Controller">
+<v:match date="20150722" ver="14.5.2.1088" aid="146435" />
+</v:node>
+<v:node winid="PCI\VEN_8086&amp;DEV_9C10&amp;SUBSYS_06AD1028&amp;REV_E4" problem="0" class="SY" stat="0" drdate="20150616" desc="Intel(R) 8 Series PCI Express Root Port #1 - 9C10" />
+<v:node winid="PCI\VEN_8086&amp;DEV_9C14&amp;SUBSYS_06AD1028&amp;REV_E4" problem="0" class="SY" stat="0" drdate="20150616" desc="Intel(R) 8 Series PCI Express Root Port #3 - 9C14" />
+<v:node winid="PCI\VEN_8086&amp;DEV_9C16&amp;SUBSYS_06AD1028&amp;REV_E4" problem="0" class="SY" stat="0" drdate="20150616" desc="Intel(R) 8 Series PCI Express Root Port #4 - 9C16" />
+<v:node winid="PCI\VEN_8086&amp;DEV_9C18&amp;SUBSYS_06AD1028&amp;REV_E4" problem="0" class="SY" stat="0" drdate="20150616" desc="Intel(R) 8 Series PCI Express Root Port #5 - 9C18" />
+<v:node winid="PCI\VEN_8086&amp;DEV_9C22&amp;SUBSYS_06AD1028&amp;REV_04" problem="0" class="SY" stat="0" drdate="20150616" desc="Intel(R) 8 Series SMBus Controller - 9C22" />
+<v:node winid="PCI\VEN_8086&amp;DEV_9C26&amp;SUBSYS_06AD1028&amp;REV_04" problem="0" class="US" stat="0" drdate="20060621" desc="Intel(R) 8 Series USB Enhanced Host Controller #1 - 9C26" />
+<v:node winid="PCI\VEN_8086&amp;DEV_9C31&amp;SUBSYS_06AD1028&amp;REV_04" problem="0" class="US" stat="0" drdate="20160328" desc="Intel(R) USB 3.0 eXtensible Host Controller - 1.0 (Microsoft)" />
+<v:node winid="PCI\VEN_8086&amp;DEV_9C3A&amp;SUBSYS_06AD1028&amp;REV_04" problem="0" class="SY" stat="0" drdate="20150707" desc="Intel(R) Management Engine Interface" />
+<v:node winid="PCI\VEN_8086&amp;DEV_9C43&amp;SUBSYS_06AD1028&amp;REV_04" problem="0" class="SY" stat="0" drdate="20150616" desc="Intel(R) 8 Series LPC Controller (Premium SKU) - 9C43" />
+<v:node winid="acpiapic" problem="0" class="SY" stat="0" drdate="20060621" desc="ACPI x64-based PC" />
+<v:node winid="root\hubusbpalbus" problem="0" class="SY" stat="0" drdate="20150316" desc="UoIP Hub">
+<v:match date="20150316" ver="2.0.13.23272" aid="146447" />
+</v:node>
+<v:node winid="root\kdnic" problem="0" class="NT" stat="0" drdate="20060621" desc="Microsoft Kernel Debug Network Adapter" />
+<v:node winid="VPNVA" problem="0" class="NT" stat="0" drdate="20140226" desc="Cisco AnyConnect Secure Mobility Client Virtual Miniport Adapter for Windows x64" />
+<v:node winid="Root\Spaceport" problem="0" class="SC" stat="0" drdate="20060621" desc="Microsoft Storage Spaces Controller" />
+<v:node winid="SW\{ddf4358e-bb2c-11d0-a42f-00a0c9223196}" problem="0" class="SO" stat="0" drdate="20060621" desc="Microsoft Streaming Quality Manager Proxy" />
+<v:node winid="(null)" problem="0" class="SY" stat="0" drdate="20060621" desc="Microsoft IPv4 IPv6 Transition Adapter Bus" />
+<v:node winid="*ISATAP" problem="0" class="NT" stat="0" drdate="20060621" desc="Microsoft ISATAP Adapter #5" />
+<v:node winid="*TEREDO" problem="0" class="NT" stat="0" drdate="20060621" desc="Teredo Tunneling Pseudo-Interface" />
+<v:node winid="MMDEVAPI\AudioEndpoints" problem="0" class="SO" stat="0" drdate="20151029" desc="Speakers / Headphones (Realtek High Definition Audio)" />
+<v:node winid="PRINTENUM\LocalPrintQueue" problem="0" class="SY" stat="0" drdate="20060621" desc="Root Print Queue" />
+<v:node winid="PRINTENUM\{0f4130dd-19c7-7ab6-99a1-980f03b2ee4e}" problem="0" class="SY" stat="0" drdate="20060621" desc="Microsoft XPS Document Writer" />
+<v:node winid="PRINTENUM\{084f01fa-e634-4d77-83ee-074817c03581}" problem="0" class="SY" stat="0" drdate="20060621" desc="Microsoft Print to PDF" />
+<v:node winid="PRINTENUM\microsoftmicrosoft_s7d14" problem="0" class="SY" stat="0" drdate="20060621" desc="Fax" />
+<v:node winid="USB\ROOT_HUB20&amp;VID8086&amp;PID9C26&amp;REV0004" problem="0" class="US" stat="0" drdate="20060621" desc="USB Root Hub" />
+<v:node winid="USB\ROOT_HUB30&amp;VID8086&amp;PID9C31&amp;REV0004" problem="0" class="US" stat="0" drdate="20160222" desc="USB Root Hub (xHCI)" />
+<v:node winid="USB\VID_045E&amp;PID_07B2&amp;REV_0704" problem="0" class="US" stat="0" drdate="20151106" desc="Microsoft Mouse and Keyboard Detection Driver (USB)">
+<v:match date="20151106" ver="9.9.114.0" aid="150333" />
+</v:node>
+<v:node winid="USB\VID_045E&amp;PID_07B2&amp;REV_0704&amp;MI_00" problem="0" class="HI" stat="0" drdate="20151027" desc="Microsoft Hardware USB Keyboard" />
+<v:node winid="USB\VID_045E&amp;PID_07B2&amp;REV_0704&amp;MI_01" problem="0" class="HI" stat="0" drdate="20151027" desc="Microsoft Hardware USB Mouse" />
+<v:node winid="USB\VID_045E&amp;PID_07B2&amp;REV_0704&amp;MI_02" problem="0" class="HI" stat="0" drdate="20060621" desc="USB Input Device" />
+<v:node winid="USB\VID_0BDA&amp;PID_0129&amp;REV_3960" problem="0" class="US" stat="1" drdate="20150511" desc="Realtek USB 2.0 Card Reader">
+<v:match date="20151221" ver="10.0.10586.31222" aid="-20823956" />
+<v:match date="20150917" ver="10.0.10125.31213" aid="-20776664" />
+<v:match date="20150818" ver="10.0.10240.31217" aid="149459" />
+<v:match date="20150818" ver="10.0.10240.31217" aid="147188" />
+<v:match date="20150729" ver="10.0.10125.31214" aid="-20755909" />
+<v:match date="20150717" ver="10.0.10163.31215" aid="149053" />
+<v:match date="20150609" ver="10.0.10125.31214" aid="150217" />
+<v:match date="20150609" ver="10.0.10125.31214" aid="147139" />
+<v:match date="20150609" ver="10.0.10125.31214" aid="146595" />
+<v:match date="20150527" ver="10.0.10125.31214" aid="147490" />
+</v:node>
+<v:node winid="USB\VID_1BCF&amp;PID_2B90&amp;REV_4267" problem="0" class="US" stat="0" drdate="20060621" desc="USB Composite Device" />
+<v:node winid="USB\VID_1BCF&amp;PID_2B90&amp;REV_4267&amp;MI_00" problem="0" class="IM" stat="0" drdate="20060621" desc="Integrated Webcam" />
+<v:node winid="USB\VID_1FD2&amp;PID_5001&amp;REV_0500" problem="0" class="US" stat="0" drdate="20060621" desc="USB Composite Device" />
+<v:node winid="USB\VID_1FD2&amp;PID_5001&amp;REV_0500&amp;MI_00" problem="0" class="HI" stat="0" drdate="20060621" desc="USB Input Device" />
+<v:node winid="USB\VID_1FD2&amp;PID_5001&amp;REV_0500&amp;MI_01" problem="0" class="HI" stat="0" drdate="20060621" desc="USB Input Device" />
+<v:node winid="USB\VID_8087&amp;PID_07DC&amp;REV_0001" problem="0" class="BL" stat="0" drdate="20150713" desc="Intel(R) Wireless Bluetooth(R)">
+<v:match date="20150618" ver="17.1.1525.1443" aid="148316" />
+<v:match date="20150618" ver="17.1.1525.1443" aid="145704" />
+</v:node>
+<v:node winid="USB\VID_8087&amp;PID_8000&amp;REV_0004" problem="0" class="US" stat="0" drdate="20060621" desc="Generic USB Hub" />
+<v:node winid="{5d624f94-8850-40c3-a3fa-a4fd2080baf3}\vwifimp_wfd" problem="0" class="NT" stat="0" drdate="20060621" desc="Microsoft Wi-Fi Direct Virtual Adapter" />
+</d:device>
+<d:archive>
+<v:node name="146435" v="4136" vd="Dell" s="14770096" fn="Serial-ATA_Driver_WPRGC_WN32_14.5.2.1088_A01.exe" d="20150724" o="2147483648" t="Intel Rapid Storage Technology F6 Driver,14.5.2.1088,A01" a="d835fa23" src="http://www.dell.com/support/home/us/en/19/Drivers/DriversDetails?driverId=WPRGC" dwn="http://us2.driveragent.com/get/oGfF4PvIJoXReh9WL3CZfkqocuU301c=/Serial-ATA_Driver_WPRGC_WN32_14.5.2.1088_A01.exe" />
+<v:node name="146447" v="4136" vd="Dell" s="127760960" fn="Network_Utility_KG8N5_WN32_6.0.40.0_A00.exe" d="20150706" o="2147483648" t="Intel 8260/7265/7260/3165 WiDi Utility,6.0.40.0,A00" a="02075057" src="http://www.dell.com/support/home/us/en/19/Drivers/DriversDetails?driverId=KG8N5" dwn="http://us8.driveragent.com/get/cSxVXzMOPG5UUJIurfAPb0zitbYcRIk=/Network_Utility_KG8N5_WN32_6.0.40.0_A00.exe" />
+<v:node name="150333" v="5140" vd="Microsoft" s="43986208" fn="MouseKeyboardCenter_64bit_ENG_2.7.133.exe" d="20151117" o="2818572288" t="Mouse and Keyboard Center 2.7 64-bit (English)" a="cd047682" src="http://www.microsoft.com/hardware/en-us/d/sidewinder-x8-mouse" dwn="http://us2.driveragent.com/get/GyaG-qQ_YLbQKd4-HQpL48PHAyScX7g=/MouseKeyboardCenter_64bit_ENG_2.7.133.exe" />
+<v:node name="-20823956" v="5140" vd="Microsoft" s="3358776" fn="20823956_37e97623c5f2eeeb08c8fe078163de5890a862b5.cab" d="20160107" o="2147483648" t="Realtek USB 2.0 Card Reader" a="14d31e52" src="http://download.windowsupdate.com/d/msdownload/update/driver/drvs/2016/01/20823956_37e97623c5f2eeeb08c8fe078163de5890a862b5.cab" dwn="http://download.windowsupdate.com/d/msdownload/update/driver/drvs/2016/01/20823956_37e97623c5f2eeeb08c8fe078163de5890a862b5.cab" />
+<v:node name="-20776664" v="5140" vd="Microsoft" s="1831468" fn="20776664_57ba0d753b9fcc499cd62da50d537a9a713818b2.cab" d="20150917" o="2147483648" t="Realtek Semiconduct Corp. Other hardware software update released in September, 2015" a="eddbe064" src="http://catalog.update.microsoft.com/v7/site/ScopedViewRedirect.aspx?updateid=c04afef5-4047-45bb-ae84-89bca4b6ecf2" dwn="http://download.windowsupdate.com/d/msdownload/update/driver/drvs/2015/09/20776664_57ba0d753b9fcc499cd62da50d537a9a713818b2.cab" />
+<v:node name="149459" v="4133" vd="Acer" s="13031335" fn="CardReader_Realtek_10.0.10240.31217_W10x64_A.zip" d="20150821" o="2147483648" t="CardReader_Realtek_10.0.10240.31217_W10x64.zip" a="3e793f64" src="http://global-download.gateway.com/GDFiles/Driver/CardReader/CardReader_Realtek_10.0.10240.31217_W10x64_A.zip?acerid=635853141506317517&amp;Step1=DESKTOP&amp;Step2=DX SERIES&amp;Step3=DX4986&amp;OS=10M1&amp;LC=en&amp;BC=GATEWAY&amp;SC=PA_6G" dwn="http://us2.driveragent.com/get/BB6fX8egz-lc6BedmjRvIeegd-basGs=/CardReader_Realtek_10.0.10240.31217_W10x64_A.zip" />
+<v:node name="147188" v="4133" vd="Acer" s="13031342" fn="CardReader_Realtek_10.0.10240.31217_W10x64_A.zip" d="20150821" o="2147483648" t="Realtek Card Reader Driver version 10.0.10240.31217" a="179d30b0" src="http://global-download.acer.com/Step5.aspx?Step1=Desktop&amp;Step2=Veriton&amp;Step3=Veriton+X4640G&amp;BC=Acer&amp;SC=PA_6&amp;LC=en&amp;FS=O01&amp;Category=DRIVER&amp;OS=Windows%C2%AE+10+64-bit" dwn="http://us2.driveragent.com/get/NGmiobzDtRMXGEFcO98shYK_Tpk72Lo=/CardReader_Realtek_10.0.10240.31217_W10x64_A.zip" />
+<v:node name="-20755909" v="5140" vd="Microsoft" s="1818616" fn="20755909_9a47c06609a3c7652e82bac1823fe7dddf01ea00.cab" d="20150729" o="2147483648" t="Realtek Semiconduct Corp. Other hardware software update released in July, 2015" a="42ee5f16" src="http://catalog.update.microsoft.com/v7/site/ScopedViewRedirect.aspx?updateid=5abf9e34-4bed-4161-b633-3289cb054b07" dwn="http://download.windowsupdate.com/d/msdownload/update/driver/drvs/2015/07/20755909_9a47c06609a3c7652e82bac1823fe7dddf01ea00.cab" />
+<v:node name="149053" v="4133" vd="Acer" s="13029839" fn="CardReader_Realtek_10.0.10163.31215_W10x64_A.zip" d="20150724" o="2147483648" t="Realtek Card Reader Driver version 10.0.10163.31215" a="48c0f9c2" src="http://global-download.acer.com/Step5.aspx?Step1=All-in-one&amp;Step2=Aspire&amp;Step3=Aspire+Z3-705&amp;BC=Acer&amp;SC=PA_6&amp;LC=en&amp;FS=O01&amp;Category=DRIVER&amp;OS=Windows%C2%AE+10+64-bit" dwn="http://us2.driveragent.com/get/cWppKdEyHx54wZUZOxMcLm5lDbCUs4Q=/CardReader_Realtek_10.0.10163.31215_W10x64_A.zip" />
+<v:node name="150217" v="4156" vd="Hewlett Packard" s="14683064" fn="sp71719.exe" d="20150630" o="4239396864" t="Realtek USB and PCIe Media Card Reader Drivers" a="650151e8" src="http://ftp.hp.com/pub/softpaq/sp71501-72000/sp71719.exe" dwn="http://us2.driveragent.com/get/EAWhiYSefagzeaNfZKXzYhgNh_iwuZg=/sp71719.exe" />
+<v:node name="147139" v="4133" vd="Acer" s="14438784" fn="CardReader_Realtek_10.0.370.92_W10x64_A.zip" d="20150609" o="2147483648" t="Realtek Card Reader Driver version 10.0.370.92" a="91a3e6a0" src="http://global-download.acer.com/Step5.aspx?Step1=All-in-one&amp;Step2=Aspire&amp;Step3=Aspire+Z1-752&amp;BC=Acer&amp;SC=PA_6&amp;LC=en&amp;FS=O01&amp;Category=DRIVER&amp;OS=Windows%C2%AE+10+64-bit" dwn="http://us2.driveragent.com/get/IqqKju1yRZYhTK6SSi5Ps-Cg-rFhxC4=/CardReader_Realtek_10.0.370.92_W10x64_A.zip" />
+<v:node name="146595" v="0" vd="" s="6155992" fn="u1car03ws17_sdc30.exe" d="20150609" o="2147483648" t="Realtek Card Reader Driver - 10 [64]" a="c6d2db28" src="https://download.lenovo.com/ibmdl/pub/pc/pccbbs/thinkcentre_drivers/u1car03ws17_sdc30.exe" dwn="http://us2.driveragent.com/get/P9ZwXWXtQ5ifwZyKl4LdAIJ4f4I3PRY=/u1car03ws17_sdc30.exe" />
+<v:node name="147490" v="5208" vd="Gigabyte" s="13016640" fn="slate-driver-64bit-cardreader-10.0.10125.31214.zip" d="20150529" o="2147483648" t="Card Reader Version:10.0.10125.31214 (2015/09/01)" a="1a4587d7" src="http://www.gigabyte.us/products/product-page.aspx?pid=4921&amp;amp;dl=1#driver" dwn="http://us2.driveragent.com/get/QXlBJg1P6_eqKX7NfEM9YDNBVZNDs7c=/slate-driver-64bit-cardreader-10.0.10125.31214.zip" />
+<v:node name="148316" v="4136" vd="Dell" s="14568352" fn="X51-R3_Network_Driver_0959K_WN32_17.1.1525.1443_A00.exe" d="20150618" o="2147483648" t="Intel BT 3165 / 7265ac driver, 17.1.1525.1443, A00" a="d8dfa421" src="http://downloads.dell.com/FOLDER03207080M/1/X51-R3_Network_Driver_0959K_WN32_17.1.1525.1443_A00.EXE" dwn="http://us2.driveragent.com/get/XbSpSfx0IRcSUCpTw835F65GRUOgmRE=/X51-R3_Network_Driver_0959K_WN32_17.1.1525.1443_A00.exe" />
+<v:node name="145704" v="4136" vd="Dell" s="20414296" fn="9343_Network_Driver_0KJ2P_WN32_17.1.1525.1443_A00.exe" d="20150618" o="2147483648" t="Intel PROSet/Wireless Bluetooth LEGUI Driver,17.1.1525.1443,A00" a="e0df945f" src="http://www.dell.com/support/home/us/en/04/Drivers/DriversDetails?driverId=0KJ2P" dwn="http://us2.driveragent.com/get/oAFpCdwJ4cadmqYaADd-TCKcQ7eeAEo=/9343_Network_Driver_0KJ2P_WN32_17.1.1525.1443_A00.exe" />
+</d:archive>
+<d:heading>
+<v:node name="BL" value="Bluetooth Devices" icon="icon_bluetooth.gif" />
+<v:node name="DA" value="Display adapters" icon="icon_display.gif" />
+<v:node name="HI" value="Human Interface Devices" icon="icon_hid.gif" />
+<v:node name="HD" value="IDE ATA/ATAPI controllers" icon="icon_diskdrives.gif" />
+<v:node name="IM" value="Imaging devices" icon="icon_imaging98.gif" />
+<v:node name="KB" value="Keyboards" icon="icon_keyboard.gif" />
+<v:node name="MS" value="Mice and other pointing devices" icon="icon_mouse.gif" />
+<v:node name="MN" value="Monitors" icon="icon_display.gif" />
+<v:node name="NT" value="Network adapters" icon="icon_network.gif" />
+<v:node name="PT" value="Ports (COM &amp; LPT)" icon="icon_port.gif" />
+<v:node name="CP" value="Processors" icon="icon_cpu.gif" />
+<v:node name="SC" value="SCSI and RAID controllers" icon="icon_scsi.gif" />
+<v:node name="SO" value="Sound, video and game controllers" icon="icon_sound.gif" />
+<v:node name="SY" value="System devices" icon="icon_computer.gif" />
+<v:node name="US" value="Universal Serial Bus controllers" icon="icon_usb.gif" />
+</d:heading>
+<v:down VALUE="0" />
+</XML>

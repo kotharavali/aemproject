@@ -1,0 +1,37 @@
+﻿var Overview = Overview || {};
+
+Overview.Events = (function () {
+    var scanId = ".rescan,.complete-scan,#bottomRescan";
+    var upgradeId = ".updateDriver";
+    var customizeNowId = "#customizeNow";
+    var updateNowId = "#updateNow";
+    var configureNowId = "#configureNow";
+
+
+    var onScanClick = function () { window.external.OverviewPageClicked(Overview.Buttons.Scan); };
+    var onUpgradeClick = function () { window.external.OverviewPageClicked(Overview.Buttons.UpdateDrivers);};
+    var onCustomizeNowClick = function () {  window.external.OverviewPageClicked(Overview.Buttons.CostumizeNow);};
+    var onUpdateNowClick = function () {  window.external.OverviewPageClicked(Overview.Buttons.UpdateApplication);};
+    var onConfigureNowClick = function() { window.external.OverviewPageClicked(Overview.Buttons.ConfigureNow); };
+        
+    var init = function () {
+        $(scanId).unbind(onScanClick);
+        $(upgradeId).unbind(onUpgradeClick);
+        $(customizeNowId).unbind(onCustomizeNowClick);
+        $(configureNowId).unbind(onConfigureNowClick);
+        $(updateNowId).unbind(onUpdateNowClick);
+
+
+        $(scanId).bind("click", onScanClick);
+        $(upgradeId).bind("click", onUpgradeClick);
+        $(customizeNowId).bind("click", onCustomizeNowClick);
+        $(updateNowId).bind("click", onUpdateNowClick);
+        $(configureNowId).bind("click", onConfigureNowClick);
+
+
+    };
+
+    return {
+        init: init
+    };
+})();

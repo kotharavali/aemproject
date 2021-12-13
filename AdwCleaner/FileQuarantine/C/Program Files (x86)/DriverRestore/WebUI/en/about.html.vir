@@ -1,0 +1,104 @@
+﻿<!DOCTYPE html>
+<html style="position:absolute;">
+
+<head>
+
+<meta charset="UTF-8" />
+
+<title>About</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+
+<link rel="stylesheet" href="lib/css/style.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="lib/css/style_old.css" type="text/css" media="screen" />
+<link rel="shortcut icon" href="favicon.png" />
+
+<script src="lib/scripts/jquery.min.js" type="text/javascript"></script>
+<script src="lib/scripts/html5shiv.js" type="text/javascript"></script>
+<script src="lib/js/csharpglue.js" type="text/javascript"></script>
+<script src="lib/js/About/Model.js" type="text/javascript"></script>
+<script src="lib/js/About/AboutlView.js" type="text/javascript"></script>
+<script src="lib/js/About/Events.js" type="text/javascript"></script>
+</head>
+
+<body>
+
+<noscript>
+	<div class="noscript">
+		<div>Please enable JavaScript in your browser.</div>
+	</div>
+</noscript>
+
+
+	<article class="about" >
+
+		<!-- title -->
+
+		<h1 class="title">Driver Restore<span></span></h1>
+		<span class="subtitle">Copyright 2014 Driver Restore is a 383 Media, Inc. Software Product. All rights reserved.</span>
+
+		<!-- overview -->
+
+		<div class="overview">
+
+			<h3>System Overview</h3>
+			<div class="hline"></div>
+
+			<p class="buttons">
+
+				<span class="label">Product Version:</span><span class="value" id="aboutPage_ProductVersion"></span>
+
+				<!-- <a class="button_old check" href="#" id="aboutpage_checkUpdatesClicked"></a>
+				<a class="button_old update" href="#" id="aboutpage_updatesOptionsClicked"></a> -->
+
+			</p>
+
+			<div class="clear"></div>
+
+		</div>
+
+		<!-- registration -->
+
+		<div class="registration">
+
+		    <h3>Registration</h3>
+                <span class="about links" style="">
+                    <a href="#" class="decoration" id="endUserLicenseAgreement">End User License Agreement</a>
+                    &nbsp;&nbsp;&nbsp;
+                    <a href="#" class="decoration" id="privacyPolicy">Privacy Policy</a>
+                </span>
+			<div class="hline"></div>
+
+			<p><span class="label">Expiry date:</span><span class="value" id="aboutLicenseVersion"><a class="licenseValidation">(Validating)</a></span></p>
+			<p><span class="label">Subscription:</span><span class="value" id="aboutSubscription"><a class="licenseValidation">(Validating)</a></span></p>
+
+			<!--p class="license">
+
+				<span class="label">License key:</span>
+				<input type="text"  id="licenseKeyAbout"/>
+				<a class="button ok" href="#" onclick="SubmitActivationKey('licenseKeyAbout');"></a>
+				<p class="registration_key" style="left:120px;bottom:11px;">(<a href="#"  id= "aboutPaste" class="copy">Click Here to Paste from Clipboard</a>)</p>
+
+			</p-->
+            <div class="clear"></div>
+			<div class="buttons mt10">
+
+				<a class="button_old product" href="#" id="aboutProductSiteButton"></a>&nbsp;
+				<span  id="bottom_register_buttontohide"  ><a class="button_old license" href="#" id="aboutGetLicenseButton"></a>&nbsp;</span>
+				<!--a class="button_old log" href="#"></a-->&nbsp;
+
+			</div>
+
+		</div>
+
+	</article>
+	
+	<!-- popup 
+	<div id="popups" style="position:absolute;top:0px;z-index:1000;">
+	</div>
+	<div id="fixscreens" style="position:absolute;top:80px;z-index:15;">
+	</div>
+    -->	
+
+</body>
+</html>

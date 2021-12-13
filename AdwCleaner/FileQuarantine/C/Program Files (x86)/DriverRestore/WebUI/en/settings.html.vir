@@ -1,0 +1,264 @@
+﻿<!DOCTYPE html>
+<html style="position:absolute;">
+
+
+<head>
+
+<meta charset="UTF-8" />
+
+<title>Settings</title>
+
+<link rel="Stylesheet" media="screen" href="lib/css/timepicker/ui.core.css" />
+<link rel="Stylesheet" media="screen" href="lib/css/timepicker/ui.timepickr.css" />
+<link rel="Stylesheet" media="screen" href="lib/css/jquery.timeentry.css" />
+<link type="text/css" href="lib/css/timepicker/jquery.datepick.css" rel="stylesheet"/>
+  <script src="lib/scripts/jquery.min.js" type="text/javascript"></script>
+<script src="lib/scripts/html5shiv.js" type="text/javascript"></script>
+<script src="lib/scripts/jquery.json-2.4.min.js" type="text/javascript"></script>
+  <script type="text/javascript" src="lib/scripts/timepicker/jquery.utils.js"></script>
+  <script type="text/javascript" src="lib/scripts/timepicker/jquery.strings.js"></script>
+  <script type="text/javascript" src="lib/scripts/timepicker/jquery.ui.all.js"></script>
+  <script type="text/javascript" src="lib/scripts/timepicker/ui.timepickr.js"></script>
+  <script type="text/javascript" src="lib/scripts/timepicker/jquery.datepick.js"></script>
+  <script type="text/javascript" src="lib/scripts/jquery.timeentry.js"></script>
+  <script src="lib/js/csharpglue.js" type="text/javascript"></script>
+  <script src="lib/js/Settings/settings.js" type="text/javascript"></script>
+<script language="VBScript">
+Sub MessageBox(title, content)
+      MsgBox content, 0, title
+End Sub
+</script>
+<link rel="stylesheet" href="lib/css/style.css" type="text/css" media="screen" />
+<link rel="shortcut icon" href="favicon.png" />
+
+
+<script src="lib/scripts/custom.js" type="text/javascript"></script>
+<script src="lib/jquery.customSelect-master/jquery.customSelect.js" type="text/javascript"></script>
+
+        
+<script type="text/javascript">
+            $(function () {
+
+            $('select.styled').customSelect();
+
+            });
+</script>
+
+<style type="text/css">
+  body {
+  font-family:Arial, Helvetica, sans-serif
+  }
+  span.customSelect {
+  font-size:11px;
+  background: #f5f5f5 url(lib/images/bg/select_tab.png) no-repeat -0px -0px !important;
+  border: 1px solid #bbb !important;
+  *border: 0 !important;
+  border-color: #e6e6e6 #e6e6e6 #bfbfbf !important;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25) !important;
+  border-bottom-color: #a2a2a2 !important;
+  -webkit-border-radius: 4px !important;
+  -moz-border-radius: 4px !important;
+  border-radius: 4px !important;
+  filter: progid : DXImageTransform.Microsoft.gradient ( startColorstr =
+  '#ffffffff', endColorstr = '#ffe6e6e6', GradientType = 0 );
+  filter: progid : DXImageTransform.Microsoft.gradient ( enabled = false );
+  *zoom: 1 !important;
+  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px
+  rgba(0, 0, 0, 0.05) !important;
+  -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px
+  rgba(0, 0, 0, 0.05) !important;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px
+  rgba(0, 0, 0, 0.05) !important;
+  line-height:normal !important;
+  padding:0px !important;
+  height:25px;
+  }
+  span.customSelect.changed {
+  background-color: #f0dea4;
+  }
+  .customSelectInner {
+  padding:5px 8px;
+
+  }
+#select_language {
+    left: 39px;
+    margin: 5px 0 0;
+    top: 48px;
+}
+#select_onclose {
+    left: 39px;
+    margin: 10px 0 0;
+    top: 48px;
+}
+</style>
+</head>
+
+<body>
+
+<noscript>
+	<div class="noscript">
+		<div>Please enable JavaScript in your browser.</div>
+	</div>
+</noscript>
+
+	<article class="settings">
+
+		<!-- title -->
+
+		<h1 class="setting_title">Settings<span></span></h1>
+
+		<!-- tabs -->
+
+		<div class="setting_tabs">
+            <div data-tab="1" id="dataTab1" class="first active"><span>Scan Settings</span></div>
+            <div data-tab="2" id="dataTab2" class="third"><span>Schedule</span></div>
+            <div data-tab="3" id="dataTab3" class="fourth"><span>General</span></div>
+            <div data-tab="4" id="dataTab4"><span>License Key</span></div>
+		</div>
+
+		<section id="tab_1" class="setting_tab_content visible">
+	<div class="checkbox_inner">
+                <div class="select_option scan_setting">
+                    <strong style="margin-bottom:0px;">Scan Configuration</strong>
+                    <img src="lib/images/icons/pc-icon.png">
+                    <p>&nbsp;</p>
+                    <p><input type="checkbox" name="option2" id="option2" checked="checked" object="ScanAreasSetttings" property="IncludeSystemDevices"/><label>Include "System Devices" during the Driver Scan</label></p>
+                    <div class="clear"></div>
+                    <img src="lib/images/icons/driver-icon.png">
+                    <p>&nbsp;</p>
+                    <p><input type="checkbox" name="option2" id="Checkbox8" checked="checked" object="ScanAreasSetttings" property="IncludeUnplugged"/><label>Include devices that are "Unplugged" (cameras, MP3 Players, etc.) during the Driver Scan</label></p>
+                    <div class="clear"></div>
+                     <img  width="33px" height="33px"  src="lib/images/icons/hard-disk.png">
+                    <p>&nbsp;</p>
+                    <p><input type="checkbox" name="option2" id="Checkbox1" checked="checked" object="ScanAreasSetttings" property="IncludeBrandedDriversOnly"/><label>Only include drivers that have been provided by your system or motherboard manufacturer during the Driver Scan</label></p>
+                    <div class="clear"></div>
+          </div>
+                
+                
+                
+                <div class="select_option pT30">
+                    <strong>Driver Downloads</strong>
+                    <img src="lib/images/icons/download-icon.png" style="margin-top:3px;">
+                    <p style="width:88%;">Save all downloads drivers to this folder</p>
+                    <p  style="width:88%;"> <input name=""  type="text" style="padding-top:0px;padding-bottom:0px;width:72%;" disabled="disabled" object="ScanAreasSetttings" property="DownloadFolder"/> <input type="button" value="Browse" id="scanAreasBrowseFoldser"/></p>
+              </div>
+			</div>
+                  <div class="setting_buttons_1">
+                      <a href="#"  id="scanAreasApply" class="apply_green" ></a>
+                </div>
+		</section>
+	
+       
+        <section id="tab_2" class="setting_tab_content">
+      <div class="checkbox_inner">
+        <strong>Configure automatic scanning schedule...</strong>
+        <div class="select_shedule">
+          <h4>Select type of schedule</h4>
+          <p>
+            <input type="radio" name="option" id="option1" value="1"	object="ScheduleTypeSettings" property="Id" >
+              <label>Run Once</label>
+          </p>
+          <p>
+            <input type="radio" name="option" id="option2" value="2" object="ScheduleTypeSettings" property="Id" >
+              <label>Every Day</label>
+          </p>
+          <p>
+            <input type="radio" name="option" id="option3" value="3" object="ScheduleTypeSettings" property="Id" >
+              <label>Every Week</label>
+          </p>
+          <p>
+            <input type="radio" name="option" id="option4" value="4" object="ScheduleTypeSettings" property="Id" >
+              <label>Do Not Schedule</label>
+          </p>
+        </div>
+        <div class="date_time">
+          <span>The date and the time to run:</span>
+          <input type="text" value="" class="select_date" id="select_date" style="width:210px;height:10px;" object="DateAndTimeSettings" property="Date" >
+            <input type="text" value="" class="select_date" id="select_time" style="width:68px;height:10px;" object="DateAndTimeSettings" property="Time" >
+                   </div>
+
+        <div class="selcet_week">
+          <h4>Select the day(s) of the week</h4>
+          <p>
+            <input type="checkbox" name="option2" id="option2" checked="checked" object="DaysOfTheWeekSettings" property="Monday"  />
+            <label for="option2">Monday</label>
+          </p>
+          <p>
+            <input type="checkbox" name="option2" id="option2" checked="checked" object="DaysOfTheWeekSettings" property="Tuesday"  />
+            <label for="option2">Tuesday</label>
+          </p>
+          <p>
+            <input type="checkbox" name="option2" id="option2" checked="checked" object="DaysOfTheWeekSettings" property="Wednesday"  />
+            <label for="option2">Wednesday</label>
+          </p>
+          <p>
+            <input type="checkbox" name="option2" id="option2" checked="checked" object="DaysOfTheWeekSettings" property="Thursday"  />
+            <label for="option2">Thursday</label>
+          </p>
+          <p>
+            <input type="checkbox" name="option2" id="option2" checked="checked" object="DaysOfTheWeekSettings" property="Friday"  />
+            <label for="option2">Friday</label>
+          </p>
+          <p>
+            <input type="checkbox" name="option2" id="option2" checked="checked" object="DaysOfTheWeekSettings" property="Saturday"  />
+            <label for="option2">Saturday</label>
+          </p>
+          <p>
+            <input type="checkbox" name="option2" id="option2" checked="checked" object="DaysOfTheWeekSettings" property="Sunday"  />
+            <label for="option2">Sunday</label>
+          </p>
+        </div>
+        <span class="schedule" id="scheduled_as">Not Scheduled Yet</span>
+      </div>
+      <div class="setting_buttons_1">
+        <a href="#" class="apply_green" id="scheduleApplySettings"></a>
+      </div>
+    </section>
+
+        
+
+
+        <section id="tab_3" class="setting_tab_content">
+
+      <div class="checkbox_inner">
+     <!--   <div class="select_option">
+          <strong>Language</strong>
+          <img src="lib/images/icons/language_select.png">
+            <label>Select the preferred language:</label>
+            <select id="select_language" class="select_language styled" object="GeneralSettings" property="Language" style="font-weight:bold;" >
+             <option> English</option>
+             </select>
+          </div>-->
+
+        <div class="select_option setting_select_option">
+          <strong>Program Control</strong>
+          <img src="lib/images/icons/close.png" class="image12">
+            <label>Select action on close button:</label>
+            <select id="select_onclose" class="select_language styled"  object="GeneralSettings" property="MinimizeToTrayOnClose" style="font-weight:bold;" >
+                <option>Exit Driver Restore</option>
+                <option>Minimize to system tray</option>
+            </select>
+          </div>
+
+        <div class="select_option setting_select_option">
+          <strong>Startup</strong>
+          <img src="lib/images/icons/start.png">
+            <p>&nbsp;</p>
+            <p>
+              <input id="select_onstartup" type="checkbox" name="option2" id="option2" checked="checked" object="GeneralSettings" property="RunApplicationAtStartupAndStartScan"/>
+              <label>Launch at Windows startup and start a scan</label>
+            </p>
+          </div>
+      </div>
+      <div class="setting_buttons_1">
+       <!-- <a href="#" class="sound"></a>-->
+        <a href="#" class="apply_green" id="applyGeneralSettings"></a>
+      </div>
+    </section>
+	</article>
+
+</div>
+    
+
+</body>
+</html>

@@ -1,0 +1,55 @@
+﻿Popups.RegistrationFlow.BottomView = (function () {
+    var bottomViewId = '#regflw_bottomview';
+
+    var render = function (state) {
+        var htmlBottomView = Popups.RegistrationFlow.BottomViewHtmlFactory.get(state);
+        $(bottomViewId).empty();
+        $(bottomViewId).append(htmlBottomView);
+    };
+
+    return {
+        render: render
+    };
+})();
+
+Popups.RegistrationFlow.BottomViewHtmlFactory = (function () {
+    var get = function (state) {
+
+        switch (state) {
+            case Popups.RegistrationFlow.States.ONQUIT_SCANCOMPLETE_DRIVERSFOUND:
+            case Popups.RegistrationFlow.States.ONQUIT_SCANCOMPLETE_DRIVERSNOTFOUND:
+                return onQuitScanComplete();
+            case Popups.RegistrationFlow.States.ONQUIT_SCANINCOMPLETE:
+                return onQuitScanIncomplete();
+            case Popups.RegistrationFlow.States.ONSCANEND_DRIVERSFOUND:
+            case Popups.RegistrationFlow.States.ONSCANEND_DRIVERSNOTFOUND:
+                return onScanEnd();
+            default:
+        }
+    };
+
+    var onQuitScanIncomplete = function () {
+        return "<div class=\"foot_1\">" +
+            "<span><a class=\"microsoft_click_area\" href=\"#\" id=\"navigateToMicrosoft\"></a></span>" +
+            "<a href=\"#\" class=\"quit_1 regflw\"></a>" +
+            "</div>";
+    };
+
+    var onQuitScanComplete = function() {
+        return "<div class=\"foot\">" +
+            "<span><a class=\"microsoft_click_area-far-left\" href=\"#\" id=\"navigateToMicrosoft\"></a></span>" +
+            "<a href=\"#\" class=\"quit_btn regflw\"></a>" +
+            "</div>";
+    };
+
+    var onScanEnd = function () {
+        return "<div class=\"foot\">" +
+            "<span><a class=\"microsoft_click_area-far-left\" href=\"#\" id=\"navigateToMicrosoft\"></a></span>" +
+            "<span>Already have a Driver Restore Registration Key? <a href=\"#\" id=\"enterkey_regflw\">Click here to enter key.</a></span>" +
+            "</div>";
+    };
+
+    return {
+        get: get
+    };
+})();

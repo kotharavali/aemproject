@@ -1,0 +1,80 @@
+﻿var Toasters = Toasters || {};
+
+Toasters.UpdatesAvailableView = (function () {
+    var deviceNameId = "#deviceName";
+    var deviceImageId = "#deviceImage";
+    var totalDriversId = "#totalDriversFound";
+    var paginationDetailsId = "#paginationDetails";
+    var devicesList = [];
+    var currentPosition = 0;
+
+    var displayDriverData = function (index) {
+        $(deviceNameId).text(devicesList[index].Name);
+        $(deviceImageId).attr("src", devicesList[index].ImagePath);
+        $(paginationDetailsId).text(index + 1 + "/" + devicesList.length);
+        $(totalDriversId).text(devicesList.length);
+    };
+
+    var moveNext = function () {
+        if (currentPosition < devicesList.length-1) {
+            currentPosition++;
+            displayDriverData(currentPosition, currentPosition);
+        }
+    };
+
+    var moveBack = function () {
+        if (currentPosition >= 1) {
+            currentPosition--;
+            displayDriverData(currentPosition, currentPosition);
+        }
+    };
+
+    var getCurrent = function() {
+        return currentPosition;
+    };
+
+    var render = function (model) {
+        devicesList = model.Devices;
+        displayDriverData(0);
+    };
+
+    var refresh = function () {
+        deleteDriverAndReload(currentPosition);
+    };
+
+    var deleteDriverAndReload = function(position) {
+        devicesList.splice(position, 1);
+
+		if(devicesList.length == 0){
+			return;
+		}
+		
+        if (position > 0 && position > devicesList.length - 1) {
+            position--;
+        }
+
+		displayDriverData(position);
+
+        currentPosition = position;
+    };
+
+    var hideDriver = function (driverModel) {
+        $.each(devicesList, function(index,driver) {
+            if (driver.Name == driverModel.Name) {
+
+                deleteDriverAndReload(index);
+
+                return false;
+            }
+        });
+    };
+
+    return {
+        render: render,
+        moveNext: moveNext,
+        moveBack: moveBack,
+        getCurrent: getCurrent,
+        refresh: refresh,
+        hideDriver: hideDriver
+    };
+})();

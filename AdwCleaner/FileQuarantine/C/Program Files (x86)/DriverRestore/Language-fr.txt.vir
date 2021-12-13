@@ -1,0 +1,88 @@
+﻿BC_Biometric_Details:Les dispositifs biométriques prennent en entrée les informations d'une personne, par exemple, une saisie vocale, une empreinte digitale, un scan de l'iris et les traitent. Ces dispositifs permettent à un système informatique  d'identifier les individus en fonction de ces caractéristiques.
+BL_Bluetooth_Details:Les dispositifs biométriques prennent en entrée les informations d'une personne, par exemple, une saisie vocale, une empreinte digitale, un scan de l'iris et les traitent. Ces dispositifs permettent à un système informatique  d'identifier les individus en fonction de ces caractéristiques.
+CD_CDDVD_Details:Le CD (compact disc) est un disque optique pour stocker des données numériques. Il est simplement inséré dans le lecteur CD-ROM pour enregistrer, écrire ou effacer des données audio. Initialement, il a été développé pour de la musique et d'autres sons uniquement. Le DVD ou digital video disk est similaire à un CD mais avec une qualité supplémentaire de pouvoir combiner des graphiques avec des sons pour stocker des vidéos.
+DA_Display_Details:L'affichage est un périphérique de sortie, utilisé pour représenter le résultat d'un processus de données ou toute information pertinente sous forme visuelle, il convertit l'information électronique dans une forme qui est comprise par l'œil humain.
+DD_DiskDrive_Details:Un lecteur de disque est un dispositif informatique pour lire les données stockées, qui sont enregistrées sur un disque optique (CD ou DVD) et d'écrire des données à stocker sur le disque.
+FD_FloppyDisk_Details:Les disquettes ou tout simplement une disquette est petit moyen de stockage sur disque pour la lecture ou l'écriture de données informatiques sur des films magnétiques en insérant des disquettes dans les lecteurs de disquettes. Mais ils ont tendance à avoir une capacité de stockage plus petite en comparaison avec les cartes mémoire et les clés USB.
+FW_Firewire_Details:Comme l'USB, le Firewire est un autre appareil qui sert à connecter et à ajouter des périphériques (par exemple, les équipements audio et vidéo) à un ordinateur personnel. Une raison majeure pour laquelle le Firewire est utilisé, c'est qu'il a un taux de transfert de données élevé et qu'il transfère l'énergie au dispositif via le même câble de transfert de données.
+HD_HardDiskControllers_Details:Les contrôleurs de disque dur sont des composants électriques (circuits sur une carte d'extension) de processeurs qui agissent comme des interfaces d'écriture, de lecture, de suppression et de modification des données/informations sur le disque dur, par conséquent, assurer le contrôle sur le disque dur.
+HI_HID_Details:HID ou Human Interface Device est un terme général pour classer tout dispositif informatique qui interagit directement avec les humains. Ces dispositifs reçoivent l'apport des êtres humains et fournissent ensuite la sortie directement à l'humain. Les exemples incluent les haut-parleurs, les casques, les webcams, etc
+IM_Imaging_Details:L'imagerie est la reproduction ou la représentation d'une image générique. Les appareils d'imagerie sont les pilotes de matériel dans un ordinateur personnel qui permettent à un signal électronique de se transformer en une image sur l'écran du moniteur.
+IR_Infrared_Details:Avec des dispositifs infrarouges, les ordinateurs peuvent communiquer entre eux en utilisant des signaux sans fil à courte portée (les ondes infrarouges sont utilisées) pour transmettre et recevoir des données. Les adaptateurs réseaux infrarouges spécialisés sont conçus pour cette rasion.
+KB_Keyboard_Details:Un clavier est un autre appareil d'entrée, conçu comme une machine à écrire, pour saisir du texte et des caractères à afficher sur l'écran. Le clavier comporte des touches alphanumériques, des touches de ponctuation et des touches de commande spéciales.
+MD_Modem_Details:Un modem est un dispositif chargé de permettre à l'ordinateur de transférer des données. Les données peuvent être transmises en format analogique sur des lignes téléphoniques ou des câbles, mais le stockage de données dans un ordinateur est dans un format numérique. Un modem est capable de convertir des données entre ces deux formats.
+MF_MultifunctionPCMCIA_Details:PCMCIA signifie Personal Computer Memory Card International Association. Les cartes PCMCIA sont comme des cartes d'extension pour les ordinateurs portables. Ils agissent comme des interfaces matérielles et fournissent des fonctionnalités supplémentaires pour les ordinateurs portables. Les PCMCIA Multifonctions possèdent plus d'une fonction, par exemple, une seule carte peut fonctionner comme un téléphone, un modem fax et une carte réseau aussi.
+MS_Mice_Details:La souris, est un dispositif d'entrée pour un ordinateur qui permet à l'utilisateur de commander le déplacement d'un pointeur ou curseur sur l'écran. Les souris ont généralement 2 ou 3 boutons pour manipuler des objets sur l'écran du moniteur.
+MT_MemoryTechnologyDriver_Details:Le pilote de technologie de mémoire est un dispositif de gestion et d'interfaçage avec une mémoire flash (dispositifs de stockage informatique) dans les systèmes d'exploitation Windows.
+NT_Network_Details:Un réseau informatique comprend un groupe de périphériques informatiques et des systèmes qui ont été liés ensemble à l'aide des médias soit avec ou sans fil, pour faciliter la communication et le partage des ressources entre les différents utilisateurs.
+PC_Pcmcia_Details:Une carte PCMCIA (Personal Computer Memory Card International Association) est un dispositif d'entrée/sortie (comme une carte d'extension) qui se connecte à un ordinateur portable ou un notebook pour fournir des fonctionnalités supplémentaires. Il existe trois tailles ou types de cartes PCMCIA.
+PT_Ports_Details:Les ports sont des points de connexion qui jouent le rôle d'interface entre un ordinateur et des périphériques ou d'autres ordinateurs. Les ports informatiques peuvent être internes ou externes. Les disques durs et les lecteurs de CD/DVD sont connectés via le port interne et le claviers et souris via le port externe.
+SC_SCSI_Details:SCSI est l'acronyme de Small Computer System Interface. Il s'agit d'un ensemble de normes d'interface, proposé par American National Standards Institute (ANSI), pour connecter des périphériques à un ordinateur personnel pour transférer des données et une communication.
+SH_Sdhost_Details:Le hôte SD ou les hôtes de données sécurisées sont les pilotes de logiciels dans un ordinateur qui contrôlent le matériel de contrôleur du hôte et fournissent l'interface pour communiquer avec les cartes mémoire SD et les paramètres d'exploitation également prévues.
+SO_SoundVideoGameControllers_Details:Les dispositifs de commande de son, de vidéo et de jeu sont des appareils qui sont largement utilisés pour les applications multimédia. Ces dispositifs facilitent l'entrée et la sortie de l'audio et des images graphiques ainsi que de gérer l'interactivité.
+SR_SmartCardReaders_Details:Les lecteurs de cartes à puce sont des dispositifs pour la lecture des données d'entrée sur les cartes à puce et l'écriture des informations. Un lecteur de carte à puce doit être interfacé avec un ordinateur pour fonctionner. Les lecteurs sont livrés avec une fente pour insérer les cartes à puce.
+SY_System_Details:Un système informatique est un ensemble de composants matériels et logiciels qui fonctionnent ensemble de manière intelligente afin de faire fonctionner efficacement un ordinateur. Tout comme les autres systèmes, les systèmes informatiques prennent en entrée, le processus et fournissent un signal de sortie.
+TD_TapeDrive_Details:Le lecteur de bande est un autre dispositif de stockage de données, mais il est utilisé pour lire et écrire des données/informations sur une bande magnétique, qui est principalement utilisée pour des fins de sauvegarde et d'archivage.
+US_USB_Details:Universal Serial Bus (USB) est essentiellement un dispositif de stockage de données pour stocker des informations dans un format numérique. Il peut être connecté à un ordinateur et peut permettre le transfert de données entre les différents ordinateurs. La quantité d'informations qu'ils peuvent tenir varie d'USB à l'autre.
+WC_WindowsCEUSBDevices_Details:Ces périphériques USB sont conçus pour être compatibles avec Windows CE, un système d'exploitation développé pour les systèmes embarqués. Ces dispositifs contrôlent tous les types d'autres périphériques USB et offrent à l'utilisateur une interface de programmation pour les applications Windows CE.
+WP_WindowsPortableDevice_Details:Les périphériques Windows Portable ou WPD est un type de technologie de pilote pour communiquer entre un ordinateur, qui fonctionne sous Windows, le stockage lié et les périphériques multimédia. Les périphériques qui sont pris en charge par WPD comprennent le lecteur MP3, les appareils photo numériques et les téléphones mobiles.
+MN_Monitor_Details:Le moniteur est un périphérique de sortie pour les systèmes informatiques qui affiche toutes les informations graphiques et vidéo, qui sont produites par la carte vidéo de l'ordinateur. Les moniteurs sont très semblables à des téléviseurs, mais la différence est que les moniteurs ont tendance à avoir une meilleure résolution.
+CP_CPU_Details:La CPU ou l'Unité Centrale de Traitement est un dispositif matériel électronique qui fonctionne comme le cerveau de l'ordinateur. Un processeur est responsable du traitement de toutes les instructions et commandes qu'il reçoit du matériel et des logiciels en cours d'exécution sur l'ordinateur.
+PR_Printer_Details:Les imprimantes sont des périphériques externes de sortie qui impriment ou transfèrent des données informatiques, comme des documents, des textes ou des images, à des feuilles de papier standard. Une imprimante est classée comme étant un dispositif périphérique, ce qui signifie qu'elle doit être reliée à un ordinateur avant l'impression.
+Problem_1:Ce dispositif n'est pas correctement configuré.
+Problem_3:Le pilote de ce périphérique peut être endommagé ou votre système peut être à court de mémoire ou d'autres ressources.
+Problem_10:Ce périphérique ne peut pas démarrer.
+Problem_12:Ce périphérique ne peut pas trouver suffisamment de ressources libres qu'il peut utiliser. Si vous souhaitez utiliser cet appareil, vous devrez désactiver l'un des autres périphériques de ce système.
+Problem_14:Cet appareil peut ne pas fonctionner correctement jusqu'à ce que vous redémarrez votre ordinateur.
+Problem_16:Windows ne peut pas identifier toutes les ressources utilisées par ce périphérique.
+Problem_18:Réinstaller les pilotes de ce périphérique.
+Problem_19:Windows ne peut pas démarrer ce périphérique matériel car ses informations de configuration (dans le Registre) sont incomplètes ou endommagées.
+Problem_21:Windows supprime ce dispositif.
+Problem_22:Ce dispositif est désactivé.
+Problem_24:Ce périphérique n'est pas présent, ne fonctionne pas correctement, ou n'a pas tous ses pilotes installés.
+Problem_28:Les pilotes de ce périphérique ne sont pas installés.
+Problem_29:Ce périphérique est désactivé car le firmware de l'appareil ne lui donne pas les ressources nécessaires.
+Problem_31:Cet appareil ne fonctionne pas correctement car Windows ne peut pas charger les pilotes requis pour ce périphérique.
+Problem_32:Un pilote (service) de ce périphérique a été désactivé. Un autre pilote pourrait fournir cette fonctionnalité.
+Problem_33:Windows ne peut pas déterminer les ressources sont nécessaires pour ce dispositif.
+Problem_34:Windows ne peut pas déterminer les paramètres de ce périphérique.
+Problem_35:Le firmware de votre ordinateur ne possède pas suffisamment d'informations pour configurer correctement et utiliser cet appareil. Pour utiliser cet appareil, contactez le fabricant de votre ordinateur pour obtenir un firmware ou une mise à jour du BIOS.
+Problem_36:Ce dispositif demande une interruption PCI mais il est configuré pour une interruption ISA (et vice versa). S'il vous plaît utilisez le programme de configuration du système de l'ordinateur pour reconfigurer l'interruption de ce périphérique.
+Problem_37:Windows ne peut pas initialiser le pilote de périphérique de ce matériel.
+Problem_38:Windows ne peut pas charger le pilote de périphérique de ce matériel car une instance précédente de ce pilote de périphérique est encore en mémoire.
+Problem_39:Windows ne peut pas charger le pilote de périphérique de ce matériel. Le pilote peut être endommagé ou manquant.
+Problem_40:Windows ne peut pas accéder à ce matériel car son information de clé de service dans le registre est manquante ou mal enregistrée.
+Problem_41:Windows a chargé le pilote de périphérique de ce matériel mais ne trouve pas le périphérique matériel.
+Problem_42:Windows ne peut pas charger le pilote de périphérique de ce matériel car c'est un périphérique dupliqué qui est déjà en cours d'exécution dans le système.
+Problem_43:Windows a arrêté ce périphérique car il présente des problèmes.
+Problem_44:Une application ou un service a éteint ce périphérique matériel.
+Problem_45:Actuellement, ce dispositif matériel n'est pas connecté à l'ordinateur.
+Problem_46:Windows ne peut pas accéder à ce périphérique matériel car le système d'exploitation est en cours d'arrêt.
+Problem_47:Windows ne peut pas utiliser ce périphérique matériel car il a été préparé pour une éjection, mais il n'a pas été supprimé de l'ordinateur.
+Problem_48:Le logiciel de ce périphérique a été bloqué dès le démarrage car il a des problèmes avec Windows. Contactez le fabricant du matériel pour un nouveau pilote.
+Problem_49:Windows ne peut pas démarrer les nouveaux périphériques matériels car la liste d'attente du système est trop importante (dépassement de la limite de la taille du registre).
+Problem_52:Windows ne peut pas vérifier la signature numérique pour les pilotes requis pour ce périphérique.
+Problem_Unknown:Problème inconnu
+HTTPException_1:Impossible d'envoyer le scan du pilote pour le traitement
+HTTPException_2:Impossible d'envoyer le scan du pilote pour le pré-traitement
+HTTPException_3:Impossible d'obtenir les résultats du pilote
+HTTPException_4:Impossible de télécharger les instructions pour le pilote: {0}
+HTTPException_5:
+FileIOException_1:Impossible de créer le dossier: {0}
+FileIOException_2:Impossible de lire les résultats du scan
+FileIOException_3:Impossible de compresser le fichier
+FileIOException_4:Impossible de lire {0}
+FileIOException_5:Impossible de supprimer le dossier du pilote: {0}
+FileIOException_6:Impossible de corriger la ligne du fichier: {0}
+FileIOException_7:Impossible de corriger la chaine du fichier: {0}
+FileIOException_8:Impossible d'écrire le fichier: {0}
+FileIOException_9:Impossible de décompresser le fichier {0} vers {1}
+FileIOException_10:Imossible de créer un raccourci pour {0} 
+APIException_1:Imossible de scanner les pilotes
+APIException_2:Impossible de lire l'ID du scan
+APIException_3:Impossible de lire le nom de l'ordinateur
+APIException_4:Impossible de lire les résultats du scan
+APIException_5:Impossible de lire les instructions d'installation du pilote:
+APIException_6:Impossible d'éviter les lignes du fichier: {0}
+APIException_7:Impossible d'analyser les résultats du pilote
+

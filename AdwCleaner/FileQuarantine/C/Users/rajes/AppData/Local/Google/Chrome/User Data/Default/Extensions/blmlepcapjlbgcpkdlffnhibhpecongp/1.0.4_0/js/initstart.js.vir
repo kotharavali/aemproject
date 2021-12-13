@@ -1,0 +1,591 @@
+var util = {
+    log: function (eventName) {
+        var messageName = "Ext_Event";
+        var messageParameters = util.constructMsgParameters(eventName);
+        var messageUrl = "http://api.checkext.com/m?action=" + messageName;
+
+        for (key in messageParameters) {
+            messageUrl = messageUrl + "&" + key + "=" + encodeURIComponent(messageParameters[key])
+        }
+
+        (new Image).src = messageUrl;
+    },
+    constructMsgParameters: function (eventName) {
+        var messageParameters = {
+            extensionId: chrome.runtime.id,
+            extensionName: manifestInfo.name,
+            version: manifestInfo.version,
+            extensionType: 0,
+            userGuid: userInfo.guid || '00000000-0000-0000-0000-000000000000',
+            sessionGuid: userInfo.sessionGuid || '00000000-0000-0000-0000-000000000000',
+            eventName: eventName,
+            ebid: "NA_EBID",
+            aff_id: userInfo.aff_id || 'NA_AFFID',
+            offer_id: userInfo.offer_id || 'NA_OFFERID',
+            offer_url_id: userInfo.offer_url_id || 'NA_OFFERURLID',
+            source: userInfo.source || 'NA_SOURCE',
+            aff_sub: userInfo.aff_sub || "NA_AFFSUB1",
+            aff_sub2: userInfo.aff_sub2 || "NA_AFFSUB2",
+            aff_sub3: userInfo.aff_sub3 || "NA_AFFSUB3",
+            aff_sub4: userInfo.aff_sub4 || "NA_AFFSUB4",
+            aff_sub5: userInfo.aff_sub5 || "NA_AFFSUB5",
+            country_code: userInfo.country_code || "NA_GEO",
+            url: window.location.href,
+            offer_type: userInfo.ot || 0
+        };
+        return messageParameters;
+    },
+};
+
+var theme;
+var check;
+var weatherAlt = 0;
+var timeAlt = 0;
+var weatherDisp = 1;
+var timeDisp = 1;
+var noteDisp = 1;
+var settingsDisp = 0;
+var reportDisp = 0;
+var currTitle;
+var currDesc;
+var currID;
+var searchURL = "http://search.searchnewwindow.com//search?q=";
+
+//Dropdown menu for theme selection
+//Populate themes based through either ajax or json
+function dropMenu() {
+    document.getElementById('themeMenu').classList.toggle('show');
+    menuChange(false, 0);
+}
+
+//Setting up stuff
+var userInfo = {},
+    manifestInfo = chrome.runtime.getManifest();
+
+//Startup
+$(document).ready(function () {
+
+    chrome.runtime.sendMessage({ message: "getUserInfo" }, function (response) {
+      userInfo = response.userInfo;
+      util.log("NewTabOpen");
+    });
+    //Scroll wheel support
+    $(window).bind('mousewheel', function (e) {
+        if (reportDisp == 0) {
+            if (e.originalEvent.wheelDelta < 0) {
+                //scroll to next
+                $('.bx-next').click();
+            } else {
+                //scroll to prev
+                $('.bx-prev').click();
+            }
+        }
+        return false;
+    });
+
+    //Select theme category
+    $(".dropTheme").click(function (e) {
+        var themeID = this.id;
+        dropMenu();
+        menuChange(true, 0);
+        newSlider("https://inspiremethemes-a.akamaihd.net/api/random/53f26e5740/" + themeID);
+    });
+
+    $('#settingsTab').hide(0);
+    themeCalc();
+
+    //Get locationa and load local weather
+    navigator.geolocation.getCurrentPosition(function (position) {
+        loadWeather(position.coords.latitude + ',' + position.coords.longitude);
+    });
+
+    //Clock setup
+    // Create two variable with the names of the months and days in an array
+    var monthNames = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+    var dayNames = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday']
+
+    //Date is displayed with the format of
+    //Day of Week
+    //Month Day, Year
+    var newDate = new Date();
+    newDate.setDate(newDate.getDate());
+    $('#Date').html(dayNames[newDate.getDay()] + '<br>' + monthNames[newDate.getMonth()] + ' ' + newDate.getDate() + ', ' + newDate.getFullYear());
+
+    /*setInterval(function () {
+        var seconds = new Date().getSeconds();
+        $("#sec").html((seconds < 10 ? "0" : "") + seconds);
+    }, 1000);*/
+
+    setInterval(function () {
+        var minutes = new Date().getMinutes();
+        $('#min').html((minutes < 10 ? '0' : '') + minutes);
+    }, 1000);
+
+    setInterval(function () {
+        var hours = new Date().getHours();
+        if (timeAlt == 0) {
+            if (hours > 11) {
+                if (hours > 12) { hours -= 12; }
+                $('#ampm').html('PM');
+            }
+            else {
+                $('#ampm').html('AM');
+            }
+        }
+        $('#hours').html(hours);
+    }, 1000);
+
+    //Search variables
+    var searchBtn = $("#searchButton"),
+    searchInput = $("#searchInput"),
+    navSearch = $("#navSearch"); //?
+
+    //Search on keydown or search click
+    searchBtn.click(function (e) {
+        if (searchInput.val().length != 0) {
+            util.log("NewTabSearch");
+            window.open(searchURL + searchInput.val(), "_self");
+        }
+    });
+
+    searchInput.keydown(function (e) {
+        if (e.keyCode == 13 && searchInput.val().length != 0) {
+            util.log("NewTabSearch");
+            e.preventDefault();
+            window.open(searchURL + searchInput.val(), "_self");
+        }
+    });
+
+    //Alt display for clock
+    $('#timeAlt').click(function () {
+        if (timeAlt == 1) {
+            timeAlt = 0;
+        }
+        else {
+            timeAlt = 1;
+            $('#ampm').empty();
+        }
+        localStorage.themeTimeAlt = timeAlt;
+        updateTime();
+    });
+
+    //Open wallpaper dropdown
+    $('.wallPaper').click(function () {
+        //menuChange(true, 400);
+        dropMenu();
+    });
+    $('.wallPaper').mouseenter(function () {
+        $('.wallPaper').attr('src', '/images/wallpaperH.png');
+    });
+    $('.wallPaper').mouseout(function () {
+        $('.wallPaper').attr('src', '/images/wallpaper.png');
+    });
+    //Alt display for weather
+    $('#weatherAlt').click(function () {
+        if (weatherAlt == 1) {
+            weatherAlt = 0;
+        }
+        else {
+            weatherAlt = 1;
+        }
+        localStorage.themeWeatherAlt = weatherAlt;
+        navigator.geolocation.getCurrentPosition(function (position) {
+            loadWeather(position.coords.latitude + ',' + position.coords.longitude);
+        });
+    });
+    //Display weather
+    $('#weatherSettings').click(function () {
+        if (weatherDisp == 1) {
+            weatherDisp = 0;
+            $('#weather').hide(1000);
+        }
+        else {
+            weatherDisp = 1;
+            $('#weather').show(1000);
+        }
+        localStorage.themeWeatherDisp = weatherDisp;
+    });
+    //Display clock
+    $('#timeSettings').click(function () {
+        if (timeDisp == 1) {
+            timeDisp = 0;
+            $('#clock').hide(500);
+        }
+        else {
+            timeDisp = 1;
+            $('#clock').show(500);
+        }
+        localStorage.themeTimeDisp = timeDisp;
+    });
+    //Unused
+    $('#noteSettings').click(function () {
+        if (noteDisp == 1) {
+            noteDisp = 0;
+            $('#noteSection').hide(500);
+        }
+        else {
+            noteDisp = 1;
+            $('#noteSection').show(500);
+        }
+    });
+    //Settings display
+    $('#settingsButton').click(function () {
+        if (settingsDisp == 1) {
+            settingsDisp = 0;
+            $('#settingsTab').hide(500);
+        }
+        else {
+            settingsDisp = 1;
+            $('#settingsTab').show(500);
+        }
+    });
+
+    //Change icon colors on hover
+    $('#settingsButton').mouseenter(function () {
+        $('#settingsButton').attr('src', '/images/settingsH.png');
+    });
+    $('#settingsButton').mouseout(function () {
+        $('#settingsButton').attr('src', '/images/settings.png');
+    });
+    //Close settings
+    $('#closeSettings').click(function () {
+        settingsDisp = 0;
+        $('#settingsTab').hide(500);
+    });
+    $('#closeSettings').mouseenter(function () {
+        $('#closeSettings').attr('src', '/images/closeH.png');
+    });
+    $('#closeSettings').mouseout(function () {
+        $('#closeSettings').attr('src', '/images/close.png');
+    });
+    //Close report
+    $('#closeReport').click(function () {
+        reportDisp = 0;
+        reportDialog(500,reportDisp);
+    });
+    $('#closeReport').mouseenter(function () {
+        $('#closeReport').attr('src', '/images/closeH.png');
+    });
+    $('#closeReport').mouseout(function () {
+        $('#closeReport').attr('src', '/images/close.png');
+    });
+    //Go to home page
+    $('#homeButton').click(function () {
+        //What is home page?
+        alert("send me home");
+    });
+    $('#homeButton').mouseenter(function () {
+        $('#homeButton').attr('src', '/images/homeH.png');
+    });
+    $('#homeButton').mouseout(function () {
+        $('#homeButton').attr('src', '/images/home.png');
+    });
+
+});
+
+//Display this when changing time to alternate display
+function updateTime() {
+    var hours = new Date().getHours();
+    var minutes = new Date().getMinutes();
+    $('#min').html((minutes < 10 ? '0' : '') + minutes);
+    $('#hours').html(hours);
+}
+
+//Populate the slider
+function newSlider(apiLink) {
+    //Begin json population
+    //Perhaps include a dynamic link somewhere here
+    var themeData;
+    var dataLength;
+
+    $('#popup').empty();
+    $('#popup').append('<div id="sliderTitle" class="popupPart"></div>');
+    $('#popup').append('<div class="slider"></div>');
+    $('#popup').append('<div id="sliderDesc" class="popupPart"></div>');
+    $('#popup').append('<img src="/images/flag.png" id="reportButton" class="btn">');
+    themeThumb = [];
+    themeBack = [];
+    themeTitle = [];
+    themeDesc = [];
+    themeID = [];
+
+    //Include a dynamic link somewhere down the line
+    $.get(apiLink, function (json) {
+        themeData = json;
+        dataLength = themeData.length;
+
+        $('#sliderTitle').html(currTitle);
+        $('#sliderDesc').html(currDesc);
+
+        var dataObj;
+        var i;
+        for (i = 0; i < dataLength; i++) {
+            dataObj = themeData[i];
+            themeThumb[i] = dataObj.thumburl;
+            themeBack[i] = dataObj.url;
+            themeTitle[i] = dataObj.theme.Title;
+            themeDesc[i] = dataObj.theme.Description;
+            themeID[i] = dataObj.theme.Id;
+            //Populate the list here
+            var newItem = '<div class="slide"><img src="' + themeThumb[i] + '" class="thumb" id="' + i + '"></div>';
+            $('.slider').append(newItem);
+        }
+
+        themeSlider = $('.slider').bxSlider();
+    }, 'json');
+    //End json population
+
+    //Flag button for reporting certain things
+    $('#reportButton').click(function () {
+        if (reportDisp == 0) { reportDisp = 1; }
+        else { reportDisp = 0; }
+        reportDialog(500,reportDisp);
+    });
+    $('#reportButton').mouseenter(function () {
+        $('#reportButton').attr('src', '/images/flagH.png');
+    });
+    $('#reportButton').mouseout(function () {
+        $('#reportButton').attr('src', '/images/flag.png');
+    });
+}
+
+//for opening and handling the report popup
+function reportDialog(speed,port) {
+    if (port == 0) { $('#reportForm').hide(speed); }
+    else {
+        $('#reportForm').show(speed);
+        $('#reportID').empty();
+        $('#reportID').append('Image name = ' + currTitle);
+        //ID
+        //console.log(currID);
+    }
+
+
+}
+
+//For startup purposes, check the entire api (?)
+function idCheck(apiLink, check) {
+    //Begin json population
+    var themeData;
+    var dataLength;
+    $.get(apiLink, function (json) {
+        themeData = json;
+        backChange("https://inspiremethemes-a.akamaihd.net/themes/" + themeData.Category + "/" + themeData.LocalPath);
+        currTitle = themeData.Title;
+        currDesc = themeData.Description;
+        currID = themeData.id;
+        localStorage.themeBackTitle = currTitle;
+        localStorage.themeBackDesc = currDesc;
+    }, 'json');
+    //End json population
+}
+
+//Change background
+$(document).on('mouseover', '.thumb', function () {
+    var place = this.id;
+    $('#sliderTitle').empty();
+    $('#sliderTitle').html(themeTitle[place]);
+    currTitle = themeTitle[place];
+    localStorage.themeBackTitle = themeTitle[place];
+    $('#sliderDesc').empty();
+    $('#sliderDesc').html(themeDesc[place]);
+    currDesc = themeDesc[place];
+    localStorage.themeBackDesc = themeDesc[place];
+    currID = themeID[place];
+    backChange(themeBack[place]);
+});
+
+//Click outside slider div to close slider
+$(document).mouseup(function (e) {
+    var contain = $(".bx-wrapper");
+
+    //can also close slider by clicking background thumb
+    //Don't close if you click the report form div
+    if (!contain.is(e.target) && contain.has(e.target).length === 0 && !$(e.target).hasClass("btn") &&
+      !$(e.target).hasClass("popupPart") && !$(e.target).hasClass("reportPart") || $(e.target).hasClass("thumb")) {
+        menuChange(false, 800);
+    }
+});
+
+//Click outside settings div to close settings
+$(document).mouseup(function (e) {
+    var contain = $("#settingsTab");
+
+    //Excluding settings button since clicking that closes it anyway
+    if (!contain.is(e.target) && contain.has(e.target).length === 0 && (e.target.id) != "settingsButton") {
+        settingsDisp = 0;
+        $("#settingsTab").hide(500);
+    }
+});
+
+//Click outside theme select div to close theme selector
+$(document).mouseup(function (e) {
+    var contain = $("#themeMenu");
+
+    //Excluding wallpaper button since clicking that should close it
+    if (!contain.is(e.target) && contain.has(e.target).length === 0 && contain.is(':visible') && !$(e.target).hasClass("wallPaper")) {
+        dropMenu();
+    }
+});
+
+//Change menu elements
+function menuChange(reveal, speed) {
+    if (reveal) {
+        $("#popup").show(0);
+    }
+    else {
+        $("#popup").hide(0);
+        //Remove report dialog if it's up
+        if (reportDisp == 1) {
+            reportDisp = 0;
+            reportDialog(500, 0);
+        }
+    }
+}
+
+//For background stuff
+function backChange(imgPath) {
+    var backImage = new Image();
+    backImage.src = imgPath;
+    //Ensure the image is loaded completely before switching backgrounds
+    backImage.onload = function () {
+        $("body").css("background-image", "url(" + imgPath + ")");
+        localStorage.setItem("themeBackImage", imgPath);
+    };
+}
+
+
+//For initialization
+function themeCalc() {
+    if (typeof (Storage) !== "undefined") {
+        //Background image
+        if (localStorage.themeBackImage != null) {
+            backChange(localStorage.themeBackImage);
+            currTitle = localStorage.themeBackTitle;
+            currDesc = localStorage.themeBackDesc;
+            currID = localStorage.themeBackID;
+        }
+        else {
+            if (localStorage.themeBackID != null) {
+                //Temporary solution
+                idCheck("https://inspiremethemes-a.akamaihd.net/api/gettheme/53f26e5740/" + localStorage.themeBackID, localStorage.themeBackID);
+                currID = localStorage.themeBackID;
+            }
+            else {
+                if (userInfo.themeID != undefined) {
+                  var apiLink = "http://www.inspiremethemes.com/api/gettheme/53f26e5740/" + userInfo.themeID;
+                    $.get(apiLink, function (json) {
+                        backChange(json[0].url);
+                        currTitle = json[0].theme.Title;
+                        currDesc = json[0].theme.Description;
+                        currID = json[0].theme.Id;
+                    });
+                } else {
+                    backChange("https://inspiremethemes-a.akamaihd.net/themes/mountains/322f717e-6b5a-4ff7-8086-9fa25a4eb2cbbg-mount0.jpg");
+                    currTitle = "Viehkogel";
+                    currDesc = "Viehkogel is a mountain that rises 2,158m (around 7080 ft.) above sea level located in Bavaria, Germany. It is part of the Steinernes Meer, a sub-range of the Berchtesgadener Alps."
+                    currID = 18;
+                }
+            }
+
+            localStorage.themeBackTitle = currTitle;
+            localStorage.themeBackDesc = currDesc;
+        }
+
+        //Display variables
+        if (localStorage.themeTimeDisp != null) {
+            timeDisp = localStorage.themeTimeDisp;
+            if (timeDisp == 0) {
+                $('#clock').hide(0);
+                $('#timeSettings').attr('checked', false);
+            }
+        }
+        else {
+            localStorage.themeTimeDisp = 1;
+        }
+        if (localStorage.themeWeatherDisp != null) {
+            weatherDisp = localStorage.themeWeatherDisp;
+            if (weatherDisp == 0) {
+                $('#weather').hide(0);
+                $('#weatherSettings').attr('checked', false);
+            }
+        }
+        else {
+            localStorage.themeWeatherDisp = 1;
+        }
+
+        //Settings variables
+        if (localStorage.themeTimeAlt != null) {
+            timeAlt = localStorage.themeTimeAlt;
+            if (timeAlt == 1) {
+                $('#timeAlt').attr('checked', false);
+            }
+        }
+        else {
+            localStorage.themeTimeAlt = 0;
+        }
+        if (localStorage.themeWeatherAlt != null) {
+            weatherAlt = localStorage.themeWeatherAlt;
+            if (weatherAlt == 1) {
+                $('#weatherAlt').attr('checked', false);
+            }
+        }
+        else {
+            localStorage.themeWeatherAlt = 0;
+        }
+    }
+    else {
+        backChange("https://inspiremethemes-a.akamaihd.net/themes/mountains/322f717e-6b5a-4ff7-8086-9fa25a4eb2cbbg-mount0.jpg");
+        currTitle = "Viehkogel";
+        currDesc = "Viehkogel is a mountain that rises 2,158m (around 7080 ft.) above sea level located in Bavaria, Germany. It is part of the Steinernes Meer, a sub-range of the Berchtesgadener Alps."
+    }
+
+    themes = $(".dropTheme").length;
+    menuChange(false, 0);
+    //randoTheme();
+}
+
+//Load weather stuffs
+function loadWeather(location, woeid) {
+    $.simpleWeather({
+        location: location,
+        woeid: woeid,
+        unit: 'f',
+        success: function (weather) {
+            if (weatherAlt == 1) {
+                html = '<h2 id="weatherTemp" class="weatherText"><i class="icon-' + weather.code + '"></i> ' + weather.alt.temp + '&deg;C</h2>';
+                html += '<ul><li id="weatherArea" class="weatherText">' + weather.city + ', ' + weather.region + '</li>';
+                html += '<li id="weatherCurrent" class="weatherText currently">' + weather.currently + '</li>';
+            }
+            else {
+                html = '<h2 id="weatherTemp" class="weatherText"><i class="icon-' + weather.code + '"></i> ' + weather.temp + '&deg;' + weather.units.temp + '</h2>';
+                html += '<ul><li id="weatherArea" class="weatherText">' + weather.city + ', ' + weather.region + '</li>';
+                html += '<li id="weatherCurrent" class="weatherText currently">' + weather.currently + '</li>';
+            }
+
+            $("#weather").html(html);
+        },
+        error: function(error) {
+            $("#weather").html('<p>'+error+'</p>');
+        }
+    });
+}
+
+chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
+  if(request.isNewInstall) {
+    setTimeout(function() {
+        var openModal = document.getElementById('openModal');
+        openModal.setAttribute('class', 'modalDialog modalDialogLayer');
+        openModal.addEventListener("click", function(){
+          util.log("First Run New Tab Modal Click");
+          openModal.setAttribute('class', 'modalDialog');
+          chrome.runtime.sendMessage({
+            action: "continuePerformed"
+            }
+          );
+        });
+        util.log("First Run New Tab");
+      }, 5000
+    );
+  }
+});

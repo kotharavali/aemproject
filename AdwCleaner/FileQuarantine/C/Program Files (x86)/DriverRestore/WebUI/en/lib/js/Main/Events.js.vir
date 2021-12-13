@@ -1,0 +1,95 @@
+﻿var Main = Main || {};
+
+Main.Buttons = {
+    RegisterNow: 0,
+    SupportPage: 1,
+    CloseApplication: 2,
+    MinimizeApplication: 3
+};
+
+Main.Pages = {
+    Overview: 0,
+    Scanner: 1,
+    Settings: 2,
+    About: 3
+};
+
+Main.Events = (function () {
+    var scanId      = "#bottom_register_button";
+    var supportId   = "#supportButton";
+    var closeAppId  = "#button_closeApplication";
+    var minimizeId  = "#button_minimizeApplication";
+    var techButton  = "#button_techSupport";
+
+    var overviewPageId      = "#nav_overview";
+    var scannerPageId       = "#nav_sys_scan";
+    var settingsPageId      = "#nav_settings";
+    var settingsAboutPagrId = "#abouttab";
+
+    var onScanClick = function () {
+        //Popups.RegisterNow.show("0"); //State.AskForRegistration: 0,
+    };
+   var onSupportButtonClick = function () {
+       window.external.MainPageClicked(Main.Buttons.SupportPage);
+    };
+    var closeApplicationClick = function () {
+        window.external.MainPageClicked(Main.Buttons.CloseApplication);
+    };
+    var minimizeApplicationClick = function () {
+        window.external.MainPageClicked(Main.Buttons.MinimizeApplication);
+    };
+
+    var navigateToOverviewPageClicked = function () {
+        window.external.MainPageNavigateRequest(Main.Pages.Overview);
+        return false;
+    };
+    var navigateToScannerPageClicked = function () {
+        window.external.MainPageNavigateRequest(Main.Pages.Scanner);
+        return false;
+    };
+    var navigateToSettingsPageClicked = function () {
+        window.external.MainPageNavigateRequest(Main.Pages.Settings);
+        return false;
+    };
+    var navigateToAboutPageClicked = function () {
+        window.external.MainPageNavigateRequest(Main.Pages.About);
+        return false;
+    };
+
+    var openTechSupportPopup = function() {
+        Popups.TechSupport.show();
+    }
+
+    var init = function () {
+        $(scanId).unbind();
+        $(supportId).unbind();
+        $(closeAppId).unbind();
+        $(minimizeId).unbind();
+
+
+        $(overviewPageId).unbind();
+        $(scannerPageId).unbind();
+        $(settingsPageId).unbind();
+        $(settingsAboutPagrId).unbind();
+
+        $(techButton).unbind();
+
+
+        $(scanId).bind("click", onScanClick);
+        $(supportId).bind("click", onSupportButtonClick);
+        $(closeAppId).bind("click", closeApplicationClick);
+        $(minimizeId).bind("click", minimizeApplicationClick);
+
+        $(overviewPageId).bind("click", navigateToOverviewPageClicked);
+        $(scannerPageId).bind("click", navigateToScannerPageClicked);
+        $(settingsPageId).bind("click", navigateToSettingsPageClicked);
+        $(settingsAboutPagrId).bind("click", navigateToAboutPageClicked);
+
+        $(techButton).bind("click", openTechSupportPopup);
+
+    };
+
+    return {
+        init: init
+    };
+})();

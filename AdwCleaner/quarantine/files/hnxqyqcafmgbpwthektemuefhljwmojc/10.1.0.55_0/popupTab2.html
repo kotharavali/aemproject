@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #wrap {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        h2 {
+            margin: 0;
+            margin-bottom: 5px;
+            text-align: center;
+            font-family: neue, sans-serif;
+        }
+
+        p {
+            margin: 10px 0;
+            font-size: 14px;
+        }
+
+        input {
+            word-spacing: 2px;
+            font-size: 12px;
+            margin-bottom: 2px;
+            width: auto;
+            background-color: transparent;
+            border-color: transparent;
+            padding-bottom: 5px;
+            font-family: neue, sans-serif;
+            color: #999999;
+        }
+
+        body {
+            background-color: #eeeeee;
+        }
+
+        *:focus {
+            outline: none;
+        }
+
+        .selected {
+            color: #333333;
+        }
+
+    </style>
+</head>
+<body>
+<div id="wrap">
+    <div>
+        <input type="button" value="Google" id="buttonGoogle">
+        <input type="button" value="Yahoo" id="buttonYahoo">
+        <input type="button" value="Bing" id="buttonBing">
+    </div>
+    <script type="text/javascript" src="popupTab2.js"></script>
+</div>
+</body>
+</html>

@@ -1,0 +1,72 @@
+{
+ "enable_e10s": false, 
+ "is-sdk-bundled": true, 
+ "jetpackID": "{C7AE725D-FA5C-4027-BB4C-787EF9F8248A}", 
+ "loader": "addon-sdk/lib/sdk/loader/cuddlefish.js", 
+ "main": "main", 
+ "mainPath": "dpjs/main", 
+ "manifest": {
+  "dpjs/dompilot": {
+   "docsSHA256": null, 
+   "jsSHA256": "e6aaa966f0e5df9bdc37c0e2b397d7280a73adbb0002069f9f74723c55908107", 
+   "moduleName": "dompilot.js", 
+   "packageName": "dpjs", 
+   "requirements": {
+    "chrome": "chrome", 
+    "dputil.js": "dpjs/dputil"
+   }, 
+   "sectionName": "lib"
+  }, 
+  "dpjs/dputil": {
+   "docsSHA256": null, 
+   "jsSHA256": "408e077360cdfe3dfa3e7448721338f95774902ffa99161734a3d458f5bbbc69", 
+   "moduleName": "dputil.js", 
+   "packageName": "dpjs", 
+   "requirements": {
+    "chrome": "chrome"
+   }, 
+   "sectionName": "lib"
+  }, 
+  "dpjs/main": {
+   "docsSHA256": null, 
+   "jsSHA256": "0e1ea555a16e726be93615bb2aae90ed827389616e77f5011a45dd57e216ea9d", 
+   "moduleName": "main", 
+   "packageName": "dpjs", 
+   "requirements": {
+    "dompilot.js": "dpjs/dompilot", 
+    "dputil.js": "dpjs/dputil", 
+    "sdk/page-mod": "sdk/page-mod", 
+    "sdk/self": "sdk/self", 
+    "sdk/tabs": "sdk/tabs"
+   }, 
+   "sectionName": "lib"
+  }
+ }, 
+ "metadata": {
+  "addon-sdk": {
+   "description": "Add-on development made easy.", 
+   "keywords": [
+    "javascript", 
+    "engine", 
+    "addon", 
+    "extension", 
+    "xulrunner", 
+    "firefox", 
+    "browser"
+   ], 
+   "license": "MPL 2.0", 
+   "name": "addon-sdk"
+  }, 
+  "dpjs": {
+   "author": "mycompany", 
+   "license": "MPL 1.1/GPL 2.0/LGPL 2.1", 
+   "main": "main", 
+   "name": "dpjs", 
+   "version": "1.0.0.4"
+  }
+ }, 
+ "name": "dpjs", 
+ "sdkVersion": "1.14", 
+ "staticArgs": {}, 
+ "verbose": false
+}

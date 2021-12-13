@@ -1,0 +1,68 @@
+﻿Popups.RegistrationFlow.ContainerView = (function() {
+    var containerId = '#regflw_container';
+    var shadowId = '#regflw_shadow';
+
+    var setContainerClass = function(state) {
+        switch (state) {
+        case Popups.RegistrationFlow.States.ONQUIT_SCANCOMPLETE_DRIVERSFOUND:
+            $(containerId).removeClass().addClass('scan_Summery');
+            break;
+        case Popups.RegistrationFlow.States.ONQUIT_SCANINCOMPLETE:
+            $(containerId).removeClass().addClass('dr_register_v03');
+            break;
+        case Popups.RegistrationFlow.States.ONSCANEND_DRIVERSFOUND:
+            $(containerId).removeClass().addClass('scan_Summery');
+            break;
+        case Popups.RegistrationFlow.States.ONSCANEND_DRIVERSNOTFOUND:
+        case Popups.RegistrationFlow.States.ONQUIT_SCANCOMPLETE_DRIVERSNOTFOUND:
+            $(containerId).removeClass().addClass('scan_Summery summry1');
+            break;
+        default:
+        }
+    };
+
+    var show = function(state) {
+        setContainerClass(state);
+        $(containerId).show();
+        $(shadowId).show();
+    };
+
+    var hide = function() {
+        $(containerId).hide();
+        $(shadowId).hide();
+    };
+
+    var render = function(registerModel) {
+        var totalUnfixedDriversFound = parseInt(registerModel.ScanSummary.Missing) + parseInt(registerModel.ScanSummary.OutOfDate);
+        var totalFixedDriversFound = parseInt(registerModel.ScanSummary.UpToDate);
+
+        show(registerModel.State);
+
+        Popups.RegistrationFlow.TopView.render(registerModel.State, totalUnfixedDriversFound);
+        Popups.RegistrationFlow.LeftContentView.render(registerModel.State, registerModel, totalFixedDriversFound);
+        Popups.RegistrationFlow.RightContentView.render(registerModel.State, registerModel);
+        Popups.RegistrationFlow.ActionView.render(registerModel.State, registerModel);
+        Popups.RegistrationFlow.BottomView.render(registerModel.State, registerModel);
+    };
+
+    return {
+        render: render,
+        hide:hide
+    };
+})();
+
+Popups.isNumber = function (value) {
+    var n = parseInt(value);
+    return typeof n == 'number' && !isNaN(n) && isFinite(n);
+};
+
+Popups.DisplayHelper = function (popupId) {
+    this.popupId = popupId;
+
+    this.show = function () {
+        $(popupId).show();
+    };
+    this.hide = function () {
+        $(popupId).hide();
+    };
+}

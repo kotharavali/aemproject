@@ -1,0 +1,38 @@
+﻿var Update = Update || {};
+
+Update.States = {
+    CHECKING: 0,
+    ISAVAILABLE: 1,
+    NOTAVAILABLE: 2,
+    DOWNLOADING: 3,
+    READYTOINSTALL: 4,
+    INSTALLING: 5
+};
+
+Update.UpdateModel = {
+    State: Update.States.CHECKING,
+    set: function (jsonUpdate) {
+        try {
+            var updateData = $.parseJSON(jsonUpdate);
+
+            Update.UpdateView.render(updateData);
+
+            Update.Events.init();
+
+        } catch (err) {
+            window.external.OnJavaScriptError(err.source + '-Update.UpdateModel.set: ' + err.message);
+        }
+    }
+};
+
+
+Update.DisplayHelper = function (popupId) {
+    this.popupId = popupId;
+
+    this.show = function () {
+        $(popupId).show();
+    };
+    this.hide = function () {
+        $(popupId).hide();
+    };
+};

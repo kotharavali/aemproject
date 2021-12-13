@@ -1,0 +1,19 @@
+﻿var Popups = Popups || {};
+
+Popups.TechSupport = (function () {
+
+  var techSupportPopup = "#techSupportPopup";
+
+  var show = function () {
+    $(techSupportPopup).show();
+  };
+
+  var hide = function () {
+    $(techSupportPopup).hide();
+  };
+
+  return {
+    show: show,
+    hide: hide
+  };
+})();

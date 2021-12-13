@@ -1,0 +1,39 @@
+﻿About.Events = (function () {
+    var getLicenseKeyId = "#aboutGetLicenseButton";
+    var goToHomePageId = "#aboutProductSiteButton";
+    var eulaLink = "#endUserLicenseAgreement";
+    var privacyLink = "#privacyPolicy";
+
+    var getLicenseKeyClicked = function () {
+        window.external.AboutPageClicked(About.Buttons.GetLicenseKey);
+    };
+
+    var goToHomePageClicked = function () {
+        window.external.AboutPageClicked(About.Buttons.GoToHomePage);
+    };
+
+    var eulaClicked = function () {
+        window.external.AboutPageClicked(About.Buttons.EulaLink);
+        return false;
+    }
+    var privacyClicked = function () {
+        window.external.AboutPageClicked(About.Buttons.PrivacyLink);
+        return false;
+    }
+
+    var init = function () {
+        $(getLicenseKeyId).unbind();
+        $(goToHomePageId).unbind();
+        $(eulaLink).unbind();
+        $(privacyLink).unbind();
+
+        $(getLicenseKeyId).bind("click", getLicenseKeyClicked);
+        $(goToHomePageId).bind("click", goToHomePageClicked);
+        $(eulaLink).bind("click", eulaClicked);
+        $(privacyLink).bind("click", privacyClicked);
+    };
+
+    return {
+        init: init
+    };
+})();

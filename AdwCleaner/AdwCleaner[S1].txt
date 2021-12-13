@@ -1,0 +1,160 @@
+# AdwCleaner v5.111 - Logfile created 16/04/2016 at 20:08:05
+# Updated 14/04/2016 by Xplode
+# Database : 2016-04-15.1 [Server]
+# Operating system : Windows 10 Home  (X64)
+# Username : rajes - LAPTOP-M2RH9VQU
+# Running from : C:\Users\rajes\Downloads\adwcleaner_5.111.exe
+# Option : Scan
+# Support : http://toolslib.net/forum
+
+***** [ Services ] *****
+
+
+***** [ Folders ] *****
+
+Folder Found : C:\Program Files (x86)\DNS Unlocker
+Folder Found : C:\Program Files (x86)\OLBPre
+Folder Found : C:\ProgramData\13ca1352-3c85-1
+Folder Found : C:\ProgramData\13ca1352-4701-0
+Folder Found : C:\ProgramData\3d5db3ef-37b5-0
+Folder Found : C:\ProgramData\3d5db3ef-62a5-0
+Folder Found : C:\ProgramData\{16b8af2f-512c-0}
+Folder Found : C:\ProgramData\{388fb546-512c-0}
+Folder Found : C:\ProgramData\{3a6e8982-412c-1}
+Folder Found : C:\ProgramData\Application Data\13ca1352-3c85-1
+Folder Found : C:\ProgramData\Application Data\13ca1352-4701-0
+Folder Found : C:\ProgramData\Application Data\3d5db3ef-37b5-0
+Folder Found : C:\ProgramData\Application Data\3d5db3ef-62a5-0
+Folder Found : C:\ProgramData\Application Data\{16b8af2f-512c-0}
+Folder Found : C:\ProgramData\Application Data\{388fb546-512c-0}
+Folder Found : C:\ProgramData\Application Data\{3a6e8982-412c-1}
+Folder Found : C:\Users\rajes\AppData\Local\Gameo
+Folder Found : C:\Users\rajes\AppData\Local\Google\Chrome\User Data\Default\Extensions\fcfenmboojpjinhpgggodefccipikbpd
+Folder Found : C:\Users\rajes\AppData\Local\Google\Chrome\User Data\Default\Extensions\mallpejgeafdahhflmliiahjdpgbegpk
+Folder Found : C:\Users\rajes\AppData\Roaming\Gameo
+Folder Found : C:\Users\rajes\AppData\Roaming\GoldenGate
+Folder Found : C:\Users\rajes\AppData\Roaming\RPEng
+Folder Found : C:\Users\rajes\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Gameo
+
+***** [ Files ] *****
+
+File Found : C:\Users\rajes\AppData\Local\Google\Chrome\User Data\Default\Local Storage\chrome-extension_mallpejgeafdahhflmliiahjdpgbegpk_0.localstorage
+File Found : C:\Users\rajes\AppData\Local\Google\Chrome\User Data\Default\Local Storage\chrome-extension_mallpejgeafdahhflmliiahjdpgbegpk_0.localstorage-journal
+File Found : C:\Users\rajes\AppData\Local\Google\Chrome\User Data\Default\Local Storage\hxxps_cdncache-a.akamaihd.net_0.localstorage
+File Found : C:\Users\rajes\AppData\Local\Google\Chrome\User Data\Default\Local Storage\hxxps_cdncache-a.akamaihd.net_0.localstorage-journal
+File Found : C:\Users\rajes\AppData\Local\Google\Chrome\User Data\Default\Local Storage\hxxps_d19tqk5t6qcjac.cloudfront.net_0.localstorage
+File Found : C:\Users\rajes\AppData\Local\Google\Chrome\User Data\Default\Local Storage\hxxps_d19tqk5t6qcjac.cloudfront.net_0.localstorage-journal
+File Found : C:\Users\rajes\AppData\Local\Google\Chrome\User Data\Default\Local Storage\hxxps_hdapp1008-a.akamaihd.net_0.localstorage
+File Found : C:\Users\rajes\AppData\Local\Google\Chrome\User Data\Default\Local Storage\hxxps_hdapp1008-a.akamaihd.net_0.localstorage-journal
+File Found : C:\Users\rajes\AppData\Local\Google\Chrome\User Data\Default\Local Storage\hxxps_nps.pastaleads.com_0.localstorage
+File Found : C:\Users\rajes\AppData\Local\Google\Chrome\User Data\Default\Local Storage\hxxps_nps.pastaleads.com_0.localstorage-journal
+File Found : C:\Users\rajes\AppData\Local\Google\Chrome\User Data\Default\Local Storage\hxxps_pstatic.bestpriceninja.com_0.localstorage
+File Found : C:\Users\rajes\AppData\Local\Google\Chrome\User Data\Default\Local Storage\hxxps_pstatic.bestpriceninja.com_0.localstorage-journal
+File Found : C:\Users\rajes\AppData\Local\Google\Chrome\User Data\Default\Local Storage\hxxps_pstatic.eshopcomp.com_0.localstorage
+File Found : C:\Users\rajes\AppData\Local\Google\Chrome\User Data\Default\Local Storage\hxxps_pstatic.eshopcomp.com_0.localstorage-journal
+File Found : C:\Users\rajes\AppData\Local\Google\Chrome\User Data\Default\Local Storage\hxxps_static.re-markit00.re-markit.co_0.localstorage
+File Found : C:\Users\rajes\AppData\Local\Google\Chrome\User Data\Default\Local Storage\hxxps_static.re-markit00.re-markit.co_0.localstorage-journal
+File Found : C:\Users\rajes\AppData\Local\Google\Chrome\User Data\Default\Local Storage\hxxps_utop.it_0.localstorage
+File Found : C:\Users\rajes\AppData\Local\Google\Chrome\User Data\Default\Local Storage\hxxps_utop.it_0.localstorage-journal
+File Found : C:\Users\rajes\AppData\Local\Google\Chrome\User Data\Default\Local Storage\hxxp_nps.pastaleads.com_0.localstorage
+File Found : C:\Users\rajes\AppData\Local\Google\Chrome\User Data\Default\Local Storage\hxxp_nps.pastaleads.com_0.localstorage-journal
+File Found : C:\Users\rajes\AppData\Local\Google\Chrome\User Data\Default\Local Storage\hxxp_pstatic.bestpriceninja.com_0.localstorage
+File Found : C:\Users\rajes\AppData\Local\Google\Chrome\User Data\Default\Local Storage\hxxp_pstatic.bestpriceninja.com_0.localstorage-journal
+File Found : C:\Users\rajes\AppData\Local\Google\Chrome\User Data\Default\Local Storage\hxxp_pstatic.eshopcomp.com_0.localstorage
+File Found : C:\Users\rajes\AppData\Local\Google\Chrome\User Data\Default\Local Storage\hxxp_pstatic.eshopcomp.com_0.localstorage-journal
+File Found : C:\Users\rajes\AppData\Local\Google\Chrome\User Data\Default\Local Storage\hxxp_searchsafer-a.akamaihd.net_0.localstorage
+File Found : C:\Users\rajes\AppData\Local\Google\Chrome\User Data\Default\Local Storage\hxxp_searchsafer-a.akamaihd.net_0.localstorage-journal
+File Found : C:\Users\rajes\AppData\Local\Google\Chrome\User Data\Default\Local Storage\hxxp_static.re-markable00.re-markable.net_0.localstorage
+File Found : C:\Users\rajes\AppData\Local\Google\Chrome\User Data\Default\Local Storage\hxxp_static.re-markable00.re-markable.net_0.localstorage-journal
+File Found : C:\Users\rajes\AppData\Local\Google\Chrome\User Data\Default\Local Storage\hxxp_utop.it_0.localstorage
+File Found : C:\Users\rajes\AppData\Local\Google\Chrome\User Data\Default\Local Storage\hxxp_utop.it_0.localstorage-journal
+File Found : C:\Users\rajes\AppData\Local\Google\Chrome\User Data\Default\Local Storage\hxxp_www.ask.com_0.localstorage
+File Found : C:\Users\rajes\AppData\Local\Google\Chrome\User Data\Default\Local Storage\hxxp_www.ask.com_0.localstorage-journal
+File Found : C:\Users\rajes\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\gameo.lnk
+File Found : C:\Users\rajes\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Play Games Online.url
+File Found : C:\Users\rajes\Desktop\gameo.lnk
+File Found : C:\Users\rajes\Desktop\Play Games Online.url
+
+***** [ DLL ] *****
+
+
+***** [ Shortcuts ] *****
+
+
+***** [ Scheduled tasks ] *****
+
+Task Found : gameo_update
+
+***** [ Registry ] *****
+
+Key Found : HKLM\SOFTWARE\MICROSOFT\SYSTEMCERTIFICATES\ROOT\CERTIFICATES\26D9E607FFF0C58C7844B47FF8B6E079E5A2220E
+Key Found : HKLM\SOFTWARE\5da059a482fd494db3f252126fbc3d5b
+Key Found : HKCU\Software\Google\Chrome\Extensions\fcfenmboojpjinhpgggodefccipikbpd
+Key Found : HKCU\Software\gameo
+Key Found : HKCU\Software\GoldenGate
+Key Found : HKCU\Software\ICSW1.17
+Key Found : HKCU\Software\OMX_Media
+Key Found : HKCU\Software\PRODUCTSETUP
+Key Found : HKCU\Software\WebDiscoverBrowser
+Key Found : HKCU\Software\Microsoft\Windows\CurrentVersion\Uninstall\gameo
+Key Found : HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\{E1527582-8509-4011-B922-29E3FB548882}_is1
+Key Found : HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\11598763487076930564
+Key Found : [x64] HKLM\SOFTWARE\WebDiscoverBrowser
+Key Found : [x64] HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\{E1527582-8509-4011-B922-29E3FB548882}_is1
+Key Found : [x64] HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\OLBPre
+Key Found : HKU\S-1-5-21-1230874461-3600533927-1289800634-1001\Software\gameo
+Key Found : HKU\S-1-5-21-1230874461-3600533927-1289800634-1001\Software\GoldenGate
+Key Found : HKU\S-1-5-21-1230874461-3600533927-1289800634-1001\Software\ICSW1.17
+Key Found : HKU\S-1-5-21-1230874461-3600533927-1289800634-1001\Software\OMX_Media
+Key Found : HKU\S-1-5-21-1230874461-3600533927-1289800634-1001\Software\PRODUCTSETUP
+Key Found : HKU\S-1-5-21-1230874461-3600533927-1289800634-1001\Software\WebDiscoverBrowser
+Key Found : HKU\S-1-5-21-1230874461-3600533927-1289800634-1001\Software\Microsoft\Windows\CurrentVersion\Uninstall\gameo
+Key Found : HKCU\Software\Microsoft\Internet Explorer\SearchScopes\{0E521781-A58F-4CB1-899B-E0D615AA7966}
+Key Found : HKU\S-1-5-21-1230874461-3600533927-1289800634-1001\Software\Microsoft\Internet Explorer\SearchScopes\{0E521781-A58F-4CB1-899B-E0D615AA7966}
+Data Found : HKLM\SYSTEM\CurrentControlSet\services\Tcpip\Parameters\Interfaces\{1bca25cf-1187-4916-8a6e-ffb4a83dcf7d} [NameServer] - 82.163.142.7 95.211.158.134
+Data Found : HKLM\SYSTEM\CurrentControlSet\services\Tcpip\Parameters\Interfaces\{2e946d2c-b50c-49f6-b836-62c077a8170a} [NameServer] - 82.163.142.7 95.211.158.134
+Data Found : HKLM\SYSTEM\CurrentControlSet\services\Tcpip\Parameters\Interfaces\{60f6aa6f-ff76-41e0-b07d-7daaef9465e1} [NameServer] - 82.163.142.7 95.211.158.134
+Data Found : HKLM\SYSTEM\CurrentControlSet\services\Tcpip\Parameters\Interfaces\{d82b6228-8eb8-4fd4-b220-ecfe4daa65f5} [NameServer] - 82.163.142.7 95.211.158.134
+Key Found : HKCU\Software\Microsoft\Internet Explorer\LowRegistry\DOMStorage\akamaihd.net
+Key Found : HKCU\Software\Microsoft\Internet Explorer\LowRegistry\DOMStorage\bestpriceninja.com
+Key Found : HKCU\Software\Microsoft\Internet Explorer\LowRegistry\DOMStorage\d3l3lkinz3f56t.cloudfront.net
+Key Found : HKCU\Software\Microsoft\Internet Explorer\LowRegistry\DOMStorage\eshopcomp.com
+Key Found : HKCU\Software\Microsoft\Internet Explorer\LowRegistry\DOMStorage\hdapp1008-a.akamaihd.net
+Key Found : HKCU\Software\Microsoft\Internet Explorer\LowRegistry\DOMStorage\nps.pastaleads.com
+Key Found : HKCU\Software\Microsoft\Internet Explorer\LowRegistry\DOMStorage\pastaleads.com
+Key Found : HKCU\Software\Microsoft\Internet Explorer\LowRegistry\DOMStorage\pstatic.bestpriceninja.com
+Key Found : HKCU\Software\Microsoft\Internet Explorer\LowRegistry\DOMStorage\pstatic.eshopcomp.com
+Key Found : HKCU\Software\Microsoft\Internet Explorer\LowRegistry\DOMStorage\re-markable.net
+Key Found : HKCU\Software\Microsoft\Internet Explorer\LowRegistry\DOMStorage\re-markit.co
+Key Found : HKCU\Software\Microsoft\Internet Explorer\LowRegistry\DOMStorage\static.re-markable00.re-markable.net
+Key Found : HKCU\Software\Microsoft\Internet Explorer\LowRegistry\DOMStorage\static.re-markit00.re-markit.co
+Key Found : HKCU\Software\Microsoft\Internet Explorer\LowRegistry\DOMStorage\utop.it
+Key Found : HKCU\Software\Microsoft\Internet Explorer\LowRegistry\DOMStorage\webcrawler.com
+Key Found : HKCU\Software\Microsoft\Internet Explorer\LowRegistry\DOMStorage\www.webcrawler.com
+Key Found : HKCU\Software\Classes\Local Settings\Software\Microsoft\Windows\CurrentVersion\AppContainer\Storage\microsoft.microsoftedge_8wekyb3d8bbwe\Children\001\Internet Explorer\EdpDomStorage\bestpriceninja.com
+Key Found : HKCU\Software\Classes\Local Settings\Software\Microsoft\Windows\CurrentVersion\AppContainer\Storage\microsoft.microsoftedge_8wekyb3d8bbwe\Children\001\Internet Explorer\EdpDomStorage\d19tqk5t6qcjac.cloudfront.net
+Key Found : HKCU\Software\Classes\Local Settings\Software\Microsoft\Windows\CurrentVersion\AppContainer\Storage\microsoft.microsoftedge_8wekyb3d8bbwe\Children\001\Internet Explorer\EdpDomStorage\driverupdate.net
+Key Found : HKCU\Software\Classes\Local Settings\Software\Microsoft\Windows\CurrentVersion\AppContainer\Storage\microsoft.microsoftedge_8wekyb3d8bbwe\Children\001\Internet Explorer\EdpDomStorage\eshopcomp.com
+Key Found : HKCU\Software\Classes\Local Settings\Software\Microsoft\Windows\CurrentVersion\AppContainer\Storage\microsoft.microsoftedge_8wekyb3d8bbwe\Children\001\Internet Explorer\EdpDomStorage\pstatic.bestpriceninja.com
+Key Found : HKCU\Software\Classes\Local Settings\Software\Microsoft\Windows\CurrentVersion\AppContainer\Storage\microsoft.microsoftedge_8wekyb3d8bbwe\Children\001\Internet Explorer\EdpDomStorage\pstatic.eshopcomp.com
+Key Found : HKCU\Software\Classes\Local Settings\Software\Microsoft\Windows\CurrentVersion\AppContainer\Storage\microsoft.microsoftedge_8wekyb3d8bbwe\Children\001\Internet Explorer\EdpDomStorage\utop.it
+Key Found : HKCU\Software\Classes\Local Settings\Software\Microsoft\Windows\CurrentVersion\AppContainer\Storage\microsoft.microsoftedge_8wekyb3d8bbwe\Children\001\Internet Explorer\EdpDomStorage\www.driverupdate.net
+Key Found : HKCU\Software\Classes\Local Settings\Software\Microsoft\Windows\CurrentVersion\AppContainer\Storage\microsoft.microsoftedge_8wekyb3d8bbwe\Children\001\Internet Explorer\DOMStorage\bestpriceninja.com
+Key Found : HKCU\Software\Classes\Local Settings\Software\Microsoft\Windows\CurrentVersion\AppContainer\Storage\microsoft.microsoftedge_8wekyb3d8bbwe\Children\001\Internet Explorer\DOMStorage\d19tqk5t6qcjac.cloudfront.net
+Key Found : HKCU\Software\Classes\Local Settings\Software\Microsoft\Windows\CurrentVersion\AppContainer\Storage\microsoft.microsoftedge_8wekyb3d8bbwe\Children\001\Internet Explorer\DOMStorage\driverupdate.net
+Key Found : HKCU\Software\Classes\Local Settings\Software\Microsoft\Windows\CurrentVersion\AppContainer\Storage\microsoft.microsoftedge_8wekyb3d8bbwe\Children\001\Internet Explorer\DOMStorage\eshopcomp.com
+Key Found : HKCU\Software\Classes\Local Settings\Software\Microsoft\Windows\CurrentVersion\AppContainer\Storage\microsoft.microsoftedge_8wekyb3d8bbwe\Children\001\Internet Explorer\DOMStorage\pstatic.bestpriceninja.com
+Key Found : HKCU\Software\Classes\Local Settings\Software\Microsoft\Windows\CurrentVersion\AppContainer\Storage\microsoft.microsoftedge_8wekyb3d8bbwe\Children\001\Internet Explorer\DOMStorage\pstatic.eshopcomp.com
+Key Found : HKCU\Software\Classes\Local Settings\Software\Microsoft\Windows\CurrentVersion\AppContainer\Storage\microsoft.microsoftedge_8wekyb3d8bbwe\Children\001\Internet Explorer\DOMStorage\utop.it
+Key Found : HKCU\Software\Classes\Local Settings\Software\Microsoft\Windows\CurrentVersion\AppContainer\Storage\microsoft.microsoftedge_8wekyb3d8bbwe\Children\001\Internet Explorer\DOMStorage\www.driverupdate.net
+Value Found : HKCU\Software\Microsoft\Windows\CurrentVersion\Run [Gameo]
+Value Found : HKU\S-1-5-21-1230874461-3600533927-1289800634-1001\Software\Microsoft\Windows\CurrentVersion\Run [Gameo]
+
+***** [ Web browsers ] *****
+
+
+*************************
+
+C:\AdwCleaner\AdwCleaner[S1].txt - [14519 bytes] - [16/04/2016 20:08:05]
+
+########## EOF - C:\AdwCleaner\AdwCleaner[S1].txt - [14593 bytes] ##########

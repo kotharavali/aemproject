@@ -1,0 +1,28 @@
+﻿About.AboutView = (function () {
+    var expiryDateId = "#aboutLicenseVersion";
+    var subscriptionTypeId = "#aboutSubscription";
+    var productVersionId = "#aboutPage_ProductVersion";
+    var getLicenseKeyId = "#aboutGetLicenseButton";
+
+    var render = function(model) {
+
+        $(productVersionId).text(model.ProductVersion);
+
+        if (!model.IsRegistered) {
+            $(getLicenseKeyId).show();
+            $(expiryDateId).text("Unregistered");
+            $(subscriptionTypeId).text("Basic – Scan Only");
+        } else {
+            $(getLicenseKeyId).hide();
+
+            if (model.SubscriptionType != "Unknown") {
+                $(expiryDateId).text(model.ExpiryDate);
+                $(subscriptionTypeId).text("Advanced");
+            }
+        }
+    };
+
+    return {
+        render: render
+    };
+})();

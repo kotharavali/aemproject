@@ -1,0 +1,181 @@
+﻿Popups.FeedbackView = (function() {
+    var parentId = "#feedbackParentContainer";
+    var shadowId = "#feedbackParentContainer_shadow";
+
+    var hide = function () {
+        $(parentId).hide();
+        $(shadowId).hide();
+    };
+
+    var show = function () {
+        $(parentId).show();
+        $(shadowId).show();
+    };
+
+    var render = function (updateModel) {
+        Popups.Feedback.DriverInfo = updateModel.Driver;
+
+        show();
+        var html = Popups.FeedbackView.ViewHtmlFactory.get(updateModel);
+        $(parentId).empty();
+        $(parentId).append(html);
+
+        Popups.Feedback.Events.init();
+
+        $("#option1").click();
+    };
+
+    return {
+        render: render,
+        hide: hide
+    };
+})();
+
+Popups.FeedbackView.ViewHtmlFactory = (function() {
+
+    var failedInstallThanks = function() {
+        return"<div class=\"uninstall_lightbox\">" +
+            "<div class=\"dr_tanks_for_feedback\">" +
+            "<div class=\"tanks_for_feedback_header\">" +
+            "<img src=\"lib/images/popup_image/dr_icon.png\" alt=\"\" class=\"dr_header_icon\" />" +
+            "<span class=\"dr_restore_tetx\"> Driver Restore</span>" +
+            "<a class=\"dr_thanks-lghtbox-close\" href=\"#\">" + "</a>" +
+            "</div>" +
+            "<div class=\"dr_tanks_contant\">" +
+            "<div class=\"dr_tanks_contant_new\">" +
+            "<h2> Thank you for providing your feedback!</h2>" +
+            "<p>We are sorry that your driver did not install correctly." +
+            "We here at Driver Restore review ALL feedback provided by our users and actively work " +
+            "towards providing solutions to any issues you have.</p>" +
+            "<p>To ensure that you get the best experience, please install Driver Restore software updates whenever they come out.</p>" +
+            "<p>Regards, <br /> Driver Restore Customer Support</p>" +
+            "</div>" +
+            "<div class=\"dr_thanks-footer\">" +
+            "<input type=\"button\" id=\"thankYouBtn\" value=\"Ok\">" +
+            "</div>" +
+            "</div>" +
+            "</div>" +
+            "<div class=\"popup_shadow\">" + "</div>" +
+            "</div>";
+    };
+
+    var succesfullInstallThanks = function() {
+        return "<div class=\"uninstall_lightbox\">" +
+            "<div class=\"dr_feedback\">" +
+            "<div class=\"tanks_for_feedback_header\">" + "<img src=\"lib/images/popup_image/dr_icon.png\" alt=\"\" class=\"dr_header_icon\" />" + "<span class=\"dr_restore_tetx\"> Driver Restore</span>" + "<a class=\"dr_thanks-lghtbox-close\" href=\"#\">" + "</a>" + "</div>" +
+            "<div class=\"dr_tanks_contant\">" +
+            "<h1> Thank you for providing your feedback!</h1>" +
+            "</div>" +
+            "</div>" +
+            "<div class=\"popup_shadow\">" + "</div>" +
+            "</div>";
+    };
+
+    var reportProblem = function (driver) {
+        return "<div class=\"uninstall_lightbox\">" +
+            "<div class=\"dr_install-lightbox\">" +
+            "<div class=\"lightbox_top_header\">" + "<img src=\"lib/images/popup_image/dr_icon.png\" class=\"dr_logo-icon\" />" + "<span class=\"dr_download-adapterTxt\"> Driver Restore</span>" + "</span>" + "<a href=\"#\" class=\"dr_un-lghtbox-close1\">" + "</a>" + "</div>" +
+            "<div class=\"dr_install-lightbox_bottom\">" +
+            "<div class=\"dr_basic-lightbox1\">" + "<span class=\"dr_light-box_img1\">" + "</span>" +
+            "<h2 class=\"dr_dlf-heading\">" + driver.Name + " Driver Update Report:</h2>" +
+            "</div>" +
+            "<div class=\"msg-box_inner_bottom\">" +
+            "<form class=\"client-information\">" +
+            "<span id=\"feedbackCenterSection\">" +
+            "<p class=\"feedbk-valuable\"> Please let us know what issues you are facing:</p>" +
+            "<p class=\"un-radio-btn\">" +
+            "<input type=\"radio\" name=\"option2\" id=\"option3\" value=\"1\" />" +
+            "<span> Driver Install did not launch.</span>" + "</p>" +
+            "<p class=\"un-radio-btn\">" +
+            "<input type=\"radio\" name=\"option2\" id=\"option4\" value=\"2\" />" +
+            "<span> Driver Install was performed in a language other than my system default language.</span></p>" +
+            "<p class=\"un-radio-btn\">" +
+            "<input type=\"radio\" name=\"option2\" id=\"option5\" value=\"2\" />" +
+            "<span> Driver Install was performed but no change was reported by Driver Restore.</span>" + "</p>" +
+            "<p class=\"un-radio-btn\">" +
+            "<input type=\"radio\" name=\"option2\" id=\"option6\" value=\"2\" />" +
+            "<span> Driver Install was performed but device is still not working properly.</span>" + "</p>" +
+            "<p class=\"un-radio-btn\">" +
+            "<input type=\"radio\" name=\"option2\" id=\"option7\" value=\"2\" />" +
+            "<span> Other (Please provide details in the comment section below)</span>" + "</p>" +
+            "<p class=\"feedbk-valuable\">  Comments:</p>" +
+            "<textarea class=\"un-other-reason\">" + "</textarea>" +
+            "</span>" +
+            "</form>" +
+            "</div>" +
+            "<div class=\"dr_lightbox-button1\">" +
+            "<input type=\"button\" class=\"dr_lightbox-nobtn1\" id=\"installFeedbackCancelBtn\" value=\"Cancel\" />" +
+            "<input type=\"button\" class=\"dr_lightbox-nobtn1\" id=\"reportProblemOkBtn\" value=\"Ok\" />" +
+            "</div>" +
+            "</div>" +
+            "</div>" +
+            "<div class=\"popup_shadow\">" + "</div>" +
+            "</div>";
+    };
+
+    var installFeedback = function (driver) {
+        return "<div class=\"uninstall_lightbox\">" +
+            "<div class=\"dr_install-lightbox\">" +
+            "<div class=\"lightbox_top_header\">" + "<img src=\"lib/images/popup_image/dr_icon.png\" class=\"dr_logo-icon\" />" + "<span class=\"dr_download-adapterTxt\"> Driver Restore</span>" + "</span>" + "<a href=\"#\" class=\"dr_un-lghtbox-close1\">" + "</a>" + "</div>" +
+            "<div class=\"dr_install-lightbox_bottom\">" +
+            "<div class=\"dr_basic-lightbox1\">" + "<span class=\"dr_light-box_img1\">" + "</span>" +
+            "<h2 class=\"dr_dlf-heading\">" + driver.Name + " Driver Update Report:</h2>" +
+            "</div>" +
+            "<div class=\"msg-box_inner_bottom\">" +
+            "<form class=\"client-information\">" +
+            "<p class=\"feedbk-valuable\"> Did your " + driver.Name + " driver install correctly?</p>" +
+            "<p class=\"un-radio-btn\">" +
+            "<input type=\"radio\" name=\"option1\" id=\"option1\" value=\"1\" />" +
+            "<span> Yes</span>" + "</p>" +
+            "<p class=\"un-radio-btn\">" +
+            "<input type=\"radio\" name=\"option1\" id=\"option2\" value=\"2\" />" +
+            "<span>No</span>" + "</p>" +
+            "<span id=\"feedbackCenterSection\">" +
+            "<p class=\"feedbk-valuable\"> Please let us know what issues you are facing:</p>" +
+            "<p class=\"un-radio-btn\">" +
+            "<input type=\"radio\" name=\"option2\" id=\"option3\" value=\"1\" />" +
+            "<span> Driver Install did not launch.</span>" + "</p>" +
+            "<p class=\"un-radio-btn\">" +
+            "<input type=\"radio\" name=\"option2\" id=\"option4\" value=\"2\" />" +
+            "<span> Driver Install was performed in a language other than my system default language.</span></p>" +
+            "<p class=\"un-radio-btn\">" +
+            "<input type=\"radio\" name=\"option2\" id=\"option5\" value=\"2\" />" +
+            "<span> Driver Install was performed but no change was reported by Driver Restore.</span>" + "</p>" +
+            "<p class=\"un-radio-btn\">" +
+            "<input type=\"radio\" name=\"option2\" id=\"option6\" value=\"2\" />" +
+            "<span> Driver Install was performed but device is still not working properly.</span>" + "</p>" +
+            "<p class=\"un-radio-btn\">" +
+            "<input type=\"radio\" name=\"option2\" id=\"option7\" value=\"2\" />" +
+            "<span> Other (Please provide details in the comment section below)</span>" + "</p>" +
+            "<p class=\"feedbk-valuable\">  Comments:</p>" +
+            "<textarea class=\"un-other-reason\">" + "</textarea>" +
+            "</span>" +
+            "</form>" +
+            "</div>" +
+            "<div class=\"dr_lightbox-button1\">" +
+            "<input type=\"button\" class=\"dr_lightbox-nobtn1\" id=\"installFeedbackCancelBtn\" value=\"Cancel\" />" +
+            "<input type=\"button\" class=\"dr_lightbox-nobtn1\" id=\"installFeedbackOkBtn\" value=\"Ok\" />" +
+            "</div>" +
+            "</div>" +
+            "</div>" +
+            "<div class=\"popup_shadow\">" + "</div>" +
+            "</div>";
+    };
+
+    var get = function (updateModel) {
+        switch (updateModel.State) {
+        case Popups.Feedback.States.FailedInstallThanks:
+            return failedInstallThanks();
+        case Popups.Feedback.States.SuccesfullInstallThanks:
+            return succesfullInstallThanks();
+        case Popups.Feedback.States.InstallFeedback:
+            return installFeedback(updateModel.Driver);
+        case Popups.Feedback.States.ReportProblemFeedback:
+            return reportProblem(updateModel.Driver);
+        }
+    };
+
+    return {
+        get: get
+    };
+})(); 

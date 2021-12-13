@@ -1,0 +1,57 @@
+﻿var Overview = Overview || {};
+
+Overview.ScannerStates = {
+    NOTHING: 0,
+    SCANNING: 1,
+    SCANNINGPAUSED: 2,
+    SCANNINGSTOPPED: 3,
+    SCANNINGCOMPLETED: 4,
+    FIXING: 5,
+    FIXINGSTOPPED: 6,
+    FIXINGCOMPLETED: 7
+};
+
+
+Overview.Buttons = {
+    Scan: 0,
+    UpdateDrivers: 1,
+    UpdateApplication: 2,
+    ConfigureNow: 3,
+    CostumizeNow: 4
+};
+
+Overview.OverviewModel = {
+    State: Overview.ScannerStates.SCANNINGCOMPLETED,
+    ScanSummary: {
+        OutOfDate: "",
+        Missing: "",
+        UpToDate: ""
+    },
+    IsLicensed: false,
+    IsUpToDate: true,
+    ImagePath: "",
+    SystemName: "",
+    set: function (jsonData) {
+        try {
+            var obj = $.parseJSON(jsonData);
+
+            this.State = obj.State;
+            this.IsLicensed = obj.IsLicensed;
+            this.ScanSummary = obj.ScanSummary;
+            this.IsUpToDate = obj.IsUpToDate;
+            this.ImagePath = obj.ImagePath;
+            this.SystemName = obj.SystemName;
+            this.LandingImagePath = obj.LandingImagePath;
+            this.OperatingSystem = obj.OperatingSystem;
+
+            Overview.BannerView.render(this);
+            Overview.ContentView.render(this);
+            Overview.BottomView.render(this);
+
+            Overview.Events.init();
+
+        } catch (err) {
+            window.external.OnJavaScriptError(err.source + '-ScanAreasSetttings.fetch: ' + err.message);
+        }
+    }
+};

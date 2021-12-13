@@ -1,0 +1,73 @@
+# AdwCleaner v5.112 - Logfile created 17/04/2016 at 18:25:36
+# Updated 17/04/2016 by Xplode
+# Database : 2016-04-17.1 [Server]
+# Operating system : Windows 10 Home  (X64)
+# Username : rajes - LAPTOP-M2RH9VQU
+# Running from : C:\Users\rajes\Downloads\adwcleaner_5.112.exe
+# Option : Clean
+# Support : http://toolslib.net/forum
+
+***** [ Services ] *****
+
+
+***** [ Folders ] *****
+
+
+***** [ Files ] *****
+
+
+***** [ DLLs ] *****
+
+
+***** [ Shortcuts ] *****
+
+
+***** [ Scheduled tasks ] *****
+
+
+***** [ Registry ] *****
+
+[-] Key Deleted : HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\App Paths\DriverRestore.exe
+[-] Key Deleted : HKLM\SOFTWARE\Classes\CLSID\{F83D1872-D9FF-47F8-B5A0-49CC51E24EE8}
+[-] Key Deleted : HKCU\Software\DriverRestore
+[-] Key Deleted : HKCU\Software\eSupport.com
+[-] Key Deleted : HKCU\Software\PRODUCTSETUP
+[-] Key Deleted : HKCU\Software\System Healer
+[-] Key Deleted : HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\WinZip Registry Optimizer_is1
+[-] Key Deleted : HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\11598763487076930564
+[-] Key Deleted : [x64] HKLM\SOFTWARE\DriverRestore
+[-] Key Deleted : [x64] HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\Driver Restore
+[-] Data Restored : HKCU\Software\Microsoft\Internet Explorer\Main [Start Page]
+[-] Data Restored : HKLM\SOFTWARE\Microsoft\Internet Explorer\Main [Start Page]
+[-] Data Restored : [x64] HKLM\SOFTWARE\Microsoft\Internet Explorer\Main [Start Page]
+[-] Data Restored : HKU\S-1-5-21-1230874461-3600533927-1289800634-1001\Software\Microsoft\Internet Explorer\Main [Start Page]
+[-] Value Deleted : HKCU\Software\Microsoft\Internet Explorer\SearchScopes [DoNotAskAgain]
+[-] Key Deleted : HKCU\Software\Microsoft\Internet Explorer\SearchScopes\{2f23ab71-4ac6-41f2-a955-ea576e553146}
+[-] Key Deleted : HKCU\Software\Microsoft\Internet Explorer\SearchScopes\{EA4CD57B-AE5C-496C-8295-E00538FD173C}
+[-] Data Restored : HKCU\Software\Microsoft\Internet Explorer\SearchScopes [DefaultScope]
+[-] Value Deleted : [x64] HKLM\SOFTWARE\Microsoft\Internet Explorer\SearchScopes [DoNotAskAgain]
+[-] Key Deleted : [x64] HKLM\SOFTWARE\Microsoft\Internet Explorer\SearchScopes\{2f23ab71-4ac6-41f2-a955-ea576e553146}
+[-] Key Deleted : [x64] HKLM\SOFTWARE\Microsoft\Internet Explorer\SearchScopes\{EA4CD57B-AE5C-496C-8295-E00538FD173C}
+[-] Data Restored : [x64] HKLM\SOFTWARE\Microsoft\Internet Explorer\SearchScopes [DefaultScope]
+[#] Value Deleted : HKU\S-1-5-21-1230874461-3600533927-1289800634-1001\Software\Microsoft\Internet Explorer\SearchScopes [DoNotAskAgain]
+[-] Data Restored : HKU\S-1-5-21-1230874461-3600533927-1289800634-1001\Software\Microsoft\Internet Explorer\SearchScopes [DefaultScope]
+
+***** [ Web browsers ] *****
+
+
+*************************
+
+:: "Tracing" keys deleted
+:: Winsock settings cleared
+
+*************************
+
+C:\AdwCleaner\AdwCleaner[C1].txt - [14635 bytes] - [16/04/2016 20:09:43]
+C:\AdwCleaner\AdwCleaner[C2].txt - [1598 bytes] - [17/04/2016 18:24:00]
+C:\AdwCleaner\AdwCleaner[C3].txt - [3027 bytes] - [17/04/2016 18:25:36]
+C:\AdwCleaner\AdwCleaner[S1].txt - [14685 bytes] - [16/04/2016 20:08:05]
+C:\AdwCleaner\AdwCleaner[S2].txt - [905 bytes] - [16/04/2016 20:16:25]
+C:\AdwCleaner\AdwCleaner[S3].txt - [7119 bytes] - [17/04/2016 18:23:11]
+C:\AdwCleaner\AdwCleaner[S4].txt - [6157 bytes] - [17/04/2016 18:24:39]
+
+########## EOF - C:\AdwCleaner\AdwCleaner[C3].txt - [3392 bytes] ##########

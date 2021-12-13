@@ -1,0 +1,65 @@
+﻿var SystemScan = SystemScan || {};
+
+SystemScan.ScanSummaryModel = {
+    OutOfDate: "",
+    Missing: "",
+    UpToDate: "",
+    ScannerState: SystemScan.ScannerStates.NOTHING,
+    set: function (scanSummary) {
+        try {
+            var scanSummaryModel = $.parseJSON(scanSummary);            
+            this.OutOfDate = scanSummaryModel.OutOfDate;
+            this.Missing = scanSummaryModel.Missing;
+            this.UpToDate = scanSummaryModel.UpToDate;
+            this.ScannerState = scanSummaryModel.ScannerState;
+
+            this.init();
+        } catch (err) {
+            window.external.OnJavaScriptError(err.source + '-SystemScan.ScanSummaryModel.set: ' + err.message);
+        }
+    },
+    init: function () {
+        try {
+            SystemScan.ScanSummaryView.render(this);
+        } catch (err) {
+            window.external.OnJavaScriptError(err.source + '-SystemScan.ScanSummaryModel.init: ' + err.message);
+        }
+    }
+};
+
+SystemScan.ScanSummaryView = (function() {
+    
+    var render = function (summaryModel) {
+        var summaryTitle = "";
+
+        switch (summaryModel.ScannerState) {
+            case SystemScan.ScannerStates.SCANNING:
+                summaryTitle = "Scanning Now...";
+            break;
+            case SystemScan.ScannerStates.SCANNINGPAUSED:
+                summaryTitle = "Scan Paused";
+            break;
+            default:
+                summaryTitle = "Scan Summary";
+        }
+
+       
+        $('.summary').empty();
+        $('.summary').append(getSummaryHtml(summaryTitle, summaryModel.OutOfDate, summaryModel.Missing, summaryModel.UpToDate));
+        DonutChart.Create(summaryModel.OutOfDate, summaryModel.Missing, summaryModel.UpToDate);
+
+        SystemScan.Events.init();
+    };
+    
+    var getSummaryHtml = function (summaryTitle,outOfDate, missing, upToDate) {
+        return "<h1 class=\"sys_over\">" + summaryTitle + " <span><a href=\"#\" style=\"color: #1284bf;font-weight:normal;\" id=\"rescanButton\">&nbsp;(Rescan)</a></span></h1>" +
+            "<p class=\"color-round \">" + "<span class=\"red_round\">" + "</span>" + "<span class=\"label\"> [" + outOfDate + "] </span>" + "<span class=\"value\">Out-of-Date Drivers</span></p>" +
+            "<p class=\"color-round\">" + "<span class=\"yellow_round\">" + "</span>" + "<span class=\"label\"> [" + missing + "] </span>" + "<span class=\"value\">Devices with No Driver</span></p>" +
+            "<p class=\"color-round\">" + "<span class=\"green_round\">" + "</span>" + "<span class=\"label\"> [" + upToDate + "] </span>" + "<span class=\"value\">Up-to-Date Drivers</span></p>";
+    };    
+
+    return {
+        render: render
+    };
+    
+})();

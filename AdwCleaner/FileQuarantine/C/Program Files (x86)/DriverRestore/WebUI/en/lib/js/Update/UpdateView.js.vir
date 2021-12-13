@@ -1,0 +1,48 @@
+﻿var Update = Update || {};
+
+Update.UpdateView = (function () {
+    var checking = new Update.DisplayHelper("#checking_for_updates_pp");
+    var isAvailable = new Update.DisplayHelper("#updates_available_pp");
+    var notAvailable = new Update.DisplayHelper("#noupdates_pp");
+    var downloading = new Update.DisplayHelper("#updates_downloading_pp");
+    var readToInstall = new Update.DisplayHelper("#download_complete_pp");
+
+    var hideAll = function () {
+        checking.hide();
+        isAvailable.hide();
+        notAvailable.hide();
+        downloading.hide();
+        readToInstall.hide();
+    };
+
+    var setProgressBar = function(progress) {
+        $("#downloadProgressBar").width(progress + "%");
+        $("#downloadProgressBarText").text("Downloading Updates... " + progress + "%");
+    };
+
+    var render = function (updateModel) {
+        hideAll();
+        switch (updateModel.State) {
+            case Update.States.CHECKING:
+                checking.show();
+                break;
+            case Update.States.ISAVAILABLE:
+                isAvailable.show();
+                break;
+            case Update.States.NOTAVAILABLE:
+                notAvailable.show();
+                break;
+            case Update.States.DOWNLOADING:
+                downloading.show();
+                setProgressBar(updateModel.Progress);
+                break;
+            case Update.States.READYTOINSTALL:
+                readToInstall.show();
+                break;
+        }
+    };
+    return {
+        render: render,
+        hideAll: hideAll
+    };
+})();

@@ -1,0 +1,4 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_CURRENT_USER\Software\Microsoft\Internet Explorer\Main]
+"Start Page"="https://us.search.yahoo.com/yhs/web?hspart=iry&hsimp=yhs-fullyhosted_003&type=wbf_adsafld_16_15&param1=1&param2=f%3D1%26b%3DIE%26cc%3Dus%26pa%3DWincy%26cd%3D2XzuyEtN2Y1L1Qzu0Fzz0C0A0BzztDtDtB0Azy0EtDyBtByDtN0D0Tzu0StCyDyCzztN1L2XzutAtFtBtCtFtDtFtCtN1L1Czu1StN1L1G1B1V1N2Y1L1Qzu2StB0C0E0CyD0ByE0BtGtD0BtB0DtG0CyD0D0EtGyB0DyDtBtGyDyEzztBtByCyE0ByByEzytC2QtN1M1F1B2Z1V1N2Y1L1Qzu2SzyzzyEzy0DyE0BzytG0D0F0EtDtGyE0F0DtCtG0AyCtD0DtGtBtBtDyE0EtCyEtB0D0CyE0A2QtN0A0LzuyE%26cr%3D1962086135%26a%3Dwbf_adsafld_16_15%26os_ver%3D10.0%26os%3DWindows%2B10%2BHome"

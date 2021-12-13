@@ -1,0 +1,4 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Internet Explorer\SearchScopes]
+"DefaultScope"="{EA4CD57B-AE5C-496C-8295-E00538FD173C}"

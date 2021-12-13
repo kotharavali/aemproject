@@ -1,0 +1,29 @@
+﻿var Toasters = Toasters || {};
+
+Toasters.InstallAvailable = Toasters.InstallAvailable || {};
+
+Toasters.InstallAvailable.Buttons = {
+    InstallNow: 0,
+    NotNow: 1,
+    Dismiss: 2
+};
+
+Toasters.InstallAvailableModel = {
+    Name: "",
+    ImagePath: "",
+
+    set: function (jsonData) {
+        try {
+            var obj = $.parseJSON(jsonData);
+            this.Name = obj.Name;
+            this.ImagePath = obj.ImagePath;
+
+            Toasters.InstallAvailableView.render(this);
+
+            Toasters.InstallAvailable.Events.init();
+
+        } catch (err) {
+            window.external.OnJavaScriptError(err.source + '-Toasters.InstallAvailableModel: ' + err.message);
+        }
+    }
+};

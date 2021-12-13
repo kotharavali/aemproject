@@ -1,0 +1,103 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Download Healper</title>
+<link rel="stylesheet" type="text/css" href="../lib/css/style.css"/>
+<script src="../lib/scripts/jquery.min.js" type="text/javascript"></script>
+<script src="../lib/js/toasters/updatefromweb/model.js" type="text/javascript"></script>
+<script src="../lib/js/toasters/updatefromweb/UpdateFromWebView.js" type="text/javascript"></script>
+<script src="../lib/js/toasters/updatefromweb/events.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+$(document).ready(function () {
+    OnPageLoad();
+});
+
+function addEvent(evnt, elem, func) 
+{
+	try{
+		if (elem.addEventListener)  // W3C DOM
+			elem.addEventListener(evnt,func,false);
+		else if (elem.attachEvent) { // IE DOM
+			elem.attachEvent('on'+evnt, func);
+		}
+		else { // No much to do
+			elem['on' + evnt] = func;
+		}
+	}
+	catch(err)
+	{
+		window.external.OnJavaScriptError(err.source + '-addEvent: ' + err.message);
+	}
+}
+
+
+function OnPageLoad()
+{    
+	try
+	{
+		document.body.attachEvent('ondragstart', function(){return false;});
+		document.body.setAttribute('unselectable','on');
+		document.body.style.cursor = 'default';
+		
+		addEvent('mousedown',	document.body,function(e){e =e || event;  window.external.BrowserMouseDown(e.clientX,e.clientY,e.button);});
+		addEvent('mouseup',	 	document.body,function(e){e =e || event;  window.external.BrowserMouseUp(e.clientX,e.clientY);});
+		addEvent('mousemove',	document.body,function(e){e =e || event;  window.external.BrowserMouseMove(e.clientX,e.clientY);});
+		addEvent('mouseout',	document.body,function(e){e =e || event;  window.external.BrowserMouseOut(e.clientX,e.clientY);});       
+
+		$('.close4').on('click',function(){
+			window.external.Exit();
+		});
+		$('.close5').on('click',function(){
+			window.external.Minimize();
+		});
+			// allow select for input elements
+		$(document.body).on('selectstart', function(e){
+			return false;
+		});
+		
+        window.external.OnCompleteLoading($(location).attr('href'));
+
+	}
+	catch(err)
+	{
+		window.external.OnJavaScriptError(err.source + '-OnPageLoad: ' + err.message);
+	}
+}
+
+function callObjectMethodOnDomain(domain, object, method, params) {
+    try {
+        window[domain][object][method](params);
+    }
+    catch (err) {
+        window.external.OnJavaScriptError(err.source + '-callObjectMethodOnDomain: ' + ' ' + err.message);
+    }
+}
+</script>
+</head>
+
+<body>
+<div class=" downloader-container">
+  <div class="inner">
+    <h1>To update your <strong id="updateDriver_Name"></strong>&nbsp; Driver:</h1>
+    <a class="close4">&nbsp;</a> <a class="close5">&nbsp;</a>
+    <div class="steps-text">
+      <div class="step1">
+        <h2> step 1</h2>
+        Locate and select 
+        your device if it is not preselected </div>
+     <div class="step2">
+       <h2>step 2</h2>
+        Once you have selected your device you will be redirected to the device specific page. Locate the latest available download for this device.</div>
+     <div class="step3">
+        <h2> step 3</h2>
+       Now that you have located the latest available download for your device click "<strong>Download</strong>" or "<strong>Install</strong>".
+       </div>
+     <div class="step4">
+        <h2> step 4</h2>
+       <span id="updateDriver_lastStep"></span></div>
+  </div>
+</div>
+</body>
+</html>

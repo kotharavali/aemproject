@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<ArrayOfTaskInfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <TaskInfo>
+    <Name>DriverRestore_ScheduledScan</Name>
+    <ExecPath>C:\Program Files (x86)\DriverRestore\DriverRestore.exe</ExecPath>
+    <Args>-scheduled</Args>
+    <Description>Driver Restore scheduled weekly scan</Description>
+    <TriggerType>Weekly</TriggerType>
+    <Type>Both</Type>
+    <Start>2016-04-17T12:52:00</Start>
+    <Days>SUN</Days>
+  </TaskInfo>
+  <TaskInfo>
+    <Name>DriverRestore_DailyScan</Name>
+    <ExecPath>C:\Program Files (x86)\DriverRestore\DriverRestore.exe</ExecPath>
+    <Args>-dailyScan</Args>
+    <Description>Driver Restore scheduled daily scan</Description>
+    <TriggerType>Daily</TriggerType>
+    <Type>Both</Type>
+    <Start>2016-04-17T12:52:00</Start>
+    <Days>None</Days>
+  </TaskInfo>
+</ArrayOfTaskInfo>

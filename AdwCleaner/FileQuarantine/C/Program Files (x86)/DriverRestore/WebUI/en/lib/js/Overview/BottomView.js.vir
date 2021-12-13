@@ -1,0 +1,36 @@
+﻿var Overview = Overview || {};
+
+Overview.BottomView = {
+    bottomId: '#dr_config',
+    render: function (scannerModel) {
+        $(this.bottomId).empty();
+        $(this.bottomId).append(Overview.BottomFactory.get(scannerModel));
+    }
+};
+
+Overview.BottomFactory = (function() {
+    var get = function(scannerModel) {
+        if (scannerModel.IsLicensed) {
+            return registeredBottom(scannerModel);
+        } else {
+            return unRegisteredBottom(scannerModel);
+        }
+    };
+
+    var registeredBottom = function(scannerModel) {
+        return "<h1>Thank you for upgrading to the full version of Driver Restore</h1>" +
+            "<li>You can configure an automatic scanning schedule.  <a href=\"#\" id=\"configureNow\"> Configure Now</a></li>" +
+            "<li style=\"" + (scannerModel.IsUpToDate ? "display:none" : "") + ";\">An update for <b>Driver Restore</b> is available.<a href=\"#\" id=\"updateNow\">Update Now</a></li>" +
+            "<li>You can customize your system scan. <a href=\"#\" id=\"customizeNow\">Customize Now</a></li>";
+    };
+    var unRegisteredBottom = function(scannerModel) {
+        return "<h1> Why upgrade to the full version of <b>Driver Restore?</b></h1>" +
+            "<li class=\"error_found_icon1\">  Update " + scannerModel.OperatingSystem + " Device Drivers</li>" +
+            "<li class=\"error_found_icon2\"> Improve Hardware Performance</li>" +
+            "<li class=\"error_found_icon3\"> Easily Update Your Drivers</li>";
+    };
+
+    return {
+        get: get
+    };
+})();

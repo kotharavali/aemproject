@@ -1,0 +1,48 @@
+﻿var Update = Update || {};
+
+Update.Buttons = {
+    Cancel: 0,
+    Download: 1,
+    Install: 2,
+    Continue: 3
+};
+
+Update.Events = (function () {
+    var downloadId = ".update_popup_btn";
+    var uptodateId = ".continue_btn";
+    var installId = ".install_btn";
+    var closeId = ".close_3.update";
+
+    var onDownloadClick = function () {
+        window.external.UpdatePageClicked(Update.Buttons.Download);
+    };
+    var onUpToDateClick = function() {
+        window.external.UpdatePageClicked(Update.Buttons.Continue);
+        Update.UpdateView.hideAll();
+    };
+    var onInstallClick = function() {
+        window.external.UpdatePageClicked(Update.Buttons.Install);
+    };
+    var onCloseClick = function() {
+        window.external.UpdatePageClicked(Update.Buttons.Cancel);
+        Update.UpdateView.hideAll();
+    };
+
+    var init = function () {
+        $(downloadId).unbind(onDownloadClick);
+        $(uptodateId).unbind(onUpToDateClick);
+        $(installId).unbind(onInstallClick);
+        $(closeId).unbind(onCloseClick);
+
+
+        $(downloadId).bind("click", onDownloadClick);
+        $(uptodateId).bind("click", onUpToDateClick);
+        $(installId).bind("click", onInstallClick);
+        $(closeId).bind("click", onCloseClick);
+
+    };
+
+    return {
+        init: init
+    };
+})();

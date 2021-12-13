@@ -1,0 +1,87 @@
+﻿BC_Biometric_Details:I dispositivi Biometrici prendono in ingresso le informazioni personali, ad esempio, l'ingresso vocale, la pressione del dito, la scansione dell'iride e in seguito le  processano. Questi dispositivi consentono ad un sistema di computer di identificare gli individui in base a queste caratteristiche.
+BL_Bluetooth_Details:Le Periferiche Bluetooth consentono ai computer di comunicare con una serie di computer in modo simultaneo e senza fili e di scambiare i dati entro brevi distanze (solitamente, pochi metri) attraverso onde radio UHF.
+CD_CDDVD_Details:Il CD (compact disc) è un disco ottico per memorizzare dati digitali. Viene semplicemente inserito in un CD-ROM per memorizzare, scrivere o cancellare dati audio. All'inizio, era stato progettato solo per musica e altri file audio. DVD o digital video disk è simile ad un CD ma con una qualità superiore che riesce a mescolare grafica e suoni per memorizzare i video.
+DA_Display_Details:Gli schermi sono dispositivi di uscita, adoperati per rappresentare in forma visuale il risultato di una procedura sui dati o altre informazioni rilevanti, in modo tale da convertire l'informazione elettronica in una modalità che sia compresa dall'occhio umano. 
+DD_DiskDrive_Details:Un disk drive è una periferica del computer per leggere dati memorizzati conservati su un disco ottico (CD o DVD) e per scrivere i dati da memorizzare sul disco.
+FD_FloppyDisk_Details:Floppy disk o semplicemente un floppy, è un mezzo di archiviazione su dischetto per la lettura o la scrittura di dati del computer su film magnetici inserendo dischi floppy in lettori appositi. Ma tendono ad avere capacità di memorizzazione inferiori a paragone delle schede di memorie e delle penne USB.
+FW_Firewire_Details:Come l'USB, Firewire è un altro dispositivo per collegare e aggiungere dispositivi e periferiche (ad es. apparecchiature audio e video) ad un personal computer. La ragione principale per cui viene adoperato Firewire è che garantisce un elevato tasso di trasferimento dati e un'altra è che trasferisce l'alimentazione al dispositivo attraverso lo stesso cavo di trasferimento dati.
+HD_HardDiskControllers_Details:I Controller del Disco Fisso sono componenti elettrici della CPU (circuiti su una scheda di espansione) che agiscono come interfacce per scrivere, leggere, cancellare e modificare dati/informazioni sul disco fisso, quindi, in definitiva, garantiscono il controllo del disco fisso.
+HI_HID_Details:HID o Dispositivi di Interfaccia è un termine generico per classificare qualsiasi periferica del computer che interagisce direttamente con gli esseri umani. Tali dispositivi ricevono l'immissione dagli esseri umani  e ricevono quindi un'output direttamente all'essere umano. Esempi comprendono gli altoparlanti, le cuffie, le webcam, ecc.
+IM_Imaging_Details:Imaging significa la riproduzione o la rappresentazione di qualsiasi immagine generica. Periferiche di Imaging sono driver hardware in un personal computer che consentono di creare un'immagine sullo schermo di un computer da un segnale elettronico.
+IR_Infrared_Details:Con i dispositivi all'infrarosso, i computer possono comunicare tra loro adoperando segnali senza fili a corto raggio (Vengono adoperate onde all'infrarosso) per trasmettere e ricevere dati. A questo scopo vengono progettate schede di rete specializzate all'infrarosso.
+KB_Keyboard_Details:Una tastiera è un altro dispositivo di input, dall'aspetto simile ad una macchina da scrivere, per inserire immissioni di testo e di caratteri da potersi visualizzare sullo schermo. La Tastiera comprende tasti alfanumerici, segni di interpunzione e tasti per funzioni speciali.
+MD_Modem_Details:Un modem è una periferica responsabile della gestione del trasferimento da e per un computer. I dati possono essere trasmessi in formato analogico lungo le linee cablate oppure il telefono, anche se la memorizzazione dei dati in un computer è in formato digitale. Un modem è in grado di convertire i dati tra questi due formati.
+MF_MultifunctionPCMCIA_Details:PCMCIA è l'acronimo per Personal Computer Memory Card International Association.  Le schede PCMCIA sono come le schede di espansione per i portatili. Funzionano come interfacce hardware  e forniscono funzionalità aggiuntive ai computer laptop laptop. Le PCMCIA Multifunzione hanno spesso più di una funzione, ad esempio, un'unica scheda potrebbe funzionare come telefono e modem fax e contemporaneamente come una scheda di rete.
+MS_Mice_Details:Il Mouse è un dispositivo di input per un computer che consente all'utente di controllare il movimento di un puntatore o di un cursore sul monitor. Il Mouse di solito si presenta con 2 o 3 pulsanti per manipolare gli oggetti nello schermo del monitor.
+MT_MemoryTechnologyDriver_Details:Driver a Tecnologia di Memoria è un dispositivo per gestire e interfacciarsi con la memoria flash   (periferiche di memorizzazione del computer) nei sistemi operativi Windows. 
+NT_Network_Details:Una rete di computer comprende un gruppo di dispositivi e di sistemi di calcolo che sono stati collegati assieme adoperando, mezzi quali wireless o cablature, per facilitare la comunicazione e la condivisione di risorse tra utenti differenti.
+PC_Pcmcia_Details:Una scheda PCMCIA (Personal Computer Memory Card International Association) è un  dispositivo di input/output (come una scheda di espansione) che si collega ad un computer portatile o a un notebook per fornire delle funzionalità aggiuntive. Esistono tre misure o tipi di schede PCMCIA.
+PT_Ports_Details:Le Porte sono punti di collegamento e svolgono il ruolo di interfaccia tra un computer e le periferiche oppure con altri computer. Le porte di un Computer possono essere interne oppure esterne. Dischi fissi e drive CD/DVD sono collegati attraverso la porta interna e le tastiere e i mouse attraverso una porta esterna.
+SC_SCSI_Details:SCSI è l'acronimo di Small Computer System Interface. Si tratta di una serie di interfacce standard, proposte dall'American National Standards Institute (ANSI), per collegare/attaccare dispositivi di periferica ad un personal computer per trasferire dati e comunicare.
+SH_Sdhost_Details:SD Host o Secure Data Host sono driver software in un computer che controllano il controller hardware dell'host e forniscono l'interfaccia per comunicare con le schede di memoria SD ed anche impostare i parametri operativi. 
+SO_SoundVideoGameControllers_Details:Controller Audio, Video e Gioco sono dispositivi che vengono adoperati in larghissima parte per applicazioni multimediali. Questi dispositivi facilitano l'input e l'output di sonoro e immagini grafiche del computer come allo stesso tempo di gestire l'interattività dell'utente.  
+SR_SmartCardReaders_Details:I lettori di Smart card sono periferiche di lettura di dati in ingresso su smart card ed anche in grado di scrivere informazioni sulle stesse. Un lettore di smart card deve essere interfacciato con un computer per poter funzionare. I lettori hanno solitamente una fessura dove poter inserire le smart card.
+SY_System_Details:Un sistema computer è una raccolta di componenti hardware e software che operano assieme in modo intelligente per far funzionare in modo efficiente un computer. Proprio come altri sistemi, i sistemi di computer prendono un ingresso, lo processano e forniscono un output.
+TD_TapeDrive_Details:Il Tape drive o Drive a nastro è un'altra periferica per la memorizzazione dei dati, ma viene adoperata per leggere e scrivere dati/informazioni su un nastro magnetico, il quale viene adoperato principalmente per scopi di memorizzazione e di archiviazione delle informazioni.
+US_USB_Details:Universal Serial Bus (USB) è principalmente un dispositivo di memorizzazione dati per memorizzare informazioni in formato digitale. Può essere collegato ad un computer e permette di attivare il trasferimento dei dati tra differenti computer. La quantità d'informazione che possono conservare varia da USB a USB.
+WC_WindowsCEUSBDevices_Details:Queste periferiche USB sono progettate per essere compatibili con Windows CE, un sistema operativo sviluppato per sistemi embedded. Tali periferiche controllano tutti i tipi di altre periferiche USB e garantiscono all'utente un'interfaccia di programmazione per le applicazioni in Windows CE. 
+WP_WindowsPortableDevice_Details:Windows Portable Devices o WPD è un tipo di tecnologia di driver per comunicare fra un computer, che funziona su Windows, e i dispositivi multimediali e di memorizzazione collegati. I Dispositivi che sono supportati da WPD comprendono i lettori MP3, le fotocamere digitali e i telefoni cellulari.
+MN_Monitor_Details:Il Monitor è un dispositivo in output in un sistema di computer che visualizza tutte le informazioni grafiche e visuali, che vengono prodotte dalla scheda video in un computer. I Monitor sono molto simili alle televisioni ma la differenza è che i monitor in genere tendono ad avere risoluzioni migliori.    
+CP_CPU_Details:CPU o Central Processing Unit è una periferica elettronica hardware che funziona come il cervello di un computer. Una CPU è responsabike per processare e gestire tutte le istruzioni e i comandi che riceve tanto dall'hardware che dal software che risulta in esecuzione in un computer. 
+PR_Printer_Details:Le Stampanti sono periferiche hardware esterne in output che stampano o trasferiscono dati elettronici, come documenti, testi o immagini, su comuni fogli di carta, cui ci si riferisce con il nome di hardcopy. Una stampante viene classificata come un dispositivo periferica, che significa che occorre venga collegata ad un computer prima di poter stampare.                                                                    
+Problem_1:Questa periferica non è configurata correttamente.
+Problem_3:Il driver per questa periferica potrebbe essere corrotto, oppure il vostro sistema potrebbe essere attivo in condizioni di memoria o risorse scarse.
+Problem_10:Questa periferica non è in grado di avviarsi.
+Problem_12:Questa periferica non riesce a trovare sufficienti risorse libere a sua disposizione. Se desiderate adoperare questa periferica, occorrerà che disabilitiate uno delle altre periferiche su questo sistema.
+Problem_14:Questa periferisca non riesce a funzionare correttamente fino a quando non riavverete il vostro computer.
+Problem_16:Windows cannot identify all the resources this device uses.
+Problem_18:Reinstall the drivers for this device.
+Problem_19:Windows cannot start this hardware device because its configuration information (in the registry) is incomplete or damaged.
+Problem_21:Windows is removing this device.
+Problem_22:This device is disabled.
+Problem_24:This device is not present, is not working properly, or does not have all its drivers installed.
+Problem_28:The drivers for this device are not installed.
+Problem_29:This device is disabled because the firmware of the device did not give it the required resources.
+Problem_31:Questa periferica non sta lavorando correttamente perché Windows non è in grado di caricare i driver richiesti per questa periferica.
+Problem_32:Un driver (servizio) per questa periferica è stato disabilitato. Un driver alternativo potrebbe essere in grado di fornire questa funzionalità.
+Problem_33:Windows non riesce a stabilire quali risorse sono richieste per questo dispositivo.
+Problem_34:Windows non riesce a determinare le impostazioni per questa periferica.
+Problem_35:Il firmware di sistema del vostro computer non comprende sufficienti informazioni per configurare e adoperare nel modo corretto questa periferica. Per adoperare questa periferica, contattate il produttore del vostro computer per ottenere un aggiornamento del firmware o del BIOS.
+Problem_36:Questo dispositivo richiede un interrupt PCI ma è stato configurato per un interrupt ISA (o viceversa). Si prega di adoperare il programma di installazione del computer per riconfigurare l'interrupt per questo dispositivo.
+Problem_37:Windows non riesce ad inizializzare il device driver per questo hardware.
+Problem_38:Windows non riesce a caricare il device driver per questo hardware perché un'istanza precedente del device driver si trova ancora in memoria.
+Problem_39:Windows non riesce a caricare il device driver per questo hardware. Il driver potrebbe essere corrotto oppure mancante.
+Problem_40:Windows non riesce ad accedere a questo hardware perché le informazioni fondamentali del servizio nel registro sono mancanti o registrate in modo scorretto.
+Problem_41:Windows ha caricato correttamente il device driver per questo hardware ma non è in grado di trovare il dispositivo hardware.
+Problem_42:Windows non riesce a caricare il device driver per questo hardware perché esiste una periferica duplicata già in esecuzione nel sistema.
+Problem_43:Windows ha interrotto questo servizio perché ha avuto una segnalazione di problemi.
+Problem_44:Un'applicazione o servizio ha spento questa periferica hardware.
+Problem_45:Al momento, questa periferica hardware non è collegata al computer.
+Problem_46:Windows non riesce ad ottenere l'accesso a questa periferica hardware perché il sistema operativo attualmente si sta spegnendo.
+Problem_47:Windows non riesce ad adoperare questa periferica hardware perché è stata predisposta per la rimozione sicura, ma non è stata fisicamente rimossa dal computer.
+Problem_48:Il software per questa periferica è stato bloccato in fase di avviamento perché è ben noto che manifesta dei problemi con  Windows. Contattate il venditore dell'hardware per un nuovo driver.
+Problem_49:Windows non riesce ad avviare i nuovi dispositivi hardware perché l'hive di sistema è troppo grande (supera il Limite Grandezza Registro).
+Problem_52:Windows non riesce a verificare la firma digitale per i driver necessari a questo dispositivo.
+Problem_Unknown:Problema sconosciuto
+HTTPException_1:Impossibile inviare la scansione driver per l'elaborazione
+HTTPException_2:Impossibile inviare la scansione driver per la pre -elaborazione
+HTTPException_3: Impossibile ottenere risultati del driver
+HTTPException_4: Impossibile scaricare le istruzioni del driver per il driver : { 0 }
+HTTPException_5:Errore di download driver: { 0 }
+FileIOException_1: Impossibile creare la cartella: { 0 }
+FileIOException_2:Impossibile scrivere i risultati della scansione
+FileIOException_3: Impossibile comprimere il file
+FileIOException_4: Impossibile leggere { 0 }
+FileIOException_5: Impossibile eliminare cartella del driver: { 0 }
+FileIOException_6:Non riesco a correggere la riga nel file: { 0 }
+FileIOException_7:Non riesco a correggere la stringa nel file: { 0 }
+FileIOException_8:Impossibile scrivere il file : { 0 }
+FileIOException_9: Impossibile decomprimere il file { 0 } di { 1 }
+FileIOException_10:Impossibile creare un collegamento sul desktop per { 0 }
+APIException_1: Impossibile eseguire la scansione dei driver
+APIException_2:Impossibile leggere ID di scansione
+APIException_3:Impossibile leggere il nome del computer
+APIException_4:Impossibile leggere i risultati della scansione
+APIException_5:Impossibile leggere le istruzioni di installazione per il driver:
+APIException_6:non poteva sfuggire righe nel file: { 0 }
+APIException_7:Impossibile analizzare i risultati del driver

@@ -1,0 +1,146 @@
+﻿Popups.UpdateDriverView = (function () {
+
+    var parentId = "#update_driver_pp";
+    var shadowId = "#update_driver_shadow_pp";
+    var progressBarId = "#driverUpdateProgressBar";
+    var downloadOpenButtonId = "#lightboxyesbtn1updt_drv";
+
+    var hide = function () {
+        $(parentId).hide();
+        $(shadowId).hide();
+    };
+
+    var show = function () {
+        $(parentId).show();
+        $(shadowId).show();
+    };
+
+    var setProgressBar = function (progress) {
+        $(progressBarId).progressbar({ value: parseInt(progress) });
+
+        if (parseInt(progress) == 100) {
+            $(downloadOpenButtonId).removeAttr('disabled'); //Enable
+        }
+    };
+
+    var render = function (updateModel) {
+        show();
+        var html = Popups.UpdateDriverView.UpdateDriverHtmlFactory.get(updateModel);
+        $(parentId).empty();
+        $(parentId).append(html);
+        setProgressBar(updateModel.Percentage);
+    };
+    return {
+        render: render,
+        hide: hide
+    };
+})();
+
+Popups.UpdateDriverView.UpdateDriverHtmlFactory = (function () {
+
+    var downloading = function (updateModel) {
+        return "<div class=\"download-flie-lightbox\">" + "<img src=\"lib/images/popup/lightbox/dr_icon.png\" class=\"logo-icon\" />" +
+            "<span class=\"download-adapterTxt\"> (" + updateModel.Percentage + "% of " + updateModel.FileName + ") <span> Driver Restore Download manager</span></span>" +
+            "<a href=\"#\" class=\"un-lghtbox-close1 updt_drv\" id=\"unlghtboxclose1updt_drv\" >" + "</a>" +
+            "<div class=\"basic-lightbox1\">" + "<span class=\"light-box_img1\">" + "</span>" +
+            "<h2 class=\"dlf-heading\"> Downloading File </h2></br>" +
+            "<div id=\"driverUpdateProgressBar\" style=\"left:6px;\" >" +
+            "</div>" +
+            "<p class=\"file-detail mg4\">" + "<label> File name: </label> <span title=" + updateModel.CompleteFileName + "> " + updateModel.FileName + " </span></p>" +
+            "<p class=\"file-detail\"><label> Download to:</label><span title=" + updateModel.DownloadFolderFullPath + "> " + updateModel.DownloadFolder + " </span></p>" +
+            "<p class=\"file-detail\"><label> Estimated time left:</label>" + "<span> " + updateModel.TimeLeft + " </span>" + "</p>" +
+            "<p class=\"file-detail\"><label>  Transfer rate:</label>" + "<span> " + updateModel.TransferRate + " </span>" + "</p>" +
+            "</div>" +
+            "<div class=\"lightbox-button1\">" +
+            "<input type=\"button\" class=\"lightbox-nobtn1  updt_drv\" id=\"lightboxnobtn1updt_drv\" value=\"Cancel\" />" +
+            "<input type=\"button\" class=\"lightbox-yesbtn1  updt_drv\" id=\"lightboxyesbtn1updt_drv\" disabled=\"disabled\" value=\"Open\" />" +
+            "</div>" +
+            "</div>";
+    };
+    var cancelDownload = function (updateModel) {
+        return "<div class=\"dr_un-lightbox-bg\">" +
+            "<p class=\"lightbox-header\">" + "<img src=\"lib/images/popup/lightbox/driverRestore-logo1.png\" class=\"dr_un-lgtbx-sfpc-logo lgtmg\" />" +
+            "<a href=\"#\" class=\"dr_un-lghtbox-close upd_drv_cd\" id=\"dr_unlghtboxcloseupd_drv_cd\" >" + "</a>" + "</p>" +
+             "<div class=\"dr_basic-lightbox dr-bg-white\">" +
+             "<div class=\"lightbox-content_v01\">" + "<span class=\"dr_light-box_img\">" + "</span>" +
+                   "<p class=\"lght-txt\"> " + updateModel.FileName + " is still downloading. Are you sure you want to cancel?</p>" +
+            "</div>" +
+            "</div>" +
+            "<div class=\"dr_lightbox-button\">" +
+            "<input type=\"button\" class=\"dr_lightbox-nobtn upd_drv_cd\" id=\"dr_lightboxnobtnupd_drv_cd\" value=\"No\" />" +
+            "<input type=\"button\" class=\"dr_lightbox-yesbtn upd_drv_cd\" id=\"dr_lightboxyesbtnupd_drv_cd\" value=\"Yes\" />" +
+            "</div>" +
+            "</div>";
+    };
+    var installNow = function (updateModel) {
+        return "<div class=\"download-flie-lightbox\">" + "<img src=\"lib/images/popup/lightbox/dr_icon.png\" class=\"logo-icon\" />" +
+            "<span class=\"download-adapterTxt\"> (" + updateModel.Percentage + "% of " + updateModel.FileName + ") <span> Driver Restore Download manager</span></span>" +
+            "<a href=\"#\" class=\"un-lghtbox-close1\" id=\"\" >" + "</a>" +
+            "<div class=\"basic-lightbox1\">" + "<span class=\"light-box_img1\">" + "</span>" +
+            "<h2 class=\"dlf-heading\"> Downloading File </h2></br>" +
+            "<div id=\"driverUpdateProgressBar\" style=\"left:6px;\" >" +
+            "</div>" +
+            "<p class=\"file-detail mg4\">" + "<label> File name: </label> <span title=" + updateModel.CompleteFileName + "> " + updateModel.FileName + " </span></p>" +
+            "<p class=\"file-detail\"><label> Download to:</label><span title=" + updateModel.DownloadFolderFullPath + "> " + updateModel.DownloadFolder + " </span></p>" +
+            "<p class=\"file-detail\"><label> Estimated time left:</label>" + "<span> " + updateModel.TimeLeft + " </span>" + "</p>" +
+            "<p class=\"file-detail\"><label>  Transfer rate:</label>" + "<span> " + updateModel.TransferRate + " </span>" + "</p>" +
+            "</div>" +
+            "<div class=\"lightbox-button1\">" +
+            "</div>" +
+            "</div>" +
+            "<div class=\"un-lightbox-bg\" style=\"position:absolute;top: 210px;left:230px;\">" +
+            "<span class=\"adapterTxt\"> " + (updateModel.DeviceName.length > 50 ? (updateModel.DeviceName.substring(0, 50) + ".....") : updateModel.DeviceName) + " </span>" +
+            "<a href=\"#\" class=\"un-lghtbox-close upd_drv_inst\" id=\"unlghtboxcloseupd_drv_inst\"></a>" +
+            "<!--a href=\"#\" class=\"un-lghtbox-res-down\">" + "</a>" +
+            "<a href=\"#\" class=\"un-lghtbox-min\">" + "</a-->" +
+            "<div class=\"basic-lightbox\">" + "<span class=\"light-box_img\">" + "</span>" +
+            (updateModel.FileType == Popups.UpdateDriver.DriverFileType.Exe ?
+            ("<p>This driver downloaded successfully.<br />" + "<span class=\"liketoinstall\"> Would you like to install it now?</span>") : ("<p>Zip folder containing your <br />driver update has been downloaded.<br>" + "<span class=\"liketoinstall\"> Would you like to open it now?</span>")) +
+            "</p>" +
+            "<div class=\"lightbox-button\" >" +
+            "<input type=\"button\" class=\"lightbox-nobtn upd_drv_inst\" id=\"lightboxnobtnupd_drv_inst\" value=\"No\" />" +
+            "<input type=\"button\" class=\"lightbox-yesbtn upd_drv_inst\" id=\"lightboxyesbtnupd_drv_inst\" value=\"Yes\" />" +
+            "</div>" +
+            "</div>" +
+            "</div>";
+    };
+    var webUpdate = function (updateModel) {
+            return "<div id=\"page\">" +
+            "<div class=\" download_popup driver_update_popup \">" +
+            "<div class=\" top-div \">" +
+            "<div class=\"logo pT10\">" + "</div>" +
+            "<div class=\"inne_popup\">" +
+             "<p class=\"heading\">To Update your <b> " + updateModel.DeviceName + " </b>  Driver Update</p>" +
+            "<div class=\"popup_text\">" +
+            "<img src=\"lib/images/popup/chipset.png\" class=\"updte_driver fl\">" +
+            "<p class=\"update-text\">The product manufacture of your <b> " + updateModel.DeviceName + " </b> device requires that all driver downloads for this device be launched from their official website.<br>" +
+            "<br> Please click \"Update Now\" to proceed with updating your <b> " + updateModel.DeviceName + "</b>  device </p>" +
+            "<div class=\"clear\">" + "</div>" +
+            "<div class=\" textcenter\">" + "<a href=\"#\" class=\"update-now\" style=\"bottom:30px;\" id=\"installNow_webUpdate\" >" + "</a>" + "</div>" +
+            "</div>" +
+            "<span class=\"close_3\" id=\"installNow_webUpdate_cancel\" >" + "</span>" +
+            "</div>" +
+            "</div>" +
+            "</div>" +
+            "<div class=\"popup_shadow\">" + "</div>" +
+            "</div>";
+    };
+
+
+    var get = function (updateModel) {
+        switch (updateModel.State) {
+            case Popups.UpdateDriver.States.CancelDownload:
+                return cancelDownload(updateModel);
+            case Popups.UpdateDriver.States.InstallNow:
+                return installNow(updateModel);
+            case Popups.UpdateDriver.States.WebUpdate:
+                return webUpdate(updateModel);
+            case Popups.UpdateDriver.States.Downloading:
+                return downloading(updateModel);
+        }
+    };
+
+    return {
+        get: get
+    };
+})();

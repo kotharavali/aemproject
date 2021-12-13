@@ -1,0 +1,144 @@
+﻿<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SearchNewWindow</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+</head>
+<body>
+    <div id="search">
+        <input class="" value="" title="Search" id="searchInput">
+        <button class="btn" value="Search" title="" type="submit" id="searchButton"></button>
+    </div>
+    <!-- <img src="images/home.png" id="homeButton" class="btn" /> -->
+    <img src="images/settings.png" id="settingsButton" class="btn" />
+    <div id="settingsTab">
+        <span id="popupTitle">Settings</span>
+        <div class="settingsOpt">
+            Weather
+            <div class="cfswitch">
+                <input type="checkbox" name="cfswitch" class="cfswitch-checkbox" id="weatherAlt" checked>
+                <label class="cfswitch-label" for="weatherAlt">
+                    <span class="cfswitch-inner"></span>
+                    <span class="cfswitch-switch"></span>
+                </label>
+            </div>
+            <div class="onoffswitch">
+                <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="weatherSettings" checked>
+                <label class="onoffswitch-label" for="weatherSettings">
+                    <span class="onoffswitch-inner"></span>
+                    <span class="onoffswitch-switch"></span>
+                </label>
+            </div>
+        </div>
+        <div class="settingsOpt">
+            Time
+            <div class="timeswitch">
+                <input type="checkbox" name="timeswitch" class="timeswitch-checkbox" id="timeAlt" checked>
+                <label class="timeswitch-label" for="timeAlt">
+                    <span class="timeswitch-inner"></span>
+                    <span class="timeswitch-switch"></span>
+                </label>
+            </div>
+            <div class="onoffswitch">
+                <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="timeSettings" checked>
+                <label class="onoffswitch-label" for="timeSettings">
+                    <span class="onoffswitch-inner"></span>
+                    <span class="onoffswitch-switch"></span>
+                </label>
+            </div>
+
+        </div>
+        <img src="images/close.png" id="closeSettings" />
+    </div>
+    <div id="reportForm" class="reportPart">
+        <span id="popupTitle" class="reportPart">Report Form</span>
+        <form action="/Contact" id="contactform" method="post" class="reportPart"><input name="__RequestVerificationToken" type="hidden" value="OLeELfsROQZXAAekFvkVRppFaDn5JTrmArDbxSBzsrdEhvc84-DJtoRzFnAH27yRowZFIfKobl7UgscOHJ0hCbLEf5A1" /><input id="guid" name="guid" type="hidden" value="" class="reportPart"/>
+            <div class="reportPart">
+                <label for="Name" class="reportPart">Name*</label>
+                <input data-val="true" data-val-required="The Name* field is required." id="Name" name="Name" type="text" value="" class="reportPart"/>
+                <span class="field-validation-valid" data-valmsg-for="Name" data-valmsg-replace="true"></span>
+            </div>
+            <div class="reportPart">
+                <label for="Email" class="reportPart">Email*</label>
+                <input data-val="true" data-val-email="Please enter a valid Email address." data-val-required="The Email* field is required." id="Email" name="Email" type="text" value="" class="reportPart"/>
+                <span class="field-validation-valid" data-valmsg-for="Email" data-valmsg-replace="true"></span>
+            </div>
+            <div class="reportPart">
+                <label for="Phone" class="reportPart">Phone</label>
+                <input id="Phone" name="Phone" type="text" value="" class="reportPart"/>
+                <span class="field-validation-valid" data-valmsg-for="Phone" data-valmsg-replace="true"></span>
+            </div>
+            <div class="reportPart">
+                <label for="Message" class="reportPart">Message*</label>
+                <textarea Columns="55" Rows="5" TextMode="MultiLine" cols="20" data-val="true" data-val-required="The Message* field is required." id="Message" name="Message" rows="2" class="reportPart">
+                </textarea>
+                <span class="field-validation-valid" data-valmsg-for="Message" data-valmsg-replace="true"></span>
+            </div>
+            <div class="reportPart">
+                <label for="" class="reportPart">*required field</label>
+            </div>
+            <br />
+            <div id="reportID" class="reportPart">
+
+            </div>
+            <button type="submit" class="reportPart">
+                <span class="reportPart">Submit</span>
+            </button>
+        </form>
+        <img src="images/close.png" id="closeReport" class="reportPart" />
+    </div>
+    <div id="themebar">
+        <div class="dropdown">
+            <img src="images/wallpaper.png" class="wallPaper"/>
+            <div id="themeMenu" class="themes">
+                <a href="#" class="dropTheme" id="beaches">Beach</a>
+                <a href="#" class="dropTheme" id="mountains">Mountain</a>
+                <a href="#" class="dropTheme" id="forests">Forest</a>
+                <a href="#" class="dropTheme" id="castles">Castle</a>
+                <a href="#" class="dropTheme" id="wildlife">Wildlife</a>
+            </div>
+
+            <div id="popup">
+            </div>
+        </div>
+    </div>
+    <div id="clock">
+        <div id="Date"></div>
+        <div id="time">
+            <ul id="timeDisp">
+                <li id="hours"> </li>
+                <li id="point">:</li>
+                <li id="min"> </li>
+                <li id="ampm"> </li>
+            </ul>
+        </div>
+    </div>
+    <div id="weather">
+
+    </div>
+    <div id="disclaimer">
+    </div>
+    <div id="openModal" class="modal hide fade">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-body" id="cont-container">
+            <div id="cont-copy">
+                <h4>Welcome to SearchNewWindow!</h4>
+            </div>
+            <div class="openModalButton">
+              <button>OK</button>
+            </div>
+        </div>
+      </div>
+    </div>
+
+    <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery.simpleWeather.min.js"></script>
+    <script type="text/javascript" src="js/jquery.bxslider.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/interact.min.js"></script>
+    <script type="text/javascript" src="js/initstart.js"></script>
+</body>
+</html>

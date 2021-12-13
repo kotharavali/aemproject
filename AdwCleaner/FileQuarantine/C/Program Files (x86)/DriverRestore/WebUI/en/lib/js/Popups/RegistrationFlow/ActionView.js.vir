@@ -1,0 +1,64 @@
+﻿Popups.RegistrationFlow.ActionView = (function () {
+    var actionViewId = '#regflw_actionview';
+
+    var render = function (state) {
+        var htmlactionView = Popups.RegistrationFlow.ActionViewHtmlFactory.get(state);
+        $(actionViewId).empty();
+        $(actionViewId).append(htmlactionView);
+    };
+
+    return {
+        render: render
+    };
+})();
+
+Popups.RegistrationFlow.ActionViewHtmlFactory = (function () {
+    var get = function (state) {
+
+        switch (state) {
+            case Popups.RegistrationFlow.States.ONQUIT_SCANCOMPLETE_DRIVERSFOUND:
+                return onQuitScanComplete();
+            case Popups.RegistrationFlow.States.ONQUIT_SCANCOMPLETE_DRIVERSNOTFOUND:
+                return onQuitScanCompleteNoDriversFound();
+            case Popups.RegistrationFlow.States.ONQUIT_SCANINCOMPLETE:
+                return onQuitScanIncomplete();
+            case Popups.RegistrationFlow.States.ONSCANEND_DRIVERSFOUND:
+                return onQuitScanComplete();
+            case Popups.RegistrationFlow.States.ONSCANEND_DRIVERSNOTFOUND:
+                return onScanEndNoDriversFound();
+            default:
+        }
+    };
+
+    var onQuitScanIncomplete = function () {
+        return "";
+    };
+
+    var onQuitScanComplete = function () {
+        return "<div class=\"content_register\">" +
+            "<h1>Update All Drivers with Driver Restore</h1>" +
+            "<span>Update Drivers and improve your PC’s Performance with Driver Restore.</span>" +
+            "<a class=\"button fix_error_now regflw\" href=\"#\"></a>" +
+            "</div>";
+    };
+
+    var onScanEndNoDriversFound = function () {
+        return "<div class=\"content_register con-mrg\">" +
+            "<h1>Update All Drivers with Driver Restore</h1>" +
+            "<span>Update Drivers and improve your PC’s Performance with Driver Restore.</span>" +
+            "<a class=\"button reg-now regflw\" href=\"#\"></a>" +
+            "</div>";
+    };
+
+    var onQuitScanCompleteNoDriversFound = function () {
+        return "<div class=\"content_register\">" +
+            "<h1>Update All Drivers with Driver Restore</h1>" +
+            "<span>Update Drivers and improve your PC’s Performance with Driver Restore.</span>" +
+            "<a class=\"button reg-now regflw\" href=\"#\"></a>" +
+            "</div>";
+    };
+
+    return {
+        get: get
+    };
+})();

@@ -1,0 +1,230 @@
+﻿$(document).ready(function () {
+    try {
+
+        document.body.attachEvent('ondragstart', function () { return false; });
+        document.body.setAttribute('unselectable', 'on');
+        document.body.style.cursor = 'default';
+
+        addWindowDragEvents();
+
+        addEvent('click', document.body, function (e) {
+            e = e || window.event;
+            var target = e.target || e.srcElement;
+            text = target.textContent || target.innerText;
+			window.external.ElementClicked(text, target.id, target.className, target.parentNode.className);
+
+            //only checkboxes are allowed default propagation
+			if (target.id != 'undefined' && (target.type == "checkbox" || target.type == "radio"  || target.type != "textarea"))
+                return true;
+
+            return false; // prevents event propagation
+        });
+
+        $("#updates").load("popups/update.html");
+        $("#question_form_pp").load("popups/question_form.html");
+        $("#register_now_pp").load("popups/register_now.html");
+        $("#registration_flow_pp").load("popups/registration_flow.html");
+        $("#update_drivers_flow_pp").load("popups/update_driver.html");
+        $("#feedback").load("popups/feedback.html");
+        $("#actv_lightbox").load("popups/activation_lightbox.html");
+        $("#tech_support").load("popups/tech_support.html");
+
+		
+		allowTextAreaSelection();
+		
+		disableSpecificKeyboardKeys();
+    }
+    catch (err) {
+        window.external.OnJavaScriptError(err.source + '-OnPageLoad: ' + err.message);
+    }
+});
+
+/*patch IE bug: DELETE key doesn't remove input text*/
+function emptySelectedTextArea(){
+	activeElement = document.activeElement;
+	if (activeElement.tagName == "INPUT" || activeElement.tagName == "TEXTAREA" || activeElement.tagName == "TEXT"){
+		activeElement.value = "";
+	}
+}
+
+function allowTextAreaSelection() {
+    // allow select for input elements
+    $(document.body).on('selectstart', function (e) {
+        return (e.target.nodeName == "INPUT") || (e.target.nodeName == "TEXTAREA");
+    });
+}
+
+function disableSpecificKeyboardKeys() {
+    $(document).unbind('keydown').bind('keydown', function (event) {
+        var doPrevent = false;
+        if (event.keyCode === 8) {
+            var d = event.srcElement || event.target;
+            if ((d.tagName.toUpperCase() === 'INPUT' && (d.type.toUpperCase() === 'TEXT' || d.type.toUpperCase() === 'PASSWORD' || d.type.toUpperCase() === 'FILE' || d.type.toUpperCase() === 'EMAIL'))
+				 || d.tagName.toUpperCase() === 'TEXTAREA') {
+                doPrevent = d.readOnly || d.disabled;
+            }
+            else {
+                doPrevent = true;
+            }
+        } else if (event.keyCode === 9) {
+            doPrevent = true;
+        }
+
+        if (doPrevent) {
+            event.preventDefault();
+        }
+    });
+}
+
+function SetElementInnerHtml(id, value) {
+
+    try {
+        if (document.getElementById(id) != null) {
+            document.getElementById(id).innerHTML = value;
+            return;
+        }
+        $("#" + id, $("#maincontentframe").contents()).html(value);
+    }
+    catch (err) {
+         window.external.OnJavaScriptError(err.source + '-SetElementInnerHtml: ' + id + ' ' + err.message);
+    }
+}
+
+function SetProgressBarColor(id,type)
+{
+  return  window.frames['maincontentframe'].window.SetProgressBarColor(id,type);
+}
+
+function SetElementPropertyByClassName(className, property, value) {
+    
+    $("." + className, $("#maincontentframe").contents()).each(function () {
+        $(this).css(property, value);
+    });
+    eval("x = document.getElementById('maincontentframe');");
+    eval(" y = (x.contentDocument) ? x.contentDocument : x.contentWindow.document;");
+    eval("  y.getElementsByClassName('" + className + "')." + property + "=" + value + ";");
+}
+
+function SetElementProperty(id, property, value) {
+    try {
+	
+        if (document.getElementById(id) != null) {
+            eval("document.getElementById('" + id + "')." + property + "=" + value + ";");
+            return;
+        }
+        x = document.getElementById("maincontentframe");
+        y = (x.contentDocument) ? x.contentDocument : x.contentWindow.document;
+        z = y.getElementById(id);
+        z.property = value;
+
+         eval("x = document.getElementById('maincontentframe');");
+         eval(" y = (x.contentDocument) ? x.contentDocument : x.contentWindow.document;");
+         eval("  y.getElementById('" + id + "')." + property + "=" + value + ";");
+       
+    }
+    catch (err) {
+        window.external.OnJavaScriptError(err.source + '-SetElementProperty: ' + id + ' ' + err.message);
+    }
+}
+
+function SubmitActivationKey(id, type) {
+    try {
+        var key = document.getElementById(id).value;
+        window.external.SubmitActivationKey(key, type);
+    }
+    catch (err) {
+        window.external.OnJavaScriptError(err.source + '-SubmitActivationKey: ' + ' ' + err.message);
+    }
+}
+
+function navigateToTab(tabName,urlParams) {
+	try{
+	    document.getElementById('maincontentframe').src = document.getElementById(tabName).href + (urlParams == null ? "" : urlParams);
+
+	    highlightNavigatedTab(tabName);
+	}
+	catch (err) {
+        window.external.OnJavaScriptError(err.source + '-navigateToTab: ' + err.message);
+    }
+    
+}
+
+function highlightNavigatedTab(tabName) {
+    if (tabName == 'nav_overview' || tabName == 'nav_sys_scan' || tabName == 'nav_settings' || tabName == 'abouttab') {
+        if (tabName == 'abouttab') {
+            $("#" + tabName).parent('li').addClass("active");
+            $("#nav_settings").parent('li').parent('ul').children('li').each(function() {
+                $(this).removeClass("active");
+            });
+        } else {
+            $("#" + tabName).parent('li').parent('ul').children('li').each(function() {
+                $(this).removeClass("active");
+            });
+            $("#" + tabName).parent('li').addClass("active");
+            $("#abouttab").parent('li').removeClass("active");
+        }
+    }
+
+}
+
+function addEvent(evnt, elem, func) {
+    try {
+        if (elem.addEventListener)  // W3C DOM
+            elem.addEventListener(evnt, func, false);
+        else if (elem.attachEvent) { // IE DOM
+            elem.attachEvent('on' + evnt, func);
+        }
+        else { // No much to do
+            elem['on' + evnt] = func;
+        }
+    }
+    catch (err) {
+        window.external.OnJavaScriptError(err.source + '-addEvent: ' + err.message);
+    }
+}
+
+function addWindowDragEvents() {
+    addEvent('mousedown', document.body, function (e) { e = e || event; if (elementIsAllowedToDrag(e)) window.external.BrowserMouseDown(e.clientX, e.clientY, e.button); });
+    addEvent('mouseup', document.body, function (e) { e = e || event; window.external.BrowserMouseUp(e.clientX, e.clientY); });
+    addEvent('mousemove', document.body, function (e) { e = e || event; window.external.BrowserMouseMove(e.clientX, e.clientY); });
+    addEvent('mouseout', document.body, function (e) { e = e || event; window.external.BrowserMouseOut(e.clientX, e.clientY); });
+
+}
+
+function elementIsAllowedToDrag(e) {
+    return  e.srcElement.id     != "error_found_detail_table"   &&
+            e.srcElement.type   != "button"                     &&
+            e.srcElement.type   != "checkbox"                   &&
+            e.srcElement.type   != "textarea"                   &&
+			e.srcElement.type   != "text"	                    &&
+            typeof  e.srcElement.href == "undefined";
+    
+}
+
+function callMethodInIframe(name,params) {
+    try {
+        window.frames['maincontentframe'].window[name](params);
+    }
+    catch (err) {
+        window.external.OnJavaScriptError(err.source + '-callMethodInIframe: ' + ' ' + err.message);
+    }
+}
+
+function callObjectMethodInIframeDomain(domain,object,method, params) {
+    try {
+        window.frames['maincontentframe'].window[domain][object][method](params);
+    }
+    catch (err) {
+        window.external.OnJavaScriptError(err.source + '-callObjectMethodInIframeDomain: ' + ' ' + err.message);
+    }
+}
+
+
+function callObjectMethodOnDomain(domain, object, method, params) {
+    try {
+        window[domain][object][method](params);
+    }
+    catch (err) {
+        window.external.OnJavaScriptError(err.source + '-callObjectMethodOnDomain: ' + ' ' + err.message);
+    }
+}

@@ -1,0 +1,21 @@
+Using existing downloads folder: C:\Program Files (x86)\DriverRestore\Downloads
+dwcPerformScan
+_saveScanResult
+Wrote 84730 characters to file: C:\Program Files (x86)\DriverRestore\DriverScan.xml
+_compressFile
+Wrote 84731 characters to compressed file: C:\Program Files (x86)\DriverRestore\DriverScan.xml.gzip
+_gatherDisconnectedDevices
+_postDriverScanToAPP
+
+_logScanDebugInfo
+_scanId: f594111fa0ff0d48d34c4e1281cc18be
+_hwId: 
+_computerName: LAPTOP-M2RH9VQU
+_scannedItemsCount: 0
+_problemCount: 0
+_lastScannedObject: 
+_lastBrokenObject: 
+_scanStartedAt: 4/17/2016 6:21:34 PM
+_scanCompletedAt: 4/17/2016 6:21:50 PM
+_scanTotalTime: 00:00:16.7907524
+

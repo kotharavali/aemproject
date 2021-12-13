@@ -1,0 +1,109 @@
+﻿Popups.Feedback.FeedbackType = {
+    UpdateWorked : 0,
+    UpdateFailed  : 1,
+    UserCommentDidNotDownload  : 2,
+    UserCommentDidNotLaunch  : 3,
+    UserCommentWrongLanguage  : 4,
+    UserCommentInstalledNoChange  : 5,
+    UserCommentInstalledNotWorking  : 6,
+    UserCommentOther  : 7
+};
+
+Popups.Feedback.EventType =
+{
+    DriverUpdate: 0,
+    UserFeedback: 1,
+    ReportProblem: 2
+};
+
+Popups.Feedback.Events = (function () {
+    var topRadioButtons = "input[type=radio]";
+    var feedbackCenterSection = "#feedbackCenterSection";
+    var okButton = "#installFeedbackOkBtn,#reportProblemOkBtn";
+    var closeButton = ".dr_un-lghtbox-close1,.dr_thanks-lghtbox-close,dr_thanks-lghtbox-close,.ok_thanks_btn,#thankYouBtn,#installFeedbackCancelBtn";
+
+    var clearAllBottomRadios = function () {
+        $('#option3').attr('checked', false);
+        $('#option4').attr('checked', false);
+        $('#option5').attr('checked', false);
+        $('#option6').attr('checked', false);
+        $('#option7').attr('checked', false);
+    };
+    var clearComment = function () {
+        $(".un-other-reason").val("");
+    };
+
+    var onRadioButtonClicked = function (e) {
+        if (e.target.id == "option2") {
+            $(feedbackCenterSection).show();
+            clearAllBottomRadios();
+            clearComment();
+            $(okButton).attr("disabled", "disabled");
+        }
+        else if (e.target.id == "option1") {
+            $(feedbackCenterSection).hide();
+            $(okButton).removeAttr("disabled");
+        }
+        else {
+            $(okButton).removeAttr("disabled");
+        }
+    };
+
+    var onOkButtonClicked = function () {
+
+        if ($("#option1").is(":checked")) {
+            Popups.FeedbackView.render({ State: Popups.Feedback.States.SuccesfullInstallThanks });
+            window.setTimeout(function () { Popups.FeedbackView.hide(); }, 3000);
+            return;
+        }
+
+        if ($("#option3").is(":checked")) {
+            window.external.DriverFeedback(Popups.Feedback.DriverInfo.Name, Popups.Feedback.DriverInfo.Category, Popups.Feedback.FeedbackType.UserCommentDidNotLaunch, $(".un-other-reason").val());
+        }
+        if ($("#option4").is(":checked")) {
+            window.external.DriverFeedback(Popups.Feedback.DriverInfo.Name, Popups.Feedback.DriverInfo.Category, Popups.Feedback.FeedbackType.UserCommentWrongLanguage, $(".un-other-reason").val());
+        }
+        if ($("#option5").is(":checked")) {
+            window.external.DriverFeedback(Popups.Feedback.DriverInfo.Name, Popups.Feedback.DriverInfo.Category, Popups.Feedback.FeedbackType.UserCommentInstalledNoChange, $(".un-other-reason").val());
+        }
+        if ($("#option6").is(":checked")) {
+            window.external.DriverFeedback(Popups.Feedback.DriverInfo.Name, Popups.Feedback.DriverInfo.Category, Popups.Feedback.FeedbackType.UserCommentInstalledNotWorking, $(".un-other-reason").val());
+        }
+        if ($("#option7").is(":checked")) {
+            if ($(".un-other-reason").val() == "") {
+                window.external.ShowMessageBox("Please provide a valid comment before sending the feedback report.","Driver Restore");
+                return;
+            };
+
+            window.external.DriverFeedback(Popups.Feedback.DriverInfo.Name, Popups.Feedback.DriverInfo.Category, Popups.Feedback.FeedbackType.UserCommentOther, $(".un-other-reason").val());
+        }
+
+        Popups.FeedbackView.render({ State: Popups.Feedback.States.FailedInstallThanks });
+    };
+    
+    var closeButtonClicked = function () {
+        Popups.FeedbackView.hide();
+    };
+
+    var disableOkButtonOnReportProblemScreen = function () {
+        if ($("#option1").length == 0) {
+            $(okButton).attr("disabled", "disabled");
+        }
+    };
+
+    var init = function () {
+        disableOkButtonOnReportProblemScreen();
+
+        $(topRadioButtons).unbind();
+        $(okButton).unbind();
+        $(closeButton).unbind();
+
+        $(topRadioButtons).bind("click", onRadioButtonClicked);
+        $(okButton).bind("click", onOkButtonClicked);
+        $(closeButton).bind("click", closeButtonClicked);
+    };
+
+    return {
+        init: init
+    };
+})();

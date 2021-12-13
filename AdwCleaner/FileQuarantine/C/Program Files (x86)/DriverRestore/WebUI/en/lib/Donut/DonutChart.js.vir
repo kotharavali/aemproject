@@ -1,0 +1,49 @@
+﻿var DonutChart = DonutChart || {};
+
+DonutChart.Create = function (outOfDate, missing, upToDate) {
+    try {
+        var outOfDateDrivers = 0;
+        var missingDrivers = 0;
+        var upToDateDrivers = 1;
+
+        if (outOfDate != "?" && outOfDate != "")
+             outOfDateDrivers = parseFloat(outOfDate);
+        if (missing != "?" && missing != "")
+             missingDrivers = parseFloat(missing);
+        if (upToDate != "?" && upToDate != "")
+            upToDateDrivers = parseFloat(upToDate);
+        if (outOfDateDrivers == 0 && missingDrivers == 0 && upToDateDrivers == 0)
+            upToDateDrivers = 1;
+
+        var showInLabel = false;
+        if (outOfDateDrivers == 0 && missingDrivers == 0 && upToDateDrivers == 1)
+            showInLabel = false;
+        else
+            showInLabel = true;
+
+        $('#summary_donut').empty();        
+        var s1 = [['Out of Date', outOfDateDrivers], ['Missing', missingDrivers], ['Up-to-Date', upToDateDrivers]];
+
+        var plot3 = $.jqplot('summary_donut', [s1], {
+            seriesColors: ["#BC141A", "#FDB719", "#839A21"],
+            grid: {
+                drawBorder: false,
+                shadow: false,
+                background: 'rgba(0,0,0,0)'
+            },
+            seriesDefaults: {
+                renderer: $.jqplot.DonutRenderer,
+                rendererOptions: {
+                    sliceMargin: 0.01,
+                    startAngle: -90,
+                    showDataLabels: showInLabel,
+                    dataLabels: 'value'
+                }
+            }, legend: { show: false, location: 'e' }
+        });
+        $('.jqplot-data-label').css('color', '#ffffff');
+    }
+    catch (err) {
+        window.external.OnJavaScriptError(err.source + '-DonutChart.Create: ' + err.message);
+    }
+}

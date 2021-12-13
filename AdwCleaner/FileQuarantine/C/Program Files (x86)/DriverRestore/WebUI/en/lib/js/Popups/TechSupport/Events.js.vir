@@ -1,0 +1,29 @@
+﻿Popups.TechSupport.Buttons = {
+  TermsAndConds: 0
+};
+
+Popups.TechSupport.Events = (function () {
+  var techSupportCloseBtn = ".close.close_2.techSupp";
+  var techSupportTermsAndConds = "#techSupportTermsAndConds";
+
+  var closeTechSupportPopup = function () {
+    Popups.TechSupport.hide();
+  };
+
+  var openTechSupportTermsAndConds = function () {
+    // window.external.TechSupportPopupClicked(Popups.TechSupport.Buttons.TermsAndConds);
+    window.external.TermsAndConds();
+  };
+
+  var init = function () {
+    $(techSupportCloseBtn).unbind();
+    $(techSupportTermsAndConds).unbind();
+
+    $(techSupportCloseBtn).bind("click", closeTechSupportPopup);
+    $(techSupportTermsAndConds).bind("click", openTechSupportTermsAndConds);
+  };
+
+  return {
+    init: init
+  };
+})();

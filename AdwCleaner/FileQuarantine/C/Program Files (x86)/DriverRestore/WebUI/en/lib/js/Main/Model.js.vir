@@ -1,0 +1,21 @@
+﻿var Main = Main || {};
+
+Main.MainModel = {
+    IsRegistered: false,
+    IsFirstScan: true,    
+    set: function (jsonData) {
+        try {
+            var obj = $.parseJSON(jsonData);
+
+            this.IsRegistered = obj.IsRegistered;
+            this.IsFirstScan = obj.IsFirstScan;
+            
+            Main.MainView.render(this);
+
+            Main.Events.init();
+
+        } catch (err) {
+            window.external.OnJavaScriptError(err.source + '-Main.MainModel.set: ' + err.message);
+        }
+    }
+};

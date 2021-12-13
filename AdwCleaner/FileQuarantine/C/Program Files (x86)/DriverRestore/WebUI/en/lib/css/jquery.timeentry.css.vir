@@ -1,0 +1,7 @@
+/* TimeEntry styles */
+.timeEntry_control {
+	left: -81px;
+    margin-left: 2px;
+    position: relative;
+    top: 64px;
+}

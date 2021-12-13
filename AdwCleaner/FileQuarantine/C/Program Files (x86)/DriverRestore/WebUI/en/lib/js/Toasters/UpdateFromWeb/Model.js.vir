@@ -1,0 +1,14 @@
+﻿var Toasters = Toasters || {};
+
+Toasters.UpdateFromWebModel = {
+    set: function (jsonData) {
+        try {
+            var obj = $.parseJSON(jsonData);
+
+            Toasters.UpdateFromWebView.render(obj);
+
+        } catch (err) {
+            window.external.OnJavaScriptError(err.source + '-Toasters.UpdateFromWebModel.set: ' + err.message);
+        }
+    }
+};

@@ -1,0 +1,13 @@
+﻿var Toasters = Toasters || {};
+
+Toasters.UpdateFromFolderModel = {
+    set: function (jsonData) {
+        try {
+            var obj = $.parseJSON(jsonData);
+            Toasters.UpdateFromFolderView.render(obj);
+
+        } catch (err) {
+            window.external.OnJavaScriptError(err.source + '-Toasters.UpdateFromFolderModel.set: ' + err.message);
+        }
+    }
+};

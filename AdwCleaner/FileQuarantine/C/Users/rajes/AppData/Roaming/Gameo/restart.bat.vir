@@ -1,0 +1,1 @@
+cd "C:\Users\rajes\AppData\Roaming\Gameo" & taskkill /F /IM gameo.exe & gameo.exe gameo.dat mode:minimized

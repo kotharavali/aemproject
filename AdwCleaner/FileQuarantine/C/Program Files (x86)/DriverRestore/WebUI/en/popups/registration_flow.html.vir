@@ -1,0 +1,30 @@
+﻿<script src="lib/js/Popups/RegistrationFlow/Model.js" type="text/javascript"></script>
+<script src="lib/js/popups/registrationflow/containerview.js" type="text/javascript"></script>
+<script src="lib/js/popups/registrationflow/topview.js" type="text/javascript"></script>
+<script src="lib/js/popups/registrationflow/bottomview.js" type="text/javascript"></script>
+<script src="lib/js/popups/registrationflow/leftcontentview.js" type="text/javascript"></script>
+<script src="lib/js/popups/registrationflow/rightcontentview.js" type="text/javascript"></script>
+<script src="lib/js/popups/registrationflow/actionview.js" type="text/javascript"></script>
+<script src="lib/js/popups/registrationflow/events.js" type="text/javascript"></script>
+
+<div >
+	<div class="" id="regflw_container" style="display:none;">
+	    <div class="error">
+		    <span id = "regflw_topview">			
+		    </span>		
+		    <article class="scan-smry">		
+			    <span id = "regflw_leftcontview">
+			    </span>
+			    <span id = "regflw_rightcontview">
+			    </span>
+		    </article>		
+		    <span id = "regflw_actionview">
+		    </span>
+	    </div>	
+	    <span id = "regflw_bottomview">
+	    </span>	
+	    <span class="close close_2 regflw"></span>	
+	</div>
+	<div class="popup_shadow"  id="regflw_shadow" style="display:none;"></div>
+</div>
+

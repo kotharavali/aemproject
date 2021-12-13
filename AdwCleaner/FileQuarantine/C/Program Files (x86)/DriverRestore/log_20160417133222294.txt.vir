@@ -1,0 +1,32 @@
+Using existing downloads folder: C:\Program Files (x86)\DriverRestore\Downloads
+dwcPerformScan
+_saveScanResult
+Wrote 84730 characters to file: C:\Program Files (x86)\DriverRestore\DriverScan.xml
+_compressFile
+Wrote 84731 characters to compressed file: C:\Program Files (x86)\DriverRestore\DriverScan.xml.gzip
+_gatherDisconnectedDevices
+_postDriverScanToAPP
+_postDriverScan
+_getDriverResults
+_loadDriverStatus
+_processDriverResultsXML
+_checkAPPImageOnline failed: https://leads.383media.com/images/devices/imaging-devices.png
+System.Net.WebException: The operation has timed out
+   at System.Net.HttpWebRequest.GetResponse()
+   at DriverRestore.Scanner.DriversScanner._checkAPPImageOnline(String url)
+_setLandingPageDevice
+_checkDriverStatusFeedback
+
+_logScanDebugInfo
+_scanId: f594111fa0ff0d48d34c4e1281cc18be
+_hwId: f594111fa0ff0d48d34c4e1281cc18be
+_computerName: LAPTOP-M2RH9VQU
+_scannedItemsCount: 85
+_problemCount: 1
+_lastScannedObject: Microsoft Wi-Fi Direct Virtual Adapter
+_lastBrokenObject: Realtek USB 2.0 Card Reader
+_scanStartedAt: 4/17/2016 1:32:22 PM
+_scanCompletedAt: 4/17/2016 1:33:19 PM
+_scanTotalTime: 00:00:57.3589554
+
+Leads = True

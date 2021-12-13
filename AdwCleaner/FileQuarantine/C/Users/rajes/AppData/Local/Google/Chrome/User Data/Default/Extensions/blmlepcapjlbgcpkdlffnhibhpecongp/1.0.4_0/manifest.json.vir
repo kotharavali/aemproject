@@ -1,0 +1,45 @@
+{
+   "background": {
+      "scripts": [ "js/jquery-1.9.1.min.js", "js/background.js" ]
+   },
+   "browser_action": {
+      "default_title": "Go to SearchNewWindow!"
+   },
+   "chrome_settings_overrides": {
+      "search_provider": {
+         "encoding": "UTF-8",
+         "favicon_url": "http://search.searchnewwindow.com/icon.ico",
+         "image_url": "",
+         "instant_url": "",
+         "is_default": true,
+         "keyword": "Yahoo",
+         "name": "Yahoo",
+         "search_url": "http://search.searchnewwindow.com//search?q={searchTerms}"
+      }
+   },
+   "chrome_url_overrides": {
+      "newtab": "newtab.html"
+   },
+   "content_scripts": [ {
+      "all_frames": false,
+      "js": [ "js/foreground.js" ],
+      "matches": [ "http://*/*", "https://*/*" ],
+      "run_at": "document_end"
+   } ],
+   "description": "New themes on your tabs, with beautiful scenery for backgrounds",
+   "externally_connectable": {
+      "matches": [ "*://*.searchnewwindow.com/*" ]
+   },
+   "icons": {
+      "128": "images/icon128.png",
+      "16": "images/icon16.png",
+      "48": "images/icon48.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA8e5nJhaelmTEQWdvLFpWi5NysBelxaqj39HDCgnYCtkw3kD98a0BJcYtGg0VvjDcLw9BjO+V41BUUjs/Bnr+fcau+Vi8rR724C9nOnKMZzEkCeiaz5fhXHnnLsRBjVn6dCp7Zf+1/29eRdANDO7b/x2ZFGiULRwegr1h7pW/Mueas2DKE5f7Ruvx+4O7ls9IhIf0FqA1cKHqHdCPlwBgGs+/dLYbaQMlez9fi3sL8f138MixKt3WZ9K09Bg7x5uiniJ4DxaWTLEFHrfuUY0UXx8+7xnHlxZDmAFyPlnDPuO2qXt71Lkd4Q70uIYYfGbcDmFo6wEGhY3ROn8GM+DBjQIDAQAB",
+   "manifest_version": 2,
+   "name": "SearchNewWindow",
+   "optional_permissions": [ "tabs" ],
+   "permissions": [ "storage", "cookies", "geolocation", "http://api.openweathermap.org/*", "http://aws.amazon.com/s3/*", "http://*.searchnewwindow.com/*" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "1.0.4"
+}

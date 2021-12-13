@@ -1,0 +1,44 @@
+﻿var Popups = Popups || {};
+
+Popups.Feedback = Popups.Feedback || {};
+
+Popups.FeedbackModel = {
+
+    set: function (jsonUpdate) {
+        try {
+            var feedBackData = $.parseJSON(jsonUpdate);
+
+            Popups.FeedbackView.render(feedBackData);
+
+            Popups.Feedback.Events.init();
+
+        } catch (err) {
+            window.external.OnJavaScriptError(err.source + '-Popups.FeedbackModel.set: ' + err.message);
+        }
+    },
+    hide: function () {
+        try {
+            Popups.FeedbackView.hide();
+        } catch (err) {
+            window.external.OnJavaScriptError(err.source + '-Popups.FeedbackModel.hide: ' + err.message);
+        }
+    }
+};
+
+Popups.Feedback.States = {
+    InstallFeedback: 0,
+    SuccesfullInstallThanks: 1,
+    FailedInstallThanks: 2,
+    ReportProblemFeedback:3
+};
+
+Popups.Feedback.DisplayHelper = function (popupId) {
+    this.popupId = popupId;
+
+    this.show = function () {
+        $(popupId).show();
+    };
+    this.hide = function () {
+        $(popupId).hide();
+    };
+};

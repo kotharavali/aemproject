@@ -1,0 +1,36 @@
+﻿var Toasters = Toasters || {};
+
+Toasters.UpdatesAvailable = Toasters.UpdatesAvailable || {};
+
+Toasters.UpdatesAvailable.Buttons = {
+    InstallNow: 0,
+    NotNow: 1,
+    Dismiss: 2
+};
+
+Toasters.UpdatesAvailableModel = {
+    Devices: [],
+    set: function (jsonData) {
+        try {
+            var obj = $.parseJSON(jsonData);
+            this.Devices = obj;
+
+            Toasters.UpdatesAvailableView.render(this);
+
+            Toasters.UpdatesAvailable.Events.init();
+
+        } catch (err) {
+            window.external.OnJavaScriptError(err.source + '-Toasters.InstallAvailableModel: ' + err.message);
+        }
+    },
+    hideDriver: function (jsonData) {
+        try {
+            var driverModel = $.parseJSON(jsonData);
+
+            Toasters.UpdatesAvailableView.hideDriver(driverModel);
+
+        } catch (err) {
+            window.external.OnJavaScriptError(err.source + '-Toasters.hideDriver: ' + err.message);
+        }
+    }
+};

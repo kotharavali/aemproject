@@ -1,0 +1,39 @@
+﻿Toasters.BrowserType = {
+    InternetExplorer7Or8: 0,
+    InternetExplorer9Plus: 1,
+    Firefox: 2,
+    Chrome: 3,
+    Unknown: 4
+};
+
+Toasters.UpdateFromWebView = (function () {
+    var lastSteptId = '#updateDriver_lastStep';
+    var deviceNameId = '#updateDriver_Name';
+
+    var render = function (mainModel) {
+        $(deviceNameId).text(mainModel.DeviceName);
+
+        switch (mainModel.BrowserType) {
+            case Toasters.BrowserType.InternetExplorer7Or8:
+                $(lastSteptId).text("To Launch your download and complete your driver update click the yellow bar at the top of your browser and select “Download File”.");
+                break;
+            case Toasters.BrowserType.InternetExplorer9Plus:
+                $(lastSteptId).text("To Launch your download and complete your driver update click the “Open” or “Run” button below.");
+                break;
+            case Toasters.BrowserType.Chrome:
+                $(lastSteptId).text("To Launch your download and complete your driver updates click the download link below.");
+                break;
+            case Toasters.BrowserType.Firefox:
+                $(lastSteptId).text("Click “Save File” when the lightbox appears. Once this lightbox closes the arrow in the top right corner of your browser will turn green. Click the green arrow to Launch your download and complete your driver update");
+                break;
+            case Toasters.BrowserType.Unknown:
+                $(lastSteptId).text("To Launch your download and complete your driver update click the “Open” or “Run” button below.");
+                break;
+        default:
+        }
+    };
+
+    return {
+        render: render
+    };
+})();

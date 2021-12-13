@@ -1,0 +1,95 @@
+﻿var Overview = Overview || {};
+
+Overview.ContentView = {
+    contentId: '#contentView',
+    render: function (scannerModel) {
+        try {
+            $(this.contentId).empty();
+            $(this.contentId).append("<div class=\"smry-left1\"><img alt=\"\" class=\"smry-left1_lapi\" src=\"" + scannerModel.LandingImagePath + "\"><p><b>" + scannerModel.SystemName + "</b></p></div>");
+            $(this.contentId).append(Overview.ScanSummaryFactory.get(scannerModel));
+
+            DonutChart.Create(scannerModel.ScanSummary.OutOfDate, scannerModel.ScanSummary.Missing, scannerModel.ScanSummary.UpToDate);
+        } catch (err) {
+            window.external.OnJavaScriptError(err.source + '-ContentView.render: ' + err.message);
+        }
+    }
+};
+
+
+Overview.ScanSummaryFactory = (function () {
+    var get = function (scannerModel) {
+        var goodNumbers = isNumber(scannerModel.ScanSummary.Missing) + isNumber(scannerModel.ScanSummary.OutOfDate) + isNumber(scannerModel.ScanSummary.UpToDate);
+
+        if (!goodNumbers) {
+            return unknownDrivers(scannerModel);
+        } else if (parseInt(scannerModel.ScanSummary.Missing) + parseInt(scannerModel.ScanSummary.OutOfDate) == 0) {
+            return allFixedDrivers(scannerModel);
+        } else {
+            return unfixedDrivers(scannerModel);
+        }
+    };
+
+    var unfixedDrivers = function (scannerModel) {
+        
+        return "<div class=\"smry-right_v3\">" +
+            "<h1><b>Scan</b> Summary " +
+            "</h1>" +
+            //"<span class=\"scan_meter_v3\">" + "</span>" +
+            "<div  id='summary_donut' ></div>" +
+            "<div class=\"scan-dr_v3\">" +
+            "<p>" + "<span class=\"cross-error-big\"></span><span></span>" + parseInt(scannerModel.ScanSummary.OutOfDate) + "<span> Out of Date Drivers</span></p>" +
+            "<p>" + "<span class=\"errors-big\"></span><span>" + parseInt(scannerModel.ScanSummary.Missing) + "</span><span> Devices with No Driver</span></p>" +
+            "<p class=\"bg-none\"><span class=\"green-error-big\"></span><span> " + parseInt(scannerModel.ScanSummary.UpToDate) + " </span><span>Up-to-Date Drivers</span></p>" +
+            "</div>" +
+            "</div>" +
+            "<div class=\"last_scan\">" +
+            "<p class=\"com-scan-txt\">It is highly recommended that you update all missing and out-of-date drivers</p>" +
+            "<a href=\"#\" class=\"updateDriver\"></a>" +
+            "</div>";
+    };
+    var allFixedDrivers = function (scannerModel) {
+        var date = new Date();
+        var today = (date.getMonth() + 1) + "/" + date.getDate() + "/" + date.getFullYear();
+        var totalFixed = parseInt(scannerModel.ScanSummary.UpToDate);
+
+        return "<div class=\"smry-right_v3\">" +
+            "<h1><b>Scan</b> Summary " +
+            "</h1>" +
+            "<span class=\"scan_meter_v3\">" + "</span>" +
+            "<div class=\"scan-dr_v3\">" +
+            "<p>" + "<span class=\"cross-error-big\"></span><span></span>0<span> Out of Date Drivers</span></p>" +
+            "<p>" + "<span class=\"errors-big\"></span><span>0</span><span> Devices with No Driver</span></p>" +
+            "<p class=\"bg-none\"><span class=\"green-error-big\"></span><span> " + totalFixed + " </span><span>Up-to-Date Drivers</span></p>" +
+            "</div>" +
+            "</div>" +
+            "<div class=\"last_scan\">" +
+	    "<p class=\"com-scan-txt_v3\">All drivers are up-to-date as of " + today + "  </p>" +
+            "<a href=\"#\" class=\"rescan\"></a>" +
+            "</div>";
+    };
+
+    var unknownDrivers = function (scannerMolde) {
+        return "<div class=\"smry-right1\">" +
+            "<h1><b>Scan</b> Summary</h1>" +
+            "<div class=\"scan-dr1\">" +
+            "<p>" + "<span class=\"cross-error-big1\"></span><span> Out of Date Drivers</span><span> (Unknown)</span></p>" +
+            "<p><span class=\"errors-big1\"></span><span> Devices with No Driver </span><span> (Unknown)</span></p>" +
+            "<p><span class=\"green-error-big1\"></span><span> Up-to-Date Drivers</span><span> (Unknown)</span></p>" +
+            "</div>" +
+            "</div>" +
+            "<div class=\"last_scan\">" +
+            "<p class=\"com-scan-txt\">It is highly recommended that you complete your system scan.</p>" +
+            "<a href=\"#\" class=\"complete-scan\"></a>" +
+            "</div>";
+    };
+
+
+    var isNumber = function(value) {
+        var n = parseInt(value);
+        return typeof n == 'number' && !isNaN(n) && isFinite(n);
+    };
+
+    return {
+        get: get
+    };
+})();

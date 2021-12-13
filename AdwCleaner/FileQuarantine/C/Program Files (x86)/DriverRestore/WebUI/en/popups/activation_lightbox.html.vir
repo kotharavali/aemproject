@@ -1,0 +1,40 @@
+﻿<div class="detail_pcc" id="popupActivation" style="display:none;">
+  <div id="call-activationpage" style="z-index:1000;">
+    <header> <span class="logo"><a href="#"><!-- any text can go here --></a></span> </header>
+      <iframe style="margin-left: 21px;" id='ae641d32' name='ae641d32' src='http://adserver.383media.net/www/delivery/afr.php?zoneid=273&amp;cb=INSERT_RANDOM_NUMBER_HERE&amp;dccat=default&amp;dccatext=default' frameborder='0' scrolling='no' width='706' height='476'><a href='http://adserver.383media.net/www/delivery/ck.php?n=afb5e27d&amp;cb=INSERT_RANDOM_NUMBER_HERE' target='_blank'><img src='http://adserver.383media.net/www/delivery/avw.php?zoneid=273&amp;cb=INSERT_RANDOM_NUMBER_HERE&amp;n=afb5e27d' border='0' alt='' /></a></iframe>
+      <span class="close_3 error_found_close" id="popupActivationCloseButton"></span>
+      <!--<div class="popup-details-call-activation">
+          <h1 class="call-detail_pcc_header"><span class="vry-imp">Very Important!</span> This page contains important registration information.  </h1>
+          <div class="call-content">
+              <h1 class="thankyou-purchase"> <span class="thanku-bld">Thank You </span>For Your Purchase</h1>
+              <p class="qualified-install">You have qualified for our free software installation service!</p>
+              <div class="call-activation-popup">
+                  <p class="activateSoftware">
+                      <b>Activate</b> your new software by calling <span class="call-activation-no phoneNumber"></span>
+                      <span class="callTollFree">call toll-free</span>
+                  </p>
+              </div>
+              <div class="toActivateSoftware">
+                  <p>
+                      To activate your software, call us toll-free at the number above. Our Microsoft certified technicians will <br>securely connect to your PC and remotely activate your software for you.
+                  </p>
+
+                  <p>
+                      You are qualified for a <b>FREE Comprehensive PC Diagnosis!</b> During the activation process, one of our Microsoft Certified technicians will provide a Free Comprehensive PC Diagnosis and inform you of any performance or security issues that may be affecting your PC.
+                  </p>
+
+
+                  To activate your software and to receive a free comprehensive diagnosis of your PC please call our support<br> team at
+                  <span class="call-number phoneNumber"></span>
+              </div>
+              <span class="close_3 error_found_close" id="popupActivationCloseButton"></span>
+          </div>
+      </div>-->
+  </div>
+    <div class="popup_shadow" id="activationLightboxShadow"></div>
+</div>
+
+<script src="lib/js/popups/Activation/Activation.js" type="text/javascript"></script>
+<script type="text/javascript">
+  Popups.ActivationLightBox.init();
+</script>

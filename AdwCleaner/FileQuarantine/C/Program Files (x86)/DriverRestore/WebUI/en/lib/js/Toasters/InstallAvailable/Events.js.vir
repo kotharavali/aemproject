@@ -1,0 +1,41 @@
+﻿var Toasters = Toasters || {};
+
+Toasters.InstallAvailable.Events = (function () {
+    var installNowId = "#installNow";
+    var notNowId = "#notNow";
+    var dismissId = "#dismiss";
+
+
+    var installNowClicked = function () {
+        window.external.ButtonClicked(Toasters.InstallAvailable.Buttons.InstallNow, installNowId);
+		
+		return false;
+    };
+
+    var notNowClicked = function () {
+        window.external.ButtonClicked(Toasters.InstallAvailable.Buttons.NotNow, notNowId);
+		
+		return false;
+    };
+
+    var dismissClicked = function () {
+        window.external.ButtonClicked(Toasters.InstallAvailable.Buttons.Dismiss, dismissClicked);
+		
+		return false;
+    };
+
+    var init = function () {
+        $(installNowId).unbind();
+        $(notNowId).unbind();
+        $(dismissId).unbind();
+
+
+        $(installNowId).bind("click", installNowClicked);
+        $(notNowId).bind("click", notNowClicked);
+        $(dismissId).bind("click", dismissClicked);
+    };
+
+    return {
+        init: init
+    };
+})();

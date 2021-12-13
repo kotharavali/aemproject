@@ -1,0 +1,15 @@
+﻿var Toasters = Toasters || {};
+
+Toasters.InstallAvailableView = (function () {
+    var deviceNameId = "#deviceName";
+    var deviceImageId = "#deviceImage";
+
+    var render = function (model) {
+        $(deviceNameId).text(model.Name);
+        $(deviceImageId).attr("src", model.ImagePath);
+    };
+
+    return {
+        render: render
+    };
+})();

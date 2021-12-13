@@ -1,0 +1,112 @@
+Using existing downloads folder: C:\Program Files (x86)\DriverRestore\Downloads
+dwcPerformScan
+_saveScanResult
+Wrote 85229 characters to file: C:\Program Files (x86)\DriverRestore\DriverScan.xml
+_compressFile
+Wrote 85230 characters to compressed file: C:\Program Files (x86)\DriverRestore\DriverScan.xml.gzip
+_gatherDisconnectedDevices
+_postDriverScanToAPP
+_postDriverScan
+_getDriverResults
+_loadDriverStatus
+_processDriverResultsXML
+_checkAPPImageOnline failed: https://leads.383media.com/images/os-logo/computer/Win-10.png
+System.Net.WebException: The operation has timed out
+   at System.Net.HttpWebRequest.GetResponse()
+   at DriverRestore.Scanner.DriversScanner._checkAPPImageOnline(String url)
+_checkAPPImageOnline failed: https://cdn.cnetcontent.com/c2/be/c2be4aa3-be1e-4de0-96e8-00f15cde0429.jpg
+System.Net.WebException: The operation has timed out
+   at System.Net.HttpWebRequest.GetResponse()
+   at DriverRestore.Scanner.DriversScanner._checkAPPImageOnline(String url)
+_checkAPPImageOnline failed: https://cdn.cnetcontent.com/ac/3e/ac3edc1c-0233-409e-a0c9-18c951a18bb9.jpg
+System.Net.WebException: The operation has timed out
+   at System.Net.HttpWebRequest.GetResponse()
+   at DriverRestore.Scanner.DriversScanner._checkAPPImageOnline(String url)
+_checkAPPImageOnline failed: https://leads.383media.com/images/os-logo/computer/Win-10.png
+System.Net.WebException: The operation has timed out
+   at System.Net.HttpWebRequest.GetResponse()
+   at DriverRestore.Scanner.DriversScanner._checkAPPImageOnline(String url)
+_checkAPPImageOnline failed: https://leads.383media.com/images/os-logo/computer/Win-10.png
+System.Net.WebException: The operation has timed out
+   at System.Net.HttpWebRequest.GetResponse()
+   at DriverRestore.Scanner.DriversScanner._checkAPPImageOnline(String url)
+_checkAPPImageOnline failed: https://cdn.cnetcontent.com/0d/f1/0df146b8-91d7-4392-b1bd-df7bbf3ed9a0.jpg
+System.Net.WebException: The operation has timed out
+   at System.Net.HttpWebRequest.GetResponse()
+   at DriverRestore.Scanner.DriversScanner._checkAPPImageOnline(String url)
+_checkAPPImageOnline failed: https://leads.383media.com/images/os-logo/computer/Win-10.png
+System.Net.WebException: The operation has timed out
+   at System.Net.HttpWebRequest.GetResponse()
+   at DriverRestore.Scanner.DriversScanner._checkAPPImageOnline(String url)
+_checkAPPImageOnline failed: https://leads.383media.com/images/devices/bluetooth-devices.png
+System.Net.WebException: The operation has timed out
+   at System.Net.HttpWebRequest.GetResponse()
+   at DriverRestore.Scanner.DriversScanner._checkAPPImageOnline(String url)
+_checkAPPImageOnline failed: https://leads.383media.com/images/devices/bluetooth-devices.png
+System.Net.WebException: The operation has timed out
+   at System.Net.HttpWebRequest.GetResponse()
+   at DriverRestore.Scanner.DriversScanner._checkAPPImageOnline(String url)
+_checkAPPImageOnline failed: https://cdn.cnetcontent.com/a9/22/a9223dac-b533-4c31-ba04-42fb5c16f374.jpg
+System.Net.WebException: The operation has timed out
+   at System.Net.HttpWebRequest.GetResponse()
+   at DriverRestore.Scanner.DriversScanner._checkAPPImageOnline(String url)
+_checkAPPImageOnline failed: https://cdn.cnetcontent.com/a9/22/a9223dac-b533-4c31-ba04-42fb5c16f374.jpg
+System.Net.WebException: The operation has timed out
+   at System.Net.HttpWebRequest.GetResponse()
+   at DriverRestore.Scanner.DriversScanner._checkAPPImageOnline(String url)
+_checkAPPImageOnline failed: https://leads.383media.com/images/devices/bluetooth-devices.png
+System.Net.WebException: The operation has timed out
+   at System.Net.HttpWebRequest.GetResponse()
+   at DriverRestore.Scanner.DriversScanner._checkAPPImageOnline(String url)
+_checkAPPImageOnline failed: https://leads.383media.com/images/devices/bluetooth-devices.png
+System.Net.WebException: The operation has timed out
+   at System.Net.HttpWebRequest.GetResponse()
+   at DriverRestore.Scanner.DriversScanner._checkAPPImageOnline(String url)
+_checkAPPImageOnline failed: https://leads.383media.com/images/devices/ports.png
+System.Net.WebException: The operation has timed out
+   at System.Net.HttpWebRequest.GetResponse()
+   at DriverRestore.Scanner.DriversScanner._checkAPPImageOnline(String url)
+_checkAPPImageOnline failed: https://leads.383media.com/images/devices/ports.png
+System.Net.WebException: The operation has timed out
+   at System.Net.HttpWebRequest.GetResponse()
+   at DriverRestore.Scanner.DriversScanner._checkAPPImageOnline(String url)
+_checkAPPImageOnline failed: https://cdn.cnetcontent.com/e5/3e/e53e1110-7610-4fb9-aada-1a5428f3c872.jpg
+System.Net.WebException: The operation has timed out
+   at System.Net.HttpWebRequest.GetResponse()
+   at DriverRestore.Scanner.DriversScanner._checkAPPImageOnline(String url)
+_checkAPPImageOnline failed: https://leads.383media.com/images/devices/bluetooth-devices.png
+System.Net.WebException: The operation has timed out
+   at System.Net.HttpWebRequest.GetResponse()
+   at DriverRestore.Scanner.DriversScanner._checkAPPImageOnline(String url)
+_checkAPPImageOnline failed: https://leads.383media.com/images/devices/display-adapters.png
+System.Net.WebException: The operation has timed out
+   at System.Net.HttpWebRequest.GetResponse()
+   at DriverRestore.Scanner.DriversScanner._checkAPPImageOnline(String url)
+_checkAPPImageOnline failed: https://leads.383media.com/images/devices/hard-disk-controllers.png
+System.Net.WebException: The operation has timed out
+   at System.Net.HttpWebRequest.GetResponse()
+   at DriverRestore.Scanner.DriversScanner._checkAPPImageOnline(String url)
+_checkAPPImageOnline failed: https://leads.383media.com/images/os-logo/computer/Win-10.png
+System.Net.WebException: The operation has timed out
+   at System.Net.HttpWebRequest.GetResponse()
+   at DriverRestore.Scanner.DriversScanner._checkAPPImageOnline(String url)
+_checkAPPImageOnline failed: https://leads.383media.com/images/os-logo/computer/Win-10.png
+System.Net.WebException: The operation has timed out
+   at System.Net.HttpWebRequest.GetResponse()
+   at DriverRestore.Scanner.DriversScanner._checkAPPImageOnline(String url)
+_setLandingPageDevice
+_checkDriverStatusFeedback
+
+_logScanDebugInfo
+_scanId: f594111fa0ff0d48d34c4e1281cc18be
+_hwId: f594111fa0ff0d48d34c4e1281cc18be
+_computerName: LAPTOP-M2RH9VQU
+_scannedItemsCount: 85
+_problemCount: 1
+_lastScannedObject: Microsoft Wi-Fi Direct Virtual Adapter
+_lastBrokenObject: Realtek USB 2.0 Card Reader
+_scanStartedAt: 4/17/2016 1:48:29 PM
+_scanCompletedAt: 4/17/2016 1:50:24 PM
+_scanTotalTime: 00:01:54.5229503
+
+Leads = True

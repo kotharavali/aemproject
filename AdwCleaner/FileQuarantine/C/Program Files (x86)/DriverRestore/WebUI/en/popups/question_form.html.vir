@@ -1,0 +1,33 @@
+﻿<div>
+    <div id="customerQuestionForm" class="dr_download-flie-lightbox"> <img src="lib/images/popup/lightbox/dr_icon.png" class="dr_logo-icon" />
+        <span class="dr_download-adapterTxt">Driver Restore</span>
+        <a href="#" class="dr_un-lghtbox-close1" id="customerQuestionClose"></a>
+        <!--a href="#" class="dr_un-lghtbox-res-down1"></!--a>
+            <a href="#" class="dr_un-lghtbox-min1"></a-->
+        <div class="dr_basic-lightbox1"> <span class="dr_light-box_img1"></span>
+            <h2 class="dr_dlf-heading">Ask a Driver Restore Technical Support Agent a question:</h2>
+            <form class="client-information">
+                <p class="information-form"> <label>Name:</label> <input type="text" class="information-field" name="" value="" id="customerQuestion_input1" /></p>
+                <p class="information-form"> <label>Email:</label> <input type="text" class="information-field" name="" value="" id="customerQuestion_input2" /></p>
+                <p class="information-form"> <label>My questions is:</label> 
+                    <input type="radio" name="option" id="3" value="option1"  class="clnt-info-rdo-btn" checked="checked"  /> <span class="rdo_btn-txt">Device Specific</span>
+                    <input type="radio" name="option" id="4" value="option2" class="clnt-info-rdo-btn" /> <span class="rdo_btn-txt">General</span></p>
+                <p class="information-form pd3"> <label>My question is about my:</label> <span class="nec-elec"></span></p>
+                <p class="information-form"> <textarea class="cliend-update" maxlength="1000"></textarea></p>
+                <p class="char_limited">Characters remaining: 1000</p>
+            </form>
+   
+        </div>
+        <div class="dr_lightbox-button1">
+            <input type="button" class="dr_lightbox-nobtn1" value="Cancel" id="customerQuestionCancel" />
+            <input type="button" class="dr_lightbox-yesbtn1" value="Send" id="customerQuestionSend"/>
+        </div>
+    </div>
+    <div class="popup_shadow" id="questionFormShadow" style="display: none;"></div>
+</div>
+
+<script src="lib/js/popups/questionform/questionform.js" type="text/javascript"></script>
+<script type="text/javascript">
+    Popups.QuestionForm.init();
+</script>
+

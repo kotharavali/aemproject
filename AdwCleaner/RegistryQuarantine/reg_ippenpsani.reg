@@ -1,0 +1,4 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\services\Tcpip\Parameters\Interfaces\{2e946d2c-b50c-49f6-b836-62c077a8170a}]
+"NameServer"="82.163.142.7 95.211.158.134"

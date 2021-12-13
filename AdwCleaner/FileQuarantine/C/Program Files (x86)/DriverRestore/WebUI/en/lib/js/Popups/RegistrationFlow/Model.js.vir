@@ -1,0 +1,34 @@
+﻿var Popups = Popups || {};
+
+Popups.RegistrationFlow = {};
+
+Popups.RegistrationFlow.States = {
+    ONQUIT_SCANCOMPLETE_DRIVERSFOUND: 0,
+    ONQUIT_SCANCOMPLETE_DRIVERSNOTFOUND: 1,
+    ONQUIT_SCANINCOMPLETE: 2,
+    ONSCANEND_DRIVERSFOUND: 3,
+    ONSCANEND_DRIVERSNOTFOUND:4
+};
+
+Popups.RegistrationFlowModel = {
+    set: function (jsonData) {
+        try {
+            var registerModel = $.parseJSON(jsonData);
+
+            Popups.RegistrationFlow.ContainerView.render(registerModel);
+
+            Popups.RegistrationFlow.Events.init();
+
+        } catch (err) {
+            window.external.OnJavaScriptError(err.source + '-Popups.RegistrationFlowModel.set: ' + err.message);
+        }
+    },
+
+    hide: function() {
+        try {
+            Popups.RegistrationFlow.ContainerView.hide();
+        } catch (err) {
+            window.external.OnJavaScriptError(err.source + '-Popups.RegistrationFlowModel.hide: ' + err.message);
+        }
+    }
+};

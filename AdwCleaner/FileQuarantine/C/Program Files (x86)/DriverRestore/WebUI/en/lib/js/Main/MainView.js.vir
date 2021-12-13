@@ -1,0 +1,22 @@
+﻿var Main = Main || {};
+
+Main.MainView = (function() {
+    var telephoneId = '.liveHelp';
+    var tabNavigatorId = 'aside nav';
+    var bottomRegisterId = '#bottom_register_button';
+    var registerTabId = '#nav_register';
+
+    var render = function (mainModel) {
+        mainModel.IsRegistered ? $(telephoneId).hide() : $(telephoneId).show();
+        mainModel.IsRegistered ? $(tabNavigatorId).css('background-image', 'url(lib/images/bg/aside.png)') : $(tabNavigatorId).css('background-image', 'url(lib/images/bg/aside1.png)');
+        mainModel.IsRegistered ? $(registerTabId).hide() : $(registerTabId).show();
+
+        var showBottomBtn = !mainModel.IsRegistered && mainModel.IsFirstScan;
+        showBottomBtn ? $(bottomRegisterId).show() : $(bottomRegisterId).hide();
+        $('#adfbeb0f').attr('src', 'http://adserver.383media.net/www/delivery/afr.php?zoneid=263&amp;cb=INSERT_RANDOM_NUMBER_HERE&amp;dccat=default&amp;dccatext=default&registered=' + mainModel.IsRegistered + '');        
+    };
+
+    return {
+        render: render
+    };
+})();

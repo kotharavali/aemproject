@@ -1,0 +1,33 @@
+﻿var About = About || {};
+
+About.Buttons = {
+    GoToHomePage: 0,
+    GetLicenseKey: 1,
+    EulaLink: 2,
+    PrivacyLink: 3
+};
+
+About.AboutModel = {
+    IsRegistered: false,
+    ProductVersion: "",
+    ExpiryDate: "",
+    SubscriptionType: "",
+
+    set: function (jsonData) {
+        try {
+            var obj = $.parseJSON(jsonData);
+            this.IsRegistered = obj.IsRegistered;
+            this.ProductVersion = obj.ProductVersion;
+            this.ExpiryDate = obj.ExpiryDate;
+            this.SubscriptionType = obj.SubscriptionType;
+
+
+            About.AboutView.render(this);
+
+            About.Events.init();
+
+        } catch (err) {
+            window.external.OnJavaScriptError(err.source + '-About.AboutModel: ' + err.message);
+        }
+    }
+};

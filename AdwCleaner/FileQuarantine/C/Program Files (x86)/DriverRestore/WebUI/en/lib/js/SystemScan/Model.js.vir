@@ -1,0 +1,59 @@
+﻿var SystemScan = SystemScan || {};
+
+SystemScan.DriverState = {
+    UNKNOWN: 0,
+    MISSING: 1,
+    OUTOFDATE: 2,
+    UPTODATE: 3,
+    SCANNING: 4,
+    SCANNINGPAUSED:5
+};
+
+SystemScan.DriverFixState = {
+    Unknown: 0,
+    NotNeeded: 1,
+    NeedsUpdate_Downloading: 2,
+    Downloaded_Installing: 3,
+    Updated: 4,
+    FailedUpdate: 5,
+    NoMatchFound: 6
+};
+
+SystemScan.ScannerStates = {
+    NOTHING: 0,
+    SCANNING: 1,
+    SCANNINGPAUSED: 2,
+    SCANNINGSTOPPED: 3,
+    SCANNINGCOMPLETED: 4,
+    FIXING: 5,
+    FIXINGSTOPPED: 6,
+    FIXINGCOMPLETED: 7
+};
+
+SystemScan.DriversCategoryModel = {
+    set: function (jsonDataModel) {
+        try {
+            var dataModel = $.parseJSON(jsonDataModel);
+
+            SystemScan.DriversCategoryView.render(dataModel.DriverCategories, dataModel.IsSemBuild);
+
+            SystemScan.Events.init();
+
+        } catch (err) {
+            window.external.OnJavaScriptError(err.source + '-SystemScan.DriversCategoryModel.set: ' + err.message);
+        }
+    },
+    selectDriver: function (jsonDriver) {
+        try {
+            var driver = $.parseJSON(jsonDriver);
+
+            SystemScan.DriversCategoryView.selectDriver(driver);
+
+            SystemScan.Events.init();
+
+        } catch (err) {
+            window.external.OnJavaScriptError(err.source + '-SystemScan.autoselect.set: ' + err.message);
+        }
+    }
+
+};

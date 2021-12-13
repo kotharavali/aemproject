@@ -1,0 +1,24 @@
+﻿Toasters.UpdateFromFolder = {};
+
+Toasters.UpdateFromFolder.Buttons = {
+    CloseToaster: 0
+};
+
+Toasters.UpdateFromFolderView = (function () {
+    var deviceNameId = '#update_from_shortcut_devicename1,#update_from_shortcut_devicename2,#update_from_shortcut_devicename3';
+    var closeToaster = '#update_from_shortcut_close';
+
+    var render = function (mainModel) {
+        $(deviceNameId).text(mainModel.DeviceName);
+
+        $(closeToaster).unbind();
+
+        $(closeToaster).bind('click', function () {
+            window.external.ButtonClicked(Toasters.UpdateFromFolder.Buttons.CloseToaster, closeToaster);
+        });
+    };
+
+    return {
+        render: render
+    };
+})();

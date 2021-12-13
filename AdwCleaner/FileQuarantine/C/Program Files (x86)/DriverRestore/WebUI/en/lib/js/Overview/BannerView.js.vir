@@ -1,0 +1,45 @@
+﻿var Overview = Overview || {};
+
+Overview.BannerView = {
+    title: '#banner_h1',
+    subtitle: '#banner_h3',
+    render: function(scannerModel) {
+        try {
+            var goodNumbers = this.isNumber(scannerModel.ScanSummary.Missing) + this.isNumber(scannerModel.ScanSummary.OutOfDate) + this.isNumber(scannerModel.ScanSummary.UpToDate);
+
+            if (!goodNumbers) {
+                this.setRedBackground();
+                this.setTitle("<b>Attention!</b> Scan Incomplete<span></span>");
+                this.setSubtitle("Your Last Scan Results");
+            } else if (parseInt(scannerModel.ScanSummary.Missing) + parseInt(scannerModel.ScanSummary.OutOfDate) == 0) {
+                this.setTitle("<b>Congratulations!</b> All Drivers Are Up-to-date<span></span>");
+                this.setBlueBackground();
+                this.setSubtitle("");
+            } else {
+                var totalProblems = parseInt(scannerModel.ScanSummary.Missing) + parseInt(scannerModel.ScanSummary.OutOfDate);
+                this.setTitle("<b>Attention!</b> " + totalProblems + " Drivers are Missing or Out-of-Date<span></span>");
+                this.setRedBackground();
+                this.setSubtitle("");
+            }
+        } catch (err) {
+            window.external.OnJavaScriptError(err.source + '-Overview.BannerView: ' + err.message);
+        }
+    },
+    isNumber: function (strNumber) {
+        var n = parseInt(strNumber);
+        return typeof n == 'number' && !isNaN(n) && isFinite(n);
+    },
+
+    setBlueBackground: function() {
+        $(this.title).attr("class", "setting_title_v3");
+    },
+    setRedBackground: function() {
+        $(this.title).attr("class", "setting_title_6");
+    },
+    setTitle: function(text) {
+        $(this.title).html(text);
+    },
+    setSubtitle: function(text) {
+        $(this.subtitle).html(text);
+    }
+};

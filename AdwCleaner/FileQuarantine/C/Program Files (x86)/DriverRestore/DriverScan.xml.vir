@@ -1,0 +1,2163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "DTD/xhtml1-strict.dtd">
+<html xmlns:v="urn:value" xmlns:D="urn:device">
+<D:bios>
+<v:type value="Dell Inc."/>
+<v:identifier value="A05"/>
+<v:eval value=""/>
+<v:signon value="None"/>
+<v:date value=""/>
+<v:biosvendor value="Dell Inc."/>
+<v:biosversion value="A05"/>
+<v:biosromsize value="8388608"/>
+</D:bios>
+
+<D:smbios>
+<v:uuid value="44454C4C560010528036B3C04F343632"/>
+<v:manufacturer value="Dell Inc."/>
+<v:product value="Inspiron 5558"/>
+<v:version value="01"/>
+<v:serial value="3VR6462"/>
+<v:basemanufacturer value="Dell Inc."/>
+<v:baseproduct value="0FF8N0"/>
+<v:baseversion value="A00"/>
+<v:baseserial value="/3VR6462/CN129635AJ00FA/"/>
+<v:pci_bus value="1"/>
+<v:isa_bus value="0"/>
+<v:socketed value="0"/>
+<v:chassisman value="Dell Inc."/>
+<v:chassisserial value="3VR6462"/>
+<v:chassisassettag value=""/>
+<v:chassisversion value=""/>
+<v:maxsupported value="1700"/>
+<v:cpu num="1" speed="1700" manufacturer="Intel(R) Corporation"/>
+<v:port name="HDMI" type="Video Port" connector="other"/>
+<v:port name="Cardreader" type="" connector="other"/>
+<v:port name="Network" type="Network Port" connector="RJ-45"/>
+<v:port name="USB1" type="USB" connector="Access Bus (USB)"/>
+<v:port name="USB2" type="USB" connector="Access Bus (USB)"/>
+<v:port name="USB3" type="USB" connector="Access Bus (USB)"/>
+<v:port name="Audio Jack" type="Audio Port" connector="Mini-jack (headphones)"/>
+<v:port name="" type="Other" connector=""/>
+<v:port name="" type="Other" connector=""/>
+<v:port name="" type="Keyboard Port" connector=""/>
+<v:port name="" type="Other" connector=""/>
+<v:port name="" type="8251 Compatible" connector=""/>
+<v:port name="" type="Other" connector=""/>
+<v:port name="" type="Other" connector=""/>
+<v:onboarddevice devicetype="VGA" Enabled="1" Description="&quot;Intel HD Graphics&quot;"/>
+<v:oemstrings description1=""/>
+<v:oemstrings description2=""/>
+<v:oemstrings description3=""/>
+<v:oemstrings description4=""/>
+<v:oemstrings description5=""/>
+<v:oemstrings description6=""/>
+<v:maxmem value="16384"/>
+<v:numslots value="2"/>
+<v:membank num="1" size="4096" label="DIMM A" vendor="Hynix/Hyundai" serial="91C2A080" speed="1600" ff="13" type="24"/>
+<v:membank num="2" size="4096" label="DIMM B" vendor="Hynix/Hyundai" serial="8FC2F080" speed="1600" ff="13" type="24"/>
+<v:memtotal value="8192"/>
+<v:dmi value="0.0"/>
+</D:smbios>
+
+<D:device key="ACPI\VEN_ACPI&amp;DEV_0003">
+<v:description>Microsoft AC Adapter</v:description>
+<v:classname value="Battery"/>
+<v:classguid value="{72631e54-78a4-11d0-bcf7-00aa00b7b32a}"/>
+<v:driver value="{72631e54-78a4-11d0-bcf7-00aa00b7b32a}\0000"/>
+<v:root value="acpi\acpi0003\2&amp;daba3ff&amp;1"/>
+<v:date value="20060621"/>
+<v:version value="10.0.10586.0"/>
+<v:inffile value="cmbatt.inf"/>
+<v:infkey value="AcAdapter_Inst"/>
+<v:mainfile value="cmbatt.sys,,"/>
+<v:provider value="Microsoft"/>
+<v:connected value="1"/>
+</D:device>
+
+<D:device key="ACPI\VEN_ACPI&amp;DEV_000C">
+<v:description>ACPI Processor Aggregator</v:description>
+<v:classname value="System"/>
+<v:classguid value="{4d36e97d-e325-11ce-bfc1-08002be10318}"/>
+<v:driver value="{4d36e97d-e325-11ce-bfc1-08002be10318}\0007"/>
+<v:root value="acpi\acpi000c\2&amp;daba3ff&amp;1"/>
+<v:date value="20060621"/>
+<v:version value="10.0.10586.0"/>
+<v:inffile value="acpipagr.inf"/>
+<v:infkey value="PagrInstall"/>
+<v:mainfile value="acpipagr.sys,,"/>
+<v:provider value="Microsoft"/>
+<v:connected value="1"/>
+</D:device>
+
+<D:device key="ACPI\VEN_DELL&amp;DEV_ABCE">
+<v:description>Airplane Mode Switch</v:description>
+<v:classname value="HIDClass"/>
+<v:classguid value="{745a17a0-74d3-11d0-b6fe-00a0c90f57da}"/>
+<v:driver value="{745a17a0-74d3-11d0-b6fe-00a0c90f57da}\0017"/>
+<v:root value="acpi\dellabce\2&amp;daba3ff&amp;1"/>
+<v:date value="20150504"/>
+<v:version value="1.4.2.0"/>
+<v:inffile value="oem18.inf"/>
+<v:infkey value="DellRbtn.Inst.win8.NT"/>
+<v:mainfile value="mshidkmdf.sys,,|dellrbtn.sys,,"/>
+<v:provider value="Dell Inc"/>
+<v:connected value="1"/>
+</D:device>
+
+<D:device key="ACPI\VEN_DLL&amp;DEV_B6AD">
+<v:description>PS/2 Compatible Mouse</v:description>
+<v:classname value="Mouse"/>
+<v:classguid value="{4d36e96f-e325-11ce-bfc1-08002be10318}"/>
+<v:driver value="{4d36e96f-e325-11ce-bfc1-08002be10318}\0000"/>
+<v:root value="acpi\dllb6ad\4&amp;18166fbc&amp;0"/>
+<v:date value="20060621"/>
+<v:version value="10.0.10586.0"/>
+<v:resources value="INT 12'"/>
+<v:inffile value="msmouse.inf"/>
+<v:infkey value="PS2_Inst"/>
+<v:mainfile value="i8042prt.sys,,"/>
+<v:provider value="Microsoft"/>
+<v:internalid value="PNPDLLB6AD"/>
+<v:connected value="1"/>
+</D:device>
+
+<D:device key="ACPI\VEN_DLL&amp;DEV_C6AD">
+<v:description>I2C HID Device</v:description>
+<v:classname value="HIDClass"/>
+<v:classguid value="{745a17a0-74d3-11d0-b6fe-00a0c90f57da}"/>
+<v:driver value="{745a17a0-74d3-11d0-b6fe-00a0c90f57da}\0010"/>
+<v:root value="acpi\dllc6ad\1"/>
+<v:date value="20060621"/>
+<v:version value="10.0.10586.0"/>
+<v:inffile value="hidi2c.inf"/>
+<v:infkey value="hidi2c_Device.NT"/>
+<v:mainfile value="mshidkmdf.sys,,|hidi2c.sys,,"/>
+<v:provider value="Microsoft"/>
+<v:internalid value="PNPDLLC6AD"/>
+<v:connected value="1"/>
+</D:device>
+
+<D:device key="ACPI\VEN_DLLK&amp;DEV_06AD">
+<v:description>Standard PS/2 Keyboard</v:description>
+<v:classname value="Keyboard"/>
+<v:classguid value="{4d36e96b-e325-11ce-bfc1-08002be10318}"/>
+<v:driver value="{4d36e96b-e325-11ce-bfc1-08002be10318}\0000"/>
+<v:root value="acpi\dllk06ad\4&amp;18166fbc&amp;0"/>
+<v:date value="20060621"/>
+<v:version value="10.0.10586.0"/>
+<v:resources value="I/O 0060 - 0060'I/O 0000 - 0000'"/>
+<v:inffile value="keyboard.inf"/>
+<v:infkey value="STANDARD_Inst"/>
+<v:mainfile value="i8042prt.sys,,"/>
+<v:provider value="Microsoft"/>
+<v:iobase value="0060"/>
+<v:connected value="1"/>
+</D:device>
+
+<D:device key="ACPI\FixedButton">
+<v:description>ACPI Fixed Feature Button</v:description>
+<v:classname value="System"/>
+<v:classguid value="{4d36e97d-e325-11ce-bfc1-08002be10318}"/>
+<v:driver value="{4d36e97d-e325-11ce-bfc1-08002be10318}\0013"/>
+<v:root value="acpi\fixedbutton\2&amp;daba3ff&amp;1"/>
+<v:date value="20060621"/>
+<v:version value="10.0.10586.0"/>
+<v:inffile value="machine.inf"/>
+<v:infkey value="NO_DRV"/>
+<v:provider value="Microsoft"/>
+<v:connected value="1"/>
+</D:device>
+
+<D:device key="ACPI\GenuineIntel_-_Intel64_Family_6_Model_69">
+<v:description>Intel(R) Core(TM) i5-4210U CPU @ 1.70GHz</v:description>
+<v:classname value="Processor"/>
+<v:classguid value="{50127dc3-0f36-415e-a6cc-4cb3be910b65}"/>
+<v:driver value="{50127dc3-0f36-415e-a6cc-4cb3be910b65}\0000"/>
+<v:root value="acpi\genuineintel_-_intel64_family_6_model_69_-_intel(r)_core(tm)_i5-4210u_cpu_@_1.70ghz\_1"/>
+<v:date value="20090421"/>
+<v:version value="10.0.10586.0"/>
+<v:inffile value="cpu.inf"/>
+<v:infkey value="IntelPPM_Inst.NT"/>
+<v:mainfile value="intelppm.sys,,"/>
+<v:provider value="Microsoft"/>
+<v:connected value="1"/>
+</D:device>
+
+<D:device key="ACPI\GenuineIntel_-_Intel64_Family_6_Model_69">
+<v:description>Intel(R) Core(TM) i5-4210U CPU @ 1.70GHz</v:description>
+<v:classname value="Processor"/>
+<v:classguid value="{50127dc3-0f36-415e-a6cc-4cb3be910b65}"/>
+<v:driver value="{50127dc3-0f36-415e-a6cc-4cb3be910b65}\0001"/>
+<v:root value="acpi\genuineintel_-_intel64_family_6_model_69_-_intel(r)_core(tm)_i5-4210u_cpu_@_1.70ghz\_2"/>
+<v:date value="20090421"/>
+<v:version value="10.0.10586.0"/>
+<v:inffile value="cpu.inf"/>
+<v:infkey value="IntelPPM_Inst.NT"/>
+<v:mainfile value="intelppm.sys,,"/>
+<v:provider value="Microsoft"/>
+<v:connected value="1"/>
+</D:device>
+
+<D:device key="ACPI\GenuineIntel_-_Intel64_Family_6_Model_69">
+<v:description>Intel(R) Core(TM) i5-4210U CPU @ 1.70GHz</v:description>
+<v:classname value="Processor"/>
+<v:classguid value="{50127dc3-0f36-415e-a6cc-4cb3be910b65}"/>
+<v:driver value="{50127dc3-0f36-415e-a6cc-4cb3be910b65}\0002"/>
+<v:root value="acpi\genuineintel_-_intel64_family_6_model_69_-_intel(r)_core(tm)_i5-4210u_cpu_@_1.70ghz\_3"/>
+<v:date value="20090421"/>
+<v:version value="10.0.10586.0"/>
+<v:inffile value="cpu.inf"/>
+<v:infkey value="IntelPPM_Inst.NT"/>
+<v:mainfile value="intelppm.sys,,"/>
+<v:provider value="Microsoft"/>
+<v:connected value="1"/>
+</D:device>
+
+<D:device key="ACPI\GenuineIntel_-_Intel64_Family_6_Model_69">
+<v:description>Intel(R) Core(TM) i5-4210U CPU @ 1.70GHz</v:description>
+<v:classname value="Processor"/>
+<v:classguid value="{50127dc3-0f36-415e-a6cc-4cb3be910b65}"/>
+<v:driver value="{50127dc3-0f36-415e-a6cc-4cb3be910b65}\0003"/>
+<v:root value="acpi\genuineintel_-_intel64_family_6_model_69_-_intel(r)_core(tm)_i5-4210u_cpu_@_1.70ghz\_4"/>
+<v:date value="20090421"/>
+<v:version value="10.0.10586.0"/>
+<v:inffile value="cpu.inf"/>
+<v:infkey value="IntelPPM_Inst.NT"/>
+<v:mainfile value="intelppm.sys,,"/>
+<v:provider value="Microsoft"/>
+<v:connected value="1"/>
+</D:device>
+
+<D:device key="ACPI\VEN_INT&amp;DEV_0800">
+<v:description>Legacy device</v:description>
+<v:classname value="System"/>
+<v:classguid value="{4d36e97d-e325-11ce-bfc1-08002be10318}"/>
+<v:driver value="{4d36e97d-e325-11ce-bfc1-08002be10318}\0027"/>
+<v:root value="acpi\int0800\4&amp;18166fbc&amp;0"/>
+<v:date value="20060621"/>
+<v:version value="10.0.10586.0"/>
+<v:inffile value="machine.inf"/>
+<v:infkey value="NO_DRV_MEM"/>
+<v:provider value="Microsoft"/>
+<v:internalid value="PNPINT0800"/>
+<v:connected value="1"/>
+</D:device>
+
+<D:device key="ACPI\VEN_INT&amp;DEV_33C2&amp;REV_0004">
+<v:description>Intel(R) Serial IO I2C Host Controller - 9C61</v:description>
+<v:classname value="System"/>
+<v:classguid value="{4d36e97d-e325-11ce-bfc1-08002be10318}"/>
+<v:driver value="{4d36e97d-e325-11ce-bfc1-08002be10318}\0024"/>
+<v:root value="acpi\int33c2\3&amp;11583659&amp;0"/>
+<v:date value="20150224"/>
+<v:version value="1.1.253.0"/>
+<v:resources value="MEM fe103000 - fe103fff'"/>
+<v:inffile value="ialpssi_i2c.inf"/>
+<v:infkey value="iaLPSSi_I2C_Device.NT"/>
+<v:mainfile value="ialpssi_i2c.sys,,"/>
+<v:provider value="Intel Corporation"/>
+<v:internalid value="PNPINT33C2"/>
+<v:connected value="1"/>
+</D:device>
+
+<D:device key="ACPI\VEN_INT&amp;DEV_33C3&amp;REV_0004">
+<v:description>Intel(R) Serial IO I2C Host Controller - 9C62</v:description>
+<v:classname value="System"/>
+<v:classguid value="{4d36e97d-e325-11ce-bfc1-08002be10318}"/>
+<v:driver value="{4d36e97d-e325-11ce-bfc1-08002be10318}\0025"/>
+<v:root value="acpi\int33c3\3&amp;11583659&amp;0"/>
+<v:date value="20150224"/>
+<v:version value="1.1.253.0"/>
+<v:resources value="MEM fe105000 - fe105fff'"/>
+<v:inffile value="ialpssi_i2c.inf"/>
+<v:infkey value="iaLPSSi_I2C_Device.NT"/>
+<v:mainfile value="ialpssi_i2c.sys,,"/>
+<v:provider value="Intel Corporation"/>
+<v:internalid value="PNPINT33C3"/>
+<v:connected value="1"/>
+</D:device>
+
+<D:device key="ACPI\VEN_INT&amp;DEV_3F0D">
+<v:description>Motherboard resources</v:description>
+<v:classname value="System"/>
+<v:classguid value="{4d36e97d-e325-11ce-bfc1-08002be10318}"/>
+<v:driver value="{4d36e97d-e325-11ce-bfc1-08002be10318}\0033"/>
+<v:root value="acpi\int3f0d\4&amp;18166fbc&amp;0"/>
+<v:date value="20060621"/>
+<v:version value="10.0.10586.0"/>
+<v:inffile value="machine.inf"/>
+<v:infkey value="NO_DRV_MBRES"/>
+<v:provider value="Microsoft"/>
+<v:internalid value="PNPINT3F0D"/>
+<v:connected value="1"/>
+</D:device>
+
+<D:device key="ACPI\VEN_PNP&amp;DEV_0000">
+<v:description>Programmable interrupt controller</v:description>
+<v:classname value="System"/>
+<v:classguid value="{4d36e97d-e325-11ce-bfc1-08002be10318}"/>
+<v:driver value="{4d36e97d-e325-11ce-bfc1-08002be10318}\0029"/>
+<v:root value="acpi\pnp0000\4&amp;18166fbc&amp;0"/>
+<v:date value="20060621"/>
+<v:version value="10.0.10586.0"/>
+<v:inffile value="machine.inf"/>
+<v:infkey value="NO_DRV_PIC"/>
+<v:provider value="Microsoft"/>
+<v:internalid value="PNPPNP0000"/>
+<v:connected value="1"/>
+</D:device>
+
+<D:device key="ACPI\VEN_PNP&amp;DEV_0100">
+<v:description>System timer</v:description>
+<v:classname value="System"/>
+<v:classguid value="{4d36e97d-e325-11ce-bfc1-08002be10318}"/>
+<v:driver value="{4d36e97d-e325-11ce-bfc1-08002be10318}\0032"/>
+<v:root value="acpi\pnp0100\4&amp;18166fbc&amp;0"/>
+<v:date value="20060621"/>
+<v:version value="10.0.10586.0"/>
+<v:inffile value="machine.inf"/>
+<v:infkey value="NO_DRV_X"/>
+<v:provider value="Microsoft"/>
+<v:internalid value="PNPPNP0100"/>
+<v:connected value="1"/>
+</D:device>
+
+<D:device key="ACPI\VEN_PNP&amp;DEV_0103">
+<v:description>High precision event timer</v:description>
+<v:classname value="System"/>
+<v:classguid value="{4d36e97d-e325-11ce-bfc1-08002be10318}"/>
+<v:driver value="{4d36e97d-e325-11ce-bfc1-08002be10318}\0028"/>
+<v:root value="acpi\pnp0103\0"/>
+<v:date value="20060621"/>
+<v:version value="10.0.10586.0"/>
+<v:inffile value="machine.inf"/>
+<v:infkey value="NO_DRV_HPET"/>
+<v:provider value="Microsoft"/>
+<v:internalid value="PNPPNP0103"/>
+<v:connected value="1"/>
+</D:device>
+
+<D:device key="ACPI\VEN_PNP&amp;DEV_0200">
+<v:description>Direct memory access controller</v:description>
+<v:classname value="System"/>
+<v:classguid value="{4d36e97d-e325-11ce-bfc1-08002be10318}"/>
+<v:driver value="{4d36e97d-e325-11ce-bfc1-08002be10318}\0026"/>
+<v:root value="acpi\pnp0200\4&amp;18166fbc&amp;0"/>
+<v:date value="20060621"/>
+<v:version value="10.0.10586.0"/>
+<v:inffile value="machine.inf"/>
+<v:infkey value="NO_DRV_X"/>
+<v:provider value="Microsoft"/>
+<v:internalid value="PNPPNP0200"/>
+<v:connected value="1"/>
+</D:device>
+
+<D:device key="ACPI\VEN_PNP&amp;DEV_0A08">
+<v:description>PCI Express Root Complex</v:description>
+<v:classname value="System"/>
+<v:classguid value="{4d36e97d-e325-11ce-bfc1-08002be10318}"/>
+<v:driver value="{4d36e97d-e325-11ce-bfc1-08002be10318}\0006"/>
+<v:root value="acpi\pnp0a08\0"/>
+<v:date value="20060621"/>
+<v:version value="10.0.10586.0"/>
+<v:resources value="I/O 0000 - ffff'MEM 000a0000 - 000bffff'MEM 000c4000 - 000c3fff'MEM 000cc000 - 000cffff'MEM 000d4000 - 000d3fff'"/>
+<v:inffile value="pci.inf"/>
+<v:infkey value="PCI_ROOT"/>
+<v:mainfile value="pci.sys,,"/>
+<v:provider value="Microsoft"/>
+<v:internalid value="PNPPNP0A08"/>
+<v:iobase value="0000"/>
+<v:connected value="1"/>
+</D:device>
+
+<D:device key="ACPI\VEN_PNP&amp;DEV_0B00">
+<v:description>System CMOS/real time clock</v:description>
+<v:classname value="System"/>
+<v:classguid value="{4d36e97d-e325-11ce-bfc1-08002be10318}"/>
+<v:driver value="{4d36e97d-e325-11ce-bfc1-08002be10318}\0031"/>
+<v:root value="acpi\pnp0b00\4&amp;18166fbc&amp;0"/>
+<v:date value="20060621"/>
+<v:version value="10.0.10586.0"/>
+<v:resources value="I/O 0070 - 0077'"/>
+<v:inffile value="machine.inf"/>
+<v:infkey value="NO_DRV_X"/>
+<v:provider value="Microsoft"/>
+<v:internalid value="PNPPNP0B00"/>
+<v:iobase value="0070"/>
+<v:connected value="1"/>
+</D:device>
+
+<D:device key="ACPI\VEN_PNP&amp;DEV_0C02">
+<v:description>Motherboard resources</v:description>
+<v:classname value="System"/>
+<v:classguid value="{4d36e97d-e325-11ce-bfc1-08002be10318}"/>
+<v:driver value="{4d36e97d-e325-11ce-bfc1-08002be10318}\0022"/>
+<v:root value="acpi\pnp0c02\1"/>
+<v:date value="20060621"/>
+<v:version value="10.0.10586.0"/>
+<v:inffile value="machine.inf"/>
+<v:infkey value="NO_DRV_MBRES"/>
+<v:provider value="Microsoft"/>
+<v:internalid value="PNPPNP0C02"/>
+<v:connected value="1"/>
+</D:device>
+
+<D:device key="ACPI\VEN_PNP&amp;DEV_0C02">
+<v:description>Motherboard resources</v:description>
+<v:classname value="System"/>
+<v:classguid value="{4d36e97d-e325-11ce-bfc1-08002be10318}"/>
+<v:driver value="{4d36e97d-e325-11ce-bfc1-08002be10318}\0030"/>
+<v:root value="acpi\pnp0c02\2"/>
+<v:date value="20060621"/>
+<v:version value="10.0.10586.0"/>
+<v:inffile value="machine.inf"/>
+<v:infkey value="NO_DRV_MBRES"/>
+<v:provider value="Microsoft"/>
+<v:internalid value="PNPPNP0C02"/>
+<v:connected value="1"/>
+</D:device>
+
+<D:device key="ACPI\VEN_PNP&amp;DEV_0C02">
+<v:description>Motherboard resources</v:description>
+<v:classname value="System"/>
+<v:classguid value="{4d36e97d-e325-11ce-bfc1-08002be10318}"/>
+<v:driver value="{4d36e97d-e325-11ce-bfc1-08002be10318}\0023"/>
+<v:root value="acpi\pnp0c02\4"/>
+<v:date value="20060621"/>
+<v:version value="10.0.10586.0"/>
+<v:inffile value="machine.inf"/>
+<v:infkey value="NO_DRV_MBRES"/>
+<v:provider value="Microsoft"/>
+<v:internalid value="PNPPNP0C02"/>
+<v:connected value="1"/>
+</D:device>
+
+<D:device key="ACPI\VEN_PNP&amp;DEV_0C09">
+<v:description>Microsoft ACPI-Compliant Embedded Controller</v:description>
+<v:classname value="System"/>
+<v:classguid value="{4d36e97d-e325-11ce-bfc1-08002be10318}"/>
+<v:driver value="{4d36e97d-e325-11ce-bfc1-08002be10318}\0034"/>
+<v:root value="acpi\pnp0c09\0"/>
+<v:date value="20060621"/>
+<v:version value="10.0.10586.0"/>
+<v:resources value="I/O 0930 - 0930'"/>
+<v:inffile value="machine.inf"/>
+<v:infkey value="NO_DRV"/>
+<v:provider value="Microsoft"/>
+<v:internalid value="PNPPNP0C09"/>
+<v:iobase value="0930"/>
+<v:connected value="1"/>
+</D:device>
+
+<D:device key="ACPI\VEN_PNP&amp;DEV_0C0A">
+<v:description>Microsoft ACPI-Compliant Control Method Battery</v:description>
+<v:classname value="Battery"/>
+<v:classguid value="{72631e54-78a4-11d0-bcf7-00aa00b7b32a}"/>
+<v:driver value="{72631e54-78a4-11d0-bcf7-00aa00b7b32a}\0001"/>
+<v:root value="acpi\pnp0c0a\1"/>
+<v:date value="20060621"/>
+<v:version value="10.0.10586.0"/>
+<v:inffile value="cmbatt.inf"/>
+<v:infkey value="CmBatt_Inst"/>
+<v:mainfile value="cmbatt.sys,,"/>
+<v:provider value="Microsoft"/>
+<v:internalid value="PNPPNP0C0A"/>
+<v:connected value="1"/>
+</D:device>
+
+<D:device key="ACPI\VEN_PNP&amp;DEV_0C0C">
+<v:description>ACPI Power Button</v:description>
+<v:classname value="System"/>
+<v:classguid value="{4d36e97d-e325-11ce-bfc1-08002be10318}"/>
+<v:driver value="{4d36e97d-e325-11ce-bfc1-08002be10318}\0010"/>
+<v:root value="acpi\pnp0c0c\2&amp;daba3ff&amp;1"/>
+<v:date value="20060621"/>
+<v:version value="10.0.10586.0"/>
+<v:inffile value="machine.inf"/>
+<v:infkey value="NO_DRV"/>
+<v:provider value="Microsoft"/>
+<v:internalid value="PNPPNP0C0C"/>
+<v:connected value="1"/>
+</D:device>
+
+<D:device key="ACPI\VEN_PNP&amp;DEV_0C0D">
+<v:description>ACPI Lid</v:description>
+<v:classname value="System"/>
+<v:classguid value="{4d36e97d-e325-11ce-bfc1-08002be10318}"/>
+<v:driver value="{4d36e97d-e325-11ce-bfc1-08002be10318}\0009"/>
+<v:root value="acpi\pnp0c0d\2&amp;daba3ff&amp;1"/>
+<v:date value="20060621"/>
+<v:version value="10.0.10586.0"/>
+<v:inffile value="machine.inf"/>
+<v:infkey value="NO_DRV"/>
+<v:provider value="Microsoft"/>
+<v:internalid value="PNPPNP0C0D"/>
+<v:connected value="1"/>
+</D:device>
+
+<D:device key="ACPI\VEN_PNP&amp;DEV_0C0E">
+<v:description>ACPI Sleep Button</v:description>
+<v:classname value="System"/>
+<v:classguid value="{4d36e97d-e325-11ce-bfc1-08002be10318}"/>
+<v:driver value="{4d36e97d-e325-11ce-bfc1-08002be10318}\0011"/>
+<v:root value="acpi\pnp0c0e\2&amp;daba3ff&amp;1"/>
+<v:date value="20060621"/>
+<v:version value="10.0.10586.0"/>
+<v:inffile value="machine.inf"/>
+<v:infkey value="NO_DRV"/>
+<v:provider value="Microsoft"/>
+<v:internalid value="PNPPNP0C0E"/>
+<v:connected value="1"/>
+</D:device>
+
+<D:device key="ACPI\VEN_PNP&amp;DEV_0C14">
+<v:description>Microsoft Windows Management Interface for ACPI</v:description>
+<v:classname value="System"/>
+<v:classguid value="{4d36e97d-e325-11ce-bfc1-08002be10318}"/>
+<v:driver value="{4d36e97d-e325-11ce-bfc1-08002be10318}\0008"/>
+<v:root value="acpi\pnp0c14\0"/>
+<v:date value="20060621"/>
+<v:version value="10.0.10586.0"/>
+<v:inffile value="wmiacpi.inf"/>
+<v:infkey value="WMIMAP_Inst.NT"/>
+<v:mainfile value="wmiacpi.sys,,"/>
+<v:provider value="Microsoft"/>
+<v:internalid value="PNPPNP0C14"/>
+<v:connected value="1"/>
+</D:device>
+
+<D:device key="ACPI\ThermalZone">
+<v:description>ACPI Thermal Zone</v:description>
+<v:classname value="System"/>
+<v:classguid value="{4d36e97d-e325-11ce-bfc1-08002be10318}"/>
+<v:driver value="{4d36e97d-e325-11ce-bfc1-08002be10318}\0012"/>
+<v:root value="acpi\thermalzone\thm_"/>
+<v:date value="20060621"/>
+<v:version value="10.0.10586.0"/>
+<v:inffile value="machine.inf"/>
+<v:infkey value="NO_DRV"/>
+<v:provider value="Microsoft"/>
+<v:connected value="1"/>
+</D:device>
+
+<D:device key="ACPI_HAL\PNP0C08">
+<v:description>Microsoft ACPI-Compliant System</v:description>
+<v:classname value="System"/>
+<v:classguid value="{4d36e97d-e325-11ce-bfc1-08002be10318}"/>
+<v:driver value="{4d36e97d-e325-11ce-bfc1-08002be10318}\0005"/>
+<v:root value="acpi_hal\pnp0c08\0"/>
+<v:date value="20060621"/>
+<v:version value="10.0.10586.122"/>
+<v:resources value="INT 54'INT 58'INT 62'INT 66'INT 70'INT 74'INT 78'INT 82'INT 86'INT 90'INT 94'INT 98'INT 102'INT 106'INT 110'INT 114'INT 118'INT 122'INT 126'INT 130'INT 134'INT 138'INT 142'INT 146'INT 150'INT 154'INT 158'INT 162'INT 166'INT 170'INT 174'INT 178'INT 182'INT 186'INT 190'INT 194'INT 198'INT 202'INT 257'MEM ffffffff - 00000100'DMA 260'INT 261'INT 265'INT 269'INT 273'INT 277'INT 281'INT 285'INT 289'INT 293'INT 297'INT 301'INT 305'INT 309'INT 313'INT 317'INT 321'INT 325'INT 329'INT 333'INT 337'INT 341'INT 345'INT 349'INT 353'INT 357'INT 361'INT 365'INT 369'INT 373'INT 377'INT 381'INT 385'INT 389'INT 393'INT 397'INT 401'INT 405'INT 409'INT 413'INT 417'INT 421'INT 425'INT 429'"/>
+<v:inffile value="acpi.inf"/>
+<v:infkey value="ACPI_Inst.NT"/>
+<v:mainfile value="acpi.sys,,"/>
+<v:provider value="Microsoft"/>
+<v:internalid value="PNPPNP0C08"/>
+<v:connected value="1"/>
+</D:device>
+
+<D:device key="BTH\MS_BTHBRB">
+<v:description>Microsoft Bluetooth Enumerator</v:description>
+<v:classname value="Bluetooth"/>
+<v:classguid value="{e0cbf06c-cd8b-4647-bb8a-263b43f0f974}"/>
+<v:driver value="{e0cbf06c-cd8b-4647-bb8a-263b43f0f974}\0002"/>
+<v:root value="bth\ms_bthbrb\6&amp;2712de18&amp;0&amp;1"/>
+<v:date value="20060621"/>
+<v:version value="10.0.10586.212"/>
+<v:inffile value="bth.inf"/>
+<v:infkey value="BthEnum"/>
+<v:infkeyext value=".NT"/>
+<v:mainfile value="bthenum.sys,,"/>
+<v:provider value="Microsoft"/>
+<v:connected value="1"/>
+</D:device>
+
+<D:device key="BTH\MS_BTHLE">
+<v:description>Microsoft Bluetooth LE Enumerator</v:description>
+<v:classname value="Bluetooth"/>
+<v:classguid value="{e0cbf06c-cd8b-4647-bb8a-263b43f0f974}"/>
+<v:driver value="{e0cbf06c-cd8b-4647-bb8a-263b43f0f974}\0001"/>
+<v:root value="bth\ms_bthle\6&amp;2712de18&amp;0&amp;0"/>
+<v:date value="20060621"/>
+<v:version value="10.0.10586.212"/>
+<v:inffile value="bthleenum.inf"/>
+<v:infkey value="BthLEEnum"/>
+<v:infkeyext value=".NT"/>
+<v:mainfile value="bthleenum.sys,,"/>
+<v:provider value="Microsoft"/>
+<v:connected value="1"/>
+</D:device>
+
+<D:device key="BTH\MS_BTHPAN">
+<v:description>Bluetooth Device (Personal Area Network)</v:description>
+<v:classname value="Net"/>
+<v:classguid value="{4d36e972-e325-11ce-bfc1-08002be10318}"/>
+<v:driver value="{4d36e972-e325-11ce-bfc1-08002be10318}\0005"/>
+<v:root value="bth\ms_bthpan\6&amp;2712de18&amp;0&amp;2"/>
+<v:date value="20060621"/>
+<v:version value="10.0.10586.0"/>
+<v:inffile value="bthpan.inf"/>
+<v:infkey value="BthPan.Install"/>
+<v:mainfile value="bthpan.sys,,"/>
+<v:provider value="Microsoft"/>
+<v:serial value="78:0C:B8:35:85:80"/>
+<v:connected value="1"/>
+</D:device>
+
+<D:device key="BTH\MS_RFCOMM">
+<v:description>Bluetooth Device (RFCOMM Protocol TDI)</v:description>
+<v:classname value="Net"/>
+<v:classguid value="{4d36e972-e325-11ce-bfc1-08002be10318}"/>
+<v:driver value="{4d36e972-e325-11ce-bfc1-08002be10318}\0004"/>
+<v:root value="bth\ms_rfcomm\6&amp;2712de18&amp;0&amp;0"/>
+<v:date value="20060621"/>
+<v:version value="10.0.10586.212"/>
+<v:inffile value="tdibth.inf"/>
+<v:infkey value="RFCOMM.Install"/>
+<v:mainfile value="bthenum.sys,,"/>
+<v:provider value="Microsoft"/>
+<v:connected value="1"/>
+</D:device>
+
+<D:device key="BTHENUM\Dev_0022371FA48B">
+<v:description>JBL Micro Wireless</v:description>
+<v:classname value="Bluetooth"/>
+<v:classguid value="{e0cbf06c-cd8b-4647-bb8a-263b43f0f974}"/>
+<v:driver value="{e0cbf06c-cd8b-4647-bb8a-263b43f0f974}\0005"/>
+<v:root value="bthenum\dev_0022371fa48b\7&amp;19859b79&amp;0&amp;bluetoothdevice_0022371fa48b"/>
+<v:date value="20060621"/>
+<v:version value="10.0.10586.212"/>
+<v:inffile value="bth.inf"/>
+<v:infkey value="BthGenericDevice"/>
+<v:infkeyext value=".NT"/>
+<v:provider value="Microsoft"/>
+<v:connected value="1"/>
+</D:device>
+
+<D:device key="BTHENUM\Dev_B8AD3E065D6C">
+<v:description>LG HBS900</v:description>
+<v:classname value="Bluetooth"/>
+<v:classguid value="{e0cbf06c-cd8b-4647-bb8a-263b43f0f974}"/>
+<v:driver value="{e0cbf06c-cd8b-4647-bb8a-263b43f0f974}\0003"/>
+<v:root value="bthenum\dev_b8ad3e065d6c\7&amp;19859b79&amp;0&amp;bluetoothdevice_b8ad3e065d6c"/>
+<v:date value="20060621"/>
+<v:version value="10.0.10586.212"/>
+<v:inffile value="bth.inf"/>
+<v:infkey value="BthGenericDevice"/>
+<v:infkeyext value=".NT"/>
+<v:provider value="Microsoft"/>
+<v:connected value="1"/>
+</D:device>
+
+<D:device key="BTHENUM\{00001101-0000-1000-8000-00805f9b34fb}_LOCALMFG&amp;0000">
+<v:description>Standard Serial over Bluetooth link (COM5)</v:description>
+<v:classname value="Ports"/>
+<v:classguid value="{4d36e978-e325-11ce-bfc1-08002be10318}"/>
+<v:driver value="{4d36e978-e325-11ce-bfc1-08002be10318}\0000"/>
+<v:root value="bthenum\{00001101-0000-1000-8000-00805f9b34fb}_localmfg&amp;0000\7&amp;1d0d417c&amp;0&amp;000000000000_00000002"/>
+<v:date value="20060621"/>
+<v:version value="10.0.10586.0"/>
+<v:portname value="COM5"/>
+<v:inffile value="bthspp.inf"/>
+<v:infkey value="GenericSerial"/>
+<v:infkeyext value=".NT"/>
+<v:mainfile value="bthmodem.sys,,"/>
+<v:provider value="Microsoft"/>
+<v:connected value="1"/>
+</D:device>
+
+<D:device key="BTHENUM\{00001101-0000-1000-8000-00805f9b34fb}_LOCALMFG&amp;0002">
+<v:description>Standard Serial over Bluetooth link (COM6)</v:description>
+<v:classname value="Ports"/>
+<v:classguid value="{4d36e978-e325-11ce-bfc1-08002be10318}"/>
+<v:driver value="{4d36e978-e325-11ce-bfc1-08002be10318}\0001"/>
+<v:root value="bthenum\{00001101-0000-1000-8000-00805f9b34fb}_localmfg&amp;0002\7&amp;1d0d417c&amp;0&amp;b8ad3e065d6c_c00000000"/>
+<v:date value="20060621"/>
+<v:version value="10.0.10586.0"/>
+<v:portname value="COM6"/>
+<v:inffile value="bthspp.inf"/>
+<v:infkey value="GenericSerial"/>
+<v:infkeyext value=".NT"/>
+<v:mainfile value="bthmodem.sys,,"/>
+<v:provider value="Microsoft"/>
+<v:connected value="1"/>
+</D:device>
+
+<D:device key="BTHENUM\{0000110b-0000-1000-8000-00805f9b34fb}_LOCALMFG&amp;0002">
+<v:description>JBL Micro Wireless Stereo</v:description>
+<v:classname value="MEDIA"/>
+<v:classguid value="{4d36e96c-e325-11ce-bfc1-08002be10318}"/>
+<v:driver value="{4d36e96c-e325-11ce-bfc1-08002be10318}\0003"/>
+<v:root value="bthenum\{0000110b-0000-1000-8000-00805f9b34fb}_localmfg&amp;0002\7&amp;19859b79&amp;0&amp;0022371fa48b_c00000000"/>
+<v:date value="20151029"/>
+<v:version value="10.0.10586.0"/>
+<v:inffile value="wdma_bt.inf"/>
+<v:infkey value="BthA2DP"/>
+<v:mainfile value="btha2dp.sys,,"/>
+<v:provider value="Microsoft"/>
+<v:connected value="1"/>
+</D:device>
+
+<D:device key="BTHENUM\{0000110b-0000-1000-8000-00805f9b34fb}_LOCALMFG&amp;0002">
+<v:description>LG HBS900 Stereo</v:description>
+<v:classname value="MEDIA"/>
+<v:classguid value="{4d36e96c-e325-11ce-bfc1-08002be10318}"/>
+<v:driver value="{4d36e96c-e325-11ce-bfc1-08002be10318}\0008"/>
+<v:root value="bthenum\{0000110b-0000-1000-8000-00805f9b34fb}_localmfg&amp;0002\7&amp;19859b79&amp;0&amp;b8ad3e065d6c_c00000000"/>
+<v:date value="20151029"/>
+<v:version value="10.0.10586.0"/>
+<v:inffile value="wdma_bt.inf"/>
+<v:infkey value="BthA2DP"/>
+<v:mainfile value="btha2dp.sys,,"/>
+<v:provider value="Microsoft"/>
+<v:connected value="1"/>
+</D:device>
+
+<D:device key="BTHENUM\{0000110c-0000-1000-8000-00805f9b34fb}_LOCALMFG&amp;0002">
+<v:description>AV Remote Target Service</v:description>
+<v:classname value="Bluetooth"/>
+<v:classguid value="{e0cbf06c-cd8b-4647-bb8a-263b43f0f974}"/>
+<v:driver value="{e0cbf06c-cd8b-4647-bb8a-263b43f0f974}\0004"/>
+<v:root value="bthenum\{0000110c-0000-1000-8000-00805f9b34fb}_localmfg&amp;0002\7&amp;19859b79&amp;0&amp;b8ad3e065d6c_c00000000"/>
+<v:date value="20060621"/>
+<v:version value="10.0.10586.212"/>
+<v:inffile value="bth.inf"/>
+<v:infkey value="BthGenericService"/>
+<v:infkeyext value=".NT"/>
+<v:provider value="Microsoft"/>
+<v:connected value="1"/>
+</D:device>
+
+<D:device key="BTHENUM\{0000110e-0000-1000-8000-00805f9b34fb}_LOCALMFG&amp;0002">
+<v:description>LG HBS900 Audio/Video Remote Control HID</v:description>
+<v:classname value="HIDClass"/>
+<v:classguid value="{745a17a0-74d3-11d0-b6fe-00a0c90f57da}"/>
+<v:driver value="{745a17a0-74d3-11d0-b6fe-00a0c90f57da}\0019"/>
+<v:root value="bthenum\{0000110e-0000-1000-8000-00805f9b34fb}_localmfg&amp;0002\7&amp;19859b79&amp;0&amp;b8ad3e065d6c_c00000000"/>
+<v:date value="20151029"/>
+<v:version value="10.0.10586.0"/>
+<v:inffile value="bthaudhid.inf"/>
+<v:infkey value="BthAvrcpTg_DDI"/>
+<v:mainfile value="bthavrcptg.sys,,"/>
+<v:provider value="Microsoft"/>
+<v:connected value="1"/>
+</D:device>
+
+<D:device key="BTHENUM\{0000111e-0000-1000-8000-00805f9b34fb}_LOCALMFG&amp;0002">
+<v:description>LG HBS900 Hands-Free Audio and Call Control HID Enumerator</v:description>
+<v:classname value="System"/>
+<v:classguid value="{4d36e97d-e325-11ce-bfc1-08002be10318}"/>
+<v:driver value="{4d36e97d-e325-11ce-bfc1-08002be10318}\0044"/>
+<v:root value="bthenum\{0000111e-0000-1000-8000-00805f9b34fb}_localmfg&amp;0002\7&amp;19859b79&amp;0&amp;b8ad3e065d6c_c00000000"/>
+<v:date value="20151029"/>
+<v:version value="10.0.10586.0"/>
+<v:inffile value="bthhfenum.inf"/>
+<v:infkey value="BthHfEnum"/>
+<v:infkeyext value=".NT"/>
+<v:mainfile value="bthhfenum.sys,,"/>
+<v:provider value="Microsoft"/>
+<v:connected value="1"/>
+</D:device>
+
+<D:device key="BTHHFENUM\BthHFPAudio">
+<v:description>LG HBS900 Hands-Free</v:description>
+<v:classname value="MEDIA"/>
+<v:classguid value="{4d36e96c-e325-11ce-bfc1-08002be10318}"/>
+<v:driver value="{4d36e96c-e325-11ce-bfc1-08002be10318}\0009"/>
+<v:root value="bthhfenum\bthhfpaudio\8&amp;3aa13be0&amp;1&amp;97"/>
+<v:date value="20151029"/>
+<v:version value="10.0.10586.0"/>
+<v:inffile value="wdma_bt.inf"/>
+<v:infkey value="BthHfAud"/>
+<v:mainfile value="bthhfaud.sys,,"/>
+<v:provider value="Microsoft"/>
+<v:connected value="1"/>
+</D:device>
+
+<D:device key="BTHHFENUM\BthHFPHID">
+<v:description>LG HBS900 Hands-Free Call Control HID</v:description>
+<v:classname value="HIDClass"/>
+<v:classguid value="{745a17a0-74d3-11d0-b6fe-00a0c90f57da}"/>
+<v:driver value="{745a17a0-74d3-11d0-b6fe-00a0c90f57da}\0022"/>
+<v:root value="bthhfenum\bthhfphid\8&amp;3aa13be0&amp;1&amp;104"/>
+<v:date value="20151029"/>
+<v:version value="10.0.10586.0"/>
+<v:inffile value="bthaudhid.inf"/>
+<v:infkey value="BthAudioHFHid"/>
+<v:mainfile value="mshidkmdf.sys,,|bthhfhid.sys,,"/>
+<v:provider value="Microsoft"/>
+<v:connected value="1"/>
+</D:device>
+
+<D:device key="MONITOR\BBY3942">
+<v:description>Generic PnP Monitor</v:description>
+<v:classguid value="{4d36e96e-e325-11ce-bfc1-08002be10318}"/>
+<v:driver value="{4d36e96e-e325-11ce-bfc1-08002be10318}\0000"/>
+<v:root value="display\bby3942\4&amp;3254af52&amp;0&amp;uid198147"/>
+<v:date value="20060621"/>
+<v:version value="10.0.10586.0"/>
+<v:inffile value="monitor.inf"/>
+<v:infkey value="PnPMonitor.Install"/>
+<v:provider value="Microsoft"/>
+<v:internalid value="MONBBY3942"/>
+<v:connected value="0"/>
+</D:device>
+
+<D:device key="MONITOR\LGD04DA">
+<v:description>Generic PnP Monitor</v:description>
+<v:classname value="Monitor"/>
+<v:classguid value="{4d36e96e-e325-11ce-bfc1-08002be10318}"/>
+<v:driver value="{4d36e96e-e325-11ce-bfc1-08002be10318}\0002"/>
+<v:root value="display\lgd04da\4&amp;3254af52&amp;0&amp;uid265988"/>
+<v:date value="20060621"/>
+<v:version value="10.0.10586.0"/>
+<v:inffile value="monitor.inf"/>
+<v:infkey value="PnPMonitor.Install"/>
+<v:mainfile value="monitor.sys,,"/>
+<v:provider value="Microsoft"/>
+<v:internalid value="MONLGD04DA"/>
+<v:connected value="1"/>
+</D:device>
+
+<D:device key="HDAUDIO\FUNC_01&amp;VEN_10EC&amp;DEV_0255&amp;SUBSYS_102806AD&amp;REV_1000">
+<v:description>Realtek High Definition Audio</v:description>
+<v:classname value="MEDIA"/>
+<v:classguid value="{4d36e96c-e325-11ce-bfc1-08002be10318}"/>
+<v:driver value="{4d36e96c-e325-11ce-bfc1-08002be10318}\0007"/>
+<v:root value="hdaudio\func_01&amp;ven_10ec&amp;dev_0255&amp;subsys_102806ad&amp;rev_1000\4&amp;8ac3b0d&amp;0&amp;0001"/>
+<v:date value="20150624"/>
+<v:version value="6.0.1.7544"/>
+<v:inffile value="oem15.inf"/>
+<v:infkey value="IntcAzAudModel1028052E"/>
+<v:infkeyext value=".NTamd64"/>
+<v:mainfile value="rtkvhd64.sys,,"/>
+<v:provider value="Realtek Semiconductor Corp."/>
+<v:internalid value="HDA0110EC0255102806AD1000"/>
+<v:connected value="1"/>
+</D:device>
+
+<D:device key="HDAUDIO\FUNC_01&amp;VEN_8086&amp;DEV_2807&amp;SUBSYS_80860101&amp;REV_1000">
+<v:description>Intel(R) Display Audio</v:description>
+<v:classguid value="{4d36e96c-e325-11ce-bfc1-08002be10318}"/>
+<v:driver value="{4d36e96c-e325-11ce-bfc1-08002be10318}\0000"/>
+<v:root value="hdaudio\func_01&amp;ven_8086&amp;dev_2807&amp;subsys_80860101&amp;rev_1000\4&amp;227c7f62&amp;0&amp;0001"/>
+<v:date value="20150803"/>
+<v:version value="6.16.0.3180"/>
+<v:inffile value="oem10.inf"/>
+<v:infkey value="IntcDAudModel8"/>
+<v:provider value="Intel(R) Corporation"/>
+<v:internalid value="HDA0180862807808601011000"/>
+<v:connected value="0"/>
+</D:device>
+
+<D:device key="HID\VEN_DELL&amp;DEV_ABCE">
+<v:description>Airplane Mode Switch Collection</v:description>
+<v:classname value="HIDClass"/>
+<v:classguid value="{745a17a0-74d3-11d0-b6fe-00a0c90f57da}"/>
+<v:driver value="{745a17a0-74d3-11d0-b6fe-00a0c90f57da}\0018"/>
+<v:root value="hid\dellabce\3&amp;233516d&amp;1&amp;0000"/>
+<v:date value="20150504"/>
+<v:version value="1.4.2.0"/>
+<v:inffile value="oem18.inf"/>
+<v:infkey value="customCollection.Inst.NT"/>
+<v:provider value="Dell Inc"/>
+<v:internalid value="HID413C0000ff"/>
+<v:connected value="1"/>
+</D:device>
+
+<D:device key="HID\VEN_DLL&amp;DEV_C6AD&amp;Col01">
+<v:description>HID-compliant mouse</v:description>
+<v:classname value="Mouse"/>
+<v:classguid value="{4d36e96f-e325-11ce-bfc1-08002be10318}"/>
+<v:driver value="{4d36e96f-e325-11ce-bfc1-08002be10318}\0003"/>
+<v:root value="hid\dllc6ad&amp;col01\5&amp;2a20a074&amp;0&amp;0000"/>
+<v:date value="20060621"/>
+<v:version value="10.0.10586.0"/>
+<v:inffile value="msmouse.inf"/>
+<v:infkey value="HID_Mouse_Inst.NT"/>
+<v:mainfile value="mouclass.sys,,"/>
+<v:provider value="Microsoft"/>
+<v:internalid value="HID06CB0000ff"/>
+<v:connected value="1"/>
+</D:device>
+
+<D:device key="HID\VEN_DLL&amp;DEV_C6AD&amp;Col02">
+<v:description>HID-compliant touch pad</v:description>
+<v:classname value="HIDClass"/>
+<v:classguid value="{745a17a0-74d3-11d0-b6fe-00a0c90f57da}"/>
+<v:driver value="{745a17a0-74d3-11d0-b6fe-00a0c90f57da}\0014"/>
+<v:root value="hid\dllc6ad&amp;col02\5&amp;2a20a074&amp;0&amp;0001"/>
+<v:date value="20060621"/>
+<v:version value="10.0.10586.0"/>
+<v:inffile value="input.inf"/>
+<v:infkey value="HID_Raw_Inst.NT"/>
+<v:provider value="Microsoft"/>
+<v:internalid value="HID06CB0000ff"/>
+<v:connected value="1"/>
+</D:device>
+
+<D:device key="HID\VEN_DLL&amp;DEV_C6AD&amp;Col03">
+<v:description>Microsoft Input Configuration Device</v:description>
+<v:classname value="HIDClass"/>
+<v:classguid value="{745a17a0-74d3-11d0-b6fe-00a0c90f57da}"/>
+<v:driver value="{745a17a0-74d3-11d0-b6fe-00a0c90f57da}\0015"/>
+<v:root value="hid\dllc6ad&amp;col03\5&amp;2a20a074&amp;0&amp;0002"/>
+<v:date value="20060621"/>
+<v:version value="10.0.10586.0"/>
+<v:inffile value="mtconfig.inf"/>
+<v:infkey value="MTConfigInst.NT"/>
+<v:mainfile value="mtconfig.sys,,"/>
+<v:provider value="Microsoft"/>
+<v:internalid value="HID06CB0000ff"/>
+<v:connected value="1"/>
+</D:device>
+
+<D:device key="HID\VEN_DLL&amp;DEV_C6AD&amp;Col04">
+<v:description>HID-compliant vendor-defined device</v:description>
+<v:classname value="HIDClass"/>
+<v:classguid value="{745a17a0-74d3-11d0-b6fe-00a0c90f57da}"/>
+<v:driver value="{745a17a0-74d3-11d0-b6fe-00a0c90f57da}\0016"/>
+<v:root value="hid\dllc6ad&amp;col04\5&amp;2a20a074&amp;0&amp;0003"/>
+<v:date value="20060621"/>
+<v:version value="10.0.10586.0"/>
+<v:inffile value="input.inf"/>
+<v:infkey value="HID_Raw_Inst.NT"/>
+<v:provider value="Microsoft"/>
+<v:internalid value="HID06CB0000ff"/>
+<v:connected value="1"/>
+</D:device>
+
+<D:device key="HID\VID_045E&amp;PID_07B2&amp;REV_0704&amp;MI_00">
+<v:description>HID Keyboard Device</v:description>
+<v:classname value="Keyboard"/>
+<v:classguid value="{4d36e96b-e325-11ce-bfc1-08002be10318}"/>
+<v:driver value="{4d36e96b-e325-11ce-bfc1-08002be10318}\0002"/>
+<v:root value="hid\vid_045e&amp;pid_07b2&amp;mi_00\7&amp;d847feb&amp;0&amp;0000"/>
+<v:date value="20060621"/>
+<v:version value="10.0.10586.0"/>
+<v:inffile value="keyboard.inf"/>
+<v:infkey value="HID_Keyboard_Inst.NT"/>
+<v:mainfile value="kbdclass.sys,,"/>
+<v:provider value="Microsoft"/>
+<v:internalid value="HID045E07B2070400"/>
+<v:connected value="1"/>
+</D:device>
+
+<D:device key="HID\VID_045E&amp;PID_07B2&amp;REV_0704&amp;MI_01&amp;Col01">
+<v:description>HID-compliant mouse</v:description>
+<v:classname value="Mouse"/>
+<v:classguid value="{4d36e96f-e325-11ce-bfc1-08002be10318}"/>
+<v:driver value="{4d36e96f-e325-11ce-bfc1-08002be10318}\0006"/>
+<v:root value="hid\vid_045e&amp;pid_07b2&amp;mi_01&amp;col01\7&amp;315bbdad&amp;0&amp;0000"/>
+<v:date value="20060621"/>
+<v:version value="10.0.10586.0"/>
+<v:inffile value="msmouse.inf"/>
+<v:infkey value="HID_Mouse_Inst.NT"/>
+<v:mainfile value="mouclass.sys,,"/>
+<v:provider value="Microsoft"/>
+<v:internalid value="HID045E07B207040101"/>
+<v:connected value="1"/>
+</D:device>
+
+<D:device key="HID\VID_045E&amp;PID_07B2&amp;REV_0704&amp;MI_01&amp;Col02">
+<v:description>HID-compliant consumer control device</v:description>
+<v:classname value="HIDClass"/>
+<v:classguid value="{745a17a0-74d3-11d0-b6fe-00a0c90f57da}"/>
+<v:driver value="{745a17a0-74d3-11d0-b6fe-00a0c90f57da}\0037"/>
+<v:root value="hid\vid_045e&amp;pid_07b2&amp;mi_01&amp;col02\7&amp;315bbdad&amp;0&amp;0001"/>
+<v:date value="20060621"/>
+<v:version value="10.0.10586.0"/>
+<v:inffile value="hidserv.inf"/>
+<v:infkey value="HIDSystemConsumerDevice"/>
+<v:provider value="Microsoft"/>
+<v:internalid value="HID045E07B207040102"/>
+<v:connected value="1"/>
+</D:device>
+
+<D:device key="HID\VID_045E&amp;PID_07B2&amp;REV_0704&amp;MI_02&amp;Col01">
+<v:description>HID-compliant consumer control device</v:description>
+<v:classname value="HIDClass"/>
+<v:classguid value="{745a17a0-74d3-11d0-b6fe-00a0c90f57da}"/>
+<v:driver value="{745a17a0-74d3-11d0-b6fe-00a0c90f57da}\0032"/>
+<v:root value="hid\vid_045e&amp;pid_07b2&amp;mi_02&amp;col01\7&amp;33977083&amp;0&amp;0000"/>
+<v:date value="20060621"/>
+<v:version value="10.0.10586.0"/>
+<v:inffile value="hidserv.inf"/>
+<v:infkey value="HIDSystemConsumerDevice"/>
+<v:provider value="Microsoft"/>
+<v:internalid value="HID045E07B207040201"/>
+<v:connected value="1"/>
+</D:device>
+
+<D:device key="HID\VID_045E&amp;PID_07B2&amp;REV_0704&amp;MI_02&amp;Col02">
+<v:description>HID-compliant consumer control device</v:description>
+<v:classname value="HIDClass"/>
+<v:classguid value="{745a17a0-74d3-11d0-b6fe-00a0c90f57da}"/>
+<v:driver value="{745a17a0-74d3-11d0-b6fe-00a0c90f57da}\0033"/>
+<v:root value="hid\vid_045e&amp;pid_07b2&amp;mi_02&amp;col02\7&amp;33977083&amp;0&amp;0001"/>
+<v:date value="20060621"/>
+<v:version value="10.0.10586.0"/>
+<v:inffile value="hidserv.inf"/>
+<v:infkey value="HIDSystemConsumerDevice"/>
+<v:provider value="Microsoft"/>
+<v:internalid value="HID045E07B207040202"/>
+<v:connected value="1"/>
+</D:device>
+
+<D:device key="HID\VID_045E&amp;PID_07B2&amp;REV_0704&amp;MI_02&amp;Col03">
+<v:description>HID-compliant vendor-defined device</v:description>
+<v:classname value="HIDClass"/>
+<v:classguid value="{745a17a0-74d3-11d0-b6fe-00a0c90f57da}"/>
+<v:driver value="{745a17a0-74d3-11d0-b6fe-00a0c90f57da}\0034"/>
+<v:root value="hid\vid_045e&amp;pid_07b2&amp;mi_02&amp;col03\7&amp;33977083&amp;0&amp;0002"/>
+<v:date value="20060621"/>
+<v:version value="10.0.10586.0"/>
+<v:inffile value="input.inf"/>
+<v:infkey value="HID_Raw_Inst.NT"/>
+<v:provider value="Microsoft"/>
+<v:internalid value="HID045E07B207040203"/>
+<v:connected value="1"/>
+</D:device>
+
+<D:device key="HID\VID_045E&amp;PID_07B2&amp;REV_0704&amp;MI_02&amp;Col04">
+<v:description>HID-compliant system controller</v:description>
+<v:classname value="HIDClass"/>
+<v:classguid value="{745a17a0-74d3-11d0-b6fe-00a0c90f57da}"/>
+<v:driver value="{745a17a0-74d3-11d0-b6fe-00a0c90f57da}\0035"/>
+<v:root value="hid\vid_045e&amp;pid_07b2&amp;mi_02&amp;col04\7&amp;33977083&amp;0&amp;0003"/>
+<v:date value="20060621"/>
+<v:version value="10.0.10586.0"/>
+<v:inffile value="input.inf"/>
+<v:infkey value="HID_Raw_Inst.NT"/>
+<v:provider value="Microsoft"/>
+<v:internalid value="HID045E07B207040204"/>
+<v:connected value="1"/>
+</D:device>
+
+<D:device key="HID\VID_1FD2&amp;PID_5001&amp;REV_0500&amp;MI_00&amp;Col01">
+<v:description>HID-compliant touch screen</v:description>
+<v:classname value="HIDClass"/>
+<v:classguid value="{745a17a0-74d3-11d0-b6fe-00a0c90f57da}"/>
+<v:driver value="{745a17a0-74d3-11d0-b6fe-00a0c90f57da}\0011"/>
+<v:root value="hid\vid_1fd2&amp;pid_5001&amp;mi_00&amp;col01\8&amp;18179cc9&amp;0&amp;0000"/>
+<v:date value="20060621"/>
+<v:version value="10.0.10586.0"/>
+<v:inffile value="input.inf"/>
+<v:infkey value="HID_Raw_Inst.NT"/>
+<v:provider value="Microsoft"/>
+<v:internalid value="HID1FD2500105000001"/>
+<v:connected value="1"/>
+</D:device>
+
+<D:device key="HID\VID_1FD2&amp;PID_5001&amp;REV_0500&amp;MI_00&amp;Col02">
+<v:description>Microsoft Input Configuration Device</v:description>
+<v:classname value="HIDClass"/>
+<v:classguid value="{745a17a0-74d3-11d0-b6fe-00a0c90f57da}"/>
+<v:driver value="{745a17a0-74d3-11d0-b6fe-00a0c90f57da}\0012"/>
+<v:root value="hid\vid_1fd2&amp;pid_5001&amp;mi_00&amp;col02\8&amp;18179cc9&amp;0&amp;0001"/>
+<v:date value="20060621"/>
+<v:version value="10.0.10586.0"/>
+<v:inffile value="mtconfig.inf"/>
+<v:infkey value="MTConfigInst.NT"/>
+<v:mainfile value="mtconfig.sys,,"/>
+<v:provider value="Microsoft"/>
+<v:internalid value="HID1FD2500105000002"/>
+<v:connected value="1"/>
+</D:device>
+
+<D:device key="HID\VID_1FD2&amp;PID_5001&amp;REV_0500&amp;MI_00&amp;Col03">
+<v:description>HID-compliant mouse</v:description>
+<v:classname value="Mouse"/>
+<v:classguid value="{4d36e96f-e325-11ce-bfc1-08002be10318}"/>
+<v:driver value="{4d36e96f-e325-11ce-bfc1-08002be10318}\0002"/>
+<v:root value="hid\vid_1fd2&amp;pid_5001&amp;mi_00&amp;col03\8&amp;18179cc9&amp;0&amp;0002"/>
+<v:date value="20060621"/>
+<v:version value="10.0.10586.0"/>
+<v:inffile value="msmouse.inf"/>
+<v:infkey value="HID_Mouse_Inst.NT"/>
+<v:mainfile value="mouclass.sys,,"/>
+<v:provider value="Microsoft"/>
+<v:internalid value="HID1FD2500105000003"/>
+<v:connected value="1"/>
+</D:device>
+
+<D:device key="HID\VID_1FD2&amp;PID_5001&amp;REV_0500&amp;MI_01">
+<v:description>HID-compliant vendor-defined device</v:description>
+<v:classname value="HIDClass"/>
+<v:classguid value="{745a17a0-74d3-11d0-b6fe-00a0c90f57da}"/>
+<v:driver value="{745a17a0-74d3-11d0-b6fe-00a0c90f57da}\0013"/>
+<v:root value="hid\vid_1fd2&amp;pid_5001&amp;mi_01\8&amp;4e7808b&amp;0&amp;0000"/>
+<v:date value="20060621"/>
+<v:version value="10.0.10586.0"/>
+<v:inffile value="input.inf"/>
+<v:infkey value="HID_Raw_Inst.NT"/>
+<v:provider value="Microsoft"/>
+<v:internalid value="HID1FD25001050001"/>
+<v:connected value="1"/>
+</D:device>
+
+<D:device key="PCI\VEN_10EC&amp;DEV_8136&amp;SUBSYS_06AD1028&amp;REV_07">
+<v:description>Realtek PCIe FE Family Controller</v:description>
+<v:classname value="Net"/>
+<v:classguid value="{4d36e972-e325-11ce-bfc1-08002be10318}"/>
+<v:driver value="{4d36e972-e325-11ce-bfc1-08002be10318}\0002"/>
+<v:root value="pci\ven_10ec&amp;dev_8136&amp;subsys_06ad1028&amp;rev_07\4&amp;a40462d&amp;0&amp;00e3"/>
+<v:date value="20150505"/>
+<v:version value="10.1.505.2015"/>
+<v:resources value="I/O ef00 - efff'I/O 0002 - 3033'MEM f00fc000 - f00fffff'"/>
+<v:inffile value="oem11.inf"/>
+<v:infkey value="RTL8105.ndi.NT"/>
+<v:mainfile value="rt640x64.sys,,"/>
+<v:provider value="Realtek"/>
+<v:internalid value="PCI10EC8136102806AD02000700"/>
+<v:iobase value="ef00"/>
+<v:serial value="F8:CA:B8:00:2A:9E"/>
+<v:connected value="1"/>
+</D:device>
+
+<D:device key="PCI\VEN_8086&amp;DEV_08B3&amp;SUBSYS_84708086&amp;REV_83">
+<v:description>Intel(R) Dual Band Wireless-AC 3160</v:description>
+<v:classname value="Net"/>
+<v:classguid value="{4d36e972-e325-11ce-bfc1-08002be10318}"/>
+<v:driver value="{4d36e972-e325-11ce-bfc1-08002be10318}\0001"/>
+<v:root value="pci\ven_8086&amp;dev_08b3&amp;subsys_84708086&amp;rev_83\4&amp;19d7a68d&amp;0&amp;00e2"/>
+<v:date value="20150622"/>
+<v:version value="18.11.0.8"/>
+<v:resources value="MEM f7dfe000 - f7dfffff'"/>
+<v:inffile value="oem0.inf"/>
+<v:infkey value="Install_MPCIEX_DELLNGFF_3160_AC_HMC_WINB_64_AC"/>
+<v:mainfile value="vwifibus.sys,,|netwbw02.sys,,"/>
+<v:provider value="Intel"/>
+<v:internalid value="PCI808608B38086847002808300"/>
+<v:serial value="78:0C:B8:35:85:7C"/>
+<v:connected value="1"/>
+</D:device>
+
+<D:device key="PCI\VEN_8086&amp;DEV_0A04&amp;SUBSYS_06AD1028&amp;REV_0B">
+<v:description>PCI standard host CPU bridge</v:description>
+<v:classname value="System"/>
+<v:classguid value="{4d36e97d-e325-11ce-bfc1-08002be10318}"/>
+<v:driver value="{4d36e97d-e325-11ce-bfc1-08002be10318}\0014"/>
+<v:root value="pci\ven_8086&amp;dev_0a04&amp;subsys_06ad1028&amp;rev_0b\3&amp;11583659&amp;0&amp;00"/>
+<v:date value="20060621"/>
+<v:version value="10.0.10586.0"/>
+<v:inffile value="machine.inf"/>
+<v:infkey value="NO_DRV"/>
+<v:provider value="Microsoft"/>
+<v:internalid value="PCI80860A04102806AD06000B00"/>
+<v:connected value="1"/>
+</D:device>
+
+<D:device key="PCI\VEN_8086&amp;DEV_0A0C&amp;SUBSYS_06AD1028&amp;REV_0B">
+<v:description>High Definition Audio Controller</v:description>
+<v:classguid value="{4d36e97d-e325-11ce-bfc1-08002be10318}"/>
+<v:driver value="{4d36e97d-e325-11ce-bfc1-08002be10318}\0015"/>
+<v:root value="pci\ven_8086&amp;dev_0a0c&amp;subsys_06ad1028&amp;rev_0b\3&amp;11583659&amp;0&amp;18"/>
+<v:date value="20151029"/>
+<v:version value="10.0.10586.0"/>
+<v:inffile value="hdaudbus.inf"/>
+<v:infkey value="HDAudio_Device.NT"/>
+<v:provider value="Microsoft"/>
+<v:internalid value="PCI80860A0C102806AD04030B00"/>
+<v:connected value="0"/>
+</D:device>
+
+<D:device key="PCI\VEN_8086&amp;DEV_0A16&amp;SUBSYS_06AD1028&amp;REV_0B">
+<v:description>Intel(R) HD Graphics Family</v:description>
+<v:classname value="Display"/>
+<v:classguid value="{4d36e968-e325-11ce-bfc1-08002be10318}"/>
+<v:driver value="{4d36e968-e325-11ce-bfc1-08002be10318}\0000"/>
+<v:root value="pci\ven_8086&amp;dev_0a16&amp;subsys_06ad1028&amp;rev_0b\3&amp;11583659&amp;0&amp;10"/>
+<v:date value="20150817"/>
+<v:version value="10.18.15.4278"/>
+<v:resources value="MEM f7800000 - f7bfffff'I/O 0002 - 21d1'I/O f000 - f03f'"/>
+<v:inffile value="oem13.inf"/>
+<v:infkey value="iHSWM_w10"/>
+<v:mainfile value="igdkmd64.sys,,"/>
+<v:provider value="Intel Corporation"/>
+<v:internalid value="PCI80860A16102806AD03000B00"/>
+<v:iobase value="0002"/>
+<v:connected value="1"/>
+</D:device>
+
+<D:device key="PCI\VEN_8086&amp;DEV_9C03&amp;SUBSYS_06AD1028&amp;REV_04">
+<v:description>Intel(R) 8 Series Chipset Family SATA AHCI Controller</v:description>
+<v:classname value="hdc"/>
+<v:classguid value="{4d36e96a-e325-11ce-bfc1-08002be10318}"/>
+<v:driver value="{4d36e96a-e325-11ce-bfc1-08002be10318}\0000"/>
+<v:root value="pci\ven_8086&amp;dev_9c03&amp;subsys_06ad1028&amp;rev_04\3&amp;11583659&amp;0&amp;fa"/>
+<v:date value="20150722"/>
+<v:version value="14.5.2.1088"/>
+<v:resources value="I/O f0b0 - f0b7'I/O 0001 - 013d'I/O f090 - f097'I/O 0003 - 0002'I/O f060 - f07f'"/>
+<v:inffile value="oem23.inf"/>
+<v:infkey value="iaStorA_inst_8.NTamd64"/>
+<v:mainfile value="iastora.sys,,"/>
+<v:provider value="Intel Corporation"/>
+<v:internalid value="PCI80869C03102806AD01060401"/>
+<v:iobase value="f0b0"/>
+<v:connected value="1"/>
+</D:device>
+
+<D:device key="PCI\VEN_8086&amp;DEV_9C10&amp;SUBSYS_06AD1028&amp;REV_E4">
+<v:description>Intel(R) 8 Series PCI Express Root Port #1 - 9C10</v:description>
+<v:classname value="System"/>
+<v:classguid value="{4d36e97d-e325-11ce-bfc1-08002be10318}"/>
+<v:driver value="{4d36e97d-e325-11ce-bfc1-08002be10318}\0017"/>
+<v:root value="pci\ven_8086&amp;dev_9c10&amp;subsys_06ad1028&amp;rev_e4\3&amp;11583659&amp;0&amp;e0"/>
+<v:date value="20150616"/>
+<v:version value="10.1.1.7"/>
+<v:resources value="I/O 0008 - fc37'"/>
+<v:inffile value="oem9.inf"/>
+<v:infkey value="Needs_PCI_DRV"/>
+<v:mainfile value="pci.sys,,"/>
+<v:provider value="INTEL"/>
+<v:internalid value="PCI80869C10102806AD0604E400"/>
+<v:iobase value="0008"/>
+<v:connected value="1"/>
+</D:device>
+
+<D:device key="PCI\VEN_8086&amp;DEV_9C14&amp;SUBSYS_06AD1028&amp;REV_E4">
+<v:description>Intel(R) 8 Series PCI Express Root Port #3 - 9C14</v:description>
+<v:classname value="System"/>
+<v:classguid value="{4d36e97d-e325-11ce-bfc1-08002be10318}"/>
+<v:driver value="{4d36e97d-e325-11ce-bfc1-08002be10318}\0018"/>
+<v:root value="pci\ven_8086&amp;dev_9c14&amp;subsys_06ad1028&amp;rev_e4\3&amp;11583659&amp;0&amp;e2"/>
+<v:date value="20150616"/>
+<v:version value="10.1.1.7"/>
+<v:resources value="MEM f7d00000 - f7dfffff'I/O 0008 - 0008'"/>
+<v:inffile value="oem9.inf"/>
+<v:infkey value="Needs_PCI_DRV"/>
+<v:mainfile value="pci.sys,,"/>
+<v:provider value="INTEL"/>
+<v:internalid value="PCI80869C14102806AD0604E400"/>
+<v:iobase value="0008"/>
+<v:connected value="1"/>
+</D:device>
+
+<D:device key="PCI\VEN_8086&amp;DEV_9C16&amp;SUBSYS_06AD1028&amp;REV_E4">
+<v:description>Intel(R) 8 Series PCI Express Root Port #4 - 9C16</v:description>
+<v:classname value="System"/>
+<v:classguid value="{4d36e97d-e325-11ce-bfc1-08002be10318}"/>
+<v:driver value="{4d36e97d-e325-11ce-bfc1-08002be10318}\0019"/>
+<v:root value="pci\ven_8086&amp;dev_9c16&amp;subsys_06ad1028&amp;rev_e4\3&amp;11583659&amp;0&amp;e3"/>
+<v:date value="20150616"/>
+<v:version value="10.1.1.7"/>
+<v:resources value="MEM f7c00000 - f7cfffff'I/O 0008 - 0117'I/O e000 - efff'"/>
+<v:inffile value="oem9.inf"/>
+<v:infkey value="Needs_PCI_DRV"/>
+<v:mainfile value="pci.sys,,"/>
+<v:provider value="INTEL"/>
+<v:internalid value="PCI80869C16102806AD0604E400"/>
+<v:iobase value="0008"/>
+<v:connected value="1"/>
+</D:device>
+
+<D:device key="PCI\VEN_8086&amp;DEV_9C18&amp;SUBSYS_06AD1028&amp;REV_E4">
+<v:description>Intel(R) 8 Series PCI Express Root Port #5 - 9C18</v:description>
+<v:classname value="System"/>
+<v:classguid value="{4d36e97d-e325-11ce-bfc1-08002be10318}"/>
+<v:driver value="{4d36e97d-e325-11ce-bfc1-08002be10318}\0020"/>
+<v:root value="pci\ven_8086&amp;dev_9c18&amp;subsys_06ad1028&amp;rev_e4\3&amp;11583659&amp;0&amp;e4"/>
+<v:date value="20150616"/>
+<v:version value="10.1.1.7"/>
+<v:resources value="I/O 0008 - 3039'"/>
+<v:inffile value="oem9.inf"/>
+<v:infkey value="Needs_PCI_DRV"/>
+<v:mainfile value="pci.sys,,"/>
+<v:provider value="INTEL"/>
+<v:internalid value="PCI80869C18102806AD0604E400"/>
+<v:iobase value="0008"/>
+<v:connected value="1"/>
+</D:device>
+
+<D:device key="PCI\VEN_8086&amp;DEV_9C20&amp;SUBSYS_06AD1028&amp;REV_04">
+<v:description>High Definition Audio Controller</v:description>
+<v:classname value="System"/>
+<v:classguid value="{4d36e97d-e325-11ce-bfc1-08002be10318}"/>
+<v:driver value="{4d36e97d-e325-11ce-bfc1-08002be10318}\0016"/>
+<v:root value="pci\ven_8086&amp;dev_9c20&amp;subsys_06ad1028&amp;rev_04\3&amp;11583659&amp;0&amp;d8"/>
+<v:date value="20151029"/>
+<v:version value="10.0.10586.0"/>
+<v:resources value="MEM feaf8000 - feafbfff'"/>
+<v:inffile value="hdaudbus.inf"/>
+<v:infkey value="HDAudio_Device.NT"/>
+<v:mainfile value="hdaudbus.sys,,"/>
+<v:provider value="Microsoft"/>
+<v:internalid value="PCI80869C20102806AD04030400"/>
+<v:connected value="1"/>
+</D:device>
+
+<D:device key="PCI\VEN_8086&amp;DEV_9C22&amp;SUBSYS_06AD1028&amp;REV_04">
+<v:description>Intel(R) 8 Series SMBus Controller - 9C22</v:description>
+<v:classname value="System"/>
+<v:classguid value="{4d36e97d-e325-11ce-bfc1-08002be10318}"/>
+<v:driver value="{4d36e97d-e325-11ce-bfc1-08002be10318}\0043"/>
+<v:root value="pci\ven_8086&amp;dev_9c22&amp;subsys_06ad1028&amp;rev_04\3&amp;11583659&amp;0&amp;fb"/>
+<v:date value="20150616"/>
+<v:version value="10.1.1.7"/>
+<v:inffile value="oem9.inf"/>
+<v:infkey value="Needs_NO_DRV"/>
+<v:provider value="INTEL"/>
+<v:internalid value="PCI80869C22102806AD0C050400"/>
+<v:connected value="1"/>
+</D:device>
+
+<D:device key="PCI\VEN_8086&amp;DEV_9C26&amp;SUBSYS_06AD1028&amp;REV_04">
+<v:description>Intel(R) 8 Series USB Enhanced Host Controller #1 - 9C26</v:description>
+<v:classname value="USB"/>
+<v:classguid value="{36fc9e60-c465-11cf-8056-444553540000}"/>
+<v:driver value="{36fc9e60-c465-11cf-8056-444553540000}\0001"/>
+<v:root value="pci\ven_8086&amp;dev_9c26&amp;subsys_06ad1028&amp;rev_04\3&amp;11583659&amp;0&amp;e8"/>
+<v:date value="20060621"/>
+<v:version value="10.0.10586.0"/>
+<v:resources value="MEM f7e1a000 - f7e1a3ff'"/>
+<v:inffile value="usbport.inf"/>
+<v:infkey value="EHCI.Dev.NT"/>
+<v:mainfile value="usbehci.sys,,"/>
+<v:provider value="Microsoft"/>
+<v:internalid value="PCI80869C26102806AD0C030420"/>
+<v:connected value="1"/>
+</D:device>
+
+<D:device key="PCI\VEN_8086&amp;DEV_9C31&amp;SUBSYS_06AD1028&amp;REV_04">
+<v:description>Intel(R) USB 3.0 eXtensible Host Controller - 1.0 (Microsoft)</v:description>
+<v:classname value="USB"/>
+<v:classguid value="{36fc9e60-c465-11cf-8056-444553540000}"/>
+<v:driver value="{36fc9e60-c465-11cf-8056-444553540000}\0000"/>
+<v:root value="pci\ven_8086&amp;dev_9c31&amp;subsys_06ad1028&amp;rev_04\3&amp;11583659&amp;0&amp;a0"/>
+<v:date value="20160328"/>
+<v:version value="10.0.10586.212"/>
+<v:resources value="MEM f7e00000 - f7e0ffff'"/>
+<v:inffile value="usbxhci.inf"/>
+<v:infkey value="Generic.Install.NT"/>
+<v:mainfile value="usbxhci.sys,,"/>
+<v:provider value="Microsoft"/>
+<v:internalid value="PCI80869C31102806AD0C030430"/>
+<v:connected value="1"/>
+</D:device>
+
+<D:device key="PCI\VEN_8086&amp;DEV_9C3A&amp;SUBSYS_06AD1028&amp;REV_04">
+<v:description>Intel(R) Management Engine Interface </v:description>
+<v:classname value="System"/>
+<v:classguid value="{4d36e97d-e325-11ce-bfc1-08002be10318}"/>
+<v:driver value="{4d36e97d-e325-11ce-bfc1-08002be10318}\0042"/>
+<v:root value="pci\ven_8086&amp;dev_9c3a&amp;subsys_06ad1028&amp;rev_04\3&amp;11583659&amp;0&amp;b0"/>
+<v:date value="20150707"/>
+<v:version value="11.0.0.1157"/>
+<v:resources value="MEM f7e1c000 - f7e1c01f'"/>
+<v:inffile value="oem26.inf"/>
+<v:infkey value="TEE_DDI_W10_x64"/>
+<v:mainfile value="teedriverw8x64.sys,,"/>
+<v:provider value="Intel"/>
+<v:internalid value="PCI80869C3A102806AD07800400"/>
+<v:connected value="1"/>
+</D:device>
+
+<D:device key="PCI\VEN_8086&amp;DEV_9C43&amp;SUBSYS_06AD1028&amp;REV_04">
+<v:description>Intel(R) 8 Series LPC Controller (Premium SKU) - 9C43</v:description>
+<v:classname value="System"/>
+<v:classguid value="{4d36e97d-e325-11ce-bfc1-08002be10318}"/>
+<v:driver value="{4d36e97d-e325-11ce-bfc1-08002be10318}\0021"/>
+<v:root value="pci\ven_8086&amp;dev_9c43&amp;subsys_06ad1028&amp;rev_04\3&amp;11583659&amp;0&amp;f8"/>
+<v:date value="20150616"/>
+<v:version value="10.1.1.7"/>
+<v:inffile value="oem9.inf"/>
+<v:infkey value="Needs_ISAPNP_DRV"/>
+<v:mainfile value="msisadrv.sys,,"/>
+<v:provider value="INTEL"/>
+<v:internalid value="PCI80869C43102806AD06010400"/>
+<v:connected value="1"/>
+</D:device>
+
+<D:device key="acpiapic">
+<v:description>ACPI x64-based PC</v:description>
+<v:classname value="Computer"/>
+<v:classguid value="{4d36e966-e325-11ce-bfc1-08002be10318}"/>
+<v:driver value="{4d36e966-e325-11ce-bfc1-08002be10318}\0000"/>
+<v:root value="root\acpi_hal\0000"/>
+<v:date value="20060621"/>
+<v:version value="10.0.10586.0"/>
+<v:inffile value="hal.inf"/>
+<v:infkey value="ACPI_AMD64_HAL"/>
+<v:provider value="Microsoft"/>
+<v:connected value="1"/>
+</D:device>
+
+<D:device key="ROOT\BasicDisplay">
+<v:description>Microsoft Basic Display Driver</v:description>
+<v:classname value="System"/>
+<v:classguid value="{4d36e97d-e325-11ce-bfc1-08002be10318}"/>
+<v:driver value="{4d36e97d-e325-11ce-bfc1-08002be10318}\0037"/>
+<v:root value="root\basicdisplay\0000"/>
+<v:date value="20060621"/>
+<v:version value="10.0.10586.0"/>
+<v:inffile value="basicdisplay.inf"/>
+<v:infkey value="MSBDD_Fallback"/>
+<v:mainfile value="basicdisplay.sys,,"/>
+<v:provider value="Microsoft"/>
+<v:connected value="1"/>
+</D:device>
+
+<D:device key="ROOT\BasicRender">
+<v:description>Microsoft Basic Render Driver</v:description>
+<v:classname value="System"/>
+<v:classguid value="{4d36e97d-e325-11ce-bfc1-08002be10318}"/>
+<v:driver value="{4d36e97d-e325-11ce-bfc1-08002be10318}\0038"/>
+<v:root value="root\basicrender\0000"/>
+<v:date value="20060621"/>
+<v:version value="10.0.10586.0"/>
+<v:inffile value="basicrender.inf"/>
+<v:infkey value="BasicRender"/>
+<v:mainfile value="basicrender.sys,,"/>
+<v:provider value="Microsoft"/>
+<v:connected value="1"/>
+</D:device>
+
+<D:device key="ROOT\CompositeBus">
+<v:description>Composite Bus Enumerator</v:description>
+<v:classname value="System"/>
+<v:classguid value="{4d36e97d-e325-11ce-bfc1-08002be10318}"/>
+<v:driver value="{4d36e97d-e325-11ce-bfc1-08002be10318}\0000"/>
+<v:root value="root\compositebus\0000"/>
+<v:date value="20060621"/>
+<v:version value="10.0.10586.0"/>
+<v:inffile value="compositebus.inf"/>
+<v:infkey value="CompositeBus_Device.NT"/>
+<v:mainfile value="compositebus.sys,,"/>
+<v:provider value="Microsoft"/>
+<v:connected value="1"/>
+</D:device>
+
+<D:device key="root\hubusbpalbus">
+<v:description>UoIP Hub</v:description>
+<v:classname value="Intel UoIP Bus Driver"/>
+<v:classguid value="{624e2be2-3c4c-4303-8cc7-8c318f348d03}"/>
+<v:driver value="{624e2be2-3c4c-4303-8cc7-8c318f348d03}\0000"/>
+<v:root value="root\intel_uoip_bus_driver\0000"/>
+<v:date value="20150316"/>
+<v:version value="2.0.13.23272"/>
+<v:inffile value="oem6.inf"/>
+<v:infkey value="usb3hub_Inst.NT"/>
+<v:mainfile value="usb3hub.sys,,"/>
+<v:provider value="Intel Corporation"/>
+<v:connected value="1"/>
+</D:device>
+
+<D:device key="root\kdnic">
+<v:description>Microsoft Kernel Debug Network Adapter</v:description>
+<v:classname value="Net"/>
+<v:classguid value="{4d36e972-e325-11ce-bfc1-08002be10318}"/>
+<v:driver value="{4d36e972-e325-11ce-bfc1-08002be10318}\0000"/>
+<v:root value="root\kdnic\0000"/>
+<v:date value="20060621"/>
+<v:version value="10.0.10586.0"/>
+<v:inffile value="kdnic.inf"/>
+<v:infkey value="KdNic.ndi"/>
+<v:mainfile value="kdnic.sys,,"/>
+<v:provider value="Microsoft"/>
+<v:connected value="1"/>
+</D:device>
+
+<D:device key="ROOT\mssmbios">
+<v:description>Microsoft System Management BIOS Driver</v:description>
+<v:classname value="System"/>
+<v:classguid value="{4d36e97d-e325-11ce-bfc1-08002be10318}"/>
+<v:driver value="{4d36e97d-e325-11ce-bfc1-08002be10318}\0039"/>
+<v:root value="root\mssmbios\0000"/>
+<v:date value="20060621"/>
+<v:version value="10.0.10586.0"/>
+<v:inffile value="mssmbios.inf"/>
+<v:infkey value="MSSMBIOS_DRV"/>
+<v:mainfile value="mssmbios.sys,,"/>
+<v:provider value="Microsoft"/>
+<v:connected value="1"/>
+</D:device>
+
+<D:device key="ROOT\NdisVirtualBus">
+<v:description>NDIS Virtual Network Adapter Enumerator</v:description>
+<v:classname value="System"/>
+<v:classguid value="{4d36e97d-e325-11ce-bfc1-08002be10318}"/>
+<v:driver value="{4d36e97d-e325-11ce-bfc1-08002be10318}\0002"/>
+<v:root value="root\ndisvirtualbus\0000"/>
+<v:date value="20060621"/>
+<v:version value="10.0.10586.0"/>
+<v:inffile value="ndisvirtualbus.inf"/>
+<v:infkey value="NdisVirtualBus_Device.NT"/>
+<v:mainfile value="ndisvirtualbus.sys,,"/>
+<v:provider value="Microsoft"/>
+<v:connected value="1"/>
+</D:device>
+
+<D:device key="VPNVA">
+<v:description>Cisco AnyConnect Secure Mobility Client Virtual Miniport Adapter for Windows x64</v:description>
+<v:classname value="Net"/>
+<v:classguid value="{4d36e972-e325-11ce-bfc1-08002be10318}"/>
+<v:driver value="{4d36e972-e325-11ce-bfc1-08002be10318}\0009"/>
+<v:root value="root\net\0000"/>
+<v:date value="20140226"/>
+<v:version value="3.1.6019.0"/>
+<v:inffile value="oem31.inf"/>
+<v:infkey value="Cisco.ndi.NTamd64"/>
+<v:mainfile value="vpnva64-6.sys,,"/>
+<v:provider value="Cisco Systems"/>
+<v:connected value="0"/>
+</D:device>
+
+<D:device key="ROOT\RDPBUS">
+<v:description>Remote Desktop Device Redirector Bus</v:description>
+<v:classname value="System"/>
+<v:classguid value="{4d36e97d-e325-11ce-bfc1-08002be10318}"/>
+<v:driver value="{4d36e97d-e325-11ce-bfc1-08002be10318}\0004"/>
+<v:root value="root\rdpbus\0000"/>
+<v:date value="20060621"/>
+<v:version value="10.0.10586.0"/>
+<v:inffile value="rdpbus.inf"/>
+<v:infkey value="RDPBUS"/>
+<v:mainfile value="rdpbus.sys,,"/>
+<v:provider value="Microsoft"/>
+<v:connected value="1"/>
+</D:device>
+
+<D:device key="Root\Spaceport">
+<v:description>Microsoft Storage Spaces Controller</v:description>
+<v:classname value="SCSIAdapter"/>
+<v:classguid value="{4d36e97b-e325-11ce-bfc1-08002be10318}"/>
+<v:driver value="{4d36e97b-e325-11ce-bfc1-08002be10318}\0000"/>
+<v:root value="root\spaceport\0000"/>
+<v:date value="20060621"/>
+<v:version value="10.0.10586.0"/>
+<v:inffile value="spaceport.inf"/>
+<v:infkey value="Spaceport_Install"/>
+<v:mainfile value="spaceport.sys,,"/>
+<v:provider value="Microsoft"/>
+<v:connected value="1"/>
+</D:device>
+
+<D:device key="ROOT\SWENUM">
+<v:description>Plug and Play Software Device Enumerator</v:description>
+<v:classname value="System"/>
+<v:classguid value="{4d36e97d-e325-11ce-bfc1-08002be10318}"/>
+<v:driver value="{4d36e97d-e325-11ce-bfc1-08002be10318}\0003"/>
+<v:root value="root\system\0000"/>
+<v:date value="20151029"/>
+<v:version value="10.0.10586.0"/>
+<v:inffile value="swenum.inf"/>
+<v:infkey value="SWENUM"/>
+<v:mainfile value="swenum.sys,,"/>
+<v:provider value="Microsoft"/>
+<v:connected value="1"/>
+</D:device>
+
+<D:device key="root\umbus">
+<v:description>UMBus Root Bus Enumerator</v:description>
+<v:classname value="System"/>
+<v:classguid value="{4d36e97d-e325-11ce-bfc1-08002be10318}"/>
+<v:driver value="{4d36e97d-e325-11ce-bfc1-08002be10318}\0001"/>
+<v:root value="root\umbus\0000"/>
+<v:date value="20060621"/>
+<v:version value="10.0.10586.0"/>
+<v:inffile value="umbus.inf"/>
+<v:infkey value="UmBusRoot_Device.NT"/>
+<v:mainfile value="umbus.sys,,"/>
+<v:provider value="Microsoft"/>
+<v:connected value="1"/>
+</D:device>
+
+<D:device key="ROOT\vdrvroot">
+<v:description>Microsoft Virtual Drive Enumerator</v:description>
+<v:classname value="System"/>
+<v:classguid value="{4d36e97d-e325-11ce-bfc1-08002be10318}"/>
+<v:driver value="{4d36e97d-e325-11ce-bfc1-08002be10318}\0035"/>
+<v:root value="root\vdrvroot\0000"/>
+<v:date value="20060621"/>
+<v:version value="10.0.10586.0"/>
+<v:inffile value="vdrvroot.inf"/>
+<v:infkey value="VDRVROOT"/>
+<v:mainfile value="vdrvroot.sys,,"/>
+<v:provider value="Microsoft"/>
+<v:connected value="1"/>
+</D:device>
+
+<D:device key="ROOT\VOLMGR">
+<v:description>Volume Manager</v:description>
+<v:classname value="System"/>
+<v:classguid value="{4d36e97d-e325-11ce-bfc1-08002be10318}"/>
+<v:driver value="{4d36e97d-e325-11ce-bfc1-08002be10318}\0036"/>
+<v:root value="root\volmgr\0000"/>
+<v:date value="20060621"/>
+<v:version value="10.0.10586.0"/>
+<v:inffile value="volmgr.inf"/>
+<v:infkey value="Volmgr"/>
+<v:mainfile value="volmgr.sys,,"/>
+<v:provider value="Microsoft"/>
+<v:connected value="1"/>
+</D:device>
+
+<D:device key="SCSI\CdRomPLDS____DVD+-RW_DU-8A5LHDD11">
+<v:description>PLDS DVD+-RW DU-8A5LH</v:description>
+<v:classname value="CDROM"/>
+<v:classguid value="{4d36e965-e325-11ce-bfc1-08002be10318}"/>
+<v:driver value="{4d36e965-e325-11ce-bfc1-08002be10318}\0000"/>
+<v:root value="scsi\cdrom&amp;ven_plds&amp;prod_dvd+-rw_du-8a5lh\4&amp;202c9f6&amp;0&amp;010000"/>
+<v:date value="20060621"/>
+<v:version value="10.0.10586.0"/>
+<v:inffile value="cdrom.inf"/>
+<v:infkey value="cdrom_install"/>
+<v:mainfile value="cdrom.sys,,"/>
+<v:provider value="Microsoft"/>
+<v:internalid value="SCIPLDS____DVD+-RW_DU-8A5LHDD11"/>
+<v:connected value="1"/>
+</D:device>
+
+<D:device key="SCSI\DiskST1000LM__024_HN-M101MBB2BA3">
+<v:description>ST1000LM024 HN-M101MBB</v:description>
+<v:classname value="DiskDrive"/>
+<v:classguid value="{4d36e967-e325-11ce-bfc1-08002be10318}"/>
+<v:driver value="{4d36e967-e325-11ce-bfc1-08002be10318}\0000"/>
+<v:root value="scsi\disk&amp;ven_st1000lm&amp;prod_024_hn-m101mbb\4&amp;202c9f6&amp;0&amp;000000"/>
+<v:date value="20060621"/>
+<v:version value="10.0.10586.0"/>
+<v:inffile value="disk.inf"/>
+<v:infkey value="disk_install.NT"/>
+<v:mainfile value="disk.sys,,"/>
+<v:provider value="Microsoft"/>
+<v:internalid value="SCIST1000LM__024_HN-M101MBB2BA3"/>
+<v:connected value="1"/>
+</D:device>
+
+<D:device key="STORAGE\Volume">
+<v:description>Generic volume</v:description>
+<v:classname value="Volume"/>
+<v:classguid value="{71a27cdd-812a-11d0-bec7-08002be2092f}"/>
+<v:driver value="{71a27cdd-812a-11d0-bec7-08002be2092f}\0004"/>
+<v:root value="storage\volume\{197c3136-7679-11e5-9bc2-806e6f6e6963}#0000000000100000"/>
+<v:date value="20060621"/>
+<v:version value="10.0.10586.0"/>
+<v:inffile value="volume.inf"/>
+<v:infkey value="volume_install.NTamd64"/>
+<v:mainfile value="fvevol.sys,,"/>
+<v:provider value="Microsoft"/>
+<v:connected value="1"/>
+</D:device>
+
+<D:device key="STORAGE\Volume">
+<v:description>Generic volume</v:description>
+<v:classname value="Volume"/>
+<v:classguid value="{71a27cdd-812a-11d0-bec7-08002be2092f}"/>
+<v:driver value="{71a27cdd-812a-11d0-bec7-08002be2092f}\0005"/>
+<v:root value="storage\volume\{197c3136-7679-11e5-9bc2-806e6f6e6963}#000000001f500000"/>
+<v:date value="20060621"/>
+<v:version value="10.0.10586.0"/>
+<v:inffile value="volume.inf"/>
+<v:infkey value="volume_install.NTamd64"/>
+<v:mainfile value="fvevol.sys,,"/>
+<v:provider value="Microsoft"/>
+<v:connected value="1"/>
+</D:device>
+
+<D:device key="STORAGE\Volume">
+<v:description>Generic volume</v:description>
+<v:classname value="Volume"/>
+<v:classguid value="{71a27cdd-812a-11d0-bec7-08002be2092f}"/>
+<v:driver value="{71a27cdd-812a-11d0-bec7-08002be2092f}\0006"/>
+<v:root value="storage\volume\{197c3136-7679-11e5-9bc2-806e6f6e6963}#0000000027500000"/>
+<v:date value="20060621"/>
+<v:version value="10.0.10586.0"/>
+<v:inffile value="volume.inf"/>
+<v:infkey value="volume_install.NTamd64"/>
+<v:mainfile value="fvevol.sys,,"/>
+<v:provider value="Microsoft"/>
+<v:connected value="1"/>
+</D:device>
+
+<D:device key="STORAGE\Volume">
+<v:description>Generic volume</v:description>
+<v:classname value="Volume"/>
+<v:classguid value="{71a27cdd-812a-11d0-bec7-08002be2092f}"/>
+<v:driver value="{71a27cdd-812a-11d0-bec7-08002be2092f}\0007"/>
+<v:root value="storage\volume\{197c3136-7679-11e5-9bc2-806e6f6e6963}#000000e8abb00000"/>
+<v:date value="20060621"/>
+<v:version value="10.0.10586.0"/>
+<v:inffile value="volume.inf"/>
+<v:infkey value="volume_install.NTamd64"/>
+<v:mainfile value="fvevol.sys,,"/>
+<v:provider value="Microsoft"/>
+<v:connected value="1"/>
+</D:device>
+
+<D:device key="STORAGE\VolumeSnapshot">
+<v:description>Generic volume shadow copy</v:description>
+<v:classname value="VolumeSnapshot"/>
+<v:classguid value="{533c5b84-ec70-11d2-9505-00c04f79deaf}"/>
+<v:driver value="{533c5b84-ec70-11d2-9505-00c04f79deaf}\0000"/>
+<v:root value="storage\volumesnapshot\harddiskvolumesnapshot1"/>
+<v:date value="20060621"/>
+<v:version value="10.0.10586.0"/>
+<v:inffile value="volsnap.inf"/>
+<v:infkey value="volume_snapshot_install.NTamd64"/>
+<v:provider value="Microsoft"/>
+<v:connected value="1"/>
+</D:device>
+
+<D:device key="STORAGE\VolumeSnapshot">
+<v:description>Generic volume shadow copy</v:description>
+<v:classname value="VolumeSnapshot"/>
+<v:classguid value="{533c5b84-ec70-11d2-9505-00c04f79deaf}"/>
+<v:driver value="{533c5b84-ec70-11d2-9505-00c04f79deaf}\0001"/>
+<v:root value="storage\volumesnapshot\harddiskvolumesnapshot2"/>
+<v:date value="20060621"/>
+<v:version value="10.0.10586.0"/>
+<v:inffile value="volsnap.inf"/>
+<v:infkey value="volume_snapshot_install.NTamd64"/>
+<v:provider value="Microsoft"/>
+<v:connected value="1"/>
+</D:device>
+
+<D:device key="STORAGE\VolumeSnapshot">
+<v:description>Generic volume shadow copy</v:description>
+<v:classname value="VolumeSnapshot"/>
+<v:classguid value="{533c5b84-ec70-11d2-9505-00c04f79deaf}"/>
+<v:driver value="{533c5b84-ec70-11d2-9505-00c04f79deaf}\0002"/>
+<v:root value="storage\volumesnapshot\harddiskvolumesnapshot3"/>
+<v:date value="20060621"/>
+<v:version value="10.0.10586.0"/>
+<v:inffile value="volsnap.inf"/>
+<v:infkey value="volume_snapshot_install.NTamd64"/>
+<v:provider value="Microsoft"/>
+<v:connected value="1"/>
+</D:device>
+
+<D:device key="STORAGE\VolumeSnapshot">
+<v:description>Generic volume shadow copy</v:description>
+<v:classname value="VolumeSnapshot"/>
+<v:classguid value="{533c5b84-ec70-11d2-9505-00c04f79deaf}"/>
+<v:driver value="{533c5b84-ec70-11d2-9505-00c04f79deaf}\0003"/>
+<v:root value="storage\volumesnapshot\harddiskvolumesnapshot4"/>
+<v:date value="20060621"/>
+<v:version value="10.0.10586.0"/>
+<v:inffile value="volsnap.inf"/>
+<v:infkey value="volume_snapshot_install.NTamd64"/>
+<v:provider value="Microsoft"/>
+<v:connected value="1"/>
+</D:device>
+
+<D:device key="SW\{ddf4358e-bb2c-11d0-a42f-00a0c9223196}">
+<v:description>Microsoft Streaming Quality Manager Proxy</v:description>
+<v:classguid value="{4d36e96c-e325-11ce-bfc1-08002be10318}"/>
+<v:driver value="{4d36e96c-e325-11ce-bfc1-08002be10318}\0002"/>
+<v:root value="sw\{ddf4358e-bb2c-11d0-a42f-00a0c9223196}\{97ebaacb-95bd-11d0-a3ea-00a0c9223196}"/>
+<v:date value="20060621"/>
+<v:version value="10.0.10586.0"/>
+<v:inffile value="ksfilter.inf"/>
+<v:infkey value="MSPQM"/>
+<v:infkeyext value=".NT"/>
+<v:provider value="Microsoft"/>
+<v:connected value="0"/>
+</D:device>
+
+<D:device key="(null)">
+<v:description>Microsoft IPv4 IPv6 Transition Adapter Bus</v:description>
+<v:classname value="SoftwareDevice"/>
+<v:classguid value="{62f9c741-b25a-46ce-b54c-9bccce08b6f2}"/>
+<v:driver value="{62f9c741-b25a-46ce-b54c-9bccce08b6f2}\0005"/>
+<v:root value="swd\ip_tunnel_vbus\ip_tunnel_device_root"/>
+<v:date value="20060621"/>
+<v:version value="10.0.10586.0"/>
+<v:inffile value="c_swdevice.inf"/>
+<v:infkey value="SoftwareDevice"/>
+<v:provider value="Microsoft"/>
+<v:connected value="1"/>
+</D:device>
+
+<D:device key="*ISATAP">
+<v:description>Microsoft ISATAP Adapter #5</v:description>
+<v:classname value="Net"/>
+<v:classguid value="{4d36e972-e325-11ce-bfc1-08002be10318}"/>
+<v:driver value="{4d36e972-e325-11ce-bfc1-08002be10318}\0012"/>
+<v:root value="swd\ip_tunnel_vbus\isatap_4"/>
+<v:date value="20060621"/>
+<v:version value="10.0.10586.0"/>
+<v:inffile value="nettun.inf"/>
+<v:infkey value="ISATAP.ndi"/>
+<v:mainfile value="tunnel.sys,,"/>
+<v:provider value="Microsoft"/>
+<v:connected value="1"/>
+</D:device>
+
+<D:device key="*TEREDO">
+<v:description>Teredo Tunneling Pseudo-Interface</v:description>
+<v:classname value="Net"/>
+<v:classguid value="{4d36e972-e325-11ce-bfc1-08002be10318}"/>
+<v:driver value="{4d36e972-e325-11ce-bfc1-08002be10318}\0008"/>
+<v:root value="swd\ip_tunnel_vbus\teredo_tunnel_device"/>
+<v:date value="20060621"/>
+<v:version value="10.0.10586.0"/>
+<v:inffile value="nettun.inf"/>
+<v:infkey value="TEREDO.ndi"/>
+<v:mainfile value="tunnel.sys,,"/>
+<v:provider value="Microsoft"/>
+<v:connected value="1"/>
+</D:device>
+
+<D:device key="MMDEVAPI\AudioEndpoints">
+<v:description>Speakers / Headphones (Realtek High Definition Audio)</v:description>
+<v:classname value="AudioEndpoint"/>
+<v:classguid value="{c166523c-fe0c-4a94-a586-f1a80cfbbf3e}"/>
+<v:driver value="{c166523c-fe0c-4a94-a586-f1a80cfbbf3e}\0001"/>
+<v:root value="swd\mmdevapi\{0.0.0.00000000}.{dad50a94-0c6b-426b-af28-467759ca9bfd}"/>
+<v:date value="20151029"/>
+<v:version value="10.0.10586.0"/>
+<v:inffile value="audioendpoint.inf"/>
+<v:infkey value="NO_DRV"/>
+<v:provider value="Microsoft"/>
+<v:connected value="1"/>
+</D:device>
+
+<D:device key="MMDEVAPI\AudioEndpoints">
+<v:description>Microphone (Realtek High Definition Audio)</v:description>
+<v:classname value="AudioEndpoint"/>
+<v:classguid value="{c166523c-fe0c-4a94-a586-f1a80cfbbf3e}"/>
+<v:driver value="{c166523c-fe0c-4a94-a586-f1a80cfbbf3e}\0002"/>
+<v:root value="swd\mmdevapi\{0.0.1.00000000}.{c0f0fff2-055f-4981-8432-f292ada0bcf4}"/>
+<v:date value="20151029"/>
+<v:version value="10.0.10586.0"/>
+<v:inffile value="audioendpoint.inf"/>
+<v:infkey value="NO_DRV"/>
+<v:provider value="Microsoft"/>
+<v:connected value="1"/>
+</D:device>
+
+<D:device key="PRINTENUM\LocalPrintQueue">
+<v:description>Root Print Queue</v:description>
+<v:classname value="PrintQueue"/>
+<v:classguid value="{1ed2bbf9-11f0-4084-b21f-ad83a8e6dcdc}"/>
+<v:driver value="{1ed2bbf9-11f0-4084-b21f-ad83a8e6dcdc}\0000"/>
+<v:root value="swd\printenum\printqueues"/>
+<v:date value="20060621"/>
+<v:version value="10.0.10586.0"/>
+<v:inffile value="printqueue.inf"/>
+<v:infkey value="NO_DRV_LOCAL"/>
+<v:provider value="Microsoft"/>
+<v:connected value="1"/>
+</D:device>
+
+<D:device key="PRINTENUM\{0f4130dd-19c7-7ab6-99a1-980f03b2ee4e}">
+<v:description>Microsoft XPS Document Writer</v:description>
+<v:classname value="PrintQueue"/>
+<v:classguid value="{1ed2bbf9-11f0-4084-b21f-ad83a8e6dcdc}"/>
+<v:driver value="{1ed2bbf9-11f0-4084-b21f-ad83a8e6dcdc}\0002"/>
+<v:root value="swd\printenum\{421bee69-3d6a-4c8e-a86a-e56a14533f34}"/>
+<v:date value="20060621"/>
+<v:version value="10.0.10586.0"/>
+<v:inffile value="printqueue.inf"/>
+<v:infkey value="NO_DRV_LOCAL"/>
+<v:provider value="Microsoft"/>
+<v:connected value="1"/>
+</D:device>
+
+<D:device key="PRINTENUM\{084f01fa-e634-4d77-83ee-074817c03581}">
+<v:description>Microsoft Print to PDF</v:description>
+<v:classname value="PrintQueue"/>
+<v:classguid value="{1ed2bbf9-11f0-4084-b21f-ad83a8e6dcdc}"/>
+<v:driver value="{1ed2bbf9-11f0-4084-b21f-ad83a8e6dcdc}\0004"/>
+<v:root value="swd\printenum\{950f1aac-bd7d-453d-a68c-e79d08f17908}"/>
+<v:date value="20060621"/>
+<v:version value="10.0.10586.0"/>
+<v:inffile value="printqueue.inf"/>
+<v:infkey value="NO_DRV_LOCAL"/>
+<v:provider value="Microsoft"/>
+<v:connected value="1"/>
+</D:device>
+
+<D:device key="PRINTENUM\microsoftmicrosoft_s7d14">
+<v:description>Fax</v:description>
+<v:classname value="PrintQueue"/>
+<v:classguid value="{1ed2bbf9-11f0-4084-b21f-ad83a8e6dcdc}"/>
+<v:driver value="{1ed2bbf9-11f0-4084-b21f-ad83a8e6dcdc}\0003"/>
+<v:root value="swd\printenum\{fea38aef-8395-4edd-88c3-09cf60c541ae}"/>
+<v:date value="20060621"/>
+<v:version value="10.0.10586.0"/>
+<v:inffile value="printqueue.inf"/>
+<v:infkey value="NO_DRV_LOCAL"/>
+<v:provider value="Microsoft"/>
+<v:connected value="1"/>
+</D:device>
+
+<D:device key="USB\ROOT_HUB20&amp;VID8086&amp;PID9C26&amp;REV0004">
+<v:description>USB Root Hub</v:description>
+<v:classname value="USB"/>
+<v:classguid value="{36fc9e60-c465-11cf-8056-444553540000}"/>
+<v:driver value="{36fc9e60-c465-11cf-8056-444553540000}\0002"/>
+<v:root value="usb\root_hub20\4&amp;21a1d9fc&amp;0"/>
+<v:date value="20060621"/>
+<v:version value="10.0.10586.0"/>
+<v:inffile value="usbport.inf"/>
+<v:infkey value="ROOTHUB.Dev.NT"/>
+<v:mainfile value="usbhub.sys,,"/>
+<v:provider value="Microsoft"/>
+<v:connected value="1"/>
+</D:device>
+
+<D:device key="USB\ROOT_HUB30&amp;VID8086&amp;PID9C31&amp;REV0004">
+<v:description>USB Root Hub (xHCI)</v:description>
+<v:classname value="USB"/>
+<v:classguid value="{36fc9e60-c465-11cf-8056-444553540000}"/>
+<v:driver value="{36fc9e60-c465-11cf-8056-444553540000}\0003"/>
+<v:root value="usb\root_hub30\4&amp;341e268&amp;0&amp;0"/>
+<v:date value="20160222"/>
+<v:version value="10.0.10586.122"/>
+<v:inffile value="usbhub3.inf"/>
+<v:infkey value="Generic.Install.NT"/>
+<v:mainfile value="usbhub3.sys,,"/>
+<v:provider value="Microsoft"/>
+<v:connected value="1"/>
+</D:device>
+
+<D:device key="USB\VID_045E&amp;PID_07B2&amp;REV_0704">
+<v:description>Microsoft Mouse and Keyboard Detection Driver (USB)</v:description>
+<v:classname value="USB"/>
+<v:classguid value="{36fc9e60-c465-11cf-8056-444553540000}"/>
+<v:driver value="{36fc9e60-c465-11cf-8056-444553540000}\0011"/>
+<v:root value="usb\vid_045e&amp;pid_07b2\5&amp;14b5537a&amp;0&amp;1"/>
+<v:date value="20151106"/>
+<v:version value="9.9.114.0"/>
+<v:inffile value="oem8.inf"/>
+<v:infkey value="dc3d.NT"/>
+<v:mainfile value="dc3d.sys,,"/>
+<v:provider value="Microsoft"/>
+<v:internalid value="USB045E07B20704ff"/>
+<v:connected value="1"/>
+</D:device>
+
+<D:device key="USB\VID_045E&amp;PID_07B2&amp;REV_0704&amp;MI_00">
+<v:description>Microsoft Hardware USB Keyboard</v:description>
+<v:classname value="HIDClass"/>
+<v:classguid value="{745a17a0-74d3-11d0-b6fe-00a0c90f57da}"/>
+<v:driver value="{745a17a0-74d3-11d0-b6fe-00a0c90f57da}\0038"/>
+<v:root value="usb\vid_045e&amp;pid_07b2&amp;mi_00\6&amp;20734075&amp;0&amp;0000"/>
+<v:date value="20151027"/>
+<v:version value="9.9.108.0"/>
+<v:inffile value="oem40.inf"/>
+<v:infkey value="ITPCdless_SelSus_Install"/>
+<v:infkeyext value=".NT"/>
+<v:mainfile value="hidusb.sys,,"/>
+<v:provider value="Microsoft"/>
+<v:internalid value="USB045E07B2070400"/>
+<v:connected value="1"/>
+</D:device>
+
+<D:device key="USB\VID_045E&amp;PID_07B2&amp;REV_0704&amp;MI_01">
+<v:description>Microsoft Hardware USB Mouse</v:description>
+<v:classname value="HIDClass"/>
+<v:classguid value="{745a17a0-74d3-11d0-b6fe-00a0c90f57da}"/>
+<v:driver value="{745a17a0-74d3-11d0-b6fe-00a0c90f57da}\0036"/>
+<v:root value="usb\vid_045e&amp;pid_07b2&amp;mi_01\6&amp;20734075&amp;0&amp;0001"/>
+<v:date value="20151027"/>
+<v:version value="9.9.108.0"/>
+<v:inffile value="oem39.inf"/>
+<v:infkey value="IPCdless_SelSus_Install"/>
+<v:infkeyext value=".NT"/>
+<v:mainfile value="hidusb.sys,,"/>
+<v:provider value="Microsoft"/>
+<v:internalid value="USB045E07B2070401"/>
+<v:connected value="1"/>
+</D:device>
+
+<D:device key="USB\VID_045E&amp;PID_07B2&amp;REV_0704&amp;MI_02">
+<v:description>USB Input Device</v:description>
+<v:classname value="HIDClass"/>
+<v:classguid value="{745a17a0-74d3-11d0-b6fe-00a0c90f57da}"/>
+<v:driver value="{745a17a0-74d3-11d0-b6fe-00a0c90f57da}\0031"/>
+<v:root value="usb\vid_045e&amp;pid_07b2&amp;mi_02\6&amp;20734075&amp;0&amp;0002"/>
+<v:date value="20060621"/>
+<v:version value="10.0.10586.0"/>
+<v:inffile value="input.inf"/>
+<v:infkey value="HID_Inst.NT"/>
+<v:mainfile value="hidusb.sys,,"/>
+<v:provider value="Microsoft"/>
+<v:internalid value="USB045E07B2070402"/>
+<v:connected value="1"/>
+</D:device>
+
+<D:device key="USB\VID_0BDA&amp;PID_0129&amp;REV_3960">
+<v:description>Realtek USB 2.0 Card Reader</v:description>
+<v:classname value="USB"/>
+<v:classguid value="{36fc9e60-c465-11cf-8056-444553540000}"/>
+<v:driver value="{36fc9e60-c465-11cf-8056-444553540000}\0008"/>
+<v:root value="usb\vid_0bda&amp;pid_0129\20100201396000000"/>
+<v:date value="20150511"/>
+<v:version value="6.3.9600.31213"/>
+<v:inffile value="oem33.inf"/>
+<v:infkey value="RSUER.UVSTOR"/>
+<v:infkeyext value=".NTamd64"/>
+<v:mainfile value="rtsuer.sys,,"/>
+<v:provider value="Realtek Semiconduct Corp."/>
+<v:internalid value="USB0BDA01293960ff"/>
+<v:connected value="1"/>
+</D:device>
+
+<D:device key="USB\VID_1BCF&amp;PID_2B90&amp;REV_4267">
+<v:description>USB Composite Device</v:description>
+<v:classname value="USB"/>
+<v:classguid value="{36fc9e60-c465-11cf-8056-444553540000}"/>
+<v:driver value="{36fc9e60-c465-11cf-8056-444553540000}\0006"/>
+<v:root value="usb\vid_1bcf&amp;pid_2b90\6&amp;30a3cb&amp;0&amp;5"/>
+<v:date value="20060621"/>
+<v:version value="10.0.10586.0"/>
+<v:inffile value="usb.inf"/>
+<v:infkey value="Composite.Dev.NT"/>
+<v:mainfile value="usbccgp.sys,,"/>
+<v:provider value="Microsoft"/>
+<v:internalid value="USB1BCF2B904267ff"/>
+<v:connected value="1"/>
+</D:device>
+
+<D:device key="USB\VID_1BCF&amp;PID_2B90&amp;REV_4267&amp;MI_00">
+<v:description>Integrated Webcam</v:description>
+<v:classname value="Image"/>
+<v:classguid value="{6bdd1fc6-810f-11d0-bec7-08002be2092f}"/>
+<v:driver value="{6bdd1fc6-810f-11d0-bec7-08002be2092f}\0000"/>
+<v:root value="usb\vid_1bcf&amp;pid_2b90&amp;mi_00\7&amp;497e2b9&amp;0&amp;0000"/>
+<v:date value="20060621"/>
+<v:version value="10.0.10586.0"/>
+<v:inffile value="usbvideo.inf"/>
+<v:infkey value="USBVideo"/>
+<v:infkeyext value=".NT"/>
+<v:mainfile value="ksthunk.sys,,"/>
+<v:provider value="Microsoft"/>
+<v:internalid value="USB1BCF2B90426700"/>
+<v:connected value="1"/>
+</D:device>
+
+<D:device key="USB\VID_1FD2&amp;PID_5001&amp;REV_0500">
+<v:description>USB Composite Device</v:description>
+<v:classname value="USB"/>
+<v:classguid value="{36fc9e60-c465-11cf-8056-444553540000}"/>
+<v:driver value="{36fc9e60-c465-11cf-8056-444553540000}\0007"/>
+<v:root value="usb\vid_1fd2&amp;pid_5001\6&amp;30a3cb&amp;0&amp;7"/>
+<v:date value="20060621"/>
+<v:version value="10.0.10586.0"/>
+<v:inffile value="usb.inf"/>
+<v:infkey value="Composite.Dev.NT"/>
+<v:mainfile value="usbccgp.sys,,"/>
+<v:provider value="Microsoft"/>
+<v:internalid value="USB1FD250010500ff"/>
+<v:connected value="1"/>
+</D:device>
+
+<D:device key="USB\VID_1FD2&amp;PID_5001&amp;REV_0500&amp;MI_00">
+<v:description>USB Input Device</v:description>
+<v:classname value="HIDClass"/>
+<v:classguid value="{745a17a0-74d3-11d0-b6fe-00a0c90f57da}"/>
+<v:driver value="{745a17a0-74d3-11d0-b6fe-00a0c90f57da}\0008"/>
+<v:root value="usb\vid_1fd2&amp;pid_5001&amp;mi_00\7&amp;8b4e8ac&amp;0&amp;0000"/>
+<v:date value="20060621"/>
+<v:version value="10.0.10586.0"/>
+<v:inffile value="input.inf"/>
+<v:infkey value="HID_Inst.NT"/>
+<v:mainfile value="hidusb.sys,,"/>
+<v:provider value="Microsoft"/>
+<v:internalid value="USB1FD25001050000"/>
+<v:connected value="1"/>
+</D:device>
+
+<D:device key="USB\VID_1FD2&amp;PID_5001&amp;REV_0500&amp;MI_01">
+<v:description>USB Input Device</v:description>
+<v:classname value="HIDClass"/>
+<v:classguid value="{745a17a0-74d3-11d0-b6fe-00a0c90f57da}"/>
+<v:driver value="{745a17a0-74d3-11d0-b6fe-00a0c90f57da}\0009"/>
+<v:root value="usb\vid_1fd2&amp;pid_5001&amp;mi_01\7&amp;8b4e8ac&amp;0&amp;0001"/>
+<v:date value="20060621"/>
+<v:version value="10.0.10586.0"/>
+<v:inffile value="input.inf"/>
+<v:infkey value="HID_Inst.NT"/>
+<v:mainfile value="hidusb.sys,,"/>
+<v:provider value="Microsoft"/>
+<v:internalid value="USB1FD25001050001"/>
+<v:connected value="1"/>
+</D:device>
+
+<D:device key="USB\VID_8087&amp;PID_07DC&amp;REV_0001">
+<v:description>Intel(R) Wireless Bluetooth(R)</v:description>
+<v:classname value="Bluetooth"/>
+<v:classguid value="{e0cbf06c-cd8b-4647-bb8a-263b43f0f974}"/>
+<v:driver value="{e0cbf06c-cd8b-4647-bb8a-263b43f0f974}\0000"/>
+<v:root value="usb\vid_8087&amp;pid_07dc\5&amp;14b5537a&amp;0&amp;6"/>
+<v:date value="20150713"/>
+<v:version value="17.1.1529.1613"/>
+<v:inffile value="oem34.inf"/>
+<v:infkey value="ibtusb_WP"/>
+<v:mainfile value="ibtusb.sys,,|bthusb.sys,,"/>
+<v:provider value="Intel Corporation"/>
+<v:internalid value="USB808707DC0001ff"/>
+<v:connected value="1"/>
+</D:device>
+
+<D:device key="USB\VID_8087&amp;PID_8000&amp;REV_0004">
+<v:description>Generic USB Hub</v:description>
+<v:classname value="USB"/>
+<v:classguid value="{36fc9e60-c465-11cf-8056-444553540000}"/>
+<v:driver value="{36fc9e60-c465-11cf-8056-444553540000}\0004"/>
+<v:root value="usb\vid_8087&amp;pid_8000\5&amp;28a36662&amp;0&amp;1"/>
+<v:date value="20060621"/>
+<v:version value="10.0.10586.0"/>
+<v:inffile value="usb.inf"/>
+<v:infkey value="StandardHub.Dev.NT"/>
+<v:mainfile value="usbhub.sys,,"/>
+<v:provider value="Microsoft"/>
+<v:internalid value="USB808780000004ff"/>
+<v:connected value="1"/>
+</D:device>
+
+<D:device key="{5d624f94-8850-40c3-a3fa-a4fd2080baf3}\vwifimp_wfd">
+<v:description>Microsoft Wi-Fi Direct Virtual Adapter</v:description>
+<v:classname value="Net"/>
+<v:classguid value="{4d36e972-e325-11ce-bfc1-08002be10318}"/>
+<v:driver value="{4d36e972-e325-11ce-bfc1-08002be10318}\0006"/>
+<v:root value="{5d624f94-8850-40c3-a3fa-a4fd2080baf3}\vwifimp_wfd\5&amp;294e426d&amp;0&amp;01"/>
+<v:date value="20060621"/>
+<v:version value="10.0.10586.0"/>
+<v:inffile value="netvwifimp.inf"/>
+<v:infkey value="vwifimp_wfd.ndi"/>
+<v:mainfile value="vwifimp.sys,,"/>
+<v:provider value="Microsoft"/>
+<v:serial value="78:0C:B8:35:85:7D"/>
+<v:connected value="1"/>
+</D:device>
+
+<D:device key="PRINTENUM\microsoftmicrosoft_s7d14">
+<v:description>Microsoft Shared Fax Driver</v:description>
+<v:classname value="printer"/>
+<v:classguid value="{4D36E979-E325-11CE-BFC1-08002BE10318}"/>
+<v:date value="20060621"/>
+<v:portname value="SHRFAX:"/>
+<v:mainfile value="fxsdrv.dll,0.3.10586.0,201510300317|fxswzrd.dll,10.0.10586.0,201510300317|fxstiff.dll,10.0.10586.0,201510300317|fxsres.dll,10.0.10586.0,201510300317|fxsapi.dll,10.0.10586.0,201510300317"/>
+<v:connected value="1"/>
+</D:device>
+
+<D:results>
+<v:ident value="LAPTOP-M2RH9VQU"/>
+<v:os value="a64|10.0.10586|w8|" suitemask="768" producttype="1"/>
+<v:install value="201512250747"/>
+<v:scandate value="201604171821"/>
+<v:licensing value="RTL"/>
+<v:isadmin value="1"/>
+<v:locale value="enu"/>
+<v:prod value="DW-WIN32"/>
+<v:options value="4454"/>
+<v:laptop value="1028"/>
+<v:pluginversion value="2.2014.9.4"/>
+<v:affiliate value="-1"/>
+<v:epu value=""/>
+<v:contrast value="0"/>
+<v:first value="201604171252"/>
+<v:protectedmode value="0"/>
+<v:wmidetect value="1"/>
+<v:driverstatus value="0"/>
+<v:hda value=""/>
+<v:hwal value="0"/>
+</D:results>
+
+</html>

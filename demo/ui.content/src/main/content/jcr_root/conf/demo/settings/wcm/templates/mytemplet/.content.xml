@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Template">
+    <jcr:content
+        cq:lastModified="{Date}2021-11-09T21:34:37.435+05:30"
+        cq:lastModifiedBy="admin"
+        cq:templateType="/conf/demo/settings/wcm/template-types/employe-page"
+        jcr:description="this is my templet for employe"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="mytemplet"
+        status="enabled"/>
+</jcr:root>

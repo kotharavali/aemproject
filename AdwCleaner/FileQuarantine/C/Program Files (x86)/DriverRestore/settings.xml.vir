@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<root>
+  <GeneralSettings>
+    <Language>en</Language>
+    <BuildDate>2016-01-08</BuildDate>
+    <MinimizeToTrayOnClose>True</MinimizeToTrayOnClose>
+    <RunApplicationAtStartupAndStartScan>False</RunApplicationAtStartupAndStartScan>
+    <MinimizeToTrayOnStartup>True</MinimizeToTrayOnStartup>
+    <StartScanWhenApplicationLaunches>True</StartScanWhenApplicationLaunches>
+    <FirstScanCompleted>True</FirstScanCompleted>
+    <FirstLaunchAfterInstall>False</FirstLaunchAfterInstall>
+    <RegistrationDate />
+    <LastAutoPopupTime>4/17/2016 12:00:00 AM</LastAutoPopupTime>
+    <UUID>D68A7709-FBD4-42B2-91C1-9D5A669A0AB5</UUID>
+    <FirstScanStartAfterInstall>True</FirstScanStartAfterInstall>
+    <DismissedDrivers />
+    <ClickID>2863302399</ClickID>
+    <SubSource>100b</SubSource>
+    <ShowActivateLightbox>True</ShowActivateLightbox>
+    <ShowRegistrationCart>True</ShowRegistrationCart>
+  </GeneralSettings>
+  <LicenseInformation>
+    <LicenseKey>
+    </LicenseKey>
+  </LicenseInformation>
+  <DateAndTime>
+    <Date>17/04/2016</Date>
+    <Time>12:52 PM</Time>
+  </DateAndTime>
+  <ScheduleType>
+    <Id>option3</Id>
+  </ScheduleType>
+  <DaysOfTheWeek>
+    <Monday>False</Monday>
+    <Tuesday>False</Tuesday>
+    <Wednesday>False</Wednesday>
+    <Thursday>False</Thursday>
+    <Friday>False</Friday>
+    <Saturday>False</Saturday>
+    <Sunday>True</Sunday>
+  </DaysOfTheWeek>
+  <ScanAreas>
+    <IncludeSystemDevices>True</IncludeSystemDevices>
+    <IncludeUnplugged>True</IncludeUnplugged>
+    <IncludeBrandedDriversOnly>True</IncludeBrandedDriversOnly>
+    <DownloadFolder>C:\Program Files (x86)\DriverRestore\Downloads</DownloadFolder>
+  </ScanAreas>
+</root>

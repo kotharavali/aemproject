@@ -1,0 +1,43 @@
+# AdwCleaner v5.112 - Logfile created 17/04/2016 at 18:24:00
+# Updated 17/04/2016 by Xplode
+# Database : 2016-04-17.1 [Server]
+# Operating system : Windows 10 Home  (X64)
+# Username : rajes - LAPTOP-M2RH9VQU
+# Running from : C:\Users\rajes\Downloads\adwcleaner_5.112.exe
+# Option : Clean
+# Support : http://toolslib.net/forum
+
+***** [ Services ] *****
+
+[-] Service Deleted : Service Mgr SearchNewWindow
+[-] Service Deleted : Update Mgr SearchNewWindow
+
+***** [ Folders ] *****
+
+[-] Folder Deleted : C:\Program Files (x86)\DriverRestore
+[-] Folder Deleted : C:\Program Files (x86)\SystemHealer
+[-] Folder Deleted : C:\Program Files (x86)\WinZip Registry Optimizer
+[-] Folder Deleted : C:\ProgramData\c3b7f255-31d5-0
+[-] Folder Deleted : C:\ProgramData\c3b7f255-6495-1
+[#] Folder Deleted : C:\ProgramData\Application Data\c3b7f255-31d5-0
+[#] Folder Deleted : C:\ProgramData\Application Data\c3b7f255-6495-1
+[-] Folder Deleted : C:\ProgramData\Microsoft\Windows\Start Menu\Programs\DriverRestore
+[-] Folder Deleted : C:\ProgramData\Microsoft\Windows\Start Menu\Programs\WinZip Registry Optimizer
+[-] Folder Deleted : C:\Users\rajes\AppData\Local\Google\Chrome\User Data\Default\Extensions\blmlepcapjlbgcpkdlffnhibhpecongp
+
+***** [ Files ] *****
+
+[-] File Deleted : C:\WINDOWS\SysNative\roboot64.exe
+
+***** [ DLLs ] *****
+
+
+***** [ Shortcuts ] *****
+
+
+***** [ Scheduled tasks ] *****
+
+[-] Task Deleted : DriverRestore_DailyScan
+[-] Task Deleted : DriverRestore_ScheduledScan
+[-] Task Deleted : Registry Optimizer_UPDATES
+[-] Task Deleted : Registry Optimizer

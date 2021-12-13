@@ -1,0 +1,50 @@
+﻿Popups.RegistrationFlow.LeftContentView = (function () {
+    var contentViewId = '#regflw_leftcontview';
+
+    var render = function (state, registerModel, totalUpToDate) {
+        var htmlcontentView = Popups.RegistrationFlow.LeftContentViewHtmlFactory.get(state, registerModel.ImagePath, registerModel.DisplayName, totalUpToDate);
+        $(contentViewId).empty();
+        $(contentViewId).append(htmlcontentView);
+    };
+
+    return {
+        render: render
+    };
+})();
+
+Popups.RegistrationFlow.LeftContentViewHtmlFactory = (function () {
+    var get = function (state,imagePath,displayName, totalUpToDate) {
+
+        switch (state) {
+            case Popups.RegistrationFlow.States.ONQUIT_SCANCOMPLETE_DRIVERSFOUND:
+                return leftSummary(imagePath, displayName);
+            case Popups.RegistrationFlow.States.ONQUIT_SCANINCOMPLETE:
+                return "";
+            case Popups.RegistrationFlow.States.ONSCANEND_DRIVERSFOUND:
+                return leftSummary(imagePath, displayName);
+            case Popups.RegistrationFlow.States.ONSCANEND_DRIVERSNOTFOUND:
+            case Popups.RegistrationFlow.States.ONQUIT_SCANCOMPLETE_DRIVERSNOTFOUND:
+                return leftSummaryNoDrivers(totalUpToDate);
+            default:
+        }
+    };
+
+    var leftSummary = function(imagePath, displayName) {
+        return "<div class=\"smry-left\">" +
+            "<img src=\""+ imagePath + "\" class=\"lapi\" alt=\"\" />" +
+            "<p>" + displayName + "</p>" +
+            "</div>";
+    };
+
+    var leftSummaryNoDrivers = function(totalUpToDate) {
+        return "<div class=\"summry1Right\">" +
+            "<h1><b>Scan</b> Summary</h1>" +
+            "<span class=\"scan_meter1\">" + "</span>" +
+            "<p class=\"dr-summery\"><span class=\"dr-green-check\"></span><span class=\"dr-sm-count\"> [" + totalUpToDate  + "]</span><span> Up-to-Date Drivers</span></p>" +
+            "</div>";
+    };
+
+    return {
+        get: get
+    };
+})();

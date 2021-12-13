@@ -1,0 +1,134 @@
+# AdwCleaner v6.043 - Logfile created 05/02/2017 at 15:16:24
+# Updated on 27/01/2017 by Malwarebytes
+# Database : 2017-02-03.2 [Server]
+# Operating System : Windows 10 Home  (X64)
+# Username : rajes - LAPTOP-M2RH9VQU
+# Running from : C:\Users\rajes\Downloads\adwcleaner_6.043.exe
+# Mode: Clean
+# Support : https://www.malwarebytes.com/support
+
+
+
+***** [ Services ] *****
+
+[-] Service deleted: PremierOpinion
+
+
+***** [ Folders ] *****
+
+[-] Folder deleted: C:\ProgramData\Microsoft\Windows\Start Menu\Programs\PremierOpinion
+[#] Folder deleted on reboot: C:\ProgramData\Microsoft\Windows\Start Menu\Programs\premieropinion
+[-] Folder deleted: C:\Program Files (x86)\PremierOpinion
+[#] Folder deleted on reboot: C:\Program Files (x86)\premieropinion
+[-] Folder deleted: C:\Users\rajes\AppData\Local\Google\Chrome\User Data\Default\Extensions\fcfenmboojpjinhpgggodefccipikbpd
+[-] Folder deleted: C:\Users\rajes\AppData\Local\Google\Chrome\User Data\Default\Extensions\bahkljhhdeciiaodlkppoonappfnheoi
+[-] Folder deleted: C:\Users\rajes\AppData\Local\Google\Chrome\User Data\Default\Extensions\mallpejgeafdahhflmliiahjdpgbegpk
+[-] Folder deleted: C:\Users\rajes\AppData\Local\Google\Chrome\User Data\Default\Extensions\kofkpgiaknijknhajbhnghkodiccblkg
+
+
+***** [ Files ] *****
+
+[-] File deleted: C:\ProgramData\Microsoft\Windows\Start Menu\Programs\HowToRemove.html.lnk
+[#] File deleted: C:\WINDOWS\SysWoW64\pmls.dll
+[-] File deleted: C:\Users\rajes\AppData\Local\Google\Chrome\User Data\Default\Local Storage\chrome-extension_bahkljhhdeciiaodlkppoonappfnheoi_0.localstorage
+[-] File deleted: C:\Users\rajes\AppData\Local\Google\Chrome\User Data\Default\Local Storage\chrome-extension_kofkpgiaknijknhajbhnghkodiccblkg_0.localstorage
+
+
+***** [ DLL ] *****
+
+
+
+***** [ WMI ] *****
+
+
+
+***** [ Shortcuts ] *****
+
+
+
+***** [ Scheduled Tasks ] *****
+
+
+
+***** [ Registry ] *****
+
+[-] Key deleted: HKLM\SOFTWARE\Classes\OCComSDK.ComSDK
+[-] Key deleted: HKLM\SOFTWARE\Classes\OCComSDK.ComSDK.1
+[#] Key deleted on reboot: [x64] HKLM\SOFTWARE\Classes\OCComSDK.ComSDK
+[#] Key deleted on reboot: [x64] HKLM\SOFTWARE\Classes\OCComSDK.ComSDK.1
+[-] Key deleted: HKLM\SOFTWARE\Classes\CLSID\{B9D64D3B-BE75-4FA2-B94A-C4AE772A0146}
+[-] Key deleted: HKLM\SOFTWARE\Classes\CLSID\{47A1DF02-BCE4-40C3-AE47-E3EA09A65E4A}
+[-] Key deleted: HKLM\SOFTWARE\Classes\Interface\{FA7B2795-C0C8-4A58-8672-3F8D80CC0270}
+[-] Key deleted: HKLM\SOFTWARE\Classes\Interface\{47A1DF02-BCE4-40C3-AE47-E3EA09A65E4A}
+[-] Key deleted: HKLM\SOFTWARE\Classes\TypeLib\{1112F282-7099-4624-A439-DB29D6551552}
+[-] Key deleted: HKU\S-1-5-21-1230874461-3600533927-1289800634-1001\Software\csastats
+[-] Key deleted: HKU\S-1-5-21-1230874461-3600533927-1289800634-1001\Software\NICO MAK COMPUTING\WinZip Registry Optimizer
+[#] Key deleted on reboot: HKCU\Software\csastats
+[#] Key deleted on reboot: HKCU\Software\NICO MAK COMPUTING\WinZip Registry Optimizer
+[-] Key deleted: HKLM\SOFTWARE\NICO MAK COMPUTING\WinZip Registry Optimizer
+[-] Key deleted: HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\{eeb86aef-4a5d-4b75-9d74-f16d438fc286}
+[#] Key deleted on reboot: [x64] HKCU\Software\csastats
+[#] Key deleted on reboot: [x64] HKCU\Software\NICO MAK COMPUTING\WinZip Registry Optimizer
+[-] Key deleted: [x64] HKLM\SOFTWARE\5da059a482fd494db3f252126fbc3d5b
+[-] Key deleted: HKCU\Software\Classes\Local Settings\Software\Microsoft\Windows\CurrentVersion\AppContainer\Storage\microsoft.microsoftedge_8wekyb3d8bbwe\Children\001\Internet Explorer\EdpDomStorage\cmptch.com
+[-] Key deleted: HKCU\Software\Classes\Local Settings\Software\Microsoft\Windows\CurrentVersion\AppContainer\Storage\microsoft.microsoftedge_8wekyb3d8bbwe\Children\001\Internet Explorer\EdpDomStorage\static.cmptch.com
+[-] Key deleted: HKCU\Software\Classes\Local Settings\Software\Microsoft\Windows\CurrentVersion\AppContainer\Storage\microsoft.microsoftedge_8wekyb3d8bbwe\Children\001\Internet Explorer\DOMStorage\cmptch.com
+[-] Key deleted: HKCU\Software\Classes\Local Settings\Software\Microsoft\Windows\CurrentVersion\AppContainer\Storage\microsoft.microsoftedge_8wekyb3d8bbwe\Children\001\Internet Explorer\DOMStorage\static.cmptch.com
+[#] Key deleted on reboot: [x64] HKCU\Software\Classes\Local Settings\Software\Microsoft\Windows\CurrentVersion\AppContainer\Storage\microsoft.microsoftedge_8wekyb3d8bbwe\Children\001\Internet Explorer\EdpDomStorage\cmptch.com
+[#] Key deleted on reboot: [x64] HKCU\Software\Classes\Local Settings\Software\Microsoft\Windows\CurrentVersion\AppContainer\Storage\microsoft.microsoftedge_8wekyb3d8bbwe\Children\001\Internet Explorer\EdpDomStorage\static.cmptch.com
+[#] Key deleted on reboot: [x64] HKCU\Software\Classes\Local Settings\Software\Microsoft\Windows\CurrentVersion\AppContainer\Storage\microsoft.microsoftedge_8wekyb3d8bbwe\Children\001\Internet Explorer\DOMStorage\cmptch.com
+[#] Key deleted on reboot: [x64] HKCU\Software\Classes\Local Settings\Software\Microsoft\Windows\CurrentVersion\AppContainer\Storage\microsoft.microsoftedge_8wekyb3d8bbwe\Children\001\Internet Explorer\DOMStorage\static.cmptch.com
+[-] Key deleted: HKLM\SYSTEM\CurrentControlSet\Control\Power\User\PowerSchemes\e24b7131-d039-43cb-9e6f-ad4be601ec1f
+[-] Key deleted: HKLM\SYSTEM\CurrentControlSet\Control\Power\User\PowerSchemes\04262113-2a31-48e1-b4bb-3b42174bea0f
+[#] Key deleted on reboot: HKLM\SYSTEM\ControlSet001\Control\Power\User\PowerSchemes\e24b7131-d039-43cb-9e6f-ad4be601ec1f
+[#] Key deleted on reboot: HKLM\SYSTEM\ControlSet001\Control\Power\User\PowerSchemes\04262113-2a31-48e1-b4bb-3b42174bea0f
+[-] Value deleted: HKLM\SOFTWARE\Mozilla\Firefox\Extensions [{C7AE725D-FA5C-4027-BB4C-787EF9F8248A}]
+[#] Value deleted on reboot: HKLM\SOFTWARE\Mozilla\Firefox\Extensions [{C7AE725D-FA5C-4027-BB4C-787EF9F8248A}]
+[#] Value deleted on reboot: HKLM\SOFTWARE\Mozilla\Firefox\Extensions [{C7AE725D-FA5C-4027-BB4C-787EF9F8248A}]
+[-] Key deleted: HKLM\SOFTWARE\Google\Chrome\Extensions\mkndcbhcgphcfkkddanakjiepeknbgle
+[-] Key deleted: HKCU\Software\Google\Chrome\Extensions\fcfenmboojpjinhpgggodefccipikbpd
+[#] Key deleted on reboot: [x64] HKCU\Software\Google\Chrome\Extensions\fcfenmboojpjinhpgggodefccipikbpd
+[-] Key deleted: HKCU\Software\Google\Chrome\Extensions\bahkljhhdeciiaodlkppoonappfnheoi
+[-] Key deleted: HKLM\SOFTWARE\Google\Chrome\Extensions\bahkljhhdeciiaodlkppoonappfnheoi
+[#] Key deleted on reboot: [x64] HKCU\Software\Google\Chrome\Extensions\bahkljhhdeciiaodlkppoonappfnheoi
+[-] Key deleted: [x64] HKLM\SOFTWARE\Google\Chrome\Extensions\bahkljhhdeciiaodlkppoonappfnheoi
+[-] Key deleted: HKCU\Software\Google\Chrome\Extensions\kofkpgiaknijknhajbhnghkodiccblkg
+[-] Key deleted: HKLM\SOFTWARE\Google\Chrome\Extensions\kofkpgiaknijknhajbhnghkodiccblkg
+[#] Key deleted on reboot: [x64] HKCU\Software\Google\Chrome\Extensions\kofkpgiaknijknhajbhnghkodiccblkg
+[-] Key deleted: [x64] HKLM\SOFTWARE\Google\Chrome\Extensions\kofkpgiaknijknhajbhnghkodiccblkg
+
+
+***** [ Web browsers ] *****
+
+[-] [C:\Users\rajes\AppData\Local\Chromium\User Data\Default\Web data] [Search Provider] Deleted: search provided by yahoo
+[-] [C:\Users\rajes\AppData\Local\Chromium\User Data\Default] [startup_urls] Deleted: hxxps://us.search.yahoo.com/yhs/web?hspart=elm&hsimp=yhs-001&type=hdr_s_16_21_orgnl&param1=1&param2=f%3D7%26b%3Dchmm%26cc%3Dus%26pa%3DHodor%26cd%3D2XzuyEtN2Y1L1Qzu0Fzz0C0A0BzztDtDtB0Azy0EtDyBtByDtN0D0Tzu0StCyCtDyDtN1L2XzutAtFtBtCtFtCtFtDtN1L1Czu1M1Q1CtBtBtFtCtFtDtN1L1G1B1V1N2Y1L1Qzu2StBtAtA0FyE0B0CyBtGyCzztCtDtGzyyC0F0AtGyBtAtAzytG0C0Azy0EyD0DzyyBtAtAtC0D2QtN1M1F1B2Z1V1N2Y1L1Qzu2SzyzzyEzy0DyE0BzytG0D0F0EtDtGyE0F0DtCtG0AyCtD0DtGtBtBtDyE0EtCyEtB0D0CyE0A2QtN0A0LzuyE%26cr%3D538034925%26a%3Dhdr_s_16_21_orgnl%26os_ver%3D10.0%26os%3DWindows%2B10%2BHome&uref=chmm
+[-] [C:\Users\rajes\AppData\Local\Chromium\User Data\Default] [extension] Deleted: bahkljhhdeciiaodlkppoonappfnheoi
+[-] [C:\Users\rajes\AppData\Local\Chromium\User Data\Default] [extension] Deleted: fcfenmboojpjinhpgggodefccipikbpd
+[-] [C:\Users\rajes\AppData\Local\Chromium\User Data\Default] [extension] Deleted: kofkpgiaknijknhajbhnghkodiccblkg
+[-] [C:\Users\rajes\AppData\Local\Chromium\User Data\Default] [extension] Deleted: mkndcbhcgphcfkkddanakjiepeknbgle
+[-] [C:\Users\rajes\AppData\Local\Chromium\User Data\Default] [homepage] Deleted: hxxps://us.search.yahoo.com/yhs/web?hspart=elm&hsimp=yhs-001&type=hdr_s_16_21_orgnl&param1=1&param2=f%3D1%26b%3Dchmm%26cc%3Dus%26pa%3DHodor%26cd%3D2XzuyEtN2Y1L1Qzu0Fzz0C0A0BzztDtDtB0Azy0EtDyBtByDtN0D0Tzu0StCyCtDyDtN1L2XzutAtFtBtCtFtCtFtDtN1L1Czu1M1Q1CtBtBtFtCtFtDtN1L1G1B1V1N2Y1L1Qzu2StBtAtA0FyE0B0CyBtGyCzztCtDtGzyyC0F0AtGyBtAtAzytG0C0Azy0EyD0DzyyBtAtAtC0D2QtN1M1F1B2Z1V1N2Y1L1Qzu2SzyzzyEzy0DyE0BzytG0D0F0EtDtGyE0F0DtCtG0AyCtD0DtGtBtBtDyE0EtCyEtB0D0CyE0A2QtN0A0LzuyE%26cr%3D538034925%26a%3Dhdr_s_16_21_orgnl%26os_ver%3D10.0%26os%3DWindows%2B10%2BHome&uref=chmm
+[-] [C:\Users\rajes\AppData\Local\Google\Chrome\User Data\Default] [extension] Deleted: bahkljhhdeciiaodlkppoonappfnheoi
+[-] [C:\Users\rajes\AppData\Local\Google\Chrome\User Data\Default] [extension] Deleted: fcfenmboojpjinhpgggodefccipikbpd
+[-] [C:\Users\rajes\AppData\Local\Google\Chrome\User Data\Default] [extension] Deleted: kofkpgiaknijknhajbhnghkodiccblkg
+[-] [C:\Users\rajes\AppData\Local\Google\Chrome\User Data\Default] [extension] Deleted: mallpejgeafdahhflmliiahjdpgbegpk
+[-] [C:\Users\rajes\AppData\Local\Google\Chrome\User Data\Default] [extension] Deleted: mkndcbhcgphcfkkddanakjiepeknbgle
+
+
+*************************
+
+:: "Tracing" keys deleted
+:: Winsock settings cleared
+
+*************************
+
+C:\AdwCleaner\AdwCleaner[C1].txt - [14635 Bytes] - [16/04/2016 19:09:43]
+C:\AdwCleaner\AdwCleaner[C2].txt - [1598 Bytes] - [17/04/2016 17:24:00]
+C:\AdwCleaner\AdwCleaner[C3].txt - [3499 Bytes] - [17/04/2016 17:25:36]
+C:\AdwCleaner\AdwCleaner[C4].txt - [9822 Bytes] - [05/02/2017 15:16:24]
+C:\AdwCleaner\AdwCleaner[S1].txt - [14685 Bytes] - [16/04/2016 19:08:05]
+C:\AdwCleaner\AdwCleaner[S2].txt - [905 Bytes] - [16/04/2016 19:16:25]
+C:\AdwCleaner\AdwCleaner[S3].txt - [7119 Bytes] - [17/04/2016 17:23:11]
+C:\AdwCleaner\AdwCleaner[S4].txt - [6157 Bytes] - [17/04/2016 17:24:39]
+C:\AdwCleaner\AdwCleaner[S5].txt - [9207 Bytes] - [05/02/2017 15:14:55]
+
+########## EOF - C:\AdwCleaner\AdwCleaner[C4].txt - [10260 Bytes] ##########

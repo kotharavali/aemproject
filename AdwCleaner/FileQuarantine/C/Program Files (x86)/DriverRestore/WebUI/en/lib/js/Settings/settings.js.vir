@@ -1,0 +1,685 @@
+﻿
+$(document).ready(function () {
+    try {
+        ScheduleTypeSettings.fetch();
+        ScanAreasSetttings.fetch();
+        DaysOfTheWeekSettings.fetch();
+        DateAndTimeSettings.fetch();
+        GeneralSettings.fetch();
+        LicenseKey.init();
+
+        BindingManager.attatch("#tab_1");
+        BindingManager.attatch("#tab_2");
+        BindingManager.attatch("#tab_3");
+
+        BindingManager.listenToClickEvents();
+
+
+        var params = Utils.getURLParameters(window.location.href);
+
+        if (params.param1 != null)
+            Utils.selectTab("#" + params.param1);
+
+        try {
+            $('#select_time').timeEntry();
+        
+        } catch (err) {
+        
+        }
+    }
+    catch (err) {
+        alert(err.message + err.source);
+        window.external.OnJavaScriptError(err.source + '-Settings initialization code failed! : ' + err.message);
+    }
+});
+	
+	
+ScanAreasSetttings = {
+    IncludeSystemDevices: false,
+    IncludeUnplugged: false,
+    IncludeBrandedDriversOnly: false,
+    DownloadFolder: "",
+    
+    setIncludeSystemDevices: function (value) {
+        this.IncludeSystemDevices = value;	
+	},	
+    setIncludeUnplugged: function(value){
+        this.IncludeUnplugged = value;	
+    },
+    setIncludeBrandedDriversOnly: function (value) {
+        this.IncludeBrandedDriversOnly = value;
+    },
+    setDownloadFolder: function(value) {
+        this.DownloadFolder = value;
+    },
+	set: function(property,newValue){
+		try{
+			this[property] = newValue;
+	
+		    switch (property) {
+		        case "IncludeSystemDevices":
+		            this.setIncludeSystemDevices(newValue);
+		        break;
+		        case "IncludeUnplugged":
+		            this.setIncludeUnplugged(newValue);
+		            break;
+		        case "DownloadFolder":
+		            this.setDownloadFolder(newValue);
+		            break;
+		        case "IncludeBrandedDriversOnly":
+		            this.setIncludeBrandedDriversOnly(newValue);
+		            break;
+		    }
+							
+			//this.IncludeSystemDevices = this.checkIncludeSystemDevices(true);
+			//this.IncludeUnplugged = this.checkIncludeUnplugged(true);
+			
+		}
+		catch(err)
+		{
+			window.external.OnJavaScriptError(err.source + '-ScanAreasSetttings.set: ' + err.message);		
+		}
+	},
+	
+	fetch: function(){
+		try{
+			var json = window.external.SettingsSync("fetch","ScanAreasSetttings",null);
+			if(json == 'undefined')
+			{
+				window.external.NotifyJSError("Bad json return!");
+				return;
+			}
+			
+			var obj = $.parseJSON(json);
+
+			this.IncludeSystemDevices = obj.IncludeSystemDevices.Value;
+			this.IncludeUnplugged = obj.IncludeUnplugged.Value;
+			this.DownloadFolder = obj.DownloadFolder.Value;
+		    this.IncludeBrandedDriversOnly = obj.IncludeBrandedDriversOnly.Value;
+		}
+		catch(err)
+		{
+			window.external.OnJavaScriptError(err.source + '-ScanAreasSetttings.fetch: ' + err.message);
+		}
+	},
+	browseFolder: function () {
+	    try {
+	        var downloadFolder = window.external.SettingsSync("browseFolder", "ScanAreasSetttings", "");
+	        if (downloadFolder) {
+	            this.setDownloadFolder(downloadFolder);
+
+	            BindingManager.attatch("#tab_1");
+
+            }
+	    }
+	    catch (err) {
+	        window.external.OnJavaScriptError(err.source + '-ScanAreasSetttings.browseFolder: ' + err.message);
+	    }
+	},
+	save: function(){
+		try{
+			window.external.SettingsSync("save","ScanAreasSetttings",$.toJSON(this));
+		}
+		catch(err)
+		{
+			window.external.OnJavaScriptError(err.source + '-ScanAreasSetttings.save: ' + err.message);
+		}
+	},
+	reset:function(){
+		try{	
+		    this.IncludeSystemDevices = true;
+		    this.IncludeUnplugged = true;
+		    this.DownloadFolder = "";
+	
+			ScanAreasSetttings.save();
+			BindingManager.attatch("#tab_1");
+		}
+		catch(err)
+		{
+			window.external.OnJavaScriptError(err.source + '-ScanAreasSetttings.reset: ' + err.message);
+		}
+	},
+	bindingMethod: function(element,propertyName){
+		try{
+		    var _this = this;
+
+            if (_this.isBool(propertyName)) {
+                element.checked = _this[propertyName];
+
+            } else if (_this.isString(propertyName)) {
+                element.value = _this[propertyName];
+            }
+
+			$(element).off("change");
+
+			$(element).change(function (event) {
+			    if (_this.isBool(propertyName)) {
+			        _this.set(propertyName, event.srcElement.checked);
+			    } else if (_this.isString(propertyName)) {
+			        _this.set(propertyName, event.srcElement.value);
+			    }
+
+				BindingManager.attatch("#tab_1");
+			});
+		}
+		catch(err)
+		{
+			window.external.OnJavaScriptError(err.source + '-ScanAreasSetttings.bindingMethod: ' + err.message);
+		}
+	},
+    isBool: function(propertyName) {
+        return typeof this[propertyName] == "boolean";
+    },
+    isString: function (propertyName) {
+        return typeof this[propertyName] == "string";
+    }
+};
+
+DaysOfTheWeekSettings = {
+    Monday: false,
+    Tuesday: false,
+    Wednesday: false,
+    Thursday: false,
+    Friday: false,
+    Saturday: false,
+    Sunday: false,
+	obj:null,
+    set: function (property, newValue) {
+        try {
+            this[property] = newValue;
+        }
+        catch (err) {
+            window.external.OnJavaScriptError(err.source + '-DaysOfTheWeekSettings.set: ' + err.message);		
+        }
+    },
+
+    fetch: function () {
+        try {
+            var json = window.external.SettingsSync("fetch","DaysOfTheWeekSettings",null);
+
+            if (json == 'undefined') {
+                 window.external.NotifyJSError("DaysOfTheWeekSettings: Bad json return!");
+                return;
+            }
+			
+            this.obj= $.parseJSON(json);
+            this.Monday = this.obj.Monday.Value;
+            this.Tuesday = this.obj.Tuesday.Value;
+            this.Wednesday = this.obj.Wednesday.Value;
+            this.Thursday = this.obj.Thursday.Value;
+            this.Friday = this.obj.Friday.Value;
+            this.Saturday = this.obj.Saturday.Value;
+            this.Sunday = this.obj.Sunday.Value;
+        }
+        catch (err) {
+            window.external.OnJavaScriptError(err.source + '-DaysOfTheWeekSettings.fetch: ' + err.message);
+        }
+    },
+
+	refresh: function(){
+	
+	
+            this.Monday = this.obj.Monday.Value;
+            this.Tuesday = this.obj.Tuesday.Value;
+            this.Wednesday = this.obj.Wednesday.Value;
+            this.Thursday = this.obj.Thursday.Value;
+            this.Friday = this.obj.Friday.Value;
+            this.Saturday = this.obj.Saturday.Value;
+            this.Sunday = this.obj.Sunday.Value;
+	},
+
+    save: function () {
+        try {
+            window.external.SettingsSync("save","DaysOfTheWeekSettings",$.toJSON(this));
+			this.obj.Monday.Value = this.Monday;
+            this.obj.Tuesday.Value=this.Tuesday;
+            this.obj.Wednesday.Value=this.Wednesday;
+            this.obj.Thursday.Value=this.Thursday;
+            this.obj.Friday.Value=this.Friday;
+            this.obj.Saturday.Value =this.Saturday ;
+            this.obj.Sunday.Value =  this.Sunday ;
+        }
+        catch (err) {
+            window.external.OnJavaScriptError(err.source + '-DaysOfTheWeekSettings.save: ' + err.message);
+        }
+    },
+
+    bindingMethod: function (element, propertyName) {
+        try {
+            var _this = this;
+            element.checked = _this[propertyName];
+            $(element).off("change");
+            $(element).change(function (event) {
+                _this.set(propertyName, event.srcElement.checked);
+                BindingManager.attatch("#tab_2");
+            });
+        }
+        catch (err) {
+            window.external.OnJavaScriptError(err.source + '-DaysOfTheWeekSettings.bindingMethod: ' + err.message);
+        }
+    },
+
+    markAllDays: function (valueis) {
+        try {
+            this.set("Monday", valueis);
+            this.set("Tuesday", valueis);
+            this.set("Wednesday", valueis);
+            this.set("Thursday", valueis);
+            this.set("Friday", valueis);
+            this.set("Saturday", valueis);
+            this.set("Sunday", valueis);
+        }
+        catch (err) {
+            window.external.OnJavaScriptError(err.source + '-DaysOfTheWeekSettings.markAllDays: ' + err.message);
+        }
+    },
+
+    IsWeeklyScanWithNoDaysSelected: function() {
+        var isWeeklyScan = ScheduleTypeSettings.Id == "option3";
+        var atLeastOneDaySelected =  this.Monday   || 
+                                     this.Tuesday  ||
+                                     this.Wednesday|| 
+                                     this.Thursday || 
+                                     this.Friday   ||
+                                     this.Saturday || 
+                                     this.Sunday;
+
+        return isWeeklyScan && !atLeastOneDaySelected;
+    }
+};
+
+DateAndTimeSettings = {
+    Date: "18/10/2013",
+    Time: "12:00",
+
+    onSet: function (element, property) {
+        try {
+            this[property] = $(element).val();
+        }
+        catch (err) {
+            window.external.OnJavaScriptError(err.source + '-DateAndTimeSettings.set: ' + err.message);
+        }
+    },
+
+    set: function (property, newValue) {
+        try {
+            this[property] = newValue;
+        }
+        catch (err) {
+            window.external.OnJavaScriptError(err.source + '-DateAndTimeSettings.set: ' + err.message);
+        }
+    },
+
+    fetch: function () {
+        try {
+            var json = window.external.SettingsSync("fetch", "DateAndTimeSettings", null);
+
+            if (json == 'undefined') {
+                window.external.NotifyJSError("DateAndTimeSettings: Bad json return!");
+                return;
+            }
+            var obj = $.parseJSON(json);
+            if (obj.Date.Value == null || obj.Date.Value == "") {
+                var d = new Date();
+                this.Date = d.getDate() + "/" + (d.getMonth() + 1) + "/" + d.getFullYear();
+            } else {
+                this.Date = obj.Date.Value;
+            }
+            this.Time = obj.Time.Value;
+        }
+        catch (err) {
+            window.external.OnJavaScriptError(err.source + '-DateAndTimeSettings.fetch: ' + err.message);
+        }
+    },
+
+    save: function () {
+        try {
+            window.external.SettingsSync("save", "DateAndTimeSettings", $.toJSON(this));
+        }
+        catch (err) {
+            window.external.OnJavaScriptError(err.source + '-DateAndTimeSettings.save: ' + err.message);
+        }
+    },
+
+    bindingMethod: function (element, propertyName) {
+        try {
+            var _this = this;
+            element.value = _this[propertyName];
+            $(element).off("change");
+            $(element).on("change", function (event) {
+			_this.set(propertyName, $(this).val());
+	
+                BindingManager.attatch("#tab_2");
+            });
+        }
+        catch (err) {
+            window.external.OnJavaScriptError(err.source + '-ScanAreasSetttings.bindingMethod: ' + err.message);
+        }
+    }
+};
+
+ScheduleTypeSettings = {
+    Id: "option4",
+    type: "#scheduled_as",
+    set: function (property, isChecked, newValue) {
+        try {
+            setWeek = true;
+            if (this[property] == newValue && newValue != "option4") {
+                setWeek = false;
+            }
+            if (isChecked)
+                this[property] = newValue;            
+            if (newValue == "option3") {
+                $('#tab_2 .checkbox_inner .date_time #select_date').attr('disabled', true);
+                $('#tab_2 .checkbox_inner .date_time #select_date').addClass('disabled');
+                $('#tab_2 .checkbox_inner .date_time #select_time').attr('disabled', false);
+                $.timeEntry.isclickEnable = true;
+                if (setWeek) DaysOfTheWeekSettings.markAllDays(false);
+                $('#tab_2 input[type=checkbox]').attr('disabled', false);
+            } if (newValue == "option4") {
+                $('#tab_2 .checkbox_inner .date_time #select_date').attr('disabled', true);
+                $('#tab_2 .checkbox_inner .date_time #select_date').addClass('disabled');
+                $('#tab_2 .checkbox_inner .date_time #select_time').attr('disabled', true);
+                $.timeEntry.isclickEnable = false;
+                if (setWeek) DaysOfTheWeekSettings.markAllDays(false);
+                $('#tab_2 input[type=checkbox]').attr('disabled', true);
+            } if (newValue == "option2") {
+                $('#tab_2 .checkbox_inner .date_time #select_date').attr('disabled', true);
+                $('#tab_2 .checkbox_inner .date_time #select_date').addClass('disabled');
+                $('#tab_2 .checkbox_inner .date_time #select_time').attr('disabled', false);
+                $.timeEntry.isclickEnable = true;
+                if (setWeek) DaysOfTheWeekSettings.markAllDays(true);
+                $('#tab_2 input[type=checkbox]').attr('disabled', true);
+
+            } if (newValue == "option1") {
+
+                $('#tab_2 .checkbox_inner .date_time #select_date').attr('disabled', false);
+                $('#tab_2 .checkbox_inner .date_time #select_date').removeClass('disabled');
+
+                $('#tab_2 .checkbox_inner .date_time #select_time').attr('disabled', false);
+
+                $.timeEntry.isclickEnable = true;
+                if (setWeek) DaysOfTheWeekSettings.markAllDays(false);
+                if (!window.external.islicenceStatusValid()) {
+                    $('#tab_2 input[type=checkbox]').attr('disabled', true);
+                }else{
+				  $('#tab_2 input[type=checkbox]').attr('disabled', false);
+				}
+            }
+            else {
+               // $('#tab_2 input[type=checkbox]').attr('disabled', false);
+            }
+
+        }
+        catch (err) {
+            window.external.OnJavaScriptError(err.source + '-ScheduleTypeSettings.set: ' + err.message);
+        }
+    },
+
+    fetch: function () {
+        try {
+            var json = window.external.SettingsSync("fetch", "ScheduleTypeSettings", null);
+
+            if (json == 'undefined') {
+                window.external.NotifyJSError("ScheduleTypeSettings: Bad json return!");
+                return;
+            }
+            var obj = $.parseJSON(json);
+            this.Id = obj.Id.Value;
+        }
+        catch (err) {
+            window.external.OnJavaScriptError(err.source + '-ScheduleTypeSettings.fetch: ' + err.message);
+        }
+    },
+
+    save: function () {
+        try {
+            window.external.SettingsSync("save", "ScheduleTypeSettings", $.toJSON(this));
+        }
+        catch (err) {
+            window.external.OnJavaScriptError(err.source + '-ScheduleTypeSettings.save: ' + err.message);
+        }
+    },
+
+    bindingMethod: function (element, propertyName) {
+        try {
+            var _this = this;
+
+            if (element.id == _this[propertyName]) {
+                element.checked = true;
+                $(this.type).html("Scheduled As:" + $('input[name=option]:checked', '.select_shedule').next('label:first').html());
+            }
+
+
+            _this.set(propertyName, true, this.Id);
+            $(element).off("change");
+            $(element).change(function (event) {
+              //  
+                _this.set(propertyName, element.checked, event.srcElement.id);
+                $(this.type).html("Scheduled As:" + $('input[name=option]:checked', '.select_shedule').next('label:first').html());
+                BindingManager.attatch("#tab_2");
+            });
+        }
+        catch (err) {
+            window.external.OnJavaScriptError(err.source + '-ScheduleType.bindingMethod: ' + err.message);
+        }
+    }
+};
+
+GeneralSettings = {
+	Language: "English",
+	MinimizeToTrayOnClose: 'Exit Driver Restore',
+	RunApplicationAtStartupAndStartScan: true,
+	
+	set: function(property,element){
+		try{
+			switch(element.id)
+			{
+				case "select_language":
+					this.Language = $('#select_language').val();
+				break;
+				case "select_onclose":
+				    this.MinimizeToTrayOnClose = $('#select_onclose').val();
+				break;
+				case "select_onstartup":
+					this.RunApplicationAtStartupAndStartScan = element.checked;
+				break;
+			}
+		}
+		catch(err)
+		{
+			window.external.OnJavaScriptError(err.source + '-GeneralSettings.set: ' + err.message);		
+		}
+	},
+	
+	fetch: function(){
+		try{
+			var json = window.external.SettingsSync("fetch","GeneralSettings",null);
+								
+			if(json == 'undefined')
+			{
+				window.external.NotifyJSError("GeneralSettings: Bad json return!");
+				return;
+			}			
+			var obj = $.parseJSON(json);
+
+			this.Language = obj.Language;
+			this.MinimizeToTrayOnClose = obj.MinimizeToTrayOnClose;
+			this.RunApplicationAtStartupAndStartScan = obj.RunApplicationAtStartupAndStartScan;
+		}
+		catch(err)
+		{
+			window.external.OnJavaScriptError(err.source + '-GeneralSettings.fetch: ' + err.message);
+		}
+	},
+	
+	save: function(){
+		try{
+			window.external.SettingsSync("save","GeneralSettings",$.toJSON(this));
+		}
+		catch(err)
+		{
+			window.external.OnJavaScriptError(err.source + '-GeneralSettings.save: ' + err.message);
+		}
+	},
+
+	bindingMethod: function(element,propertyName){
+		try{
+			var _this = this;
+
+			switch(element.id)
+			{
+				case "select_language":
+					$('#select_language').val(this.Language);
+				break;
+				case "select_onclose":
+				    $('#select_onclose').val(this.MinimizeToTrayOnClose);
+				break;
+				case "select_onstartup":
+				  element.checked = _this[propertyName];
+				break;
+			}
+				
+			$(element).off("change");
+			$(element).change(function(event){ 
+				_this.set(propertyName,event.srcElement);								
+				BindingManager.attatch("#tab_2");
+			});
+		}
+		catch(err)
+		{
+			window.external.OnJavaScriptError(err.source + '-GeneralSettings.bindingMethod: ' + err.message);
+		}
+	}
+};
+
+
+LicenseKey = {
+    tabId: "#dataTab4",
+    generalTabId:"#dataTab3",
+    init: function () {
+        var self = this;
+        //on tab click navigate to general tab and signal click
+        $(this.tabId).on("click", function () {
+            Utils.selectTab(self.generalTabId);
+            self.click();
+            throw new Error("prevent click propagation");
+        });
+
+        // if licensed don't show this tab
+        if (window.external.islicenceStatusValid()) {
+            this.hideLicenseTab();
+        }  
+    },
+    hideLicenseTab: function() {
+        $(this.tabId).hide();
+    },
+    click: function() {
+        try {
+            window.external.SettingsSync("save", "LicenseKey",'');
+        }
+        catch (err) {
+            window.external.OnJavaScriptError(err.source + '-SettingsSync.LicenseKey.click: ' + err.message);
+        }
+    }
+};
+BindingManager = {
+
+	attatch: function(parentElement)
+	{	
+		var _this = this;
+		try{
+			$(parentElement).find("*").each(function(index,element)
+			{
+				_this.initializeElement(element);
+			});
+		}
+		catch(err)
+		{
+			window.external.OnJavaScriptError(err.source + '-BindingManager.initialize: ' + err.message);
+		}
+	},
+
+    listenToClickEvents: function() {
+        $('#select_date').datepick({ onSelect: function () { DateAndTimeSettings.onSet("#select_date", "Date"); }, width: 220 });
+
+        $("#scanAreasApply").on("click", function () {
+            ScanAreasSetttings.save();
+        });
+
+        $("#scanAreasBrowseFoldser").on("click", function () {
+            ScanAreasSetttings.browseFolder();
+        });
+
+        $("#scheduleApplySettings").on("click", function () {
+
+            if (DaysOfTheWeekSettings.IsWeeklyScanWithNoDaysSelected()) {
+                window.external.ShowMessageBox("Please select a valid scan day before creating a weekly scan.", "Driver Restore");
+
+                return;
+            }
+
+            DateAndTimeSettings.Time = $("#select_time").val();
+            ScheduleTypeSettings.save();
+            DaysOfTheWeekSettings.save();
+            DateAndTimeSettings.save();
+        }
+			);
+
+        $("#applyGeneralSettings").on("click", function () {
+            GeneralSettings.save();
+        });
+
+        $(".setting_tabs div").on("click", function () {
+
+            Utils.selectTab('#' + $(this).attr('id'));
+        });
+
+    },
+
+	initializeElement: function(element)
+	{
+		if (!(this.elementHasAttribute(element,'object') &&	this.elementHasAttribute(element,'property')))
+			return;
+
+		var objectName = window[this.getAttributeValue(element,'object')];
+		var propertyName = this.getAttributeValue(element,'property');
+		objectName.bindingMethod(element,propertyName);
+	},
+
+	elementHasAttribute: function (element,attributeName)
+	{
+		return $(element).attr(attributeName)!=null;
+	},
+
+	getAttributeValue: function (element, attributeName)
+	{
+		return $(element).attr(attributeName);
+	}
+}
+  
+Utils = {
+  selectTab: function(tabId){
+	if (!$(tabId).hasClass('active')) {
+			var id = $(tabId).attr('data-tab');
+			$('article .visible').hide().removeClass('visible');
+			$('article #tab_'+id).fadeIn().addClass('visible');
+			$('article .active').removeClass('active');
+			$(tabId).addClass('active');
+		}
+  },
+  getURLParameters: function(url){
+		var result = {};
+			var searchIndex = url.indexOf("?");
+			if (searchIndex == -1 ) return result;
+		var sPageURL = url.substring(searchIndex +1);
+		var sURLVariables = sPageURL.split('&');
+		for (var i = 0; i < sURLVariables.length; i++)
+		{    	
+			var sParameterName = sURLVariables[i].split('=');      
+			result[sParameterName[0]] = sParameterName[1];
+		}
+		return result;
+	}
+ }
+ 

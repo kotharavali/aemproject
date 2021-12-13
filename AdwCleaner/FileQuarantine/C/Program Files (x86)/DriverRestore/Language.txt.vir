@@ -1,0 +1,87 @@
+﻿BC_Biometric_Details:Biometric devices take as input a person’s information, for instance, voice input, fingerprint input, iris scan and then process it. These devices enable a computer system to identify individuals based on these characteristics.                                                                                                                                   
+BL_Bluetooth_Details:Bluetooth devices enable computers to communicate with multiple computers simultaneously and wirelessly and exchange data within short distances (usually, a few meters) via UHF radio.                                                                                                                                                                               
+CD_CDDVD_Details:CD (compact disc) is an optical disc to store digital data. It is simply inserted into a CD-ROM to save, write or delete audio data. Initially, it was developed for just music and other sounds. DVD or digital video disk is similar to a CD but with an added quality that it can combine graphics with sounds to store videos.                                    
+DA_Display_Details:Displays are output devices, used to represent the result of a data process or any relevant information in visual form, converting electronic information into a form which is understood by the human eye.                                                                                                                                                           
+DD_DiskDrive_Details:A disk drive is a computer device to read stored data which is saved on an optical disk (CD or DVD) and to write data to store on the disk.                                                                                                                                                                                                                           
+FD_FloppyDisk_Details:Floppy disks or simply a floppy is small disk storage medium for reading or writing computer data on magnetic films by inserting floppy disks into floppy drives. But they tend to have smaller storage capacity in comparison to memory cards and USBs.                                                                                                              
+FW_Firewire_Details:Like USB, Firewire is another device to connect and add peripheral devices (e.g. audio and video equipment) to a personal computer. One major reason why Firewire is used is that it has high data transfer rate and another is that it transfers power to the device via the same data transfer.                                                                     
+HD_HardDiskControllers_Details:Hard Disk Controllers are electrical components (circuitry on an expansion board) of CPUs that act like interfaces to write, read, delete and to modify data/information on the hard disk, hence, providing control over the hard disk.                                                                                                                               
+HI_HID_Details:HID or Human Interface Device is a broad term to categorize any computer device that directly interacts with humans. Such devices receive input from the humans and then give the output directly to the human. Examples include speakers, headsets, webcams etc.                                                                                                     
+IM_Imaging_Details:Imaging means the reproduction or representation of any generic image. Imaging devices are hardware drivers in a personal computer that enable an electronic signal to be created into an image on the monitor screen.                                                                                                                                                
+IR_Infrared_Details:With infrared devices, computers can communicate with each other by making use of short range wireless signals (Infrared waves are used) to transmit and receive data. Specialized infrared network adapters are designed for this purpose.                                                                                                                           
+KB_Keyboard_Details:A keyboard is another input device, designed like a type writer, to enter input text and characters to be displayed on screen. Keyboard includes alpha-numeric keys, punctuation keys and special command keys.                                                                                                                                                       
+MD_Modem_Details:A modem is a device responsible for enabling the computer to transfer data to and fro. Data can be transmitted in analog format over cable lines or telephone, but data storage in a computer is in digital format. A modem is able to convert data between these two formats.                                                                                        
+MF_MultifunctionPCMCIA_Details:PCMCIA stands for Personal Computer Memory Card International Association. PCMCIA cards are like expansion cards for laptops. They act like hardware interfaces and provide added functionality to laptop computers. Multifunction PCMCIA have more than one function, for instance, a single card might work as phone and fax modem and as a network adapter as well.
+MS_Mice_Details:Mouse or mice in plural, is an input device for a computer that enables the user to control the movement of a pointer or cursor on the monitor. Mice usually come with 2 or 3 buttons to manipulate objects on the monitor screen.                                                                                                                                    
+MT_MemoryTechnologyDriver_Details:Memory Technology Driver is a device for managing and interfacing with flash memory (computer storage devices) in Windows operating systems.                                                                                                                                                                                                                          
+NT_Network_Details:A computer network comprises a group of computing devices and systems which have been linked together using either wireless or cable media, for facilitating communication and resource sharing between different users.                                                                                                                                              
+PC_Pcmcia_Details:A PCMCIA (Personal Computer Memory Card International Association) card is an input/output device (like an expansion card) that connects to a laptop computer or notebook to provide additional functionality. There exist three sizes or types of PCMCIA cards.                                                                                                      
+PT_Ports_Details:Ports are connection points and play the role of interface between a computer and peripheral devices or other computers. Computer ports can be internal or external. Hard drives and CD/DVD drives are connected via internal port and keyboards and mice via external port.                                                                                          
+SC_SCSI_Details:SCSI stands for Small Computer System Interface. It is a set of interface standards, proposed by American National Standards Institute (ANSI), to connect/attach peripheral devices to a personal computer for transferring data and communication.                                                                                                                   
+SH_Sdhost_Details:SD Host or Secure Data Hosts are software drivers in a computer that control host controller hardware and provide the interface to communicate with SD memory cards and also set operating parameters.                                                                                                                                                                
+SO_SoundVideoGameControllers_Details:Sound, Video and Game controllers are devices that are used extensively for multimedia applications. These devices facilitate the input and output of computer audio and graphic images as well as manage user interactivity.                                                                                                                                         
+SR_SmartCardReaders_Details:Smart card readers are devices for reading input data on smart cards and also to write information on them. A smart card reader has to be interfaced with a computer to be operated. The readers come with a slot to insert smart cards.                                                                                                                              
+SY_System_Details:A computer system is a collection of hardware and software components that work together intelligently to run a computer efficiently. Just like other systems, computer systems take in input, process it and deliver an output.                                                                                                                                      
+TD_TapeDrive_Details:Tape drive is another data storage device, but it is used to read and write data/information on a magnetic tape, which is primarily used for backup and archival storage purposes.                                                                                                                                                                                    
+US_USB_Details:Universal Serial Bus (USB) is primarily a data storage device to store information in a digital format. It can be connected to a computer and can enable transferring of data between different computers. The amount of information they can hold varies from USB to USB.                                                                                            
+WC_WindowsCEUSBDevices_Details:These USB devices are designed to be compatible with Windows CE, an operating system developed for embedded systems. Such devices control all types of other USB devices and provide the user with a programming interface for Windows CE applications.                                                                                                               
+WP_WindowsPortableDevice_Details:Windows Portable Devices or WPD is a type of driver technology to communicate between a computer, which works on Windows, and attached storage and media devices. Devices that are supported by WPD include MP3 players, digital cameras and mobile phones.                                                                                                           
+MN_Monitor_Details:Monitor is an output device in computer systems that displays all graphics and video information, which is produced by the video card in a computer. Monitors are very similar to televisions but the difference is that monitors generally tend to have better resolution.                                                                                           
+CP_CPU_Details:CPU or Central Processing Unit is an electronic hardware device which works as a brain of the computer. A CPU is responsible for processing and handling all the instructions and commands it receives from both hardware and software being run on the computer.                                                                                                     
+PR_Printer_Details:Printers are external output hardware devices that print or transfer computer data, like documents, texts or images, to standard sheets of paper, referred to as a hardcopy. A printer is categorized as a peripheral device, which means that it needs be attached to a computer before printing.                                                                    
+Problem_1:This device is not configured correctly.
+Problem_3:The driver for this device might be corrupted, or your system may be running low on memory or other resources.
+Problem_10:This device cannot start.
+Problem_12:This device cannot find enough free resources that it can use. If you want to use this device, you will need to disable one of the other devices on this system.
+Problem_14:This device cannot work properly until you restart your computer.
+Problem_16:Windows cannot identify all the resources this device uses.
+Problem_18:Reinstall the drivers for this device.
+Problem_19:Windows cannot start this hardware device because its configuration information (in the registry) is incomplete or damaged.
+Problem_21:Windows is removing this device.
+Problem_22:This device is disabled.
+Problem_24:This device is not present, is not working properly, or does not have all its drivers installed.
+Problem_28:The drivers for this device are not installed.
+Problem_29:This device is disabled because the firmware of the device did not give it the required resources.
+Problem_31:This device is not working properly because Windows cannot load the drivers required for this device.
+Problem_32:A driver (service) for this device has been disabled. An alternate driver may be providing this functionality.
+Problem_33:Windows cannot determine which resources are required for this device.
+Problem_34:Windows cannot determine the settings for this device.
+Problem_35:Your computer's system firmware does not include enough information to properly configure and use this device. To use this device, contact your computer manufacturer to obtain a firmware or BIOS update.
+Problem_36:This device is requesting a PCI interrupt but is configured for an ISA interrupt (or vice versa). Please use the computer's system setup program to reconfigure the interrupt for this device.
+Problem_37:Windows cannot initialize the device driver for this hardware.
+Problem_38:Windows cannot load the device driver for this hardware because a previous instance of the device driver is still in memory.
+Problem_39:Windows cannot load the device driver for this hardware. The driver may be corrupted or missing.
+Problem_40:Windows cannot access this hardware because its service key information in the registry is missing or recorded incorrectly.
+Problem_41:Windows successfully loaded the device driver for this hardware but cannot find the hardware device.
+Problem_42:Windows cannot load the device driver for this hardware because there is a duplicate device already running in the system.
+Problem_43:Windows has stopped this device because it has reported problems.
+Problem_44:An application or service has shut down this hardware device.
+Problem_45:Currently, this hardware device is not connected to the computer.
+Problem_46:Windows cannot gain access to this hardware device because the operating system is in the process of shutting down.
+Problem_47:Windows cannot use this hardware device because it has been prepared for safe removal, but it has not been removed from the computer.
+Problem_48:The software for this device has been blocked from starting because it is known to have problems with Windows. Contact the hardware vendor for a new driver.
+Problem_49:Windows cannot start new hardware devices because the system hive is too large (exceeds the Registry Size Limit).
+Problem_52:Windows cannot verify the digital signature for the drivers required for this device.
+Problem_Unknown:Unknown Problem
+HTTPException_1:Could not send driver scan for processing
+HTTPException_2:Could not send driver scan for pre-processing
+HTTPException_3:Could not get driver results
+HTTPException_4:Could not download driver instructions for driver: {0}
+HTTPException_5:Error downloading driver: {0}
+FileIOException_1:Can't create folder: {0}
+FileIOException_2:Could not write scan results
+FileIOException_3:Could not compress file
+FileIOException_4:Could not read {0}
+FileIOException_5:Can't delete driver folder: {0}
+FileIOException_6:Could not correct line in file: {0}
+FileIOException_7:Could not correct string in file: {0}
+FileIOException_8:Could not write file: {0}
+FileIOException_9:Could not decompress file {0} to {1}
+FileIOException_10:Could not create a desktop shortcut for {0}
+APIException_1:Could not scan drivers
+APIException_2:Could not read scan ID
+APIException_3:Could not read computer name
+APIException_4:Could not read scan results
+APIException_5:Could not read installation instructions for driver: 
+APIException_6:Could not escape lines in file: {0}
+APIException_7:Could not parse driver results

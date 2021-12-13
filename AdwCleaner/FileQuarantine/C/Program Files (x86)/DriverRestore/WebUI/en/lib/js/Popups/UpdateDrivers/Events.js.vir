@@ -1,0 +1,88 @@
+﻿Popups.UpdateDriver.Buttons =
+{
+    DownloadingOpen: 0,
+    DownloadingCancel: 1,
+    InstallNowYes: 2,
+    InstallNowNo: 3,
+    CancelDownloadYes: 4,
+    CancelDownloadNo: 5,
+    UpdateNowWeb : 6
+};
+
+Popups.UpdateDriver.Events = (function () {
+    var cancelDownload = "#lightboxnobtn1updt_drv,#unlghtboxclose1updt_drv";//",un-lghtbox-close1.updt_drv";
+    var openDownload = "#lightboxyesbtn1updt_drv";
+    var cancelDownloadTopBtn = "";
+
+    var yesCancelDownload = "#dr_lightboxyesbtnupd_drv_cd";
+    var noCancelDownload = "#dr_lightboxnobtnupd_drv_cd,#dr_unlghtboxcloseupd_drv_cd";
+    var noDownloadTopBtn = "";
+
+    var yesInstallNow = "#lightboxyesbtnupd_drv_inst";
+    var noInstallNow = "#lightboxnobtnupd_drv_inst,#unlghtboxcloseupd_drv_inst";
+
+    var updateNowWeb = "#installNow_webUpdate";
+    var cancelWebUpdate = '#installNow_webUpdate_cancel';
+
+    var closePopup = "";
+
+    var yesCancelDownloadClicked = function () {
+        window.external.UpdateDriverPopupClicked(Popups.UpdateDriver.Buttons.CancelDownloadYes);
+    };
+    var noCancelDownloadClicked = function () {
+        window.external.UpdateDriverPopupClicked(Popups.UpdateDriver.Buttons.CancelDownloadNo);
+    };
+    var cancelDownloadClicked = function () {
+        window.external.UpdateDriverPopupClicked(Popups.UpdateDriver.Buttons.DownloadingCancel);
+    };
+    var openDownloadClicked = function () {
+        window.external.UpdateDriverPopupClicked(Popups.UpdateDriver.Buttons.DownloadingOpen);
+        //Update.UpdateView.hideAll();
+    };
+    var yesInstallNowClicked = function () {
+        window.external.UpdateDriverPopupClicked(Popups.UpdateDriver.Buttons.InstallNowYes);
+       // Update.UpdateView.hideAll();
+    };
+    var noInstallNowClicked = function () {
+        window.external.UpdateDriverPopupClicked(Popups.UpdateDriver.Buttons.InstallNowNo);
+       // Update.UpdateView.hideAll();
+    };
+    var updateNowWebClicked = function () {
+        window.external.UpdateDriverPopupClicked(Popups.UpdateDriver.Buttons.UpdateNowWeb);
+        Popups.UpdateDriverView.hide();
+    };
+    var closePopupClicked = function () {
+        //window.external.UpdatePageClicked(Popups.UpdateDriver.ButtonsCancel);
+        Popups.UpdateDriverView.hide();
+    };
+
+    var init = function () {
+        $(yesCancelDownload).unbind();
+        $(noCancelDownload).unbind();
+        $(cancelDownload).unbind();
+        $(openDownload).unbind();
+        $(yesInstallNow).unbind();
+        $(noInstallNow).unbind();
+        $(updateNowWeb).unbind();
+        $(closePopup).unbind();
+        $(cancelWebUpdate).unbind();
+
+
+        $(yesCancelDownload).bind("click", yesCancelDownloadClicked);
+        $(noCancelDownload).bind("click", noCancelDownloadClicked);
+
+        $(cancelDownload).bind("click", cancelDownloadClicked);
+        $(openDownload).bind("click", openDownloadClicked);
+
+        $(yesInstallNow).bind("click", yesInstallNowClicked);
+        $(noInstallNow).bind("click", noInstallNowClicked);
+
+        $(updateNowWeb).bind("click", updateNowWebClicked);
+        $(cancelWebUpdate).bind("click", closePopupClicked);
+
+    };
+
+    return {
+        init: init
+    };
+})();

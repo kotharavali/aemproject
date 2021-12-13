@@ -1,0 +1,73 @@
+# AdwCleaner v5.112 - Logfile created 17/04/2016 at 18:24:39
+# Updated 17/04/2016 by Xplode
+# Database : 2016-04-17.1 [Server]
+# Operating system : Windows 10 Home  (X64)
+# Username : rajes - LAPTOP-M2RH9VQU
+# Running from : C:\Users\rajes\Downloads\adwcleaner_5.112.exe
+# Option : Scan
+# Support : http://toolslib.net/forum
+
+***** [ Services ] *****
+
+
+***** [ Folders ] *****
+
+
+***** [ Files ] *****
+
+
+***** [ DLL ] *****
+
+
+***** [ Shortcuts ] *****
+
+
+***** [ Scheduled tasks ] *****
+
+
+***** [ Registry ] *****
+
+Key Found : HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\App Paths\DriverRestore.exe
+Key Found : HKLM\SOFTWARE\Classes\CLSID\{F83D1872-D9FF-47F8-B5A0-49CC51E24EE8}
+Key Found : HKCU\Software\DriverRestore
+Key Found : HKCU\Software\eSupport.com
+Key Found : HKCU\Software\PRODUCTSETUP
+Key Found : HKCU\Software\System Healer
+Key Found : HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\WinZip Registry Optimizer_is1
+Key Found : HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\11598763487076930564
+Key Found : [x64] HKLM\SOFTWARE\DriverRestore
+Key Found : [x64] HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\Driver Restore
+Key Found : HKU\S-1-5-21-1230874461-3600533927-1289800634-1001\Software\DriverRestore
+Key Found : HKU\S-1-5-21-1230874461-3600533927-1289800634-1001\Software\eSupport.com
+Key Found : HKU\S-1-5-21-1230874461-3600533927-1289800634-1001\Software\PRODUCTSETUP
+Key Found : HKU\S-1-5-21-1230874461-3600533927-1289800634-1001\Software\System Healer
+Data Found : HKCU\Software\Microsoft\Internet Explorer\Main [Start Page] - hxxps://us.search.yahoo.com/yhs/web?hspart=iry&hsimp=yhs-fullyhosted_003&type=wbf_adsafld_16_15&param1=1&param2=f%3D1%26b%3DIE%26cc%3Dus%26pa%3DWincy%26cd%3D2XzuyEtN2Y1L1Qzu0Fzz0C0A0BzztDtDtB0Azy0EtDyBtByDtN0D0Tzu0StCyDyCzztN1L2XzutAtFtBtCtFtDtFtCtN1L1Czu1StN1L1G1B1V1N2Y1L1Qzu2StB0C0E0CyD0ByE0BtGtD0BtB0DtG0CyD0D0EtGyB0DyDtBtGyDyEzztBtByCyE0ByByEzytC2QtN1M1F1B2Z1V1N2Y1L1Qzu2SzyzzyEzy0DyE0BzytG0D0F0EtDtGyE0F0DtCtG0AyCtD0DtGtBtBtDyE0EtCyEtB0D0CyE0A2QtN0A0LzuyE%26cr%3D1962086135%26a%3Dwbf_adsafld_16_15%26os_ver%3D10.0%26os%3DWindows%2B10%2BHome
+Data Found : HKLM\SOFTWARE\Microsoft\Internet Explorer\Main [Start Page] - hxxps://us.search.yahoo.com/yhs/web?hspart=iry&hsimp=yhs-fullyhosted_003&type=wbf_adsafld_16_15&param1=1&param2=f%3D1%26b%3DIE%26cc%3Dus%26pa%3DWincy%26cd%3D2XzuyEtN2Y1L1Qzu0Fzz0C0A0BzztDtDtB0Azy0EtDyBtByDtN0D0Tzu0StCyDyCzztN1L2XzutAtFtBtCtFtDtFtCtN1L1Czu1StN1L1G1B1V1N2Y1L1Qzu2StB0C0E0CyD0ByE0BtGtD0BtB0DtG0CyD0D0EtGyB0DyDtBtGyDyEzztBtByCyE0ByByEzytC2QtN1M1F1B2Z1V1N2Y1L1Qzu2SzyzzyEzy0DyE0BzytG0D0F0EtDtGyE0F0DtCtG0AyCtD0DtGtBtBtDyE0EtCyEtB0D0CyE0A2QtN0A0LzuyE%26cr%3D1962086135%26a%3Dwbf_adsafld_16_15%26os_ver%3D10.0%26os%3DWindows%2B10%2BHome
+Data Found : [x64] HKLM\SOFTWARE\Microsoft\Internet Explorer\Main [Start Page] - hxxps://us.search.yahoo.com/yhs/web?hspart=iry&hsimp=yhs-fullyhosted_003&type=wbf_adsafld_16_15&param1=1&param2=f%3D1%26b%3DIE%26cc%3Dus%26pa%3DWincy%26cd%3D2XzuyEtN2Y1L1Qzu0Fzz0C0A0BzztDtDtB0Azy0EtDyBtByDtN0D0Tzu0StCyDyCzztN1L2XzutAtFtBtCtFtDtFtCtN1L1Czu1StN1L1G1B1V1N2Y1L1Qzu2StB0C0E0CyD0ByE0BtGtD0BtB0DtG0CyD0D0EtGyB0DyDtBtGyDyEzztBtByCyE0ByByEzytC2QtN1M1F1B2Z1V1N2Y1L1Qzu2SzyzzyEzy0DyE0BzytG0D0F0EtDtGyE0F0DtCtG0AyCtD0DtGtBtBtDyE0EtCyEtB0D0CyE0A2QtN0A0LzuyE%26cr%3D1962086135%26a%3Dwbf_adsafld_16_15%26os_ver%3D10.0%26os%3DWindows%2B10%2BHome
+Data Found : HKU\S-1-5-21-1230874461-3600533927-1289800634-1001\Software\Microsoft\Internet Explorer\Main [Start Page] - hxxps://us.search.yahoo.com/yhs/web?hspart=iry&hsimp=yhs-fullyhosted_003&type=wbf_adsafld_16_15&param1=1&param2=f%3D1%26b%3DIE%26cc%3Dus%26pa%3DWincy%26cd%3D2XzuyEtN2Y1L1Qzu0Fzz0C0A0BzztDtDtB0Azy0EtDyBtByDtN0D0Tzu0StCyDyCzztN1L2XzutAtFtBtCtFtDtFtCtN1L1Czu1StN1L1G1B1V1N2Y1L1Qzu2StB0C0E0CyD0ByE0BtGtD0BtB0DtG0CyD0D0EtGyB0DyDtBtGyDyEzztBtByCyE0ByByEzytC2QtN1M1F1B2Z1V1N2Y1L1Qzu2SzyzzyEzy0DyE0BzytG0D0F0EtDtGyE0F0DtCtG0AyCtD0DtGtBtBtDyE0EtCyEtB0D0CyE0A2QtN0A0LzuyE%26cr%3D1962086135%26a%3Dwbf_adsafld_16_15%26os_ver%3D10.0%26os%3DWindows%2B10%2BHome
+Value Found : HKCU\Software\Microsoft\Internet Explorer\SearchScopes [DoNotAskAgain]
+Key Found : HKCU\Software\Microsoft\Internet Explorer\SearchScopes\{2f23ab71-4ac6-41f2-a955-ea576e553146}
+Key Found : HKCU\Software\Microsoft\Internet Explorer\SearchScopes\{EA4CD57B-AE5C-496C-8295-E00538FD173C}
+Data Found : HKCU\Software\Microsoft\Internet Explorer\SearchScopes [DefaultScope] - {EA4CD57B-AE5C-496C-8295-E00538FD173C}
+Value Found : [x64] HKLM\SOFTWARE\Microsoft\Internet Explorer\SearchScopes [DoNotAskAgain]
+Key Found : [x64] HKLM\SOFTWARE\Microsoft\Internet Explorer\SearchScopes\{2f23ab71-4ac6-41f2-a955-ea576e553146}
+Key Found : [x64] HKLM\SOFTWARE\Microsoft\Internet Explorer\SearchScopes\{EA4CD57B-AE5C-496C-8295-E00538FD173C}
+Data Found : [x64] HKLM\SOFTWARE\Microsoft\Internet Explorer\SearchScopes [DefaultScope] - {EA4CD57B-AE5C-496C-8295-E00538FD173C}
+Value Found : HKU\S-1-5-21-1230874461-3600533927-1289800634-1001\Software\Microsoft\Internet Explorer\SearchScopes [DoNotAskAgain]
+Key Found : HKU\S-1-5-21-1230874461-3600533927-1289800634-1001\Software\Microsoft\Internet Explorer\SearchScopes\{2f23ab71-4ac6-41f2-a955-ea576e553146}
+Key Found : HKU\S-1-5-21-1230874461-3600533927-1289800634-1001\Software\Microsoft\Internet Explorer\SearchScopes\{EA4CD57B-AE5C-496C-8295-E00538FD173C}
+Data Found : HKU\S-1-5-21-1230874461-3600533927-1289800634-1001\Software\Microsoft\Internet Explorer\SearchScopes [DefaultScope] - {EA4CD57B-AE5C-496C-8295-E00538FD173C}
+
+***** [ Web browsers ] *****
+
+
+*************************
+
+C:\AdwCleaner\AdwCleaner[C1].txt - [14635 bytes] - [16/04/2016 20:09:43]
+C:\AdwCleaner\AdwCleaner[C2].txt - [1598 bytes] - [17/04/2016 18:24:00]
+C:\AdwCleaner\AdwCleaner[S1].txt - [14685 bytes] - [16/04/2016 20:08:05]
+C:\AdwCleaner\AdwCleaner[S2].txt - [905 bytes] - [16/04/2016 20:16:25]
+C:\AdwCleaner\AdwCleaner[S3].txt - [7119 bytes] - [17/04/2016 18:23:11]
+C:\AdwCleaner\AdwCleaner[S4].txt - [5977 bytes] - [17/04/2016 18:24:39]
+
+########## EOF - C:\AdwCleaner\AdwCleaner[S4].txt - [6050 bytes] ##########

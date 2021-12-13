@@ -1,0 +1,38 @@
+
+.main-outer {
+	background-image: url('lib/images/bg/content.png'); 
+	width: 653px; 
+	height: 545px; 
+	right: 1px; 
+	float: right; 
+	margin-right: 6px;
+}
+
+.main-inner{
+	margin-right: 6px;
+	background-repeat: no-repeat; 
+	background-position: center center; 
+	height: 545px;
+}
+
+.main-iframe{
+	position: absolute;
+	border:0 none;
+	float:right;
+	margin: 0 0 0 0;
+	overflow:hidden;
+	width:660px;
+	height:560px;
+}
+
+.popups{
+	position:absolute;
+	top:0px;
+	z-index:1000;
+}
+
+.fixscreens{
+	position:absolute;
+	top:80px;
+	z-index:15;
+}

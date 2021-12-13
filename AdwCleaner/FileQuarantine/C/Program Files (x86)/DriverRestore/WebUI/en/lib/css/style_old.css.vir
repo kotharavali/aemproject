@@ -1,0 +1,246 @@
+
+
+/* button_olds */
+
+.button_old{
+	height: 31px;
+	background-image: url(../images/btns/kit_old.png);
+	vertical-align: middle;
+	display: inline-block;
+}
+
+.button_old.disabled{
+	cursor: default !important;
+}
+
+.button_old.start { background-position: 0 0; width: 92px; }
+.button_old.start.hover { background-position: 0 -32px; }
+.button_old.start.active { background-position: 0 -64px; }
+.button_old.start.pressed { background-position: 0 -64px; }
+.button_old.start.disabled { background-position: 0 -96px; }
+
+.button_old.pause { background-position: -93px 0; width: 94px; }
+.button_old.pause.hover { background-position: -93px -32px; }
+.button_old.pause.active { background-position: -93px -64px; }
+.button_old.pause.pressed { background-position: -93px -64px; }
+.button_old.pause.disabled { background-position: -93px -96px; }
+
+.button_old.stop { background-position: -188px 0; width: 94px; }
+.button_old.stop.hover { background-position: -188px -32px; }
+.button_old.stop.active { background-position: -188px -64px; }
+.button_old.stop.pressed { background-position: -188px -64px; }
+.button_old.stop.disabled { background-position: -188px -96px; }
+
+.button_old.check { background-position: -283px 0; width: 124px; }
+.button_old.check.hover { background-position: -283px -32px; }
+.button_old.check.active { background-position: -283px -64px; }
+.button_old.check.pressed { background-position: -283px -64px; }
+
+.button_old.update { background-position: -408px 0; width: 114px; }
+.button_old.update.hover { background-position: -408px -32px; }
+.button_old.update.active { background-position: -408px -64px; }
+.button_old.update.pressed { background-position: -408px -64px; }
+
+.button_old.ok { background-position: -523px 0; width: 124px; }
+.button_old.ok.hover { background-position: -523px -32px; }
+.button_old.ok.active { background-position: -523px -64px; }
+.button_old.ok.pressed { background-position: -523px -64px; }
+
+.button_old.close { background-position: -648px 0; width: 114px; }
+.button_old.close.hover { background-position: -648px -32px; }
+.button_old.close.active { background-position: -648px -64px; }
+.button_old.close.pressed { background-position: -648px -64px; }
+
+.button_old.register { background-position: -763px 0; width: 128px; }
+.button_old.register.hover { background-position: -763px -32px; }
+.button_old.register.active { background-position: -763px -64px; }
+.button_old.register.pressed { background-position: -763px -64px; }
+
+.button_old.activate { background-position: -892px 0; width: 124px; }
+.button_old.activate.hover { background-position: -892px -32px; }
+.button_old.activate.active { background-position: -892px -64px; }
+.button_old.activate.pressed { background-position: -892px -64px; }
+
+.button_old.manage { background-position: -1017px 0; width: 124px; }
+.button_old.manage.hover { background-position: -1017px -32px; }
+.button_old.manage.active { background-position: -1017px -64px; }
+.button_old.manage.pressed { background-position: -1017px -64px; }
+
+.button_old.product {background-position: -2025px  0; width: 125px; background-image: url(../images/btns/kit_sp.png); }
+.button_old.product:hover { background-position: -2025px  -32px !important ; width: 125px; background-image: url(../images/btns/kit_sp.png);  }
+.button_old.product:active { background-position: -2025px  -64px; width: 125px; background-image: url(../images/btns/kit_sp.png);  }
+.button_old.product:pressed { background-position: -2025px  -64px; width: 125px; background-image: url(../images/btns/kit_sp.png);  }
+
+.button_old.license { background-position: -1244px 0; width: 121px; }
+.button_old.license:hover { background-position: -1244px -32px; }
+.button_old.license:active { background-position: -1244px -64px; }
+.button_old.license:pressed { background-position: -1244px -64px; }
+
+.button_old.log { background-position: -1366px 0; width: 121px; }
+.button_old.log.hover { background-position: -1366px -32px; }
+.button_old.log.active { background-position: -1366px -64px; }
+.button_old.log.pressed { background-position: -1366px -64px; }
+
+.button_old.risk { background-position: -1488px 0; width: 101px; }
+.button_old.risk.hover { background-position: -1488px -32px; }
+.button_old.risk.active { background-position: -1488px -64px; }
+.button_old.risk.pressed { background-position: -1488px -64px; }
+
+.button_old.select { background-position: -1590px 0; width: 91px; }
+.button_old.select.hover { background-position: -1590px -32px; }
+.button_old.select.active { background-position: -1590px -64px; }
+.button_old.select.pressed { background-position: -1590px -64px; }
+
+.button_old.action { background-position: -1682px 0; width: 151px; }
+.button_old.action.hover { background-position: -1682px -32px; }
+.button_old.action.active { background-position: -1682px -64px; }
+.button_old.action.pressed { background-position: -1682px -64px; }
+
+.button_old.return { background-position: -1834px 0; width: 114px; }
+.button_old.return.hover { background-position: -1834px -32px; }
+.button_old.return.active { background-position: -1834px -64px; }
+.button_old.return.pressed { background-position: -1834px -64px; }
+
+.button_old.submit { background-position: -1949px 0; width: 74px; }
+.button_old.submit.hover { background-position: -1949px -32px; }
+.button_old.submit.active { background-position: -1949px -64px; }
+.button_old.submit.pressed { background-position: -1949px -64px; }
+
+.floatFix{
+position: relative;
+height:0px;
+}
+
+.button_old.fix{
+	position:absolute;
+	width: 204px;
+	height:48px;
+	right:0px;
+	bottom:-5px;
+	background-image: url(../images/btns/fix_error_now.png);
+}
+
+.button_old.fix.hover { background-position: 0 -50px; }
+.button_old.fix.active { background-position: 0 -95px; }
+
+.button_old.registernow{
+	width: 224px;
+	height: 51px;
+	background-image: url(../images/btns/registernow.png);
+}
+
+.button_old.registernow.hover { background-position: 0 -52px; }
+.button_old.registernow.active { background-position: 0 -104px; }
+.button_old.registernow.pressed { background-position: 0 -104px; }
+
+.button_old.getkey{
+	width: 283px;
+	height: 51px;
+	background-image: url(../images/btns/getkey.png);
+}
+
+.button_old.getkey.hover { background-position: 0 -52px; }
+.button_old.getkey.active { background-position: 0 -104px; }
+.button_old.getkey.pressed { background-position: 0 -104px; }
+
+.button_old.continue{
+	width: 283px;
+	height: 71px;
+	background-image: url(../images/btns/continue.png);
+}
+
+.button_old.continue.hover { background-position: 0 -72px; }
+.button_old.continue.active { background-position: 0 -144px; }
+.button_old.continue.pressed { background-position: 0 -144px; }
+
+.button_old.manage {
+float: right;
+bottom: 20px;
+}
+
+.home .progress .box{
+	width: 602px;
+	height: 15px;
+	background-image: url(../images/home/progress/box.png);
+	margin-bottom: 2px;
+	display: block;
+	overflow:hidden;
+}
+
+.home .progress .bar{
+	width: 0px;
+	height: 15px;
+	background-image: url(../images/home/progress/bar.png);
+	display: block;
+	border-radius:20px;
+	/*behavior: url(en/lib/scripts/roundcorners/PIE.htc);*/
+}
+
+.home .progress .info{
+	padding-left: 3px;
+}
+
+.home .progress .second{
+	left:-85px;
+	bottom:-15px;
+}
+
+.home .progress .box2{
+	width: 510px;
+	height: 15px;
+	background-image: url(../images/home/progress/box2.png);
+	margin-bottom: 2px;
+	display: block;
+	overflow:hidden;
+	border-radius:20px;
+	behavior: url(en/lib/scripts/roundcorners/PIE.htc);
+	background-repeat:no-repeat;
+}
+
+.home .progress .bar2{
+	width: 0px;
+	height: 15px;
+	background-image: url(../images/home/progress/green_bar2.png);
+	background-repeat:no-repeat;
+	display: block;
+	border-radius:20px;
+	behavior: url(en/lib/scripts/roundcorners/PIE.htc);
+}
+.download_popup.download_1 .popup_text_1 .progress{ position:relative;}
+.over-lap-right{ position:absolute; z-index:9999; top:0px; left:0px; background-image: url(../images/home/progress/box-rit.png); height:15px; width:500px;
+           background-repeat:no-repeat;
+           background-position:right;
+           }
+           .over-lap-left{ position:absolute; z-index:9998; top:0px; left:0px; background-image: url(../images/home/progress/box-left.png); height:15px; width:500px;
+           background-repeat:no-repeat;
+           background-position:left;
+           }
+/* Threat Details
+---------------------------------------------------- */
+
+
+.popup.details .content .old table thead th{
+	padding: 5px 17px;
+	font-weight: normal;
+	text-align: left;
+}
+
+
+.popup.details .content .old  table thead .category{
+	background-position: -349px 0;
+	width: 106px;
+}
+
+.fixed_ok{
+	background:url(../images/icons/ok.png) no-repeat -5px !important;
+	width:100%;
+	height:100%;
+}
+.button { _noFocusLine: expression(this.hideFocus=true); }
+
+html {
+  filter: expression(document.execCommand("BackgroundImageCache", false, true));
+}
+
+
+

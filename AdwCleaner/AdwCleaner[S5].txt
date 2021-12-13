@@ -1,0 +1,132 @@
+# AdwCleaner v6.043 - Logfile created 05/02/2017 at 15:14:55
+# Updated on 27/01/2017 by Malwarebytes
+# Database : 2017-02-03.2 [Server]
+# Operating System : Windows 10 Home  (X64)
+# Username : rajes - LAPTOP-M2RH9VQU
+# Running from : C:\Users\rajes\Downloads\adwcleaner_6.043.exe
+# Mode: Scan
+# Support : https://www.malwarebytes.com/support
+
+
+
+***** [ Services ] *****
+
+Service Found:  PremierOpinion
+
+
+***** [ Folders ] *****
+
+Folder Found:  C:\ProgramData\Microsoft\Windows\Start Menu\Programs\PremierOpinion
+Folder Found:  C:\ProgramData\Microsoft\Windows\Start Menu\Programs\premieropinion
+Folder Found:  C:\Program Files (x86)\PremierOpinion
+Folder Found:  C:\Program Files (x86)\premieropinion
+Folder Found:  C:\Users\rajes\AppData\Local\Google\Chrome\User Data\Default\Extensions\fcfenmboojpjinhpgggodefccipikbpd
+Folder Found:  C:\Users\rajes\AppData\Local\Google\Chrome\User Data\Default\Extensions\bahkljhhdeciiaodlkppoonappfnheoi
+Folder Found:  C:\Users\rajes\AppData\Local\Google\Chrome\User Data\Default\Extensions\mallpejgeafdahhflmliiahjdpgbegpk
+Folder Found:  C:\Users\rajes\AppData\Local\Google\Chrome\User Data\Default\Extensions\kofkpgiaknijknhajbhnghkodiccblkg
+
+
+***** [ Files ] *****
+
+File Found:  C:\ProgramData\Microsoft\Windows\Start Menu\Programs\HowToRemove.html.lnk
+File Found:  C:\WINDOWS\SysWoW64\pmls.dll
+File Found:  C:\Users\rajes\AppData\Local\Google\Chrome\User Data\Default\Local Storage\chrome-extension_bahkljhhdeciiaodlkppoonappfnheoi_0.localstorage
+File Found:  C:\Users\rajes\AppData\Local\Google\Chrome\User Data\Default\Local Storage\chrome-extension_kofkpgiaknijknhajbhnghkodiccblkg_0.localstorage
+
+
+***** [ DLL ] *****
+
+No malicious DLLs found.
+
+
+***** [ WMI ] *****
+
+No malicious keys found.
+
+
+***** [ Shortcuts ] *****
+
+No infected shortcut found.
+
+
+***** [ Scheduled Tasks ] *****
+
+No malicious task found.
+
+
+***** [ Registry ] *****
+
+Key Found:  HKLM\SOFTWARE\Classes\OCComSDK.ComSDK
+Key Found:  HKLM\SOFTWARE\Classes\OCComSDK.ComSDK.1
+Key Found:  [x64] HKLM\SOFTWARE\Classes\OCComSDK.ComSDK
+Key Found:  [x64] HKLM\SOFTWARE\Classes\OCComSDK.ComSDK.1
+Key Found:  HKLM\SOFTWARE\Classes\CLSID\{B9D64D3B-BE75-4FA2-B94A-C4AE772A0146}
+Key Found:  HKLM\SOFTWARE\Classes\CLSID\{47A1DF02-BCE4-40C3-AE47-E3EA09A65E4A}
+Key Found:  HKLM\SOFTWARE\Classes\Interface\{FA7B2795-C0C8-4A58-8672-3F8D80CC0270}
+Key Found:  HKLM\SOFTWARE\Classes\Interface\{47A1DF02-BCE4-40C3-AE47-E3EA09A65E4A}
+Key Found:  HKLM\SOFTWARE\Classes\TypeLib\{1112F282-7099-4624-A439-DB29D6551552}
+Key Found:  HKU\S-1-5-21-1230874461-3600533927-1289800634-1001\Software\csastats
+Key Found:  HKU\S-1-5-21-1230874461-3600533927-1289800634-1001\Software\NICO MAK COMPUTING\WinZip Registry Optimizer
+Key Found:  HKCU\Software\csastats
+Key Found:  HKCU\Software\NICO MAK COMPUTING\WinZip Registry Optimizer
+Key Found:  HKLM\SOFTWARE\NICO MAK COMPUTING\WinZip Registry Optimizer
+Key Found:  HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\{eeb86aef-4a5d-4b75-9d74-f16d438fc286}
+Key Found:  [x64] HKCU\Software\csastats
+Key Found:  [x64] HKCU\Software\NICO MAK COMPUTING\WinZip Registry Optimizer
+Key Found:  [x64] HKLM\SOFTWARE\5da059a482fd494db3f252126fbc3d5b
+Key Found:  HKCU\Software\Classes\Local Settings\Software\Microsoft\Windows\CurrentVersion\AppContainer\Storage\microsoft.microsoftedge_8wekyb3d8bbwe\Children\001\Internet Explorer\EdpDomStorage\cmptch.com
+Key Found:  HKCU\Software\Classes\Local Settings\Software\Microsoft\Windows\CurrentVersion\AppContainer\Storage\microsoft.microsoftedge_8wekyb3d8bbwe\Children\001\Internet Explorer\EdpDomStorage\static.cmptch.com
+Key Found:  HKCU\Software\Classes\Local Settings\Software\Microsoft\Windows\CurrentVersion\AppContainer\Storage\microsoft.microsoftedge_8wekyb3d8bbwe\Children\001\Internet Explorer\DOMStorage\cmptch.com
+Key Found:  HKCU\Software\Classes\Local Settings\Software\Microsoft\Windows\CurrentVersion\AppContainer\Storage\microsoft.microsoftedge_8wekyb3d8bbwe\Children\001\Internet Explorer\DOMStorage\static.cmptch.com
+Key Found:  [x64] HKCU\Software\Classes\Local Settings\Software\Microsoft\Windows\CurrentVersion\AppContainer\Storage\microsoft.microsoftedge_8wekyb3d8bbwe\Children\001\Internet Explorer\EdpDomStorage\cmptch.com
+Key Found:  [x64] HKCU\Software\Classes\Local Settings\Software\Microsoft\Windows\CurrentVersion\AppContainer\Storage\microsoft.microsoftedge_8wekyb3d8bbwe\Children\001\Internet Explorer\EdpDomStorage\static.cmptch.c
+Key Found:  [x64] HKCU\Software\Classes\Local Settings\Software\Microsoft\Windows\CurrentVersion\AppContainer\Storage\microsoft.microsoftedge_8wekyb3d8bbwe\Children\001\Internet Explorer\DOMStorage\cmptch.com
+Key Found:  [x64] HKCU\Software\Classes\Local Settings\Software\Microsoft\Windows\CurrentVersion\AppContainer\Storage\microsoft.microsoftedge_8wekyb3d8bbwe\Children\001\Internet Explorer\DOMStorage\static.cmptch.com
+Key Found:  HKLM\SYSTEM\CurrentControlSet\Control\Power\User\PowerSchemes\e24b7131-d039-43cb-9e6f-ad4be601ec1f
+Key Found:  HKLM\SYSTEM\CurrentControlSet\Control\Power\User\PowerSchemes\04262113-2a31-48e1-b4bb-3b42174bea0f
+Key Found:  HKLM\SYSTEM\ControlSet001\Control\Power\User\PowerSchemes\e24b7131-d039-43cb-9e6f-ad4be601ec1f
+Key Found:  HKLM\SYSTEM\ControlSet001\Control\Power\User\PowerSchemes\04262113-2a31-48e1-b4bb-3b42174bea0f
+Value Found:  HKLM\SOFTWARE\Mozilla\Firefox\Extensions [{C7AE725D-FA5C-4027-BB4C-787EF9F8248A}]
+Value Found:  HKLM\SOFTWARE\Mozilla\Firefox\Extensions [{C7AE725D-FA5C-4027-BB4C-787EF9F8248A}]
+Value Found:  HKLM\SOFTWARE\Mozilla\Firefox\Extensions [{C7AE725D-FA5C-4027-BB4C-787EF9F8248A}]
+Key Found:  HKLM\SOFTWARE\Google\Chrome\Extensions\mkndcbhcgphcfkkddanakjiepeknbgle
+Key Found:  HKCU\Software\Google\Chrome\Extensions\fcfenmboojpjinhpgggodefccipikbpd
+Key Found:  [x64] HKCU\Software\Google\Chrome\Extensions\fcfenmboojpjinhpgggodefccipikbpd
+Key Found:  HKCU\Software\Google\Chrome\Extensions\bahkljhhdeciiaodlkppoonappfnheoi
+Key Found:  HKLM\SOFTWARE\Google\Chrome\Extensions\bahkljhhdeciiaodlkppoonappfnheoi
+Key Found:  [x64] HKCU\Software\Google\Chrome\Extensions\bahkljhhdeciiaodlkppoonappfnheoi
+Key Found:  [x64] HKLM\SOFTWARE\Google\Chrome\Extensions\bahkljhhdeciiaodlkppoonappfnheoi
+Key Found:  HKCU\Software\Google\Chrome\Extensions\kofkpgiaknijknhajbhnghkodiccblkg
+Key Found:  HKLM\SOFTWARE\Google\Chrome\Extensions\kofkpgiaknijknhajbhnghkodiccblkg
+Key Found:  [x64] HKCU\Software\Google\Chrome\Extensions\kofkpgiaknijknhajbhnghkodiccblkg
+Key Found:  [x64] HKLM\SOFTWARE\Google\Chrome\Extensions\kofkpgiaknijknhajbhnghkodiccblkg
+
+
+***** [ Web browsers ] *****
+
+No malicious Firefox based browser items found.
+Chrome pref Found:  [C:\Users\rajes\AppData\Local\Chromium\User Data\Default\Web data] - search provided by yahoo
+Chrome pref Found:  [C:\Users\rajes\AppData\Local\Chromium\User Data\Default\Secure Preferences] - hxxps://us.search.yahoo.com/yhs/web?hspart=elm&hsimp=yhs-001&type=hdr_s_16_21_orgnl&param1=1&param2=f%3D7%26b%3Dchmm%26cc%
+Chrome pref Found:  [C:\Users\rajes\AppData\Local\Chromium\User Data\Default\Secure Preferences ] - bahkljhhdeciiaodlkppoonappfnheoi
+Chrome pref Found:  [C:\Users\rajes\AppData\Local\Chromium\User Data\Default\Secure Preferences ] - fcfenmboojpjinhpgggodefccipikbpd
+Chrome pref Found:  [C:\Users\rajes\AppData\Local\Chromium\User Data\Default\Secure Preferences ] - kofkpgiaknijknhajbhnghkodiccblkg
+Chrome pref Found:  [C:\Users\rajes\AppData\Local\Chromium\User Data\Default\Secure Preferences ] - mkndcbhcgphcfkkddanakjiepeknbgle
+Chrome pref Found:  [C:\Users\rajes\AppData\Local\Chromium\User Data\Default\Secure Preferences ] - hxxps://us.search.yahoo.com/yhs/web?hspart=elm&hsimp=yhs-001&type=hdr_s_16_21_orgnl&param1=1&param2=f%3D1%26b%3Dchmm%26cc
+Chrome pref Found:  [C:\Users\rajes\AppData\Local\Google\Chrome\User Data\Default\Secure Preferences ] - bahkljhhdeciiaodlkppoonappfnheoi
+Chrome pref Found:  [C:\Users\rajes\AppData\Local\Google\Chrome\User Data\Default\Secure Preferences ] - fcfenmboojpjinhpgggodefccipikbpd
+Chrome pref Found:  [C:\Users\rajes\AppData\Local\Google\Chrome\User Data\Default\Secure Preferences ] - kofkpgiaknijknhajbhnghkodiccblkg
+Chrome pref Found:  [C:\Users\rajes\AppData\Local\Google\Chrome\User Data\Default\Secure Preferences ] - mallpejgeafdahhflmliiahjdpgbegpk
+Chrome pref Found:  [C:\Users\rajes\AppData\Local\Google\Chrome\User Data\Default\Secure Preferences ] - mkndcbhcgphcfkkddanakjiepeknbgle
+
+*************************
+
+C:\AdwCleaner\AdwCleaner[C1].txt - [14635 Bytes] - [16/04/2016 19:09:43]
+C:\AdwCleaner\AdwCleaner[C2].txt - [1598 Bytes] - [17/04/2016 17:24:00]
+C:\AdwCleaner\AdwCleaner[C3].txt - [3499 Bytes] - [17/04/2016 17:25:36]
+C:\AdwCleaner\AdwCleaner[S1].txt - [14685 Bytes] - [16/04/2016 19:08:05]
+C:\AdwCleaner\AdwCleaner[S2].txt - [905 Bytes] - [16/04/2016 19:16:25]
+C:\AdwCleaner\AdwCleaner[S3].txt - [7119 Bytes] - [17/04/2016 17:23:11]
+C:\AdwCleaner\AdwCleaner[S4].txt - [6157 Bytes] - [17/04/2016 17:24:39]
+C:\AdwCleaner\AdwCleaner[S5].txt - [8999 Bytes] - [05/02/2017 15:14:55]
+
+########## EOF - C:\AdwCleaner\AdwCleaner[S5].txt - [9072 Bytes] ##########

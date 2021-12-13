@@ -1,0 +1,89 @@
+﻿var Popups = Popups || {};
+
+Popups.QuestionForm = (function () {
+    var radioButtons = '.clnt-info-rdo-btn';
+    var categoryDetails = '.information-form.pd3';
+    var cliendUpdate = '.cliend-update';
+    var textArea = '.char_limited';
+    var customerquestionform = '#customerQuestionForm';
+    var customerquestionclose = '#customerQuestionClose';
+    var customerquestioncancel = "#customerQuestionCancel";
+    var customerQuestionSend = "#customerQuestionSend";
+    var questionFormId = '#customerQuestionForm';
+    var formDriverName = '.nec-elec';
+    var inputNameId = '#customerQuestion_input1';
+    var inputEmailId = '#customerQuestion_input2';
+    var shadowId = "#questionFormShadow";
+
+    var driverObject = {};
+
+    var init = function () {
+        $(radioButtons).on('click', function (e) {
+            if (e.target.id == "3")
+                $(categoryDetails).show();
+            else
+                $(categoryDetails).hide();
+        });
+
+        $(cliendUpdate).keyup(function () {
+            $(textArea).text("Characters remaining: " + (1000 - $(cliendUpdate).val().length));
+        });
+        var hideAndClear = function () {
+            $(customerquestionform).hide();
+            $(cliendUpdate).val("");
+            $(inputNameId).val("");
+            $(inputEmailId).val("");
+            $(inputNameId).removeClass("name-filed");
+            $(inputEmailId).removeClass("name-filed");
+            $(shadowId).hide();
+        };
+
+        $(customerquestionclose).click(hideAndClear);
+        $(customerquestioncancel).click(hideAndClear);
+        $(customerQuestionSend).click(function () {
+            var sizeName = $(inputNameId).val().length;
+            var sizeEmail = $(inputEmailId).val().length;
+            var sizeMessage = $(cliendUpdate).val().length;
+
+            $(inputNameId).removeClass("name-filed");
+            $(inputEmailId).removeClass("name-filed");
+
+            if (sizeName == 0) {
+                $(inputNameId).addClass("name-filed");
+                return;
+            }
+        
+            if (sizeEmail == 0) {
+                $(inputEmailId).addClass("name-filed");
+                return;
+            }
+
+            if (sizeMessage == 0) {
+                alert("Message body is empty. Please provide few details!");
+                return;
+            }
+
+            var isSpecificMessage = $(".client-information input[type='radio']:checked").id == "3";
+            window.external.SendQuestionForm(   $(inputNameId).val(),
+                                                $(inputEmailId).val(),
+                                                $(cliendUpdate).val(),
+                                                $(formDriverName).text(),
+                                                isSpecificMessage   );
+        });
+
+    };
+
+    var show = function (driverInfo) {
+        driverObject = driverInfo;
+        $(formDriverName).text(driverObject.Name);
+        $(questionFormId).show();
+        $(shadowId).show();
+    };
+
+    return {
+        init: init,
+        show: show
+    };
+})();
+
+
